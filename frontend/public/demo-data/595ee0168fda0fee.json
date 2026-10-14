@@ -1,0 +1,18 @@
+{
+ "body": {
+  "capability": "SECURITIES_SHADOW_ONLY",
+  "data": {
+   "financial_authority": false,
+   "items": [],
+   "warnings": [
+    "CONTROLLED HYPOTHESIS RESEARCH EVIDENCE ONLY -- NO STRATEGY, PAPER, OR LIVE AUTHORITY",
+    "Apex may conclude a relationship is historically associated with, conditionally predictive in this sample, or improves benchmark-relative discrimination. It may not conclude a relationship 'causes' an outcome; no method used by this milestone supports causal inference.",
+    "PANEL_OBSERVATIONS_SHARE_MARKET_DATES_NOT_INDEPENDENT_SAMPLES",
+    "DISCOVERED_HYPOTHESES_CANNOT_TREAT_THEIR_OWN_DISCOVERY_PERIOD_AS_CONFIRMATORY"
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/securities/cross-market-research/agendas",
+ "status": 200
+}

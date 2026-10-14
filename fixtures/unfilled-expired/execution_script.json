@@ -1,0 +1,14 @@
+{
+  "fixture_id": "unfilled-expired",
+  "schema_version": "1",
+  "script_id": "execution-unfilled-expired-v1",
+  "kind": "NONMARKETABLE_EXPIRE_UNFILLED",
+  "side": "YES",
+  "executable_yes_ask": "0.40",
+  "executable_no_ask": "0.62",
+  "visible_yes_quantity": "1000",
+  "opened_at": "2026-07-15T15:00:03Z",
+  "expires_at": "2026-07-15T15:04:00Z",
+  "opened_sequence": "1",
+  "expired_sequence": "2"
+}

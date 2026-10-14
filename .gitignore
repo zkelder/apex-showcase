@@ -1,0 +1,79 @@
+.venv/
+venv/
+__pycache__/
+*pycache*/
+*.py[cod]
+.pytest_cache/
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.direnv/
+*.egg-info/
+dist/
+build/
+artifacts/
+reports/
+test-results/
+htmlcov/
+coverage.xml
+.coverage
+.coverage.*
+*.log
+*.tmp
+
+# Generated local Operator Console frontend output.
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+
+# Generated only by the isolated NOAA GFS feasibility spike.
+.local/research/weather_gfs_feasibility/
+
+# Local-only post-plan operator runbooks.
+.local/forward_evidence/
+
+# Retained local verification logs and pytest temporary roots.
+.local/verification/
+.local/pytest-tmp/
+
+# Immutable local-only Strategy Lab datasets and generated model artifacts.
+.local/strategy_lab/
+.local/batch-learning/
+
+# Subordinate local research stores; Apex PostgreSQL evidence remains authoritative.
+.local/optuna/
+.local/mlflow/
+.local/uv-cache/
+.local/npm-cache/
+
+# Local-only operational backups, alert outbox, and bounded runner artifacts.
+.local/operational/
+
+# Immutable local-only managed Securities Stage 1 datasets and demo artifacts.
+.local/securities/
+
+# Immutable local-only research-integrity return artifacts.
+.local/research-integrity/
+
+# Workspace-local verification caches and temporary roots.
+.apex-verification-tmp/
+
+# Local databases and runtime state
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.duckdb
+
+# Secrets and machine-local configuration
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+*.key
+*.pem
+*.p12
+*.pfx
+frontend/dist-demo/

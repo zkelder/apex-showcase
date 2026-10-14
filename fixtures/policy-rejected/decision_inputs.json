@@ -1,0 +1,99 @@
+{
+  "fixture_id": "policy-rejected",
+  "schema_version": "1",
+  "logical_time": "2026-07-15T15:00:01Z",
+  "decision_cutoff": "2026-07-15T15:00:00Z",
+  "campaign": {
+    "campaign_id": "campaign-policy-rejected",
+    "currency": "USD",
+    "campaign_contribution": "1000.00",
+    "authorized_campaign_loss": "1000.00",
+    "authorized_loss_fraction": "1"
+  },
+  "policy": {
+    "policy_version_id": "policy-policy-rejected-v1",
+    "profile": "MOONSHOT",
+    "requested_risk_fraction": "0.10",
+    "max_trade_loss_fraction": "0.10",
+    "max_open_loss_fraction": "1",
+    "min_synthetic_edge": "0.01",
+    "max_spread": "0.25",
+    "max_data_age_seconds": "300",
+    "max_capital_lockup_seconds": "3600",
+    "content_hash": "c933f929dc5891a182b9fa4ff02f94362e9b8e35753bdd1a425a1937a50ec372"
+  },
+  "instrument": {
+    "instrument_id": "SYNTH-WEATHER-20260715",
+    "category": "WEATHER",
+    "payout_unit": "1.00",
+    "price_tick": "0.01",
+    "quantity_increment": "1",
+    "yes_ask": "0.40",
+    "no_ask": "0.62",
+    "visible_yes_quantity": "1000",
+    "yes_settlement_value": "1.00",
+    "no_settlement_value": "0.00",
+    "void_settlement_value": "0.40"
+  },
+  "contract_rule": {
+    "rule_version_id": "rule-golden-v1",
+    "exact_text": "This synthetic contract settles to 1.00 if the recorded fixture value is YES, 0.00 if it is NO, and 0.40 if it is VOID. Only the frozen synthetic resolution record identified by this rule is authoritative.",
+    "resolution_source": "Frozen synthetic golden settlement record",
+    "effective_at": "2026-07-15T14:00:00Z",
+    "close_at": "2026-07-15T16:30:00Z",
+    "determination_at": "2026-07-15T17:00:00Z",
+    "expected_settlement_at": "2026-07-15T17:05:00Z",
+    "content_hash": "742ac2b67c6ebd52f63cc960e890a03cb98b86ba344c68a248a2c2d54d07747d"
+  },
+  "source_records": [
+    {
+      "source_id": "source-book-1",
+      "source_event_at": "2026-07-15T14:58:00Z",
+      "available_at": "2026-07-15T14:58:01Z",
+      "sequence": "1",
+      "schema_version": "1",
+      "raw_payload": "book:yes_ask=0.40;no_ask=0.62;visible_yes_quantity=1000",
+      "content_hash": "189ffa4ebfd4bfe9082c3e3e244ae80fa779f627efaa8e18898ac14a47500e6c"
+    },
+    {
+      "source_id": "source-estimate-2",
+      "source_event_at": "2026-07-15T14:59:00Z",
+      "available_at": "2026-07-15T14:59:02Z",
+      "sequence": "2",
+      "schema_version": "1",
+      "raw_payload": "synthetic_probability:yes=0.70;no=0.25;void=0.05",
+      "content_hash": "7d09e4e24133fb7c063228bba76a0d7240406668c505b8797f0ec6abab4dec76"
+    },
+    {
+      "source_id": "source-late-revision-3",
+      "source_event_at": "2026-07-15T14:57:00Z",
+      "available_at": "2026-07-15T15:00:05Z",
+      "sequence": "3",
+      "schema_version": "1",
+      "raw_payload": "late_revision:yes_ask=0.10;received_after_cutoff=true",
+      "content_hash": "54ffb1a26ba7a781e11180c9e65dd97284a10def807d59265fea983732abfcb8"
+    }
+  ],
+  "reference_estimate": {
+    "estimate_id": "estimate-golden-v1",
+    "source_id": "source-estimate-2",
+    "probability_yes": "0.70",
+    "probability_no": "0.25",
+    "probability_void": "0.05",
+    "published_at": "2026-07-15T14:59:00Z",
+    "expires_at": "2026-07-15T15:05:00Z",
+    "method_version": "synthetic-reference-v1"
+  },
+  "strategy_version": "reference-edge-v1",
+  "fee_model_version": "synthetic-flat-per-contract-v1",
+  "execution": {
+    "script_id": "execution-policy-rejected-v1",
+    "kind": "FULL_MARKETABLE_FILL",
+    "opened_at": "2026-07-15T15:00:01Z",
+    "filled_at": "2026-07-15T15:00:02Z",
+    "opened_sequence": "1",
+    "fill_sequence": "2",
+    "fill_price": "0.40",
+    "fee_per_contract": "0.01"
+  }
+}

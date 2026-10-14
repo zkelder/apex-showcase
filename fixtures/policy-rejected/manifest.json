@@ -1,0 +1,8 @@
+{
+  "fixture_id": "policy-rejected",
+  "schema_version": "1",
+  "evidence": "SYNTHETIC",
+  "files": {
+    "decision_inputs.json": "df9c779dbabed68516f5ffde88f7e1d3ef6e66c509060bdf5c3d9aac3e2c59c0"
+  }
+}

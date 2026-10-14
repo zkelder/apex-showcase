@@ -1,0 +1,13 @@
+{
+ "body": {
+  "capability": "SECURITIES_SHADOW_ONLY",
+  "data": {
+   "financial_authority": false,
+   "items": [],
+   "warning": "FORWARD EVIDENCE REMAINS RESEARCH-ONLY"
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/securities/real-data/forward-plans",
+ "status": 200
+}

@@ -1,0 +1,77 @@
+{
+ "body": {
+  "capability": "OPERATOR_READ_ONLY",
+  "data": {
+   "attention_preview": [],
+   "authority": "NONE",
+   "current_allocation_decision_id": null,
+   "current_retained_cash": null,
+   "decision_ledger_summary": {
+    "eligibility_coverage_complete": true,
+    "ledger_eligibility_decision_count": 0,
+    "ledger_mandate_evaluation_count": 0,
+    "mandate_coverage_complete": true,
+    "opportunity_set_count": 0,
+    "upstream_eligibility_decision_count": 0,
+    "upstream_mandate_evaluation_count": 0
+   },
+   "degraded_strategy_or_method_count": 0,
+   "empty_state": "NO_RETAINED_OPERATING_BRIEF",
+   "followup_summary": {
+    "as_of": "2026-07-25T12:00:00Z",
+    "coverage": {
+     "decision_count": 0,
+     "decisions_with_at_least_one_observation": 0,
+     "most_recent_observed_at": null,
+     "observation_count": 0,
+     "observation_count_by_baseline_kind": {},
+     "observation_count_by_disposition": {},
+     "observation_count_by_horizon_kind": {},
+     "observation_count_by_observation_type": {},
+     "observation_count_by_policy_version": {},
+     "observation_count_by_provenance": {},
+     "observation_count_by_venue": {}
+    },
+    "current_backlog_state_counts": [],
+    "current_policy_version": "FOLLOWUP_POLICY_V2 \u00b7 FOLLOWUP_POLICY_V3",
+    "currently_permanently_unavailable": 0,
+    "last_cycle_completed_at": null,
+    "last_cycle_created": null,
+    "last_cycle_permanently_unavailable_skipped": null,
+    "last_cycle_status": null
+   },
+   "insufficient_sample_count": 0,
+   "latest_cycle": null,
+   "latest_cycle_changes": [],
+   "latest_successful_refresh": null,
+   "live_authority": "NONE",
+   "operating_brief": null,
+   "operating_health": null,
+   "options_research_summary": {
+    "campaign_progress_label": "0/20",
+    "campaign_sessions_captured": 0,
+    "campaign_sessions_target": 20,
+    "latest_session": null,
+    "readiness_state": "INSUFFICIENT_HISTORY"
+   },
+   "paper_account_count": 0,
+   "paper_activation": null,
+   "paper_eligible": false,
+   "paper_open_order_count": 0,
+   "paper_partially_filled_order_count": 0,
+   "portfolio_mandate_summary": {
+    "latest_evaluation_count": 0,
+    "mandate_effective_at": null,
+    "mandate_version": null,
+    "portfolio_as_of": null,
+    "portfolio_completeness": null
+   },
+   "provider_capabilities": [],
+   "reconciliation_issue_count": 0,
+   "summary_source": "RETAINED_OPERATING_BRIEF"
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/operator-console/home",
+ "status": 200
+}

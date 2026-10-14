@@ -1,0 +1,22 @@
+# TEMPLATE systemd user unit. Replace <repo> with the absolute path of your
+# checkout. %h expands to your home directory. Nothing installs this for you.
+# Install: cp to ~/.config/systemd/user/ ; systemctl --user daemon-reload ;
+#          systemctl --user enable --now apex-live-observer-worker.timer
+# The worker is a single bounded --once invocation; scheduling and idempotency
+# live inside Apex. Failed firings are not retried; the next timer tick
+# re-evaluates independently. Postgres is a separate Compose service.
+[Unit]
+Description=Apex live market-observer worker (one bounded intraday capture round)
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=<repo>
+ExecStart=/bin/sh -c 'exec %h/.local/bin/uv run python -m apex.cli live-observer-worker \
+  --plan-id apex-live-observation-plan-crypto-v1 \
+  --runner-id apex-live-observer-runner-v1 \
+  --run-instance-id systemd-$(date -u +%%Y%%m%%dT%%H%%M%%SZ) \
+  --once'
+Restart=no
+StandardOutput=journal
+StandardError=journal

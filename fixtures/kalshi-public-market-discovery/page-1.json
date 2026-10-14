@@ -1,0 +1,50 @@
+{
+  "cursor": "fixture-next",
+  "markets": [
+    {
+      "ticker": "KXTEST-VALID",
+      "event_ticker": "KXTEST-EVENT",
+      "title": "Synthetic valid public market",
+      "subtitle": "A redistributable test observation",
+      "status": "open",
+      "open_time": "2026-07-20T12:00:00Z",
+      "close_time": "2026-08-20T12:00:00Z",
+      "latest_expiration_time": "2026-08-20T13:00:00Z",
+      "yes_bid_dollars": "0.42",
+      "yes_ask_dollars": "0.45",
+      "no_bid_dollars": "0.55",
+      "no_ask_dollars": "0.58",
+      "yes_bid_size_fp": "12.50",
+      "yes_ask_size_fp": "15.00",
+      "volume_fp": "123.45",
+      "volume_24h_fp": "45.67",
+      "open_interest_fp": "100.00",
+      "liquidity_dollars": "0",
+      "rules_primary": "This synthetic contract resolves by its stated test condition.",
+      "rules_secondary": "Synthetic secondary rule text."
+    },
+    {
+      "ticker": "KXTEST-INCOMPLETE",
+      "event_ticker": "KXTEST-EVENT",
+      "title": "Synthetic incomplete quote market",
+      "subtitle": null,
+      "status": "open",
+      "open_time": "2026-07-20T12:00:00Z",
+      "close_time": "2026-08-20T12:00:00Z",
+      "latest_expiration_time": "2026-08-20T13:00:00Z",
+      "yes_bid_dollars": "0.20",
+      "yes_ask_dollars": null,
+      "no_bid_dollars": "0.70",
+      "no_ask_dollars": null,
+      "yes_bid_size_fp": "1.00",
+      "yes_ask_size_fp": null,
+      "volume_fp": "0",
+      "volume_24h_fp": "0",
+      "open_interest_fp": "0",
+      "liquidity_dollars": null,
+      "rules_primary": "Synthetic rule text remains available.",
+      "rules_secondary": null
+    },
+    "malformed synthetic market record"
+  ]
+}

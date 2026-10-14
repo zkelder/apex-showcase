@@ -1,0 +1,9 @@
+{
+  "fixture_id": "unfilled-expired",
+  "schema_version": "1",
+  "evidence": "SYNTHETIC",
+  "files": {
+    "decision_inputs.json": "bf6334f77b5fbe2eee7ef64da395697e5a2e26bcf312a6c502e5884636b48cbe",
+    "execution_script.json": "6240b26a8ac76458e927c800d95dca6245bddbef5ed92ee73a312d09351b120b"
+  }
+}

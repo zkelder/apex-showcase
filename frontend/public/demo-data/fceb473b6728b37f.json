@@ -1,0 +1,225 @@
+{
+ "body": {
+  "capability": "OPERATOR_PAPER_READ_ONLY",
+  "data": {
+   "capability_gate": {
+    "actor": null,
+    "empty_state": "NO_RETAINED_PAPER_ACTIVATION_DECISION",
+    "enabled": false,
+    "last_evaluated_at": null,
+    "reason": null,
+    "state": null
+   },
+   "cost_assumptions": {
+    "applies_to": "STRATEGY_PAPER_TRIAL_EXECUTION (genuine-strategy-crypto-paper-account)",
+    "fee_bps": 60,
+    "slippage_bps": 10,
+    "spread_bps": 10
+   },
+   "external_alpaca": {
+    "broker_records_are_financial_truth": false,
+    "empty_state": "NO_EXTERNAL_PAPER_INSTRUCTIONS",
+    "instruction_count": 0,
+    "instructions": [],
+    "live_authority": "NONE",
+    "paper_authority": "SEPARATELY_GOVERNED_EXTERNAL_PAPER",
+    "state_source": "EXTERNAL_PAPER_EVIDENCE",
+    "validated_fill_count": 0,
+    "venue": "ALPACA"
+   },
+   "genuine_provider_writes_created": 0,
+   "internal_crypto": {
+    "account_count": 0,
+    "accounts": [],
+    "capability": null,
+    "empty_state": "NO_GENUINE_INTERNAL_PAPER_ACCOUNT",
+    "live_authority": "NONE",
+    "paper_authority": "PAPER_ONLY",
+    "provider_submission_capability": "NONE",
+    "state_source": "APEX_INTERNAL_PAPER",
+    "venue": "CRYPTO"
+   },
+   "internal_kalshi": {
+    "account_count": 0,
+    "accounts": [],
+    "capability": null,
+    "empty_state": "NO_GENUINE_INTERNAL_PAPER_ACCOUNT",
+    "live_authority": "NONE",
+    "paper_authority": "PAPER_ONLY",
+    "provider_submission_capability": "NONE",
+    "state_source": "APEX_INTERNAL_PAPER",
+    "venue": "KALSHI"
+   },
+   "live_authority": "NONE",
+   "strategy_registry": {
+    "account_last_reconciled_at": null,
+    "authority": "NONE",
+    "candidates_considered": null,
+    "candidates_promoted": null,
+    "contemporaneous_evidence_disposition": null,
+    "continuation_health": {
+     "freshness_window_seconds": 600,
+     "is_stale": false,
+     "latest_continuation_at": null,
+     "latest_terminal_at": null,
+     "latest_terminal_status": null,
+     "recovered_since_failure": false,
+     "state": "UNKNOWN"
+    },
+    "empty_state": "NO_RETAINED_STRATEGY_PAPER_CYCLE_YET",
+    "latest_task_completed_at": null,
+    "latest_task_status": null,
+    "reconciliation_status": null,
+    "strategies": [
+     {
+      "active_trial": null,
+      "blocking_reasons": [],
+      "display_name": "Buy and Hold BTC-USD",
+      "durable_current_lifecycle_state": "RESEARCH_ONLY",
+      "eligible_this_cycle": false,
+      "evaluation_empty_state": "NOT_YET_EVALUATED_THIS_TASK_HISTORY",
+      "evaluation_freshness": "NEVER_EVALUATED",
+      "has_evaluation_history": false,
+      "has_open_trial": false,
+      "horizon_kind": "DAILY_SIGNAL_INDEFINITE_HOLD",
+      "instrument_ids": [
+       "BTC-USD"
+      ],
+      "latest_durable_evaluation": null,
+      "latest_promotion": null,
+      "latest_terminal_trial": null,
+      "lifecycle_state": null,
+      "open_order_evidence_href": null,
+      "open_order_id": null,
+      "promotion_count": 0,
+      "recent_evaluations": [],
+      "recent_trials": [],
+      "rule_kind": "BUY_AND_HOLD",
+      "source_kind": "EXTERNAL",
+      "strategy_id": "strategy_definition_f7afb672c33cff581951bfa6",
+      "trial_count": 0,
+      "venue": "CRYPTO",
+      "version": 1
+     },
+     {
+      "active_trial": null,
+      "blocking_reasons": [],
+      "display_name": "50/200-Day Moving Average Trend (Golden/Death Cross)",
+      "durable_current_lifecycle_state": "RESEARCH_ONLY",
+      "eligible_this_cycle": false,
+      "evaluation_empty_state": "NOT_YET_EVALUATED_THIS_TASK_HISTORY",
+      "evaluation_freshness": "NEVER_EVALUATED",
+      "has_evaluation_history": false,
+      "has_open_trial": false,
+      "horizon_kind": "DAILY_SIGNAL_INDEFINITE_HOLD",
+      "instrument_ids": [
+       "BTC-USD"
+      ],
+      "latest_durable_evaluation": null,
+      "latest_promotion": null,
+      "latest_terminal_trial": null,
+      "lifecycle_state": null,
+      "open_order_evidence_href": null,
+      "open_order_id": null,
+      "promotion_count": 0,
+      "recent_evaluations": [],
+      "recent_trials": [],
+      "rule_kind": "MOVING_AVERAGE_TREND",
+      "source_kind": "EXTERNAL",
+      "strategy_id": "strategy_definition_dcbbb42adb3f6f6ae69a8569",
+      "trial_count": 0,
+      "venue": "CRYPTO",
+      "version": 1
+     },
+     {
+      "active_trial": null,
+      "blocking_reasons": [],
+      "display_name": "90-Day Time-Series Momentum",
+      "durable_current_lifecycle_state": "RESEARCH_ONLY",
+      "eligible_this_cycle": false,
+      "evaluation_empty_state": "NOT_YET_EVALUATED_THIS_TASK_HISTORY",
+      "evaluation_freshness": "NEVER_EVALUATED",
+      "has_evaluation_history": false,
+      "has_open_trial": false,
+      "horizon_kind": "DAILY_SIGNAL_BOUNDED_HOLD",
+      "instrument_ids": [
+       "BTC-USD"
+      ],
+      "latest_durable_evaluation": null,
+      "latest_promotion": null,
+      "latest_terminal_trial": null,
+      "lifecycle_state": null,
+      "open_order_evidence_href": null,
+      "open_order_id": null,
+      "promotion_count": 0,
+      "recent_evaluations": [],
+      "recent_trials": [],
+      "rule_kind": "TIME_SERIES_MOMENTUM",
+      "source_kind": "EXTERNAL",
+      "strategy_id": "strategy_definition_02790e205c97eda7a3a89e1d",
+      "trial_count": 0,
+      "venue": "CRYPTO",
+      "version": 1
+     },
+     {
+      "active_trial": null,
+      "blocking_reasons": [],
+      "display_name": "20-Day Mean Reversion (5% Band)",
+      "durable_current_lifecycle_state": "RESEARCH_ONLY",
+      "eligible_this_cycle": false,
+      "evaluation_empty_state": "NOT_YET_EVALUATED_THIS_TASK_HISTORY",
+      "evaluation_freshness": "NEVER_EVALUATED",
+      "has_evaluation_history": false,
+      "has_open_trial": false,
+      "horizon_kind": "DAILY_SIGNAL_BOUNDED_HOLD",
+      "instrument_ids": [
+       "BTC-USD"
+      ],
+      "latest_durable_evaluation": null,
+      "latest_promotion": null,
+      "latest_terminal_trial": null,
+      "lifecycle_state": null,
+      "open_order_evidence_href": null,
+      "open_order_id": null,
+      "promotion_count": 0,
+      "recent_evaluations": [],
+      "recent_trials": [],
+      "rule_kind": "MEAN_REVERSION",
+      "source_kind": "EXTERNAL",
+      "strategy_id": "strategy_definition_2b2dae79f7266b95b323d329",
+      "trial_count": 0,
+      "venue": "CRYPTO",
+      "version": 1
+     }
+    ],
+    "task_type": "STRATEGY_PAPER_TRIAL_EXECUTION",
+    "trials_created_last_cycle": null
+   },
+   "summary": {
+    "internal_account_count": 0,
+    "open_order_count": 0,
+    "partially_filled_order_count": 0,
+    "unresolved_reconciliation_count": 0
+   },
+   "trial_outcome_assessments": {
+    "assessment_count": 0,
+    "authority": "NONE",
+    "closed_trials_awaiting_assessment": [],
+    "live_authority": "NONE",
+    "minimum_sample_size": 30,
+    "policy_version": "STRATEGY_TRIAL_OUTCOME_ASSESSMENT_POLICY_V1",
+    "provenance_bound_sample_count": 0,
+    "recent": [],
+    "status_counts": {},
+    "warning": "STRATEGY TRIAL OUTCOME ASSESSMENT -- IMMUTABLE OUTCOME EVIDENCE ONLY; NO PROMOTION, DEMOTION, RANKING, PAPER, OR LIVE AUTHORITY"
+   },
+   "warnings": [
+    "PAPER PERFORMANCE IS NOT REAL EARNINGS",
+    "INTERNAL_AND_EXTERNAL_PAPER_STATE_MUST_NOT_BE_COMBINED"
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/operator-console/paper",
+ "status": 200
+}

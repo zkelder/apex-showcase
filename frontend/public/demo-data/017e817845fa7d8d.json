@@ -1,0 +1,30 @@
+{
+ "body": {
+  "capability": "RESEARCH_EVIDENCE_ONLY",
+  "data": {
+   "champion_control_present": false,
+   "deploy_control_present": false,
+   "items": [],
+   "live_control_present": false,
+   "mlflow": {
+    "authority": "NONE",
+    "bind_host": "127.0.0.1",
+    "loopback_url": null,
+    "loopback_url_reason": "AVAILABLE_ONLY_FROM_HEALTHY_MLFLOW_STATUS",
+    "server_required_for_search": false,
+    "tracking_mode": "LOCAL_SQLITE_TRACKING",
+    "version": "3.14.0"
+   },
+   "paper_control_present": false,
+   "warnings": [
+    "AUTOMATED SEARCH EXPLORES ONLY THE PREDECLARED BOUNDED SPACE",
+    "OPTUNA PROPOSES PARAMETERS \u2014 APEX OWNS THE TRIAL LEDGER AND DECISION",
+    "MLFLOW IS A LOCAL RESEARCH MIRROR \u2014 IT GRANTS NO AUTHORITY",
+    "CANDIDATE ELIGIBILITY DOES NOT GRANT DEPLOYMENT OR CAPITAL AUTHORITY"
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/strategy-lab/automated-searches",
+ "status": 200
+}

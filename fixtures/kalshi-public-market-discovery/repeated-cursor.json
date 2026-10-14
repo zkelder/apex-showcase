@@ -1,0 +1,27 @@
+{
+  "cursor": "fixture-repeat",
+  "markets": [
+    {
+      "ticker": "KXTEST-REPEAT",
+      "event_ticker": "KXTEST-REPEAT-EVENT",
+      "title": "Synthetic repeated cursor market",
+      "subtitle": null,
+      "status": "open",
+      "open_time": "2026-07-20T12:00:00Z",
+      "close_time": "2026-08-22T12:00:00Z",
+      "latest_expiration_time": "2026-08-22T13:00:00Z",
+      "yes_bid_dollars": "0.10",
+      "yes_ask_dollars": "0.11",
+      "no_bid_dollars": "0.89",
+      "no_ask_dollars": "0.90",
+      "yes_bid_size_fp": "1.00",
+      "yes_ask_size_fp": "1.00",
+      "volume_fp": "1.00",
+      "volume_24h_fp": "1.00",
+      "open_interest_fp": "1.00",
+      "liquidity_dollars": "0",
+      "rules_primary": "Synthetic repeated cursor rule text.",
+      "rules_secondary": null
+    }
+  ]
+}

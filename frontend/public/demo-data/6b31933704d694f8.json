@@ -1,0 +1,13 @@
+{
+ "body": {
+  "details": {},
+  "entity_id": null,
+  "entity_type": null,
+  "error_code": "MALFORMED_REQUEST",
+  "message": "request does not match the local operator contract",
+  "request_id": "normalized-for-demo",
+  "retryable": false
+ },
+ "path": "/api/v1/securities/paper",
+ "status": 400
+}

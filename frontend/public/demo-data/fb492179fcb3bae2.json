@@ -1,0 +1,998 @@
+{
+ "body": {
+  "capability": "SECURITIES_SHADOW_ONLY",
+  "data": {
+   "approved_champion_status": "NO_APPROVED_CHAMPION",
+   "attempts": [],
+   "authority": "NONE",
+   "broker_authority": "NONE",
+   "broker_writes": 0,
+   "campaign_budget": null,
+   "campaign_candidates": [],
+   "campaign_state": null,
+   "candidate_1_dossiers": [],
+   "candidate_1_hypotheses": [],
+   "candidate_1_nomination_evaluations": [],
+   "candidate_1_outcomes": [],
+   "candidate_1_protocols": [],
+   "candidate_1_runs": [],
+   "candidate_1_semantic_comparisons": [],
+   "candidate_2_dossiers": [],
+   "candidate_2_failed_nomination_conditions": [],
+   "candidate_2_hypotheses": [],
+   "candidate_2_nomination_eligible": false,
+   "candidate_2_nomination_evaluations": [],
+   "candidate_2_outcomes": [],
+   "candidate_2_protocols": [],
+   "candidate_2_runs": [],
+   "candidate_2_semantic_comparisons": [],
+   "candidate_evidence_class": "EXPOSED_DEVELOPMENT_EVIDENCE",
+   "candle_count": 0,
+   "capital_authority": "NONE",
+   "captures": [],
+   "challenger_conclusions": [],
+   "challenger_dossiers": [],
+   "challenger_hypotheses": [],
+   "challenger_outcomes": [],
+   "challenger_protocols": [],
+   "challenger_runs": [],
+   "challenger_strategies": [],
+   "checkpoints": [],
+   "dataset_exposures": [],
+   "dossier_conclusions": [],
+   "dossiers": [],
+   "execution_authority": "NONE",
+   "financial_authority": "NONE",
+   "financial_mutation_capability": "NONE",
+   "financial_mutations_possible": false,
+   "generic_candidate_views": [],
+   "generic_operability": {
+    "authority": "NONE",
+    "capital_authority": "NONE",
+    "compatibility_projections": [
+     {
+      "authority": "NONE",
+      "canonical_hash": "2b4cdb62b66daf0c208e0d63068c5f632f1e1fe0265b27e4368f6aa4c991bc5f",
+      "definition": {
+       "aggregate_nomination_policy": [
+        "EVERY_WINDOW_PASSES",
+        "COMPOUNDED_CONSERVATIVE_RETURN_POSITIVE"
+       ],
+       "allowed_evidence_classes": [
+        "HISTORICAL_PUBLIC",
+        "FIXTURE"
+       ],
+       "approved_snapshot_ids": [
+        "btc-usd-genuine-replication-snapshot-2022-07-01-2024-07-01-v1",
+        "btc-usd-genuine-snapshot-2024-07-01-2026-07-01-v1"
+       ],
+       "authority": "NONE",
+       "authority_restrictions": [
+        "RESEARCH_ONLY",
+        "NO_PAPER",
+        "NO_LIVE",
+        "NO_CAPITAL",
+        "NO_FINANCIAL_MUTATION"
+       ],
+       "baselines": [
+        "CASH",
+        "BUY_AND_HOLD"
+       ],
+       "cadence": "DAILY",
+       "campaign_id": "btc-usd-risk-managed-long-cash-campaign-v1",
+       "candidate_id": "btc-usd-daily-sma-20-100-rejected-v1-compatibility-candidate",
+       "canonical_hash": "b1f172860f55f68820b22323b397b903033d820f26a60e133576b7842aaef281",
+       "definition_id": "btc-usd-daily-sma-20-100-rejected-v1-generic-compatibility-v1",
+       "execution_timing": "NEXT_ELIGIBLE_DAILY_OPEN",
+       "expected_mechanism": "Read-only compatibility projection of retained economic rules; it does not register a campaign candidate or rewrite evidence.",
+       "family": "BTC_USD_DAILY_SMA_TREND",
+       "features": [
+        {
+         "canonical_hash": "fbb81462c9cf44bf20a0663391444fa06bae4b1bf118ecd20ee222532139daf3",
+         "exclude_decision_observation": false,
+         "input_field": "close",
+         "kind": "ROLLING_MEAN",
+         "missing_data_action": "SELECT_CASH",
+         "name": "mean_20",
+         "observations": 20,
+         "precision": 8
+        },
+        {
+         "canonical_hash": "f5f3b9361e3e3387c45be8dd43404c2672b3ad8e703fe8d11a74f38737cd0a35",
+         "exclude_decision_observation": false,
+         "input_field": "close",
+         "kind": "ROLLING_MEAN",
+         "missing_data_action": "SELECT_CASH",
+         "name": "mean_100",
+         "observations": 100,
+         "precision": 8
+        }
+       ],
+       "fee_bps_per_side": "60",
+       "hypothesis_id": "btc-usd-daily-sma-20-100-rejected-v1-compatibility-hypothesis",
+       "hypothesis_version_id": "btc-usd-daily-sma-20-100-rejected-v1-compatibility-hypothesis-v1",
+       "hypothetical_notional": "10000",
+       "initial_state": "CASH",
+       "parent_strategy_ids": [],
+       "per_window_policy": [
+        "CONSERVATIVE_NET_RETURN_AT_LEAST_ZERO",
+        "DRAWDOWN_STRICTLY_BELOW_BUY_AND_HOLD",
+        "EVIDENCE_COMPLETE",
+        "REPRODUCIBLE",
+        "NO_DISQUALIFYING_WARNING",
+        "AT_LEAST_ONE_LONG_EXPOSURE_PERIOD"
+       ],
+       "position_sizing": "FULL_LONG_OR_CASH",
+       "prior_strategy_ids": [],
+       "product_id": "BTC-USD",
+       "rule_mode": "STATELESS_LONG_CASH",
+       "rules": [
+        {
+         "canonical_hash": "af2783bc394dfb0e56220940a60f00507f04d9bcdba81047cf9432c1685e8af7",
+         "left": {
+          "constant": null,
+          "feature_name": "mean_20",
+          "kind": "FEATURE"
+         },
+         "missing_data_action": "SELECT_CASH",
+         "non_trigger_state": "CASH",
+         "operator": "STRICTLY_GREATER_THAN",
+         "right": {
+          "constant": null,
+          "feature_name": "mean_100",
+          "kind": "FEATURE"
+         },
+         "rule_id": "fast_above_slow",
+         "source_state": null,
+         "trigger_state": "LONG"
+        }
+       ],
+       "schema_version": "GENERIC_CRYPTO_CANDIDATE_DEFINITION_V1",
+       "semantics_hash": "d3ada5bfb4311d6f12ed484d34c66740fcd3a66eeef686d0a00f7177884d403c",
+       "slippage_bps_per_side": "10",
+       "strategy_specification_id": "btc-usd-daily-sma-20-100-rejected-v1",
+       "strategy_version": 1,
+       "validation_windows": [
+        [
+         "2023-07-01T00:00:00Z",
+         "2024-07-01T00:00:00Z"
+        ],
+        [
+         "2025-07-01T00:00:00Z",
+         "2026-07-01T00:00:00Z"
+        ]
+       ]
+      },
+      "economic_rules_representable": true,
+      "historical_family": "BTC_USD_DAILY_SMA_TREND",
+      "historical_hash_claim": "ECONOMIC_EQUIVALENCE_ONLY_HISTORICAL_CANONICAL_HASH_NOT_REPLACED",
+      "historical_semantics_hash": "2e028203df214ac1484dfd567ba9cc85e1cbecd1ba193aeed76700272551da2f",
+      "historical_strategy_id": "btc-usd-daily-sma-20-100-rejected-v1",
+      "plan": {
+       "authority": "NONE",
+       "cadence": "DAILY",
+       "canonical_hash": "4c521db7c5a9f26122ecb2ab46e798d29a8c833fd5efdbe7b5461e9e100903a5",
+       "compiler_id": "GENERIC_CRYPTO_CANDIDATE_COMPILER_V1",
+       "compiler_version": 1,
+       "decision_rules": [
+        {
+         "canonical_hash": "af2783bc394dfb0e56220940a60f00507f04d9bcdba81047cf9432c1685e8af7",
+         "left": {
+          "constant": null,
+          "feature_name": "mean_20",
+          "kind": "FEATURE"
+         },
+         "missing_data_action": "SELECT_CASH",
+         "non_trigger_state": "CASH",
+         "operator": "STRICTLY_GREATER_THAN",
+         "right": {
+          "constant": null,
+          "feature_name": "mean_100",
+          "kind": "FEATURE"
+         },
+         "rule_id": "fast_above_slow",
+         "source_state": null,
+         "trigger_state": "LONG"
+        }
+       ],
+       "definition_id": "btc-usd-daily-sma-20-100-rejected-v1-generic-compatibility-v1",
+       "definition_schema_version": "GENERIC_CRYPTO_CANDIDATE_DEFINITION_V1",
+       "execution_timing": "NEXT_ELIGIBLE_DAILY_OPEN",
+       "fee_bps_per_side": "60",
+       "hypothetical_notional": "10000",
+       "initial_state": "CASH",
+       "missing_data_policy": [
+        [
+         "fast_above_slow",
+         "SELECT_CASH"
+        ]
+       ],
+       "plan_hash": "5039e4a422d3606ebd472deb4af542b45e9ef3423e183e8925a9f4fa91b8d16a",
+       "plan_id": "generic-crypto-plan-d3ada5bfb4311d6f12ed484d",
+       "position_sizing": "FULL_LONG_OR_CASH",
+       "product_id": "BTC-USD",
+       "required_features": [
+        {
+         "canonical_hash": "fbb81462c9cf44bf20a0663391444fa06bae4b1bf118ecd20ee222532139daf3",
+         "exclude_decision_observation": false,
+         "input_field": "close",
+         "kind": "ROLLING_MEAN",
+         "missing_data_action": "SELECT_CASH",
+         "name": "mean_20",
+         "observations": 20,
+         "precision": 8
+        },
+        {
+         "canonical_hash": "f5f3b9361e3e3387c45be8dd43404c2672b3ad8e703fe8d11a74f38737cd0a35",
+         "exclude_decision_observation": false,
+         "input_field": "close",
+         "kind": "ROLLING_MEAN",
+         "missing_data_action": "SELECT_CASH",
+         "name": "mean_100",
+         "observations": 100,
+         "precision": 8
+        }
+       ],
+       "rule_mode": "STATELESS_LONG_CASH",
+       "semantics_hash": "d3ada5bfb4311d6f12ed484d34c66740fcd3a66eeef686d0a00f7177884d403c",
+       "slippage_bps_per_side": "10",
+       "warnings": [
+        "EXPOSED OR FIXTURE DEVELOPMENT EVIDENCE ONLY",
+        "HYPOTHETICAL RESEARCH NOTIONAL \u2014 NOT ACCOUNT VALUE",
+        "SEALED HOLDOUT EXCLUDED",
+        "NO PAPER, LIVE, CAPITAL, ORDER, BROKER, OR FINANCIAL AUTHORITY"
+       ]
+      }
+     },
+     {
+      "authority": "NONE",
+      "canonical_hash": "6e5f07b2868bff99fe33ab9dbef1525ceeda139150ab6b03567daecfdc658dbc",
+      "definition": {
+       "aggregate_nomination_policy": [
+        "EVERY_WINDOW_PASSES",
+        "COMPOUNDED_CONSERVATIVE_RETURN_POSITIVE"
+       ],
+       "allowed_evidence_classes": [
+        "HISTORICAL_PUBLIC",
+        "FIXTURE"
+       ],
+       "approved_snapshot_ids": [
+        "btc-usd-genuine-replication-snapshot-2022-07-01-2024-07-01-v1",
+        "btc-usd-genuine-snapshot-2024-07-01-2026-07-01-v1"
+       ],
+       "authority": "NONE",
+       "authority_restrictions": [
+        "RESEARCH_ONLY",
+        "NO_PAPER",
+        "NO_LIVE",
+        "NO_CAPITAL",
+        "NO_FINANCIAL_MUTATION"
+       ],
+       "baselines": [
+        "CASH",
+        "BUY_AND_HOLD"
+       ],
+       "cadence": "CALENDAR_MONTHLY",
+       "campaign_id": "btc-usd-risk-managed-long-cash-campaign-v1",
+       "candidate_id": "btc-usd-monthly-252-absolute-momentum-challenger-v1-compatibility-candidate",
+       "canonical_hash": "d56611c6b7c651f1cff000d10b44ddded0305ac3caa6cd86fdec6cd32dcbcd82",
+       "definition_id": "btc-usd-monthly-252-absolute-momentum-challenger-v1-generic-compatibility-v1",
+       "execution_timing": "NEXT_ELIGIBLE_DAILY_OPEN",
+       "expected_mechanism": "Read-only compatibility projection of retained economic rules; it does not register a campaign candidate or rewrite evidence.",
+       "family": "BTC_USD_MONTHLY_252_ABSOLUTE_MOMENTUM",
+       "features": [
+        {
+         "canonical_hash": "c117da50729e8403bce66f6fe66aae04dea132ef07f24ed1d2df0b516d559944",
+         "exclude_decision_observation": false,
+         "input_field": "close",
+         "kind": "POINT_TO_POINT_RETURN",
+         "missing_data_action": "SELECT_CASH",
+         "name": "return_252",
+         "observations": 253,
+         "precision": 8
+        }
+       ],
+       "fee_bps_per_side": "60",
+       "hypothesis_id": "btc-usd-monthly-252-absolute-momentum-challenger-v1-compatibility-hypothesis",
+       "hypothesis_version_id": "btc-usd-monthly-252-absolute-momentum-challenger-v1-compatibility-hypothesis-v1",
+       "hypothetical_notional": "10000",
+       "initial_state": "CASH",
+       "parent_strategy_ids": [],
+       "per_window_policy": [
+        "CONSERVATIVE_NET_RETURN_AT_LEAST_ZERO",
+        "DRAWDOWN_STRICTLY_BELOW_BUY_AND_HOLD",
+        "EVIDENCE_COMPLETE",
+        "REPRODUCIBLE",
+        "NO_DISQUALIFYING_WARNING",
+        "AT_LEAST_ONE_LONG_EXPOSURE_PERIOD"
+       ],
+       "position_sizing": "FULL_LONG_OR_CASH",
+       "prior_strategy_ids": [],
+       "product_id": "BTC-USD",
+       "rule_mode": "STATELESS_LONG_CASH",
+       "rules": [
+        {
+         "canonical_hash": "946aec3a62563a270900a5b702681c6d842a85a8461f8ffe671d2d44e22715bb",
+         "left": {
+          "constant": null,
+          "feature_name": "return_252",
+          "kind": "FEATURE"
+         },
+         "missing_data_action": "SELECT_CASH",
+         "non_trigger_state": "CASH",
+         "operator": "STRICTLY_GREATER_THAN",
+         "right": {
+          "constant": "0",
+          "feature_name": null,
+          "kind": "CONSTANT"
+         },
+         "rule_id": "positive_252_return",
+         "source_state": null,
+         "trigger_state": "LONG"
+        }
+       ],
+       "schema_version": "GENERIC_CRYPTO_CANDIDATE_DEFINITION_V1",
+       "semantics_hash": "94419512680606ed7b85264a3939c88ee5d4227b479102ad8b9e5584e1149ed2",
+       "slippage_bps_per_side": "10",
+       "strategy_specification_id": "btc-usd-monthly-252-absolute-momentum-challenger-v1",
+       "strategy_version": 2,
+       "validation_windows": [
+        [
+         "2023-07-01T00:00:00Z",
+         "2024-07-01T00:00:00Z"
+        ],
+        [
+         "2025-07-01T00:00:00Z",
+         "2026-07-01T00:00:00Z"
+        ]
+       ]
+      },
+      "economic_rules_representable": true,
+      "historical_family": "BTC_USD_MONTHLY_252_ABSOLUTE_MOMENTUM",
+      "historical_hash_claim": "ECONOMIC_EQUIVALENCE_ONLY_HISTORICAL_CANONICAL_HASH_NOT_REPLACED",
+      "historical_semantics_hash": "5a98e1444f88fe5be0e0cb3438af3dfbf3f4c35c855479d36b442e7c76e9e6d6",
+      "historical_strategy_id": "btc-usd-monthly-252-absolute-momentum-challenger-v1",
+      "plan": {
+       "authority": "NONE",
+       "cadence": "CALENDAR_MONTHLY",
+       "canonical_hash": "8a29da95a935623f419cd3b8540435d179057783817e3d97314fd046f235ccfb",
+       "compiler_id": "GENERIC_CRYPTO_CANDIDATE_COMPILER_V1",
+       "compiler_version": 1,
+       "decision_rules": [
+        {
+         "canonical_hash": "946aec3a62563a270900a5b702681c6d842a85a8461f8ffe671d2d44e22715bb",
+         "left": {
+          "constant": null,
+          "feature_name": "return_252",
+          "kind": "FEATURE"
+         },
+         "missing_data_action": "SELECT_CASH",
+         "non_trigger_state": "CASH",
+         "operator": "STRICTLY_GREATER_THAN",
+         "right": {
+          "constant": "0",
+          "feature_name": null,
+          "kind": "CONSTANT"
+         },
+         "rule_id": "positive_252_return",
+         "source_state": null,
+         "trigger_state": "LONG"
+        }
+       ],
+       "definition_id": "btc-usd-monthly-252-absolute-momentum-challenger-v1-generic-compatibility-v1",
+       "definition_schema_version": "GENERIC_CRYPTO_CANDIDATE_DEFINITION_V1",
+       "execution_timing": "NEXT_ELIGIBLE_DAILY_OPEN",
+       "fee_bps_per_side": "60",
+       "hypothetical_notional": "10000",
+       "initial_state": "CASH",
+       "missing_data_policy": [
+        [
+         "positive_252_return",
+         "SELECT_CASH"
+        ]
+       ],
+       "plan_hash": "55e614fc535f5d9d3c358cff3adb2aa87f020682c50092c59c245c91214f0967",
+       "plan_id": "generic-crypto-plan-94419512680606ed7b85264a",
+       "position_sizing": "FULL_LONG_OR_CASH",
+       "product_id": "BTC-USD",
+       "required_features": [
+        {
+         "canonical_hash": "c117da50729e8403bce66f6fe66aae04dea132ef07f24ed1d2df0b516d559944",
+         "exclude_decision_observation": false,
+         "input_field": "close",
+         "kind": "POINT_TO_POINT_RETURN",
+         "missing_data_action": "SELECT_CASH",
+         "name": "return_252",
+         "observations": 253,
+         "precision": 8
+        }
+       ],
+       "rule_mode": "STATELESS_LONG_CASH",
+       "semantics_hash": "94419512680606ed7b85264a3939c88ee5d4227b479102ad8b9e5584e1149ed2",
+       "slippage_bps_per_side": "10",
+       "warnings": [
+        "EXPOSED OR FIXTURE DEVELOPMENT EVIDENCE ONLY",
+        "HYPOTHETICAL RESEARCH NOTIONAL \u2014 NOT ACCOUNT VALUE",
+        "SEALED HOLDOUT EXCLUDED",
+        "NO PAPER, LIVE, CAPITAL, ORDER, BROKER, OR FINANCIAL AUTHORITY"
+       ]
+      }
+     },
+     {
+      "authority": "NONE",
+      "canonical_hash": "67f10157f7840d66e4fbaaa0d498384283cbfe40db75ecf8b3ea151273b11dce",
+      "definition": {
+       "aggregate_nomination_policy": [
+        "EVERY_WINDOW_PASSES",
+        "COMPOUNDED_CONSERVATIVE_RETURN_POSITIVE"
+       ],
+       "allowed_evidence_classes": [
+        "HISTORICAL_PUBLIC",
+        "FIXTURE"
+       ],
+       "approved_snapshot_ids": [
+        "btc-usd-genuine-replication-snapshot-2022-07-01-2024-07-01-v1",
+        "btc-usd-genuine-snapshot-2024-07-01-2026-07-01-v1"
+       ],
+       "authority": "NONE",
+       "authority_restrictions": [
+        "RESEARCH_ONLY",
+        "NO_PAPER",
+        "NO_LIVE",
+        "NO_CAPITAL",
+        "NO_FINANCIAL_MUTATION"
+       ],
+       "baselines": [
+        "CASH",
+        "BUY_AND_HOLD"
+       ],
+       "cadence": "CALENDAR_MONTHLY",
+       "campaign_id": "btc-usd-risk-managed-long-cash-campaign-v1",
+       "candidate_id": "btc-usd-monthly-200-observation-price-trend-v1-compatibility-candidate",
+       "canonical_hash": "c1857e4b4c19b84ff3e496f3a151164e763356dec338b31756ca827d7a808539",
+       "definition_id": "btc-usd-monthly-200-observation-price-trend-v1-generic-compatibility-v1",
+       "execution_timing": "NEXT_ELIGIBLE_DAILY_OPEN",
+       "expected_mechanism": "Read-only compatibility projection of retained economic rules; it does not register a campaign candidate or rewrite evidence.",
+       "family": "BTC_USD_MONTHLY_200_OBSERVATION_PRICE_TREND",
+       "features": [
+        {
+         "canonical_hash": "a56b2442ec1c84b86bc7673ac0e7c833fe9cf046021954e93d985bdbd7b60e89",
+         "exclude_decision_observation": false,
+         "input_field": "close",
+         "kind": "ROLLING_MEAN",
+         "missing_data_action": "SELECT_CASH",
+         "name": "mean_200",
+         "observations": 200,
+         "precision": 8
+        }
+       ],
+       "fee_bps_per_side": "60",
+       "hypothesis_id": "btc-usd-monthly-200-observation-price-trend-v1-compatibility-hypothesis",
+       "hypothesis_version_id": "btc-usd-monthly-200-observation-price-trend-v1-compatibility-hypothesis-v1",
+       "hypothetical_notional": "10000",
+       "initial_state": "CASH",
+       "parent_strategy_ids": [],
+       "per_window_policy": [
+        "CONSERVATIVE_NET_RETURN_AT_LEAST_ZERO",
+        "DRAWDOWN_STRICTLY_BELOW_BUY_AND_HOLD",
+        "EVIDENCE_COMPLETE",
+        "REPRODUCIBLE",
+        "NO_DISQUALIFYING_WARNING",
+        "AT_LEAST_ONE_LONG_EXPOSURE_PERIOD"
+       ],
+       "position_sizing": "FULL_LONG_OR_CASH",
+       "prior_strategy_ids": [],
+       "product_id": "BTC-USD",
+       "rule_mode": "STATELESS_LONG_CASH",
+       "rules": [
+        {
+         "canonical_hash": "7b25c94588c5f89d7f438ff7ab7afe4602f234fb9af7e04472c922c0f8457315",
+         "left": {
+          "constant": null,
+          "feature_name": null,
+          "kind": "DECISION_CLOSE"
+         },
+         "missing_data_action": "SELECT_CASH",
+         "non_trigger_state": "CASH",
+         "operator": "STRICTLY_GREATER_THAN",
+         "right": {
+          "constant": null,
+          "feature_name": "mean_200",
+          "kind": "FEATURE"
+         },
+         "rule_id": "close_above_mean_200",
+         "source_state": null,
+         "trigger_state": "LONG"
+        }
+       ],
+       "schema_version": "GENERIC_CRYPTO_CANDIDATE_DEFINITION_V1",
+       "semantics_hash": "e0a06644d0fb0f11c65f404b475598299e2e5466e44ebb41c8755347a94bf471",
+       "slippage_bps_per_side": "10",
+       "strategy_specification_id": "btc-usd-monthly-200-observation-price-trend-v1",
+       "strategy_version": 3,
+       "validation_windows": [
+        [
+         "2023-07-01T00:00:00Z",
+         "2024-07-01T00:00:00Z"
+        ],
+        [
+         "2025-07-01T00:00:00Z",
+         "2026-07-01T00:00:00Z"
+        ]
+       ]
+      },
+      "economic_rules_representable": true,
+      "historical_family": "BTC_USD_MONTHLY_200_OBSERVATION_PRICE_TREND",
+      "historical_hash_claim": "ECONOMIC_EQUIVALENCE_ONLY_HISTORICAL_CANONICAL_HASH_NOT_REPLACED",
+      "historical_semantics_hash": "c76c9d1690880803c293d25fd104eebbd9c2bd20d1cf9f60fcbe0a7e9f19dd4f",
+      "historical_strategy_id": "btc-usd-monthly-200-observation-price-trend-v1",
+      "plan": {
+       "authority": "NONE",
+       "cadence": "CALENDAR_MONTHLY",
+       "canonical_hash": "a94cde4799c175c4afae7c955d4dec9055b442c969b22306e0563f62e092455e",
+       "compiler_id": "GENERIC_CRYPTO_CANDIDATE_COMPILER_V1",
+       "compiler_version": 1,
+       "decision_rules": [
+        {
+         "canonical_hash": "7b25c94588c5f89d7f438ff7ab7afe4602f234fb9af7e04472c922c0f8457315",
+         "left": {
+          "constant": null,
+          "feature_name": null,
+          "kind": "DECISION_CLOSE"
+         },
+         "missing_data_action": "SELECT_CASH",
+         "non_trigger_state": "CASH",
+         "operator": "STRICTLY_GREATER_THAN",
+         "right": {
+          "constant": null,
+          "feature_name": "mean_200",
+          "kind": "FEATURE"
+         },
+         "rule_id": "close_above_mean_200",
+         "source_state": null,
+         "trigger_state": "LONG"
+        }
+       ],
+       "definition_id": "btc-usd-monthly-200-observation-price-trend-v1-generic-compatibility-v1",
+       "definition_schema_version": "GENERIC_CRYPTO_CANDIDATE_DEFINITION_V1",
+       "execution_timing": "NEXT_ELIGIBLE_DAILY_OPEN",
+       "fee_bps_per_side": "60",
+       "hypothetical_notional": "10000",
+       "initial_state": "CASH",
+       "missing_data_policy": [
+        [
+         "close_above_mean_200",
+         "SELECT_CASH"
+        ]
+       ],
+       "plan_hash": "9998ce917c91d03766bc6b0ca2714697c90b4546f84d23ae67540de075da757d",
+       "plan_id": "generic-crypto-plan-e0a06644d0fb0f11c65f404b",
+       "position_sizing": "FULL_LONG_OR_CASH",
+       "product_id": "BTC-USD",
+       "required_features": [
+        {
+         "canonical_hash": "a56b2442ec1c84b86bc7673ac0e7c833fe9cf046021954e93d985bdbd7b60e89",
+         "exclude_decision_observation": false,
+         "input_field": "close",
+         "kind": "ROLLING_MEAN",
+         "missing_data_action": "SELECT_CASH",
+         "name": "mean_200",
+         "observations": 200,
+         "precision": 8
+        }
+       ],
+       "rule_mode": "STATELESS_LONG_CASH",
+       "semantics_hash": "e0a06644d0fb0f11c65f404b475598299e2e5466e44ebb41c8755347a94bf471",
+       "slippage_bps_per_side": "10",
+       "warnings": [
+        "EXPOSED OR FIXTURE DEVELOPMENT EVIDENCE ONLY",
+        "HYPOTHETICAL RESEARCH NOTIONAL \u2014 NOT ACCOUNT VALUE",
+        "SEALED HOLDOUT EXCLUDED",
+        "NO PAPER, LIVE, CAPITAL, ORDER, BROKER, OR FINANCIAL AUTHORITY"
+       ]
+      }
+     },
+     {
+      "authority": "NONE",
+      "canonical_hash": "099366f03e3e1593da1423cadf27d17bedc14e271c5240095e3f8ffba601bacf",
+      "definition": {
+       "aggregate_nomination_policy": [
+        "EVERY_WINDOW_PASSES",
+        "COMPOUNDED_CONSERVATIVE_RETURN_POSITIVE"
+       ],
+       "allowed_evidence_classes": [
+        "HISTORICAL_PUBLIC",
+        "FIXTURE"
+       ],
+       "approved_snapshot_ids": [
+        "btc-usd-genuine-replication-snapshot-2022-07-01-2024-07-01-v1",
+        "btc-usd-genuine-snapshot-2024-07-01-2026-07-01-v1"
+       ],
+       "authority": "NONE",
+       "authority_restrictions": [
+        "RESEARCH_ONLY",
+        "NO_PAPER",
+        "NO_LIVE",
+        "NO_CAPITAL",
+        "NO_FINANCIAL_MUTATION"
+       ],
+       "baselines": [
+        "CASH",
+        "BUY_AND_HOLD"
+       ],
+       "cadence": "CALENDAR_MONTHLY",
+       "campaign_id": "btc-usd-risk-managed-long-cash-campaign-v1",
+       "candidate_id": "btc-usd-monthly-stateful-90-45-breakout-v1-compatibility-candidate",
+       "canonical_hash": "f99f534be74e90e6d06833b506416e5a2d1a8e4a847ab3c2aa1490bf4c75556d",
+       "definition_id": "btc-usd-monthly-stateful-90-45-breakout-v1-generic-compatibility-v1",
+       "execution_timing": "NEXT_ELIGIBLE_DAILY_OPEN",
+       "expected_mechanism": "Read-only compatibility projection of retained economic rules; it does not register a campaign candidate or rewrite evidence.",
+       "family": "BTC_USD_MONTHLY_STATEFUL_90_45_CLOSE_BREAKOUT",
+       "features": [
+        {
+         "canonical_hash": "987887b4a6d9ffa0c0340115b453f20d117166cc04e1703eff4d032fa047248d",
+         "exclude_decision_observation": true,
+         "input_field": "close",
+         "kind": "ROLLING_MAXIMUM",
+         "missing_data_action": "PRESERVE_CASH",
+         "name": "maximum_90",
+         "observations": 90,
+         "precision": 8
+        },
+        {
+         "canonical_hash": "83e3c17ddbb1ef0b11f11a2d320a5ebebb5d7fe861ba2c654144d8967e536936",
+         "exclude_decision_observation": true,
+         "input_field": "close",
+         "kind": "ROLLING_MINIMUM",
+         "missing_data_action": "PROTECTIVE_EXIT_TO_CASH",
+         "name": "minimum_45",
+         "observations": 45,
+         "precision": 8
+        }
+       ],
+       "fee_bps_per_side": "60",
+       "hypothesis_id": "btc-usd-monthly-stateful-90-45-breakout-v1-compatibility-hypothesis",
+       "hypothesis_version_id": "btc-usd-monthly-stateful-90-45-breakout-v1-compatibility-hypothesis-v1",
+       "hypothetical_notional": "10000",
+       "initial_state": "CASH",
+       "parent_strategy_ids": [],
+       "per_window_policy": [
+        "CONSERVATIVE_NET_RETURN_AT_LEAST_ZERO",
+        "DRAWDOWN_STRICTLY_BELOW_BUY_AND_HOLD",
+        "EVIDENCE_COMPLETE",
+        "REPRODUCIBLE",
+        "NO_DISQUALIFYING_WARNING",
+        "AT_LEAST_ONE_LONG_EXPOSURE_PERIOD"
+       ],
+       "position_sizing": "FULL_LONG_OR_CASH",
+       "prior_strategy_ids": [],
+       "product_id": "BTC-USD",
+       "rule_mode": "STATEFUL_ENTRY_EXIT",
+       "rules": [
+        {
+         "canonical_hash": "d070e1be0d46a191b9a9c49f36694f46c8f2273a1cb212b3143998afbb8ee1d3",
+         "left": {
+          "constant": null,
+          "feature_name": null,
+          "kind": "DECISION_CLOSE"
+         },
+         "missing_data_action": "PRESERVE_CASH",
+         "non_trigger_state": "CASH",
+         "operator": "STRICTLY_GREATER_THAN",
+         "right": {
+          "constant": null,
+          "feature_name": "maximum_90",
+          "kind": "FEATURE"
+         },
+         "rule_id": "entry_90_close_maximum",
+         "source_state": "CASH",
+         "trigger_state": "LONG"
+        },
+        {
+         "canonical_hash": "7648d997258e1406f0e69d1dd58f475614472618de6c8eacba5bb523c1d98de8",
+         "left": {
+          "constant": null,
+          "feature_name": null,
+          "kind": "DECISION_CLOSE"
+         },
+         "missing_data_action": "PROTECTIVE_EXIT_TO_CASH",
+         "non_trigger_state": "LONG",
+         "operator": "STRICTLY_LESS_THAN",
+         "right": {
+          "constant": null,
+          "feature_name": "minimum_45",
+          "kind": "FEATURE"
+         },
+         "rule_id": "exit_45_close_minimum",
+         "source_state": "LONG",
+         "trigger_state": "CASH"
+        }
+       ],
+       "schema_version": "GENERIC_CRYPTO_CANDIDATE_DEFINITION_V1",
+       "semantics_hash": "cec6c54b8716205403ba17bb90183f8440922658ec69562514f1e317aa8f2155",
+       "slippage_bps_per_side": "10",
+       "strategy_specification_id": "btc-usd-monthly-stateful-90-45-breakout-v1",
+       "strategy_version": 4,
+       "validation_windows": [
+        [
+         "2023-07-01T00:00:00Z",
+         "2024-07-01T00:00:00Z"
+        ],
+        [
+         "2025-07-01T00:00:00Z",
+         "2026-07-01T00:00:00Z"
+        ]
+       ]
+      },
+      "economic_rules_representable": true,
+      "historical_family": "BTC_USD_MONTHLY_STATEFUL_90_45_CLOSE_BREAKOUT",
+      "historical_hash_claim": "ECONOMIC_EQUIVALENCE_ONLY_HISTORICAL_CANONICAL_HASH_NOT_REPLACED",
+      "historical_semantics_hash": "5b81c588665ba08d3a13e206035d270b729dcda69555576b7fe9380e73291c98",
+      "historical_strategy_id": "btc-usd-monthly-stateful-90-45-breakout-v1",
+      "plan": {
+       "authority": "NONE",
+       "cadence": "CALENDAR_MONTHLY",
+       "canonical_hash": "8244dbd79602141bd05526108e7b300cf22e95120a34f5dff0aa1696340574ad",
+       "compiler_id": "GENERIC_CRYPTO_CANDIDATE_COMPILER_V1",
+       "compiler_version": 1,
+       "decision_rules": [
+        {
+         "canonical_hash": "d070e1be0d46a191b9a9c49f36694f46c8f2273a1cb212b3143998afbb8ee1d3",
+         "left": {
+          "constant": null,
+          "feature_name": null,
+          "kind": "DECISION_CLOSE"
+         },
+         "missing_data_action": "PRESERVE_CASH",
+         "non_trigger_state": "CASH",
+         "operator": "STRICTLY_GREATER_THAN",
+         "right": {
+          "constant": null,
+          "feature_name": "maximum_90",
+          "kind": "FEATURE"
+         },
+         "rule_id": "entry_90_close_maximum",
+         "source_state": "CASH",
+         "trigger_state": "LONG"
+        },
+        {
+         "canonical_hash": "7648d997258e1406f0e69d1dd58f475614472618de6c8eacba5bb523c1d98de8",
+         "left": {
+          "constant": null,
+          "feature_name": null,
+          "kind": "DECISION_CLOSE"
+         },
+         "missing_data_action": "PROTECTIVE_EXIT_TO_CASH",
+         "non_trigger_state": "LONG",
+         "operator": "STRICTLY_LESS_THAN",
+         "right": {
+          "constant": null,
+          "feature_name": "minimum_45",
+          "kind": "FEATURE"
+         },
+         "rule_id": "exit_45_close_minimum",
+         "source_state": "LONG",
+         "trigger_state": "CASH"
+        }
+       ],
+       "definition_id": "btc-usd-monthly-stateful-90-45-breakout-v1-generic-compatibility-v1",
+       "definition_schema_version": "GENERIC_CRYPTO_CANDIDATE_DEFINITION_V1",
+       "execution_timing": "NEXT_ELIGIBLE_DAILY_OPEN",
+       "fee_bps_per_side": "60",
+       "hypothetical_notional": "10000",
+       "initial_state": "CASH",
+       "missing_data_policy": [
+        [
+         "entry_90_close_maximum",
+         "PRESERVE_CASH"
+        ],
+        [
+         "exit_45_close_minimum",
+         "PROTECTIVE_EXIT_TO_CASH"
+        ]
+       ],
+       "plan_hash": "e128fd86c669fa76f49ce018213bd13730211adbe40c7c13d635f51f44e40a74",
+       "plan_id": "generic-crypto-plan-cec6c54b8716205403ba17bb",
+       "position_sizing": "FULL_LONG_OR_CASH",
+       "product_id": "BTC-USD",
+       "required_features": [
+        {
+         "canonical_hash": "987887b4a6d9ffa0c0340115b453f20d117166cc04e1703eff4d032fa047248d",
+         "exclude_decision_observation": true,
+         "input_field": "close",
+         "kind": "ROLLING_MAXIMUM",
+         "missing_data_action": "PRESERVE_CASH",
+         "name": "maximum_90",
+         "observations": 90,
+         "precision": 8
+        },
+        {
+         "canonical_hash": "83e3c17ddbb1ef0b11f11a2d320a5ebebb5d7fe861ba2c654144d8967e536936",
+         "exclude_decision_observation": true,
+         "input_field": "close",
+         "kind": "ROLLING_MINIMUM",
+         "missing_data_action": "PROTECTIVE_EXIT_TO_CASH",
+         "name": "minimum_45",
+         "observations": 45,
+         "precision": 8
+        }
+       ],
+       "rule_mode": "STATEFUL_ENTRY_EXIT",
+       "semantics_hash": "cec6c54b8716205403ba17bb90183f8440922658ec69562514f1e317aa8f2155",
+       "slippage_bps_per_side": "10",
+       "warnings": [
+        "EXPOSED OR FIXTURE DEVELOPMENT EVIDENCE ONLY",
+        "HYPOTHETICAL RESEARCH NOTIONAL \u2014 NOT ACCOUNT VALUE",
+        "SEALED HOLDOUT EXCLUDED",
+        "NO PAPER, LIVE, CAPITAL, ORDER, BROKER, OR FINANCIAL AUTHORITY"
+       ]
+      }
+     }
+    ],
+    "compiled_plans": [],
+    "compiler": "GENERIC_CRYPTO_CANDIDATE_COMPILER_V1",
+    "definition_schema_version": "GENERIC_CRYPTO_CANDIDATE_DEFINITION_V1",
+    "definitions": [],
+    "execution_authority": "NONE",
+    "executor": "GENERIC_CRYPTO_CANDIDATE_EXECUTOR_V1",
+    "financial_authority": "NONE",
+    "historical_hash_claim": "COMPATIBILITY PROJECTIONS ESTABLISH ECONOMIC REPRESENTABILITY; THEY DO NOT REPLACE RETAINED HISTORICAL HASHES",
+    "holdout_accessed": false,
+    "live_eligible": false,
+    "network_request_performed": false,
+    "opportunity_authority": "NONE",
+    "order_authority": "NONE",
+    "paper_eligible": false,
+    "supported_primitives": {
+     "cadences": [
+      "DAILY",
+      "CALENDAR_MONTHLY"
+     ],
+     "features": [
+      "ROLLING_MEAN",
+      "ROLLING_MINIMUM",
+      "ROLLING_MAXIMUM",
+      "POINT_TO_POINT_RETURN"
+     ],
+     "operators": [
+      "STRICTLY_GREATER_THAN",
+      "STRICTLY_LESS_THAN",
+      "GREATER_THAN_OR_EQUAL",
+      "LESS_THAN_OR_EQUAL"
+     ],
+     "rule_modes": [
+      "STATELESS_LONG_CASH",
+      "STATEFUL_ENTRY_EXIT"
+     ],
+     "states": [
+      "CASH",
+      "LONG"
+     ]
+    },
+    "unsupported": [
+     "ARBITRARY_CODE",
+     "ARBITRARY_FORMULAS",
+     "DYNAMIC_IMPORTS",
+     "PLUGINS",
+     "SHORTING",
+     "LEVERAGE",
+     "DERIVATIVES",
+     "PARTIAL_SIZING",
+     "INTRADAY_EXECUTION",
+     "LIMIT_ORDERS",
+     "BROKER_SIMULATION"
+    ]
+   },
+   "holdout": null,
+   "holdout_non_use": {
+    "evaluated": false,
+    "release_authorized": false,
+    "state": null,
+    "values_redacted": true
+   },
+   "hypotheses": [],
+   "independent_validation": false,
+   "journals": 0,
+   "leading_challenger_status": "NO_LEADING_CHALLENGER",
+   "live_eligible": false,
+   "market_pulse": {
+    "authority": "NONE",
+    "broker_writes": 0,
+    "capital_authority": "NONE",
+    "checkpoints": [],
+    "current_rankings": [],
+    "empty_state": "NO CRYPTO MARKET PULSE PLAN RETAINED",
+    "expired_opportunities": [],
+    "fills": 0,
+    "journals": 0,
+    "live_eligible": false,
+    "market_change_summary": null,
+    "opportunity_lineages": [],
+    "orders": 0,
+    "paper_eligible": false,
+    "persistence_classifications": [],
+    "positions": 0,
+    "pulse_snapshot": null,
+    "quote_evidence_limitation": "PUBLIC_TOP_OF_BOOK_NOT_CAPTURED_BY_SUPPORTED_BOUNDARY",
+    "refresh_plan": null,
+    "refresh_run": null,
+    "refresh_state": null,
+    "reservations": 0,
+    "reversed_opportunities": []
+   },
+   "multi_asset_discovery": {
+    "broker_authority": "NONE",
+    "canonical_base_asset_count": 0,
+    "capital_authority": "NONE",
+    "catalog_complete": false,
+    "catalog_pagination_status": null,
+    "discovery_run": null,
+    "eligible_assets": [],
+    "empty_state": "NO MULTI-ASSET CRYPTO UNIVERSE EVIDENCE RETAINED",
+    "fills": 0,
+    "financial_mutation_authority": "NONE",
+    "history_shortlist": [],
+    "journals": 0,
+    "live_eligible": false,
+    "network_behavior": "EXPLICIT BOUNDED PUBLIC GET ONLY",
+    "observations": [],
+    "opportunities": [],
+    "orders": 0,
+    "paper_eligible": false,
+    "policy": {
+     "fail_closed": true,
+     "maximum_eligible_products": 10,
+     "maximum_history_assets": 20,
+     "policy_id": "CRYPTO_UNIVERSE_SELECTION_QUALITY_POLICY_V1",
+     "supported_quotes": [
+      "USD",
+      "USDC"
+     ],
+     "version": 1
+    },
+    "positions": 0,
+    "product_capture": null,
+    "product_route_count": 0,
+    "products": [],
+    "rankings": [],
+    "research_only": true,
+    "reservations": 0,
+    "route_groups": [],
+    "universe_snapshot": null
+   },
+   "negative_knowledge_count": 0,
+   "network_behavior": "RETAINED_EVIDENCE_ONLY_NO_PROVIDER_REQUEST",
+   "opportunity_authority": "NONE",
+   "order_authority": "NONE",
+   "orders": 0,
+   "outcomes": [],
+   "paper_eligible": false,
+   "positions": 0,
+   "provider_capability": {
+    "authentication": "NONE",
+    "endpoint_class": "ADVANCED_TRADE_PUBLIC_MARKET_CANDLES_GET_ONLY",
+    "granularity": "ONE_DAY",
+    "network_writes": 0,
+    "product": "BTC-USD",
+    "provider": "COINBASE"
+   },
+   "replication_outcomes": [],
+   "replication_protocols": [],
+   "replication_runs": [],
+   "research_campaign": null,
+   "research_state": "CHALLENGER_NOT_EVALUATED",
+   "reservations": 0,
+   "runs": [],
+   "snapshots": [],
+   "strategy_specifications": [],
+   "warnings": [
+    "RETROSPECTIVE HISTORICAL PUBLIC DATA \u2014 NOT VINTAGE POINT-IN-TIME POSSESSION",
+    "HISTORICAL SIMULATION \u2014 NOT EARNED OR ACCOUNT PERFORMANCE",
+    "RESEARCH EVIDENCE ONLY \u2014 NO PAPER, LIVE, OR CAPITAL AUTHORITY"
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/crypto-research/workspace",
+ "status": 200
+}

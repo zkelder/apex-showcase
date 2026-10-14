@@ -1,0 +1,23 @@
+# TEMPLATE systemd user unit. Replace <repo> with the absolute path of your
+# checkout. %h expands to your home directory. Nothing installs this for you.
+# Install: cp to ~/.config/systemd/user/ ; systemctl --user daemon-reload ;
+#          systemctl --user enable --now apex-operating-cycle-worker.timer
+# The worker is a single bounded --once invocation; scheduling and idempotency
+# live inside Apex. Failed firings are not retried; the next timer tick
+# re-evaluates independently. Postgres is a separate Compose service.
+[Unit]
+Description=Apex recurring operating-cycle worker (one bounded due-work evaluation)
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=<repo>
+ExecStart=/bin/sh -c '[ -f %h/.config/apex/alpaca.env ] && . %h/.config/apex/alpaca.env; \
+  exec %h/.local/bin/uv run python -m apex.cli operating-cycle-worker \
+  --plan-id apex-operating-cycle-plan-crypto-book-evidence-v1 \
+  --runner-id apex-operating-runner-v1 \
+  --run-instance-id systemd-$(date -u +%%Y%%m%%dT%%H%%M%%SZ) \
+  --once'
+Restart=no
+StandardOutput=journal
+StandardError=journal

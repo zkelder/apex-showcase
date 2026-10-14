@@ -1,0 +1,70 @@
+{
+ "body": {
+  "capability": "OPERATOR_READ_ONLY",
+  "data": {
+   "authority": "NONE",
+   "empty_state": "NO_RETAINED_TASK_RESULTS",
+   "highlights": [
+    {
+     "current_disposition": null,
+     "current_reasons": [],
+     "latest_effective_completed_at": null,
+     "latest_effective_output_identities": [],
+     "latest_effective_status": null,
+     "latest_result_completed_at": null,
+     "latest_result_status": null,
+     "task_type": "OPTIONS_RESEARCH_EVIDENCE_CAPTURE"
+    },
+    {
+     "current_disposition": null,
+     "current_reasons": [],
+     "latest_effective_completed_at": null,
+     "latest_effective_output_identities": [],
+     "latest_effective_status": null,
+     "latest_result_completed_at": null,
+     "latest_result_status": null,
+     "task_type": "COUNTERFACTUAL_FOLLOWUP_REFRESH"
+    },
+    {
+     "current_disposition": null,
+     "current_reasons": [],
+     "latest_effective_completed_at": null,
+     "latest_effective_output_identities": [],
+     "latest_effective_status": null,
+     "latest_result_completed_at": null,
+     "latest_result_status": null,
+     "task_type": "STRATEGY_PAPER_TRIAL_EXECUTION"
+    },
+    {
+     "current_disposition": null,
+     "current_reasons": [],
+     "latest_effective_completed_at": null,
+     "latest_effective_output_identities": [],
+     "latest_effective_status": null,
+     "latest_result_completed_at": null,
+     "latest_result_status": null,
+     "task_type": "CRYPTO_PAPER_TRIAL_EXECUTION"
+    },
+    {
+     "current_disposition": null,
+     "current_reasons": [],
+     "latest_effective_completed_at": null,
+     "latest_effective_output_identities": [],
+     "latest_effective_status": null,
+     "latest_result_completed_at": null,
+     "latest_result_status": null,
+     "task_type": "KALSHI_PAPER_TRIAL_EXECUTION"
+    }
+   ],
+   "items": [],
+   "latest_cycle_as_of": null,
+   "latest_cycle_id": null,
+   "limit": 25,
+   "offset": 0,
+   "total": 0
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/operator-console/operations",
+ "status": 200
+}

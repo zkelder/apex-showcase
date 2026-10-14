@@ -1,0 +1,12 @@
+{
+ "body": {
+  "capability": "SECURITIES_SHADOW_ONLY",
+  "data": {
+   "items": [],
+   "warning": "EXTERNAL ENGINE OUTPUT IS EVIDENCE, NOT APEX AUTHORITY"
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/securities/conformance",
+ "status": 200
+}

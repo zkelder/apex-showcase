@@ -1,0 +1,165 @@
+{
+ "body": {
+  "capability": "SECURITIES_SHADOW_ONLY",
+  "data": {
+   "allocation": null,
+   "authority": "NONE",
+   "cross_venue_allocation": {
+    "authority": "NONE",
+    "decision": null,
+    "explanations": [],
+    "lines": [],
+    "live_authority": "NONE",
+    "paper_trial_proposals": [],
+    "policy": {
+     "allocation_method": "DETERMINISTIC_RANK_ORDER_INCREMENTAL_V1",
+     "authority": "NONE",
+     "canonical_hash": "2190a45969f844411f0bd2445f36d72ede343484a611ac8c140757a347b81dd8",
+     "context_cash_fractions": [
+      [
+       "RISK_SUPPORTIVE",
+       "0.25"
+      ],
+      [
+       "MIXED",
+       "0.35"
+      ],
+      [
+       "RISK_CAUTIONARY",
+       "0.5"
+      ],
+      [
+       "MARKET_STRESS",
+       "0.75"
+      ],
+      [
+       "INSUFFICIENT_CONTEXT",
+       "1"
+      ]
+     ],
+     "exclusions": [
+      "EXCLUDE_NON_ELIGIBLE_SHARED_OPPORTUNITIES",
+      "EXCLUDE_STALE_EXPIRED_OR_MISSING_EVIDENCE",
+      "EXCLUDE_UNAVAILABLE_VENUE_PAPER_BOUNDARY",
+      "NEVER_EXCEED_SOURCE_MAXIMUM"
+     ],
+     "live_authority": "NONE",
+     "long_lockup_days": 30,
+     "maximum_aggregate_downside_fraction": "0.1",
+     "maximum_instrument_fraction": "0.25",
+     "maximum_long_lockup_fraction": "0.25",
+     "maximum_opportunity_fraction": "0.2",
+     "maximum_strategy_fraction": "0.25",
+     "maximum_venue_fraction": "0.4",
+     "minimum_retained_cash_fraction": "0.25",
+     "order_authority": "NONE",
+     "paper_authorization": false,
+     "policy_id": "CROSS_VENUE_ALLOCATION_POLICY_V1",
+     "total_hypothetical_capital": "1000"
+    },
+    "warnings": [
+     "NO_CROSS_VENUE_ALLOCATION_RETAINED"
+    ]
+   },
+   "crypto_count": 0,
+   "eligible_count": 0,
+   "financial_authority": "NONE",
+   "kalshi_count": 0,
+   "kalshi_operating": {
+    "latest_refresh": null,
+    "live_authority": "NONE",
+    "paper_authority": "PAPER_ONLY",
+    "provider_capability": null
+   },
+   "operating_cycle": {
+    "broker_authority": "NONE",
+    "capital_authority": "NONE",
+    "due_work": null,
+    "financial_mutation_capability": "NONE",
+    "latest_cycle": null,
+    "latest_cycle_state": null,
+    "live_eligible": false,
+    "network_behavior": "DUE_TASKS_ONLY_EXACT_BOUNDED_PUBLIC_GET",
+    "operating_brief": null,
+    "operating_health": null,
+    "operator_control": null,
+    "order_authority": "NONE",
+    "paper_activation": null,
+    "paper_eligible": false,
+    "plan": null,
+    "reservation_authority": "NONE",
+    "task_effects": "RESEARCH_EVIDENCE_ONLY",
+    "task_results": [],
+    "warnings": [
+     "NO_OPERATING_CYCLE_PLAN_RETAINED"
+    ]
+   },
+   "opportunity_set": null,
+   "performance_attribution": {
+    "attributions": [],
+    "authority": "NONE",
+    "health": [],
+    "live_authority": "NONE",
+    "method_summaries": [],
+    "paper_evidence_counts": {
+     "attributions": 0,
+     "fills": 0,
+     "reconciliation_issues": 0,
+     "settled": 0
+    },
+    "policy": {
+     "authority": "NONE",
+     "canonical_hash": "df8953ba5442d84719190a04431f141f3cb137c4721f16ae66608055ca9b42d8",
+     "healthy_minimum_fill_rate": "0.75",
+     "live_authority": "NONE",
+     "maximum_drawdown_for_watch": "0.2",
+     "maximum_fee_variance": "0.01",
+     "maximum_slippage_variance": "0.01",
+     "minimum_fills": 2,
+     "minimum_settled_outcomes": 2,
+     "minimum_trials": 3,
+     "policy_id": "STRATEGY_HEALTH_POLICY_V1",
+     "watch_minimum_fill_rate": "0.4"
+    },
+    "portfolio_summary": null,
+    "venue_summaries": [],
+    "warning": "PAPER PERFORMANCE IS NOT REAL EARNINGS"
+   },
+   "ranked_opportunities": [],
+   "rejected_count": 0,
+   "rejected_opportunities": [],
+   "total_market_context": {
+    "attachments": [],
+    "capital_authority": "NONE",
+    "components": [],
+    "context_authority": "NONE",
+    "context_snapshot": null,
+    "enriched_opportunity_set": null,
+    "evidence_class": "RETAINED_CONTEXT",
+    "financial_mutation_capability": "NONE",
+    "live_eligible": false,
+    "opportunity_authority": "NONE",
+    "order_authority": "NONE",
+    "paper_eligible": false,
+    "unavailable_components": [
+     "US_EQUITY_MARKET",
+     "TREASURY_RATE",
+     "YIELD_CURVE",
+     "MARKET_VOLATILITY",
+     "US_DOLLAR",
+     "COMMODITY_OR_INFLATION",
+     "MACRO_EVENT_PROXIMITY"
+    ],
+    "warnings": [
+     "NO_TOTAL_MARKET_CONTEXT_RETAINED"
+    ]
+   },
+   "warnings": [
+    "NO_SHARED_OPPORTUNITY_SET_RETAINED"
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/shared-opportunities/workspace",
+ "status": 200
+}

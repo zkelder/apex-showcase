@@ -1,0 +1,23 @@
+{
+  "binding_version": "1",
+  "canonical_configuration_hash": "73dad936a4ff38fcbde34952687e70580ece6ea475c96c952a24fb56026f7945",
+  "contract_terms": {
+    "sha256": "e0575b9b2a66d2bdaa3233e523675924cb8b52ec78c4c3e33714e917a3182d2e",
+    "url": "https://kalshi-public-docs.s3.amazonaws.com/contract_terms/LAXHIGH.pdf"
+  },
+  "contract_type": "DAILY_MAXIMUM_TEMPERATURE",
+  "latitude": "33.93806",
+  "longitude": "-118.38889",
+  "measurement_period": "The exact Kalshi date in the NWS Daily Climate Report; GFS reconstruction uses every hour of that local civil date and does not claim identity with the station instrument's observing-day convention.",
+  "requested_series": "KXTEMPLAXH",
+  "rule_identity": "KXHIGHLAX LAXHIGH contract terms plus the exact per-event Kalshi rules_primary string, retained with a SHA-256 hash in each manifest record.",
+  "selected_series": "KXHIGHLAX",
+  "settlement_location_notes": "Kalshi's exact daily-high rule identifies Los Angeles Airport and its NWS Daily Climatological Report. NOAA/NWS station KLAX identifies Los Angeles International Airport at the stored coordinate and timezone. The configured nearest GFS grid point is forecast evidence only, not a claim that it equals the settlement station.",
+  "station": {
+    "identifier": "KLAX",
+    "metadata_url": "https://api.weather.gov/stations/KLAX",
+    "name": "Los Angeles, Los Angeles International Airport"
+  },
+  "temperature_unit": "F",
+  "timezone": "America/Los_Angeles"
+}

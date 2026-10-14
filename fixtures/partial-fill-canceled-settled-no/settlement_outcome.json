@@ -1,0 +1,15 @@
+{
+  "fixture_id": "partial-fill-canceled-settled-no",
+  "schema_version": "2",
+  "source_id": "settlement-partial-fill-canceled-no",
+  "instrument_id": "SYNTH-WEATHER-20260715",
+  "rule_version_id": "rule-golden-v1",
+  "rule_content_hash": "742ac2b67c6ebd52f63cc960e890a03cb98b86ba344c68a248a2c2d54d07747d",
+  "resolution_source": "Frozen synthetic golden settlement record",
+  "source_event_at": "2026-07-15T17:00:00Z",
+  "available_at": "2026-07-15T17:00:03Z",
+  "settlement_value": "0.00",
+  "raw_payload": "resolution:NO;settlement_value=0.00;instrument=SYNTH-WEATHER-20260715;rule=rule-golden-v1;rule_hash=742ac2b67c6ebd52f63cc960e890a03cb98b86ba344c68a248a2c2d54d07747d;source=Frozen synthetic golden settlement record",
+  "raw_payload_hash": "5ff5fc1fa49941f70e9de1774c7f6026c65373608b7e170cfe0f7fdb1b1880ca",
+  "content_hash": "ceee614f3a20a0a2cfba89b78776a7b09a9173b2373c5d7b90352e3080eb576d"
+}

@@ -1,0 +1,5066 @@
+{
+  "file_count": 1012,
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "7cf2181c857339491ade7a85a91e08cd8468184d5d493cadfcbd564a376f9601",
+      "size": 249
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "6dbf0e61cd77b09b136b7feafc7c04534402ded89e07d8170b896c2c2094444e",
+      "size": 1482
+    },
+    {
+      "path": ".python-version",
+      "sha256": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d",
+      "size": 5
+    },
+    {
+      "path": "ENGINEERING_PRINCIPLES.md",
+      "sha256": "efad0a646f142be91c71361c7bd00bb2257ab3a24714dd27cb29df4613bf98fb",
+      "size": 5379
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "size": 11357
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "ba94e766ec632a3666470c12b7fc16b511dcc2b24a505943513dcbd17b32083d",
+      "size": 1001
+    },
+    {
+      "path": "README.md",
+      "sha256": "0ed3d16c822894903095330e39a92a065749e34f78c808b9e6f9985b032b4e71",
+      "size": 12404
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES.md",
+      "sha256": "8a13f42b65c9004228a3a1a503bcefcff1426d6d4b0be0a396dfbe2bbbe5caef",
+      "size": 18738
+    },
+    {
+      "path": "alembic.ini",
+      "sha256": "3259e4b992ba99a4becea59a01c9342d8af3cd8542fc0c550c2e6bfae5768131",
+      "size": 558
+    },
+    {
+      "path": "compose.yaml",
+      "sha256": "298a6006e6cf945e6ea93f5ef22c49badc313d79806f435c77429f1e0e864ca9",
+      "size": 679
+    },
+    {
+      "path": "deploy/README.md",
+      "sha256": "7e0f8eb13614f56f81e7772d5ddde2c1e14319c2345f255219c58d86d58a00a8",
+      "size": 910
+    },
+    {
+      "path": "deploy/apex-live-observer-worker.service",
+      "sha256": "0b882a92e20d758a220d6bf8b79d4430f8f1bcedd603d11499f62cf88224b40a",
+      "size": 1004
+    },
+    {
+      "path": "deploy/apex-live-observer-worker.timer",
+      "sha256": "466985f59ae5633dd7d7d91757616902097eff0b4393b83aacc3019517f0983c",
+      "size": 352
+    },
+    {
+      "path": "deploy/apex-operating-cycle-worker.service",
+      "sha256": "75d1981f18f7e96b20b71ddab91704b3e33e80cee7de27580703880f9cecba8d",
+      "size": 1090
+    },
+    {
+      "path": "deploy/apex-operating-cycle-worker.timer",
+      "sha256": "9bbc198dba12781b674cf495f5c0fd685c95df949fe2327d39e5ea03dc8f753f",
+      "size": 347
+    },
+    {
+      "path": "docs/ARCHITECTURE_OVERVIEW.md",
+      "sha256": "8424d169fc17bf4fbe11f8d36bebe80e36a8af3433b8d3a0d9fd062468e643c2",
+      "size": 7448
+    },
+    {
+      "path": "docs/AUTHORITY_AND_SAFETY_MODEL.md",
+      "sha256": "f6653f91aada930d3c17bd3c4f8f7f47866bef4e23b5e1e908dc6159acfe9950",
+      "size": 9936
+    },
+    {
+      "path": "docs/ENGINEERING_DECISIONS.md",
+      "sha256": "ee03a58b4e299eb23971a0829984f10c7f0c5beec0684e4951b91f7d8a717756",
+      "size": 12051
+    },
+    {
+      "path": "docs/EVIDENCE_AND_FEEDBACK_LIFECYCLE.md",
+      "sha256": "07d05e4ecbae1886fef2b52ceab46dfe6e502c707b5cd74c6280b097489667d6",
+      "size": 20677
+    },
+    {
+      "path": "docs/KALSHI_PUBLIC_API_FACTS.md",
+      "sha256": "eafd7deb7ee3824fa088dd5b02716d45003ebd7dc78a010073003694831c365e",
+      "size": 13755
+    },
+    {
+      "path": "docs/LIMITATIONS_AND_FUTURE_WORK.md",
+      "sha256": "7a74c9c844cf01742b1330ae6fe55338dc26b988d21716206e5a0d9944877d66",
+      "size": 3363
+    },
+    {
+      "path": "docs/OPERATIONS_AND_RELIABILITY.md",
+      "sha256": "5689c87aa885498b2f94905338e4895477f76d4c25f093c22600e527866bb05e",
+      "size": 10516
+    },
+    {
+      "path": "docs/OPPORTUNITY_LIFECYCLE.md",
+      "sha256": "25a448cf9ad2dfb59376612d9cb96475b399afcecc9b9cee7c0a6e4e45107021",
+      "size": 8374
+    },
+    {
+      "path": "docs/PORTFOLIO_OVERVIEW.md",
+      "sha256": "86f259810db0318267163db7104f052a304ef668b1ed2329a49eb74b949e8144",
+      "size": 7865
+    },
+    {
+      "path": "docs/PRODUCT_OVERVIEW.md",
+      "sha256": "7a226b20903f2b49d07193698ab7c6f6f8cee25f651cccf4f314a3edd9d1e841",
+      "size": 15699
+    },
+    {
+      "path": "docs/SAFETY_MODEL.md",
+      "sha256": "7624303982470400e12c2bd75839f9a12eb68f10991966601006fe90e2480cd0",
+      "size": 5780
+    },
+    {
+      "path": "docs/SYSTEM_MENTAL_MODEL.md",
+      "sha256": "e45ed8993caff1ca99976dab21985bc2e623ddb31f06d5dae456f21afc475596",
+      "size": 13375
+    },
+    {
+      "path": "docs/TESTING_AND_REPRODUCIBILITY.md",
+      "sha256": "f16234fc8a3b10e9546901244046fa31109cb5accab3b03c6a1b063ba054ee3c",
+      "size": 6380
+    },
+    {
+      "path": "docs/adr/0001-securities-research-ecosystem-ownership.md",
+      "sha256": "757643d6a246c6717255eb3ebdd7c5c8702fec80ac5c23dd17d782500395a724",
+      "size": 5334
+    },
+    {
+      "path": "docs/images/console-campaign.png",
+      "sha256": "2a8e3d9a610c5b5d36ccfebea2b67abb81c378a5b387977139c01c2e60dad27e",
+      "size": 153518
+    },
+    {
+      "path": "docs/images/console-operations.png",
+      "sha256": "ff1c6f82ad1b650b9510e65f2186fc8c7713a034a1c66f19d2cfdaf1c2a1a3dc",
+      "size": 119381
+    },
+    {
+      "path": "docs/images/console-portfolio-ledger.png",
+      "sha256": "d035897ba69b8a99c501d25b6eedfea3f78e7a97e5f36b268d99e9ba9d7f3537",
+      "size": 161423
+    },
+    {
+      "path": "docs/images/console-portfolio-orders.png",
+      "sha256": "20e1b032e7b7ad5ac8b0b628b7850a28753f234e91441f18ecc11c8c946a2f85",
+      "size": 129973
+    },
+    {
+      "path": "docs/images/demo-outcome-ledger.png",
+      "sha256": "74ac2ac4089815b445d1ece6ee273b1857c621915dda3096dac5f8d7844a87fc",
+      "size": 117073
+    },
+    {
+      "path": "docs/images/demo-outcomes.png",
+      "sha256": "166f542f581440ca34d5251ee8b4663a5f43a1a4391847c7d955d7180063dc0d",
+      "size": 186772
+    },
+    {
+      "path": "fixtures/broad-research/nasdaqlisted.txt",
+      "sha256": "f2b11e1faaa2e847db7ff516af3a838f8bc1704578e398ebf11721c016ff56ec",
+      "size": 268
+    },
+    {
+      "path": "fixtures/broad-research/sec_company_tickers.json",
+      "sha256": "249199aa01a4c16f5921689aaedbb3833edcbe39e781b16f944f92f10191a58a",
+      "size": 126
+    },
+    {
+      "path": "fixtures/golden/decision_inputs.json",
+      "sha256": "ddf0ca53351faf7af81d850aae522a20cc4ee88c7410da103ed99b1530bf4f13",
+      "size": 3629
+    },
+    {
+      "path": "fixtures/golden/manifest.json",
+      "sha256": "80222924591d6a03224d5d57a6be8b349f1f1ab9400b3dbd90fe286e310e9ba3",
+      "size": 293
+    },
+    {
+      "path": "fixtures/golden/settlement_outcome.json",
+      "sha256": "abfc9b4f51ea0ac36dfeab1949025db394218b6bc69811ac5c23f0521d51b78c",
+      "size": 462
+    },
+    {
+      "path": "fixtures/invariant-rejected/decision_inputs.json",
+      "sha256": "473ab185df51d9884d4f7e00d43dfc86cdd97c7a87f342330879cef78fc721f9",
+      "size": 3818
+    },
+    {
+      "path": "fixtures/invariant-rejected/manifest.json",
+      "sha256": "61ce1cc7154b93b3d4656340898e3b2dfae03e1c5c7049f6bc3020749aee8c84",
+      "size": 206
+    },
+    {
+      "path": "fixtures/kalshi-public-event-consistency/events-1.json",
+      "sha256": "531e3d5313289be82dbaa8f6007d612096bf56890181e75b15cfab259d27cab9",
+      "size": 3623
+    },
+    {
+      "path": "fixtures/kalshi-public-event-consistency/events-2.json",
+      "sha256": "9589ef7e8e24fe7d4bbbcca837a910fd1afcdf96b2dba4de12ca44951083a73f",
+      "size": 391
+    },
+    {
+      "path": "fixtures/kalshi-public-event-consistency/events-repeated.json",
+      "sha256": "c21b8b6993fcefdcb8e55fe4dd5d0f8d5ce88dd1bb5bc3f08ef5c0b305c28230",
+      "size": 310
+    },
+    {
+      "path": "fixtures/kalshi-public-event-consistency/manifest.json",
+      "sha256": "16b7baa1633baf0d297123eaee1e7edd82b9fdcd7442fc57fe20e4fefc3d0ca3",
+      "size": 2325
+    },
+    {
+      "path": "fixtures/kalshi-public-event-consistency/markets-1.json",
+      "sha256": "1a9c38cf7394dcd345bcf983373fb40c276b955f01f1b9081664167096d7ff75",
+      "size": 2741
+    },
+    {
+      "path": "fixtures/kalshi-public-event-consistency/markets-2.json",
+      "sha256": "a83e783a42518af36e9e2b250b98093ec18f491cb51237890688fd9ded38b3a8",
+      "size": 1309
+    },
+    {
+      "path": "fixtures/kalshi-public-market-discovery/manifest.json",
+      "sha256": "98c18fcea81a6a7b51b1b8f38b786a890327813ecc3be5f8fe834c680fc7072c",
+      "size": 617
+    },
+    {
+      "path": "fixtures/kalshi-public-market-discovery/page-1.json",
+      "sha256": "bc445d33fa53e6414b9ac261cb28cefeeddee27843d58fcabef11299d684774a",
+      "size": 1651
+    },
+    {
+      "path": "fixtures/kalshi-public-market-discovery/page-2.json",
+      "sha256": "1bcaedff27e206790d764110ac481cb7afe167d64b99014e6763a5713870d1e1",
+      "size": 796
+    },
+    {
+      "path": "fixtures/kalshi-public-market-discovery/repeated-cursor.json",
+      "sha256": "11f018b2594d1e7eacf834d0a5270213f5dde6bc505dc82552302c9041d3ec7b",
+      "size": 798
+    },
+    {
+      "path": "fixtures/no-proposal/decision_inputs.json",
+      "sha256": "25bfbc00773ee5baddda76b734bbd2fcb03dc578d17deb874a1aa67fc34c43eb",
+      "size": 3673
+    },
+    {
+      "path": "fixtures/no-proposal/manifest.json",
+      "sha256": "b369f13f6c1d7eb2d55018081027d32024e6a779526676587448b52a8cab1e33",
+      "size": 199
+    },
+    {
+      "path": "fixtures/partial-fill-canceled/decision_inputs.json",
+      "sha256": "8d9a0fc099373fa01a6beecabe3fc94f3bb1d3c05b0152760d43046adba1d1db",
+      "size": 3701
+    },
+    {
+      "path": "fixtures/partial-fill-canceled/execution_script.json",
+      "sha256": "6ba4d1399530c4945bcf8ae8508405b85410f6ee482e8bf0eac93d3cc697611f",
+      "size": 611
+    },
+    {
+      "path": "fixtures/partial-fill-canceled/manifest.json",
+      "sha256": "7e7c017c4bffd9f74dde5991f718a2ca8330430b4d3b1364320f5155a7ed712f",
+      "size": 306
+    },
+    {
+      "path": "fixtures/partial-fill-canceled-settled-no/decision_inputs.json",
+      "sha256": "beb7284e276cfa58027299f0de0a8011e8f769e50a6d74e0309de67db9d99256",
+      "size": 3723
+    },
+    {
+      "path": "fixtures/partial-fill-canceled-settled-no/execution_script.json",
+      "sha256": "9c941a0572c4c05e9386b37dc39e8b7775a510ef807226bf85ccbea9e9daaafa",
+      "size": 633
+    },
+    {
+      "path": "fixtures/partial-fill-canceled-settled-no/manifest.json",
+      "sha256": "f46b9e7c59a099f3aa26e3505d1c73717204e7459039974781fdcbeb5753d2ca",
+      "size": 416
+    },
+    {
+      "path": "fixtures/partial-fill-canceled-settled-no/settlement_outcome.json",
+      "sha256": "9dde3967063d5ebd5730dc9994deb400b4086437fa5ca887e9373f9f44832550",
+      "size": 904
+    },
+    {
+      "path": "fixtures/partial-fill-canceled-settled-void/decision_inputs.json",
+      "sha256": "2ce4897a581d3ca7ac28bef305f4b1c4d87f6e3451da21143fd7fd4742573fdc",
+      "size": 3927
+    },
+    {
+      "path": "fixtures/partial-fill-canceled-settled-void/execution_script.json",
+      "sha256": "9b4fdcfefb105296ee1f79b83219e9ac37210a22ac7fde9591e54dae0c63965d",
+      "size": 637
+    },
+    {
+      "path": "fixtures/partial-fill-canceled-settled-void/manifest.json",
+      "sha256": "3f332dbf07b8ecabcccb7bd0e0c94dc463a6a9dc9f1a03d9f403366c869ba1c6",
+      "size": 418
+    },
+    {
+      "path": "fixtures/partial-fill-canceled-settled-void/settlement_outcome.json",
+      "sha256": "4f1296544c941e7696aa74cfddae568ad577f7079dbb1e6f1b304e087585e57e",
+      "size": 946
+    },
+    {
+      "path": "fixtures/policy-rejected/decision_inputs.json",
+      "sha256": "df9c779dbabed68516f5ffde88f7e1d3ef6e66c509060bdf5c3d9aac3e2c59c0",
+      "size": 3664
+    },
+    {
+      "path": "fixtures/policy-rejected/manifest.json",
+      "sha256": "95fa3c6214b13b70a896ef12472eaa2cc87111b412105ce2bd1f3e8b1fe35c1a",
+      "size": 203
+    },
+    {
+      "path": "fixtures/unfilled-expired/decision_inputs.json",
+      "sha256": "bf6334f77b5fbe2eee7ef64da395697e5a2e26bcf312a6c502e5884636b48cbe",
+      "size": 3691
+    },
+    {
+      "path": "fixtures/unfilled-expired/execution_script.json",
+      "sha256": "6240b26a8ac76458e927c800d95dca6245bddbef5ed92ee73a312d09351b120b",
+      "size": 401
+    },
+    {
+      "path": "fixtures/unfilled-expired/manifest.json",
+      "sha256": "ec7da14e07f50f96401a10fa7add6edca5ba8f2cb8acd4e0701533560b2fc0f5",
+      "size": 301
+    },
+    {
+      "path": "frontend/index.html",
+      "sha256": "3b60abe4588b5b175d02fc85806cdba1889548565e0a3c344398d8bf31754e84",
+      "size": 308
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "sha256": "ef01f92346919923475dd5d6b3cf7830c8e6edb666be447adfe46853cb4c6d6d",
+      "size": 98173
+    },
+    {
+      "path": "frontend/package.json",
+      "sha256": "11a79791db2d974d1a271da460e2dd24062c52ae3c50d1218c9e7a4aa85ac8cf",
+      "size": 772
+    },
+    {
+      "path": "frontend/public/demo-data/0074d2f058303134.json",
+      "sha256": "db17ebe8b8a8644282e37714b87f4240910a4089d876d5e446ff1167bf2c4876",
+      "size": 5425
+    },
+    {
+      "path": "frontend/public/demo-data/010692d8ed11af20.json",
+      "sha256": "93d889eb891cc9ec8cde966983fec4df42305bff74ecf3b83838e0e9ab45f7e7",
+      "size": 950
+    },
+    {
+      "path": "frontend/public/demo-data/017e817845fa7d8d.json",
+      "sha256": "2efed3566f8424469b5bc14fac30abe3ca73225fb7ef7e13636306206b5e0b1e",
+      "size": 945
+    },
+    {
+      "path": "frontend/public/demo-data/021f23004fc151fd.json",
+      "sha256": "bc11b64c8d19b3ddc46c7d67b96c54401cc95e7e4f29beb768c34f7458a5d597",
+      "size": 457
+    },
+    {
+      "path": "frontend/public/demo-data/0399d02d804b9a48.json",
+      "sha256": "7ba6bb6047afae44afc4f0654dd16bee9c5861ee54907978f5b5f7a5cd971286",
+      "size": 473
+    },
+    {
+      "path": "frontend/public/demo-data/06195b9d6c0e3870.json",
+      "sha256": "891414355bb0511667d77c6ab51db9027eda5284d5f5b753bad05d2af524aa71",
+      "size": 414
+    },
+    {
+      "path": "frontend/public/demo-data/0cdecda47bcd2771.json",
+      "sha256": "295a5e45406bc7a34b4ca3db65b465982edc3a18e269dabd605b0bbaca02a599",
+      "size": 214
+    },
+    {
+      "path": "frontend/public/demo-data/0f1ac8e63a9b1d72.json",
+      "sha256": "e1a1dea963b878f84fe3d2fc82634b37df4422acabd2006e842a77e90c450ef4",
+      "size": 224
+    },
+    {
+      "path": "frontend/public/demo-data/10452f961f1f75b6.json",
+      "sha256": "38d0b7f1a2716e5f2bae3603f9f606d232ebc5b671a63f9e8d34d3bc8342bfaf",
+      "size": 299
+    },
+    {
+      "path": "frontend/public/demo-data/12780f460ebe4ece.json",
+      "sha256": "30ef93b697c44691cb0f9b52773dba149c2515fd3ddcee3b676a4a507b604561",
+      "size": 28387
+    },
+    {
+      "path": "frontend/public/demo-data/14ff1e040d674296.json",
+      "sha256": "a357439a4968c4cb12ff78a5d522fb9f1a6bb7ae0f063272412b8c4f66538410",
+      "size": 204
+    },
+    {
+      "path": "frontend/public/demo-data/15193325068b8790.json",
+      "sha256": "411c44d655572430cd5100185a67efe6ae0c98bfe186d8525835a1100326c5e3",
+      "size": 252
+    },
+    {
+      "path": "frontend/public/demo-data/1b43f7fbc2bbb700.json",
+      "sha256": "8217262aa553c2c0bc6ef8a2ee8fb7d5fe447f732ed7738a9817f8181d88fa42",
+      "size": 217
+    },
+    {
+      "path": "frontend/public/demo-data/1d4c7eff70f5e5af.json",
+      "sha256": "9c9fabc27e73040d4e6f40d5049c614bd66e1d022d6e74798b3ed6c4f46727c1",
+      "size": 1062
+    },
+    {
+      "path": "frontend/public/demo-data/212f4377903fe3fd.json",
+      "sha256": "d47e3ffeee27da6ae97b2466a9d9cc7a39ce04a35d2ad46fca45a87a1ced6faf",
+      "size": 593
+    },
+    {
+      "path": "frontend/public/demo-data/236a6bbe3fcec450.json",
+      "sha256": "f38b3b784c0e0dc426219c42a8bda6f698cacebf504ac27f8e84755413231c4c",
+      "size": 188
+    },
+    {
+      "path": "frontend/public/demo-data/23f17adfc29a32e5.json",
+      "sha256": "6698b4c1ed7c3eb8583f4408709c042723854b1dd7d8bc43af49abf171c7009f",
+      "size": 4298
+    },
+    {
+      "path": "frontend/public/demo-data/27561bc1b2f3c9fa.json",
+      "sha256": "1a864768b0711fa64577488bdc4087b49618dad92ce2f1aa5ac20f3d5e38fa27",
+      "size": 253
+    },
+    {
+      "path": "frontend/public/demo-data/2b61c1647631ff32.json",
+      "sha256": "5cfb6b2eb0060de4654ffea633b6081a19c7b51319b6aed3a0a4a73d483b38df",
+      "size": 225
+    },
+    {
+      "path": "frontend/public/demo-data/2c77414cf9e1dd1a.json",
+      "sha256": "7c91e88ef459934bbe2e041fa046b1baa4d1abcdf72e22861286b92432d13e26",
+      "size": 479
+    },
+    {
+      "path": "frontend/public/demo-data/2d92f93ea404dcf6.json",
+      "sha256": "9b08f46e60b85994bef72a70a70593e72fc589df86832380af2e3e17acbbbfbe",
+      "size": 56941
+    },
+    {
+      "path": "frontend/public/demo-data/2dc2871d311d0515.json",
+      "sha256": "9f4b234e57b725468ab78d2127f92af8119a83bfb4a42838c9fb0c153c77e151",
+      "size": 422
+    },
+    {
+      "path": "frontend/public/demo-data/34b4ea04f38f17ad.json",
+      "sha256": "a4b611ed5ad4012bc2103472cc9b99c5817a37a31f0c6c2673c7994ce9dcf444",
+      "size": 214
+    },
+    {
+      "path": "frontend/public/demo-data/34ea4c5740a35d74.json",
+      "sha256": "5fedb09fcfa921474ba6c400699cc2154dff87a3b385f623e6c94e524b75abd2",
+      "size": 226
+    },
+    {
+      "path": "frontend/public/demo-data/42dee6c4d023fd22.json",
+      "sha256": "8508ad82ee1288f1141f575a1c21dfe3384298b91af5246894047ae00c0270f3",
+      "size": 1347
+    },
+    {
+      "path": "frontend/public/demo-data/44c3a5d2b36ff4b5.json",
+      "sha256": "767610ab42cdd4a437f3071fbc97358620526540ad90785ac27640bcaca24953",
+      "size": 215
+    },
+    {
+      "path": "frontend/public/demo-data/487b697a1a24959c.json",
+      "sha256": "f4797055651cb10c0dc56072c0951dbd9700a140c277d702d587e1f53263e81b",
+      "size": 289
+    },
+    {
+      "path": "frontend/public/demo-data/48e7112470dcc5ed.json",
+      "sha256": "e72ec73093eb621ab56043da7c11506739cc94fff5d9e0742b258d7d4deae7dd",
+      "size": 546
+    },
+    {
+      "path": "frontend/public/demo-data/4ab1ec5d61adaefe.json",
+      "sha256": "210f1c0f2c2305a750dff284733cf82dd969b226d07c891c032ae78b32de8bae",
+      "size": 2046
+    },
+    {
+      "path": "frontend/public/demo-data/4c0e3c3cc278eaca.json",
+      "sha256": "5bdda85d21a5a207d829aadba4385591768d0c9852933b466d8e2fd66888af8d",
+      "size": 6199
+    },
+    {
+      "path": "frontend/public/demo-data/4f8b5a2a6fbf53e1.json",
+      "sha256": "8c9f55c1b534f891eccd87d9fdbc923999d3329d41f37eff440ad2aef1d150e3",
+      "size": 3023
+    },
+    {
+      "path": "frontend/public/demo-data/54f10af8edcd73fd.json",
+      "sha256": "35d17124496d0aca9949c6a8562f214d07bb6cb83d55cf1e9a6147cc13d8d589",
+      "size": 7511
+    },
+    {
+      "path": "frontend/public/demo-data/5687336a7f411445.json",
+      "sha256": "6b878ec8348e33f44ad2877328da297664ce600a3e9056580d087dc65d00c34a",
+      "size": 333
+    },
+    {
+      "path": "frontend/public/demo-data/56cbb2041a95d735.json",
+      "sha256": "d936c53778cbf42ba46ea6ca36cffbab7a1c22238e6e9da97c5554c304f43371",
+      "size": 367
+    },
+    {
+      "path": "frontend/public/demo-data/595ee0168fda0fee.json",
+      "sha256": "78f80b4298856db9c054e80907a0439ffeeeb27030e3b87c8631e94c66cb9b6b",
+      "size": 787
+    },
+    {
+      "path": "frontend/public/demo-data/5d3e97b10eecf286.json",
+      "sha256": "e7dd1a4e037c9861ac6be0240e62147fbfb3f759fe556606d218d5c5dbedb98e",
+      "size": 691
+    },
+    {
+      "path": "frontend/public/demo-data/600c47ef030467fb.json",
+      "sha256": "4ac9b0e355581c1333fe5cb43019d029a3dd5bcc152efba4384be6e73f7cb4c9",
+      "size": 362
+    },
+    {
+      "path": "frontend/public/demo-data/604f948161f3559c.json",
+      "sha256": "baab5188a91d7b6e3e1514bea7be0cc171af5ba549e2815e9d80a0b68ff4dd76",
+      "size": 454
+    },
+    {
+      "path": "frontend/public/demo-data/623a576858a8e8fd.json",
+      "sha256": "1b81e5a5c2a65ca1ae0e0293d6f2028ef96fb4d3c175248131597d93738f537d",
+      "size": 234
+    },
+    {
+      "path": "frontend/public/demo-data/62f1fa21f3f37289.json",
+      "sha256": "419463323b87769467ef6637d20002065f178f99692d359c8b159a8f656c5c34",
+      "size": 430
+    },
+    {
+      "path": "frontend/public/demo-data/63f66e66b3dfb349.json",
+      "sha256": "44b5b188467974dae3b56cc66e848e7aa524bfd06bdc96052c2bae35366f519d",
+      "size": 626
+    },
+    {
+      "path": "frontend/public/demo-data/65d5698aa640081f.json",
+      "sha256": "a4d293ef709205a1c5e6dca165a393111c79aa2ff0fc20fc44b6e1b4b25927f6",
+      "size": 193
+    },
+    {
+      "path": "frontend/public/demo-data/6696b2e8a0b6ade2.json",
+      "sha256": "5777b38157884d15f30fb909df6eb3073de32c41aa6b94523ba0d150622025f8",
+      "size": 313
+    },
+    {
+      "path": "frontend/public/demo-data/6b31933704d694f8.json",
+      "sha256": "3070afa42ede95411d4cd456e25cc4a2ba86dd5f8c688a38a42ead682f981f0c",
+      "size": 296
+    },
+    {
+      "path": "frontend/public/demo-data/6b3cb930524648c1.json",
+      "sha256": "adaba84237ce719ae374a96e71702fe60b86bff33f2ce611bb8d4115872206e5",
+      "size": 225
+    },
+    {
+      "path": "frontend/public/demo-data/6cc384d13529c48b.json",
+      "sha256": "09ea98f36f9f0b8b59b3c0052c9d37f760ce74139805c2d014400ed882e3fd3e",
+      "size": 2588
+    },
+    {
+      "path": "frontend/public/demo-data/71d0fe210245cff2.json",
+      "sha256": "4c14d5b65eb79feb7344fc3ab0301f866d3e60275b9406bc6fc68fd28f30ef9b",
+      "size": 2509
+    },
+    {
+      "path": "frontend/public/demo-data/76153a84d30dd104.json",
+      "sha256": "cc7332c3410b0657f75befaffceb358d7128d8bb3f45530b49f59c3307953edf",
+      "size": 480
+    },
+    {
+      "path": "frontend/public/demo-data/77b30d5c350b1d1e.json",
+      "sha256": "8e37acf43b24604668838946f9296c8b6200a74be88f290335278a4809711b2e",
+      "size": 4493
+    },
+    {
+      "path": "frontend/public/demo-data/7a0eb81f077f0669.json",
+      "sha256": "8badf5afb901eb2fcca249c6e286d9d9cbffd2f9d22ab1e28c08cbca5bfa2bae",
+      "size": 474
+    },
+    {
+      "path": "frontend/public/demo-data/7a3cd2ad9fd30066.json",
+      "sha256": "4894cb8ba278a4b44cc2ecb55b719e0bc344300e6fcfaedf6de621c19384150a",
+      "size": 1695
+    },
+    {
+      "path": "frontend/public/demo-data/7e8ff1f765a86eca.json",
+      "sha256": "5fcec4cc104a9d7ca67fe4998c5eed5ef22f84a62adc4b712d4c31f54211da71",
+      "size": 21368
+    },
+    {
+      "path": "frontend/public/demo-data/813b4775e6d1ff7f.json",
+      "sha256": "99faf093caa9fa614e849c15427a2143125af591bcaf7714dee35a2216f5b2ed",
+      "size": 2646
+    },
+    {
+      "path": "frontend/public/demo-data/81f9c12692588ed0.json",
+      "sha256": "7fe381540cd16a606b017320ad0f2e2a3bea2b1b4bda0b32ff347279e40a5011",
+      "size": 298
+    },
+    {
+      "path": "frontend/public/demo-data/8254dab496fbc874.json",
+      "sha256": "cc4aa7e31e5418a7130f63f3da7b052a953dcbdb734daea7948cfec5a9f7cf38",
+      "size": 566
+    },
+    {
+      "path": "frontend/public/demo-data/874c69945a574ca7.json",
+      "sha256": "0b12915de88b7ff6995d6e507bd85298b7987cdb79e6b8374326e54c4b8c00a6",
+      "size": 777
+    },
+    {
+      "path": "frontend/public/demo-data/88a1d970e6f3617b.json",
+      "sha256": "81e6889063fc4f8b1f0f3671d4b7cd2c8d00b9c13796382faf48441d5cd8e639",
+      "size": 206
+    },
+    {
+      "path": "frontend/public/demo-data/899a09b50846cb34.json",
+      "sha256": "89d79280d87d368e44a4eeaf72d164bab6e86783312bb3ca3c777ad2ab58558a",
+      "size": 248
+    },
+    {
+      "path": "frontend/public/demo-data/8b16d1b01654de68.json",
+      "sha256": "d7f8221a535fb9e3b0c3a6cfe6835567dc163a3f93fdf865650591f7f779c40f",
+      "size": 2969
+    },
+    {
+      "path": "frontend/public/demo-data/8c9c8c1e2dc877f8.json",
+      "sha256": "30590d5be58c36583b46877b3461dcc45e5d25b7c1da42bc74ba6c6ce2c23e34",
+      "size": 216
+    },
+    {
+      "path": "frontend/public/demo-data/8d667f1cba7118ed.json",
+      "sha256": "9fc4ba04e0f452d868d66ef315462ed2e55792dba992c3752c3392042e66120d",
+      "size": 6700
+    },
+    {
+      "path": "frontend/public/demo-data/9049871e2c1913df.json",
+      "sha256": "43202552706892354bb8d8efa04c1367fbd05ed384096fa99c054fd94fd728da",
+      "size": 4125
+    },
+    {
+      "path": "frontend/public/demo-data/9086ed95fa2b24de.json",
+      "sha256": "74bc844fb3d8323698d970e39c897b0f92cc2345f6fa744bcbc33c5f6acff33f",
+      "size": 215
+    },
+    {
+      "path": "frontend/public/demo-data/91e7b266dc5be382.json",
+      "sha256": "c7af43a33f1678723e0c3980a8898a4499757c0a6f92067dd0919651360437ea",
+      "size": 6939
+    },
+    {
+      "path": "frontend/public/demo-data/95a96615ebcfb002.json",
+      "sha256": "f4ae53d3f26cf76ff9eba8cc67aa73e98d71e58e8fc57aa4500d7b7355ed3b6b",
+      "size": 420
+    },
+    {
+      "path": "frontend/public/demo-data/9b1b5fe5b5b9c365.json",
+      "sha256": "48ae6789c0754cd21cd0c228c461f53c8cc6bbd475e30423313ae43e875c9aa2",
+      "size": 300
+    },
+    {
+      "path": "frontend/public/demo-data/9c658a2bfe31dd11.json",
+      "sha256": "46c92ce3b9664c7286f75d4618f7fce8c6d0a539f54015292ad22f6b2129fd36",
+      "size": 461
+    },
+    {
+      "path": "frontend/public/demo-data/a1ba028cca4f9f0b.json",
+      "sha256": "0d17138d7511ead1f75b4b6a10477f54806497bf3f58f019a07eed14142a7d12",
+      "size": 3495
+    },
+    {
+      "path": "frontend/public/demo-data/a399e03d11435500.json",
+      "sha256": "5962a6c51e946e9ed56eae0dcf7b033b6bd435e4f226bf165d234f51dc7d1c34",
+      "size": 602
+    },
+    {
+      "path": "frontend/public/demo-data/a4c5360e98650525.json",
+      "sha256": "71c542da783e54e9f73afaa1ba2f3c0ea6b6f044ca6d20b4e3f6b71f6a48658b",
+      "size": 597
+    },
+    {
+      "path": "frontend/public/demo-data/a5b5ac5b3283b1b3.json",
+      "sha256": "42a5fac62a91cc9bc0c7ed74f40e68f27a555659622145741c582d3d5adbd846",
+      "size": 291
+    },
+    {
+      "path": "frontend/public/demo-data/a766684d4751b810.json",
+      "sha256": "236e347000ce1086e86f64af80b43baae63d6f3fef31043af35970c9fc98ee8a",
+      "size": 220
+    },
+    {
+      "path": "frontend/public/demo-data/a7eb0181e2ce87b0.json",
+      "sha256": "4b1779464cee035f41e24cfdf0f44c085108f9b3f2400c6d9c36452fb4457352",
+      "size": 190
+    },
+    {
+      "path": "frontend/public/demo-data/a82b5314e27f538a.json",
+      "sha256": "0f0fe521b74d00110c5f6e07d1bc3e94f60a4414a2d4b7fc1a5f83a929e9df9a",
+      "size": 504
+    },
+    {
+      "path": "frontend/public/demo-data/ac7c0fb082a1d5ba.json",
+      "sha256": "4bab7661fdc4e2396daa0b8f5d5a15dc5e53f6a2b468c0a2cc3a83a33e1aed03",
+      "size": 1146
+    },
+    {
+      "path": "frontend/public/demo-data/b0a40468e2a039ec.json",
+      "sha256": "f84d552e0f49eb75526fae6ab3f344babeacd18da4562bd06da558842a377700",
+      "size": 958
+    },
+    {
+      "path": "frontend/public/demo-data/b14bcb94502c6721.json",
+      "sha256": "84010a679ec911a2f0f0579ebbe2ea894a7976ba1abb107517c0c43033392796",
+      "size": 211
+    },
+    {
+      "path": "frontend/public/demo-data/b1ec897f00a13ec7.json",
+      "sha256": "c7a5597bada7c976f4a6849bb56c91623d5b8b692b709307fa6316fa9e45ff32",
+      "size": 262
+    },
+    {
+      "path": "frontend/public/demo-data/b4bdda3b60f7eed8.json",
+      "sha256": "db2b1905f0e725184dd4d4a42cf2917eca2eb69f762348e9e7bdff34853ffdcf",
+      "size": 3402
+    },
+    {
+      "path": "frontend/public/demo-data/b73719e9b256cfec.json",
+      "sha256": "117c7e0c9d3e29b6483ecc35a3c0339a7c8b21721708204b20d45330a645f39b",
+      "size": 231
+    },
+    {
+      "path": "frontend/public/demo-data/b89725580cdd97bd.json",
+      "sha256": "246256f5790bf3faa8aa55d8f518f836b16d3249699ef887995d1fa858709357",
+      "size": 252
+    },
+    {
+      "path": "frontend/public/demo-data/bc4ff164e3bc6124.json",
+      "sha256": "d09cdfc5898301f5c264ea5de0a0af062c0dbf8bd98934114e581b264b9ee8e6",
+      "size": 221
+    },
+    {
+      "path": "frontend/public/demo-data/bc7bf30290ce280d.json",
+      "sha256": "e1a2a089f6e57af8358937cf4d178af537e4272c6d1a3a1d7ab32dd5a20a3f49",
+      "size": 7666
+    },
+    {
+      "path": "frontend/public/demo-data/bd470ccf76088dc7.json",
+      "sha256": "f42f155aa1a8c042d2e7983ae46610e804c38337933f8e81a089b5af1b6ac272",
+      "size": 1465
+    },
+    {
+      "path": "frontend/public/demo-data/bfe140089431065e.json",
+      "sha256": "629d5b512cc9af5ea1d9acd5ecaab8ce5d59f0e5a5ddf790498dff9c872770e0",
+      "size": 254
+    },
+    {
+      "path": "frontend/public/demo-data/c6823cbcb7dd7238.json",
+      "sha256": "7027445f04f3c3df27ca437c93257e8bacd0d72be4ac0e4c10554b10e0e12a72",
+      "size": 810
+    },
+    {
+      "path": "frontend/public/demo-data/c84e046ec4eadc09.json",
+      "sha256": "c716d8a92b726def11ef915b048eea5d877414f10dbc0cbaa62dec5400cfa737",
+      "size": 225
+    },
+    {
+      "path": "frontend/public/demo-data/c99f9a197f966da6.json",
+      "sha256": "0376877d2781c43bce9629ce8014653533d0152b288cd2613f9062270d2250eb",
+      "size": 253
+    },
+    {
+      "path": "frontend/public/demo-data/cc7a74372ff94eff.json",
+      "sha256": "b1c1d06e4d7b833d515af15e55cc529676a29dbac5e1befd0c39e6c89f96643c",
+      "size": 1393
+    },
+    {
+      "path": "frontend/public/demo-data/cee46917ef614563.json",
+      "sha256": "0d6bfdc835b25b7eba3388668a84c04de26913971ccc2e609a2287f234d8ed3c",
+      "size": 222
+    },
+    {
+      "path": "frontend/public/demo-data/d4eed8bea470be2c.json",
+      "sha256": "4181111544c15d6d5fa95fbb7d8122dd6edc6b721cc7e870f253d4e518979f32",
+      "size": 209
+    },
+    {
+      "path": "frontend/public/demo-data/d51ffd2d17dc966b.json",
+      "sha256": "a13bc9c0722db0bb65d9a3b6708605f6c478311cfa2bddb20ade5985a6a113b2",
+      "size": 471
+    },
+    {
+      "path": "frontend/public/demo-data/d943494d947571a0.json",
+      "sha256": "b88e19672ac945a1ad27cad485b4f36eb2ad7e5907aa917c822017a84b0369ed",
+      "size": 317
+    },
+    {
+      "path": "frontend/public/demo-data/d9da5a36c99f353f.json",
+      "sha256": "24c328ccb47a99e5304097abe6d3a1abf25b65ca66035fa6cfab403a99844196",
+      "size": 249
+    },
+    {
+      "path": "frontend/public/demo-data/daced86bc85cc8d9.json",
+      "sha256": "be592c6496180172a6cf6d7d006cbaf88a003918e3eeb1ed451c0d5c7c885fb1",
+      "size": 547
+    },
+    {
+      "path": "frontend/public/demo-data/dba33cd23b3b705c.json",
+      "sha256": "39d90bb188f7ea0d817a79396f365f6d60f7dad491526c295ba2074bad5c23e0",
+      "size": 307
+    },
+    {
+      "path": "frontend/public/demo-data/dc33fb673da9c9d6.json",
+      "sha256": "98113e3c2a830295d1e29214cb64148e8260a6a977d5456d294fd740f3f60c20",
+      "size": 418
+    },
+    {
+      "path": "frontend/public/demo-data/dd2875d484359552.json",
+      "sha256": "a374c6fce389804a388e387e3d162764fc44f3b5f4e60c08f0bc42fdbf4c1478",
+      "size": 285
+    },
+    {
+      "path": "frontend/public/demo-data/dd74962885bb1747.json",
+      "sha256": "7512dfdff3de7abc2155ab4888e396bfc91a91a1079d3d9e0a1503f7fc55ae9a",
+      "size": 3562
+    },
+    {
+      "path": "frontend/public/demo-data/e539a52fa47a3274.json",
+      "sha256": "19b814d1736d6e6b84eb4d93eb5c9a30b9a3f11522ff736faf277b3162111fbe",
+      "size": 456
+    },
+    {
+      "path": "frontend/public/demo-data/e5c78e919bdd35bf.json",
+      "sha256": "a32202c5bd1404924a008122521c4a2eb6a6491a8022a5e30577e0023cb8f732",
+      "size": 1264
+    },
+    {
+      "path": "frontend/public/demo-data/e78374a2305d1e37.json",
+      "sha256": "cfe4e71a7514dfcb607ff15f3dffe63e8ffdc069ae5cf7126806b228322b801f",
+      "size": 18246
+    },
+    {
+      "path": "frontend/public/demo-data/f6119bc9b082f658.json",
+      "sha256": "916e95d9d2e0f776f884762d3a47ffe80519caf808007bd6d62af2c1f71a2e87",
+      "size": 268
+    },
+    {
+      "path": "frontend/public/demo-data/f808900559c93edd.json",
+      "sha256": "b86b2d05a1af5cd43c991cf2887e8955097d33e14517dce43b48913adb53266e",
+      "size": 12124
+    },
+    {
+      "path": "frontend/public/demo-data/f80fd88a3af8bab3.json",
+      "sha256": "21c91d6a57c2f41f30cb65216bc81f71ccf61a8d8f7e7c1251d2e89d294a02d5",
+      "size": 220
+    },
+    {
+      "path": "frontend/public/demo-data/f94704cec64f8e72.json",
+      "sha256": "444b52c7f922c12174a7af4f47d0d6cab6154384de83116ee6a90a19c9a269e6",
+      "size": 219
+    },
+    {
+      "path": "frontend/public/demo-data/fb492179fcb3bae2.json",
+      "sha256": "ee058f06fb5ce8beb0f46e7e82609e63c81666a21cd5a553d7dec86ba4db665b",
+      "size": 35716
+    },
+    {
+      "path": "frontend/public/demo-data/fbc580e85ea2ba4e.json",
+      "sha256": "1cc488ba1b64ea8874c1fe2f36aa77e3f9e365fa08556fb62c31840db4be2771",
+      "size": 1107
+    },
+    {
+      "path": "frontend/public/demo-data/fc146b0f5c247ba3.json",
+      "sha256": "40d990a6e7845f65dc8083b4dcd4167bc26dbf13d677643b06a8dbe80675c64f",
+      "size": 230
+    },
+    {
+      "path": "frontend/public/demo-data/fceb473b6728b37f.json",
+      "sha256": "328b3db0c5b2ed388335c39b2b9147e4eada5bff9ebe579d89477a89ed81d0fd",
+      "size": 7327
+    },
+    {
+      "path": "frontend/public/demo-data/fixture-outcomes.json",
+      "sha256": "c72770cabd9091d72a27cb9ffc700362bae46e9eae76d95af88461b17d83a403",
+      "size": 119316
+    },
+    {
+      "path": "frontend/public/demo-data/manifest.json",
+      "sha256": "63ef739dd9fbcd78be64ef2a32a0ebab509fe5825f7ac23e111a34e4571f48b7",
+      "size": 8429
+    },
+    {
+      "path": "frontend/src/api.ts",
+      "sha256": "e5df289ef9a61925e1e79e828c1e323b4d35f2488b2c7a8bced7a2a550ed42a3",
+      "size": 4273
+    },
+    {
+      "path": "frontend/src/consoleKit.test.tsx",
+      "sha256": "ecd74576de9af086c9d0243848045b02d00fa50ef5ff14502b412411a20efb87",
+      "size": 7201
+    },
+    {
+      "path": "frontend/src/consoleKit.tsx",
+      "sha256": "8c18db0d8a789ec06c4baf2437e274113fb946c09e2242295df5a6be6bb8b446",
+      "size": 12102
+    },
+    {
+      "path": "frontend/src/decisionLedger.test.tsx",
+      "sha256": "1a84544cc5f1af2141a42d39c390df43a6d83f53cf64261e55d863c1902304cb",
+      "size": 5589
+    },
+    {
+      "path": "frontend/src/decisionLedger.tsx",
+      "sha256": "809f2bc749278ac554e32f422ed0542c787566af9a3a98530e86ea56e9c73276",
+      "size": 6797
+    },
+    {
+      "path": "frontend/src/demoBanner.tsx",
+      "sha256": "8091d0f4521de96389ca15d0e09d4c8612db12b7c1ede2cac092914f0851503c",
+      "size": 783
+    },
+    {
+      "path": "frontend/src/demoMode.test.tsx",
+      "sha256": "afdbf3421caec00fd037deb2463fd88d333f2665b202f269f091d74add3e8baa",
+      "size": 4972
+    },
+    {
+      "path": "frontend/src/demoShell.tsx",
+      "sha256": "3f6c4de90592e63e8a88629de36e939bcf7ae1f360964eb6517c6c5234f3f087",
+      "size": 2532
+    },
+    {
+      "path": "frontend/src/fixtureOutcomes.tsx",
+      "sha256": "368725749db45e5b78a340ae63b80899738fe8a50d0d5220ace817c7bf6f2b16",
+      "size": 7939
+    },
+    {
+      "path": "frontend/src/followUp.test.tsx",
+      "sha256": "c249f1ddd9d9055fa63cd267f80953921dc6d3d0702156b4bb32ef1a0aae8735",
+      "size": 13520
+    },
+    {
+      "path": "frontend/src/followUp.tsx",
+      "sha256": "ac6aa5c907655114b63ae39e81e90b5da3dcf526547205c6ecb4f7231f8666b1",
+      "size": 17975
+    },
+    {
+      "path": "frontend/src/layout.test.tsx",
+      "sha256": "55ec9d319bb9fb102ce7a630c1a9665d6cc9330f8f19d79881aa618f04b64eeb",
+      "size": 4093
+    },
+    {
+      "path": "frontend/src/main.tsx",
+      "sha256": "e68711386e92948eff91dde308cb596ab05776af7c6178c0f5d4cfa9a3a867fa",
+      "size": 312145
+    },
+    {
+      "path": "frontend/src/operations.test.tsx",
+      "sha256": "575972195075d34d383f39e604855ad843d29b42d640ebe71c3f424b2d0c0343",
+      "size": 4009
+    },
+    {
+      "path": "frontend/src/operations.tsx",
+      "sha256": "0f1fbaa7346552eed814b0bfe49900e593ca8f0b7b9541906156d280c51954b6",
+      "size": 6291
+    },
+    {
+      "path": "frontend/src/operatorConsole.test.tsx",
+      "sha256": "8d9dfc53bc52dbabc2d33757a130354a5d5a54aa7ffbb30c23b50049b3a734dc",
+      "size": 31270
+    },
+    {
+      "path": "frontend/src/operatorConsole.tsx",
+      "sha256": "5bd99e02d3325b7044d07f38d3227a628fb91d3b331b59d4bdac155636d9a952",
+      "size": 73668
+    },
+    {
+      "path": "frontend/src/optionsResearch.test.tsx",
+      "sha256": "d456dea54e8ffaca4d5a56add2352ea4576b74acc85e4708b35dbe482ce5e6b1",
+      "size": 3563
+    },
+    {
+      "path": "frontend/src/optionsResearch.tsx",
+      "sha256": "925acdf986a688d5c74644687eb3eb48f481ccf0d9af50614ec99205cf5993a1",
+      "size": 11011
+    },
+    {
+      "path": "frontend/src/portfolioMandate.test.tsx",
+      "sha256": "a99316aac37b254b4ef3183b75b1f12b1f7474d4f17269b67cb4edf866e5df1e",
+      "size": 3941
+    },
+    {
+      "path": "frontend/src/portfolioMandate.tsx",
+      "sha256": "7c86a7ac1a0d1b6a764d65bd9b7b820af0f4f877aefc1a22e5731b8a564ea031",
+      "size": 11331
+    },
+    {
+      "path": "frontend/src/reasonCodes.test.ts",
+      "sha256": "b5e934b23b805c393f3758cc433f48448d1bb395de375dfb16672041fc5e9b2f",
+      "size": 2486
+    },
+    {
+      "path": "frontend/src/reasonCodes.ts",
+      "sha256": "0e3d03ee3ac638b9c98273237034c27cfb1b510db71dae402b72474d186b3539",
+      "size": 5317
+    },
+    {
+      "path": "frontend/src/styles.css",
+      "sha256": "e7b4920cefab7235dc97a87241f783973abe56ea258f6a176ce0d720cbcafc41",
+      "size": 15656
+    },
+    {
+      "path": "frontend/src/test/helpers.ts",
+      "sha256": "aa648465b10bfe8a469d31fbfccb98c46144ea6403c7d94cac9a6984f0edf905",
+      "size": 1247
+    },
+    {
+      "path": "frontend/src/test/node-fs.d.ts",
+      "sha256": "a1ee6c62ee59fcd0357abbecc3b2d6dd6874e80c69ca094655bb4d118955cdb3",
+      "size": 786
+    },
+    {
+      "path": "frontend/src/test/setup.ts",
+      "sha256": "44443e556298c4dbc26e1fa1fad17e996ae87e8b931eff57ee0994c6eeec5116",
+      "size": 218
+    },
+    {
+      "path": "frontend/src/vite-env.d.ts",
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+      "size": 38
+    },
+    {
+      "path": "frontend/tsconfig.json",
+      "sha256": "07262db1003961f8089ac8035a7a051a94760b6ca06596e92ef7bc0baa318390",
+      "size": 461
+    },
+    {
+      "path": "frontend/vite.config.ts",
+      "sha256": "916483c9d48df3d4d448538ed1a9ee2e80ff6d9c818810d09242cd8b943dfda3",
+      "size": 615
+    },
+    {
+      "path": "frontend/vitest.config.ts",
+      "sha256": "25bdf96e96b1f36512389d8d36f9f2ca84e2ae93849a74372c0da8d97d80f032",
+      "size": 243
+    },
+    {
+      "path": "migrations/env.py",
+      "sha256": "0440c8905eb360f7703c51a93d8f0667c4042b63837708636a86add128662b29",
+      "size": 1518
+    },
+    {
+      "path": "migrations/script.py.mako",
+      "sha256": "8f04eceacc65e51e5371acb08200412129d28d866c44cf9c8d87b91f6e5474f5",
+      "size": 580
+    },
+    {
+      "path": "migrations/versions/0001_atomic_authorization.py",
+      "sha256": "64dbea43beb77f1271cefa028259fbd22bbe953e165a3ebed51fc5a6b73b3834",
+      "size": 1180
+    },
+    {
+      "path": "migrations/versions/0002_durable_execution_events.py",
+      "sha256": "08287655fc32f4e54fc1a2de42623cbf377852b66c561d5861a37941407cd7ef",
+      "size": 13318
+    },
+    {
+      "path": "migrations/versions/0003_partial_fill_and_position.py",
+      "sha256": "ab7f78016690c70d03d29a2a5b9261d05e18ab2072e54d0819caa2350a8a9728",
+      "size": 23499
+    },
+    {
+      "path": "migrations/versions/0004_durable_no_settlement.py",
+      "sha256": "32f5a7d033ae0e961562539709b967a2e615ac75e77ec03780e28f85ab38bf58",
+      "size": 14938
+    },
+    {
+      "path": "migrations/versions/0005_durable_void_settlement.py",
+      "sha256": "a69e771c477f2d65145a7980ff7ea067b8f0acefe1ee931593a9121e60e29fd1",
+      "size": 19325
+    },
+    {
+      "path": "migrations/versions/0006_public_market_discovery.py",
+      "sha256": "88b65c47c067d3b6f46af7af18f9dda4f0bb6e0f4c17cb717ce037768e1ff978",
+      "size": 2971
+    },
+    {
+      "path": "migrations/versions/0007_public_event_consistency.py",
+      "sha256": "ffed9c5cc03bae74088e793e6a809d9c0a819f1b9613ec1cd486dd2de725834f",
+      "size": 4851
+    },
+    {
+      "path": "migrations/versions/0008_persisted_scan_comparison.py",
+      "sha256": "a20ce81ae9e294d28c62b25151419eb6e35e0cbb4ee812f7817ccc51d9f0150a",
+      "size": 2392
+    },
+    {
+      "path": "migrations/versions/0009_event_observation_history.py",
+      "sha256": "4751c4792a587c63e7ebfa41053eb0e3738666c0b40323058b60f3cddc04ce05",
+      "size": 6086
+    },
+    {
+      "path": "migrations/versions/0010_public_orderbook_complement_scanning.py",
+      "sha256": "406909f85497c0c9506d4b12d829a5a818cbebdf2ae05769041feef3c2929c98",
+      "size": 7641
+    },
+    {
+      "path": "migrations/versions/0011_orderbook_observation_history.py",
+      "sha256": "a50ce8c654f6f6b6849d4e04c8e787d11d4e9a486d363b9a75c3161054480194",
+      "size": 6273
+    },
+    {
+      "path": "migrations/versions/0012_bounded_orderbook_capture_sessions.py",
+      "sha256": "48ae3e0c88a5d3f114dc15cbe2d360b4ebb55507fe002266da914548719161ec",
+      "size": 7421
+    },
+    {
+      "path": "migrations/versions/0013_threshold_ladder_scanning.py",
+      "sha256": "037190c1216d4c0de1ddb409dc0a86d9727656eeb154808d203357bd736ce9fd",
+      "size": 4712
+    },
+    {
+      "path": "migrations/versions/0014_autopilot_core.py",
+      "sha256": "670a38b0f79f593fb2b3d5cf011745204e1531f2fecfdf1218c16baef71bdad4",
+      "size": 3894
+    },
+    {
+      "path": "migrations/versions/0015_paper_portfolio.py",
+      "sha256": "42559d2c638e4e62b51c5865265df7240296f691836dfb3fda1eddbcc980984b",
+      "size": 19474
+    },
+    {
+      "path": "migrations/versions/0016_operator_console.py",
+      "sha256": "575de0c84690744331eea012eae47d6e2a5e343c7ac708d8ab045e99bb4d4412",
+      "size": 1765
+    },
+    {
+      "path": "migrations/versions/0017_strategy_promotion_shadowing.py",
+      "sha256": "92547c1d6e7930f4a6799106c8c12bf6bf78e0518ee872b1d27b9d5a4e931603",
+      "size": 13767
+    },
+    {
+      "path": "migrations/versions/0018_orderbook_microstructure_shadow.py",
+      "sha256": "2354ec7a2d12acb62d596c1bc897d118a6362586880ef6d71754739b7beb8202",
+      "size": 1681
+    },
+    {
+      "path": "migrations/versions/0019_market_dynamics_shadow.py",
+      "sha256": "318674288615c1ef49d0589c132304d9b9c5dc82d6fb829c5d031612589fdddd",
+      "size": 2408
+    },
+    {
+      "path": "migrations/versions/0020_multi_strategy_shadow_campaign.py",
+      "sha256": "78229372e92d65268f38a9aa8e8ac7afd6ed108a1b3bfd0a6f4245e2d20343ba",
+      "size": 6748
+    },
+    {
+      "path": "migrations/versions/0021_shadow_operations_performance.py",
+      "sha256": "de31ccd19485b8e55d833624c57f8f6132ed2300fe6435e4e59f356a78eb41ec",
+      "size": 15955
+    },
+    {
+      "path": "migrations/versions/0022_evidence_review_paper_trials.py",
+      "sha256": "ea5a015a1bb6b2c0a0b83818a54bf956c8710eb882ecb2a7dd9aaa775609b31d",
+      "size": 7434
+    },
+    {
+      "path": "migrations/versions/0023_strategy_lab_foundation.py",
+      "sha256": "da3b960035ba8c1f562244710d98d5b9e78889916845576613c45efcbc5a23ad",
+      "size": 5072
+    },
+    {
+      "path": "migrations/versions/0024_strategy_lab_shadow_deployment.py",
+      "sha256": "75eeca65931acc41c8636eafe75d7f41d1885f30179f63272d61ffd456d45001",
+      "size": 1532
+    },
+    {
+      "path": "migrations/versions/0025_securities_research_shadow.py",
+      "sha256": "8f487006ed2fc91f997259bedefe78371bdad6840a7a00d1d25f895769231b83",
+      "size": 1497
+    },
+    {
+      "path": "migrations/versions/0026_securities_paper_execution.py",
+      "sha256": "59b1a80508fd2dbcb4eec75b09fae4122906dabb6896647daa74488cf17b1aa9",
+      "size": 8565
+    },
+    {
+      "path": "migrations/versions/0027_securities_baselines_conformance.py",
+      "sha256": "d3d8292a59e440d2a17aaba02278a25c09161f85357c820411882e92135aefa1",
+      "size": 1681
+    },
+    {
+      "path": "migrations/versions/0028_research_overfitting_controls.py",
+      "sha256": "3701a60cc87a32d1e2098b6c8c8958fdf72e53ac37517ae2607cb282cda21789",
+      "size": 7991
+    },
+    {
+      "path": "migrations/versions/0029_bounded_candidate_generation.py",
+      "sha256": "8664b7e69ac1a70b30c4c063c4bc6ba3b5cbf09ce0a78bbad7be08a76ff48542",
+      "size": 13101
+    },
+    {
+      "path": "migrations/versions/0030_automated_batch_learning_forward_evaluation.py",
+      "sha256": "e43060721401302a66393373191a0d6c0a37888ca2d28f374c817c7011201163",
+      "size": 15328
+    },
+    {
+      "path": "migrations/versions/0031_real_securities_data_validation.py",
+      "sha256": "f9338d46c3af52f89d322bacdc8b36c5692696922400802570cf1f58413fc0b2",
+      "size": 6815
+    },
+    {
+      "path": "migrations/versions/0032_real_securities_quality_integrity_state.py",
+      "sha256": "a069d2256c4e32b86679c895413e734b855af385ad4555b123ed5bcabdf7a12b",
+      "size": 1997
+    },
+    {
+      "path": "migrations/versions/0033_genuine_securities_strategy_lab_dataset.py",
+      "sha256": "29eab1a9781440fa00944dd3ea79476e94c7209eb061e027d117ca87bda6933f",
+      "size": 4864
+    },
+    {
+      "path": "migrations/versions/0034_validation_candidate_link_transition.py",
+      "sha256": "b7a18c19a3f61aef307e2c44dc2654475b63fadaec4b67a543ea39882fb5fe13",
+      "size": 3800
+    },
+    {
+      "path": "migrations/versions/0035_securities_strategy_intelligence.py",
+      "sha256": "f0562bdb5537a52df3f37d94c43bee2bdc87ad9fd80bf3205e8f819b29f62129",
+      "size": 3178
+    },
+    {
+      "path": "migrations/versions/0036_securities_ensemble_meta_strategy.py",
+      "sha256": "0e4e3c23264e28f475cbc26086d3ba5e4f81396f4b947e708ca4bfd6b225fb51",
+      "size": 1982
+    },
+    {
+      "path": "migrations/versions/0037_sustained_securities_shadow.py",
+      "sha256": "7d3548a6fca39b5bccbcaa75b68159ffdf441f8a006f3d058abd08e3adf3c704",
+      "size": 3821
+    },
+    {
+      "path": "migrations/versions/0038_sustained_shadow_operations.py",
+      "sha256": "d3b262f4a0c2f611b7650cb8134441102e4670173b27fc1f9d55865b46008e5c",
+      "size": 2191
+    },
+    {
+      "path": "migrations/versions/0039_sustained_shadow_plan_lineage.py",
+      "sha256": "71a7ac3e735049503ace8d7bb29fd9582e4e8a61f6dcf5a04aff097e5950347e",
+      "size": 1287
+    },
+    {
+      "path": "migrations/versions/0040_portfolio_intelligence.py",
+      "sha256": "b87120a2de78a61071e813c6a0f121e711bc0d52a3b275f0e16a00aaad1afaca",
+      "size": 1216
+    },
+    {
+      "path": "migrations/versions/0041_external_paper.py",
+      "sha256": "b20a1fc4f1abed98f6349ceca9607dd95f63f91e28bd4bc57652673c5e6572fb",
+      "size": 6441
+    },
+    {
+      "path": "migrations/versions/0042_external_paper_fills.py",
+      "sha256": "02ae80c27f4c5a5006e303790f3b289d43a9a88a81cc99083095bd4d579a379a",
+      "size": 2398
+    },
+    {
+      "path": "migrations/versions/0043_external_paper_binding.py",
+      "sha256": "386b9a614098ab5113b70ff7eed368a52a5db4dde929e5ae20d7ed29ad81a1c2",
+      "size": 1816
+    },
+    {
+      "path": "migrations/versions/0044_securities_multi_fill_accounting.py",
+      "sha256": "d41188f0242833b24b8f8bf6fd5e44b50ade308690ab964cdb31be8a728ba089",
+      "size": 4131
+    },
+    {
+      "path": "migrations/versions/0045_external_paper_campaign_observations.py",
+      "sha256": "31e0f7a8492fc184fb1159c01bde50570e7c64fc31dffee86ee8d712cfaca7dc",
+      "size": 1976
+    },
+    {
+      "path": "migrations/versions/0046_alpaca_paper_acceptance.py",
+      "sha256": "63e56908e6a5312cd147177ba221a09c779466ce0851e937f652ba99bc495f05",
+      "size": 2934
+    },
+    {
+      "path": "migrations/versions/0047_acceptance_authority_isolation.py",
+      "sha256": "dcc1afae0a0364ad19b3a3f0c2a80f57b91b0895f22c6499d55ea808c8d655e3",
+      "size": 1371
+    },
+    {
+      "path": "migrations/versions/0048_durable_research_evidence.py",
+      "sha256": "691078713caf81b0689da7d5c81179b32caf79fffb2af6f3da24c8641c7ebed2",
+      "size": 13440
+    },
+    {
+      "path": "migrations/versions/0049_genuine_crypto_historical_validation.py",
+      "sha256": "8a720c27bfc97093e619af5bc8cb6bf59d7629fc58ca4c2edc96d74df4032a02",
+      "size": 10346
+    },
+    {
+      "path": "migrations/versions/0050_crypto_strategy_evidence_dossier.py",
+      "sha256": "2e5de086a5719f5308aa8a8f38ee3f1a7231d170c592615a1b9acb960c2aca8a",
+      "size": 7481
+    },
+    {
+      "path": "migrations/versions/0051_crypto_material_challenger.py",
+      "sha256": "d14f51f24e50d5cff0b5fc8fb5cbdea59b19168496bc4b03a52459e4ad49dad6",
+      "size": 8254
+    },
+    {
+      "path": "migrations/versions/0052_crypto_campaign_sealed_holdout.py",
+      "sha256": "2103fa354dc7b662ee32f1a7799958d5ca0c1f4862f540728239415ce001e2f8",
+      "size": 15582
+    },
+    {
+      "path": "migrations/versions/0053_crypto_campaign_candidate_1.py",
+      "sha256": "c9d9c66d9094031a4b3974005819fcb82e8cf3d63b11228d205d501381db0a8f",
+      "size": 10944
+    },
+    {
+      "path": "migrations/versions/0054_generic_crypto_candidate_operability.py",
+      "sha256": "83df4bf267ebcd720630170a6c26f8ee2d92862b93b2e3fa6114db268a9727ae",
+      "size": 3523
+    },
+    {
+      "path": "migrations/versions/0055_crypto_multi_asset_discovery.py",
+      "sha256": "9db40d744d1a638f88348453b3107b5e322b8d13df5da619fb5150fd5a79bb51",
+      "size": 4857
+    },
+    {
+      "path": "migrations/versions/0056_crypto_universe_quality_repair.py",
+      "sha256": "3ab5d27ab4edf3e64743297b1c7639791d48385eb5baab840f6e107d09138d8b",
+      "size": 1466
+    },
+    {
+      "path": "migrations/versions/0057_crypto_market_pulse.py",
+      "sha256": "07f39783ae48988bfd698f920ef11ee6a386d67745bdbe24211b37ce4cf64f3f",
+      "size": 7298
+    },
+    {
+      "path": "migrations/versions/0058_shared_opportunity_layer.py",
+      "sha256": "937f4712abb2879cd403b46e467de959c217d58516b9580b5d9ca7843052a809",
+      "size": 5860
+    },
+    {
+      "path": "migrations/versions/0059_total_market_context.py",
+      "sha256": "cc01ea98f090d5ea628f4dff84bb6d9423f2c1bed8d14e4abdbf624626f19c2a",
+      "size": 5471
+    },
+    {
+      "path": "migrations/versions/0060_recurring_operating_cycle.py",
+      "sha256": "8d7636b000566f14c1aa6a4cc18826ec0e7dda466b8d4f3fb161f7da35f7afc9",
+      "size": 5548
+    },
+    {
+      "path": "migrations/versions/0061_crypto_spot_paper.py",
+      "sha256": "e4104ddbb6707e02fc5ac38f0cd470e920e163b6a074bb6c4717b26458541ddd",
+      "size": 5126
+    },
+    {
+      "path": "migrations/versions/0062_kalshi_operating_paper.py",
+      "sha256": "8ac1ae5ddd8b6624e2212e622bd295be49a966e9c7c268407c765311213df4c9",
+      "size": 5799
+    },
+    {
+      "path": "migrations/versions/0063_cross_venue_allocation.py",
+      "sha256": "56e4c29849c57171957cba083012c896780f48347e530121c2c0535e67c32056",
+      "size": 5002
+    },
+    {
+      "path": "migrations/versions/0064_shared_performance_attribution.py",
+      "sha256": "236b2a345febebbc5ebd1a060e4e5ff20d1f5bf03d1f70d71c7bcee584a2ded5",
+      "size": 5161
+    },
+    {
+      "path": "migrations/versions/0065_governed_research_operations.py",
+      "sha256": "bef2a5c532908e157630cfa69f9ee0ede395e3fad81788f25b24e79702ceb58d",
+      "size": 6003
+    },
+    {
+      "path": "migrations/versions/0066_research_proposal_queue.py",
+      "sha256": "f4fff723dbd1e7d00a5da6d734563a588a0041399b6ea93a885279327cd0515b",
+      "size": 6743
+    },
+    {
+      "path": "migrations/versions/0067_first_generated_research_method.py",
+      "sha256": "eaae7aeeba0252b5546212a2bf1c924839e492a59312a6a961a91c01f2be627c",
+      "size": 4761
+    },
+    {
+      "path": "migrations/versions/0068_generated_crypto_challenger.py",
+      "sha256": "9c4c7686b89ecb6f52e6fe094052f5f8840b86ef90e838f2acac168bcc48916b",
+      "size": 4941
+    },
+    {
+      "path": "migrations/versions/0069_secure_live_readiness.py",
+      "sha256": "756dfec2ec5e0155e80fc54f513c12f14a0b0a88b7adc1ccd314add2794139fa",
+      "size": 1401
+    },
+    {
+      "path": "migrations/versions/0070_operational_reliability.py",
+      "sha256": "fe5165e84d758d5f21261301d377d73e2220aff20e8f8ca182e37eaf246a4f5d",
+      "size": 1419
+    },
+    {
+      "path": "migrations/versions/0071_coinbase_read_only_capability.py",
+      "sha256": "99f802846afefc87e28d91a2a7e69766424a0eb836105763e868a1e4bb7384c1",
+      "size": 1378
+    },
+    {
+      "path": "migrations/versions/0072_kalshi_read_only_capability.py",
+      "sha256": "56c3b93ebfb6521408dcb0357548f2758906736a0e06d86523a1fa155e49afd1",
+      "size": 1346
+    },
+    {
+      "path": "migrations/versions/0073_live_preflight.py",
+      "sha256": "7588004b194867c361c1a23f4144b07c982c0be6ddc5c039ab7f3b1dcabe102b",
+      "size": 1328
+    },
+    {
+      "path": "migrations/versions/0074_paper_activation.py",
+      "sha256": "2b789fe8b5304bb97dd2145ef39f77b6b9974e3b60f0e2f4327a1ba68a95158b",
+      "size": 2049
+    },
+    {
+      "path": "migrations/versions/0075_broad_market_research.py",
+      "sha256": "53e60c0d1e16e0a8276e37c3ed0b318e0818170ebd7e3886573462ce7ee374db",
+      "size": 10087
+    },
+    {
+      "path": "migrations/versions/0076_stable_security_identity.py",
+      "sha256": "ef2df0f2b19454b82981a7726290844a69b3745a972fa650bc9d0aa20f3ee665",
+      "size": 6986
+    },
+    {
+      "path": "migrations/versions/0077_historical_market_data.py",
+      "sha256": "93479f18be6f3d3551e2bda72d14bef7d5c96985cab69c4208d61188c4cf03b7",
+      "size": 11443
+    },
+    {
+      "path": "migrations/versions/0078_historical_replay.py",
+      "sha256": "8785ae82315f6665fc0b57830e57e78b3f85ec3cd5ece47ec4ae7669c2805d70",
+      "size": 14178
+    },
+    {
+      "path": "migrations/versions/0079_quant_research_methodology.py",
+      "sha256": "c01520a82a1d48455ce86e2ce2c595c57bb979efff86a602131462f1ad5adb9b",
+      "size": 17759
+    },
+    {
+      "path": "migrations/versions/0080_genuine_multi_asset_history.py",
+      "sha256": "9286b1e86035f1ee7d7a7a783e2fb9ef92ff8d8f860e2d41a66ac58d4acd364e",
+      "size": 6051
+    },
+    {
+      "path": "migrations/versions/0081_cross_market_research.py",
+      "sha256": "8081320f1a119c532076f1e033a285e249ed4fd5393a521e64d5f304d1ff7252",
+      "size": 14213
+    },
+    {
+      "path": "migrations/versions/0082_research_signal_calibration.py",
+      "sha256": "35e217b634011b97fe49c9ced3da3000cf20692b5ac7bbf1f0001cb54686359a",
+      "size": 16205
+    },
+    {
+      "path": "migrations/versions/0083_calibration_v2_template.py",
+      "sha256": "76a3710dcf201947183b00ec7b140d3a81496b881711a165a7e93901ae6b836c",
+      "size": 14291
+    },
+    {
+      "path": "migrations/versions/0084_research_replication.py",
+      "sha256": "68593d94b5cfa8ee75184ba857cb567719dcce354c6f4036aff958d2f41afb6e",
+      "size": 13485
+    },
+    {
+      "path": "migrations/versions/0085_options_quote_intelligence.py",
+      "sha256": "529f8aca4be2290ea6373a9a3ac6a0df086d79266dfb7e3b167a3e6784cb714f",
+      "size": 11338
+    },
+    {
+      "path": "migrations/versions/0086_defined_risk_options_economics.py",
+      "sha256": "fa085a6cc9fed11abcd3d8d8a874f0d7f378094be844b617a3d3a3e64812c64d",
+      "size": 14304
+    },
+    {
+      "path": "migrations/versions/0087_options_forward_evidence.py",
+      "sha256": "eb35cbc6010c329562042578ad2e8e15e8d971a28ed1785dc6c27e92d0b37e38",
+      "size": 5987
+    },
+    {
+      "path": "migrations/versions/0088_corporate_fundamental_intelligence.py",
+      "sha256": "0710798aca8744d8f1397e0bdebeb45ac29dd47719a1a72b8d162594807d6bd4",
+      "size": 14300
+    },
+    {
+      "path": "migrations/versions/0089_corporate_market_research.py",
+      "sha256": "13972346994fec99ee911fb4bf79507a35b721e625d8abebbdd58c65913a81d3",
+      "size": 16257
+    },
+    {
+      "path": "migrations/versions/0090_corporate_calibration_depth.py",
+      "sha256": "260d6400931cf60153569672a13ea4271dc31cdf3df8b26e77a283d096f74066",
+      "size": 16104
+    },
+    {
+      "path": "migrations/versions/0091_corporate_regime_followup.py",
+      "sha256": "11765893eb59615970812891a4629bff9baa2a3c6805a9e24ba52dee091a789e",
+      "size": 9043
+    },
+    {
+      "path": "migrations/versions/0092_portfolio_mandate.py",
+      "sha256": "dfddcab921fbb47a34b7e026b5c19dfced3716cd9d3d39dd8135fa7a665e3e07",
+      "size": 7900
+    },
+    {
+      "path": "migrations/versions/0093_tmc_component_as_of.py",
+      "sha256": "f31007db11f41f89b576c8cea8231d016560777ce695d68d6163089664b17425",
+      "size": 5674
+    },
+    {
+      "path": "migrations/versions/0094_counterfactual_ledger.py",
+      "sha256": "598746362ce681250d40c2698594adb91504d31d85a5ac8727667080f7542821",
+      "size": 5297
+    },
+    {
+      "path": "migrations/versions/0095_reason_classification.py",
+      "sha256": "70400bfc1b4a26d510097fcb8485217b5d0e7308ad77ec883c85ac17ccc63e77",
+      "size": 22324
+    },
+    {
+      "path": "migrations/versions/0096_counterfactual_followup.py",
+      "sha256": "dfeb789ee33f2a9cd4ee771799b8275547735add76f4384a0b3f46ec3aad67db",
+      "size": 6148
+    },
+    {
+      "path": "migrations/versions/0097_followup_policy_v2.py",
+      "sha256": "b27ac0b68dcae869595310679aa2a4591f29a5b9c1a5624b24df52aa86d22531",
+      "size": 9447
+    },
+    {
+      "path": "migrations/versions/0098_followup_scan_cursor.py",
+      "sha256": "08b9ee31d248706b68c152d07bbe2637d4038166793eac9bb843256ddc8b1736",
+      "size": 5132
+    },
+    {
+      "path": "migrations/versions/0099_followup_evidence_quality.py",
+      "sha256": "4f7ed68e8bb1a5c1d4bf6471ab021bb426d12291d81932b2d5067656b7ba2f0a",
+      "size": 7778
+    },
+    {
+      "path": "migrations/versions/0100_crypto_opportunity_lineage.py",
+      "sha256": "5295db340505b4156d920ab754e2be92421948d9fee30bfb660b0de9926b304b",
+      "size": 17553
+    },
+    {
+      "path": "migrations/versions/0101_counterfactual_outcome.py",
+      "sha256": "2a82fbd6c1128749dc1ced2d808c0646fafcba82350612cbb076fba2e42036a4",
+      "size": 10579
+    },
+    {
+      "path": "migrations/versions/0102_kalshi_baseline_quote.py",
+      "sha256": "67d388c5ad9838e6ab5de4b4b5148209d55dc4d4c55048712b0f3686b00b8347",
+      "size": 7613
+    },
+    {
+      "path": "migrations/versions/0103_counterfactual_outcome_v2.py",
+      "sha256": "7b9045bcd4c8bcc10318a4285c733fdb5bb613e53f56c76cbf9575d7f2e865aa",
+      "size": 3584
+    },
+    {
+      "path": "migrations/versions/0104_securities_bridge_v1.py",
+      "sha256": "a846ed89a60d3b2017ebcc8286d4a141ecd1560b40bd89f334c25a8cb50a7e47",
+      "size": 11002
+    },
+    {
+      "path": "migrations/versions/0105_securities_structure_perf.py",
+      "sha256": "ec00cc9cfae479e7417453dac50fca17b6f21bc88ccb782f0c415c938080e0eb",
+      "size": 11817
+    },
+    {
+      "path": "migrations/versions/0106_live_market_observation.py",
+      "sha256": "69efe89cb49335e1ce513e72b798a945065f00cd4a6a9c0f287d0995a828bfd4",
+      "size": 8086
+    },
+    {
+      "path": "migrations/versions/0107_kalshi_resolution_fact.py",
+      "sha256": "3285bf0a3772b318670429dfd3f7baa2d363d914c2eec516ab7fea220a06ae4a",
+      "size": 7810
+    },
+    {
+      "path": "migrations/versions/0108_kalshi_baseline_v2.py",
+      "sha256": "0407e62bb5edfb6226f8f2b75aa83f5e58cd586a4c507fb639b5aa24f716391b",
+      "size": 6373
+    },
+    {
+      "path": "migrations/versions/0109_external_strategy_research.py",
+      "sha256": "0784c4a1acd0dc26dcdf56812d2ad1ea210f8d60cdd8ffa9963dd536576d9c7e",
+      "size": 10792
+    },
+    {
+      "path": "migrations/versions/0110_strategy_evaluation_history.py",
+      "sha256": "fccfbc10476681065d2551e31fdb8198004cae9735484697fc8bbf2b2910b347",
+      "size": 11264
+    },
+    {
+      "path": "migrations/versions/0111_strategy_paper_trials.py",
+      "sha256": "0954da5fae332d0f06ba33a688913a7b818b7543f19c32d00a5f20eb78d32f39",
+      "size": 9410
+    },
+    {
+      "path": "migrations/versions/0112_trial_evidence_coverage.py",
+      "sha256": "82e46c441fe8e830caeaba737b7a7d29f4184d6064987dc0b71b14e06f53cf18",
+      "size": 6188
+    },
+    {
+      "path": "migrations/versions/0113_followup_policy_v3.py",
+      "sha256": "a307691087904de1f489a3a5105072d89674da272702eec485e9b329c63efe5b",
+      "size": 9215
+    },
+    {
+      "path": "migrations/versions/0114_outcome_specificity_v3.py",
+      "sha256": "0ae70906bdec513414c167665e9b5ed0fd0d4fffcea642c073bb53776742228d",
+      "size": 3731
+    },
+    {
+      "path": "migrations/versions/0115_strategy_provenance.py",
+      "sha256": "ce82a69e5f9eb032911fc7f43b3b40ee6503eee6e8c15fd528ba235f79859eda",
+      "size": 18564
+    },
+    {
+      "path": "migrations/versions/0116_securities_followup_lag.py",
+      "sha256": "f0340d2e9035078f91c8841a858ae074a828e3cd84aa7b47a1ded03c2e394ef7",
+      "size": 5497
+    },
+    {
+      "path": "migrations/versions/0117_strategy_trial_outcome_assessment.py",
+      "sha256": "00cfd0da3cf53888df4f68cca0c083565d4fa3ece51447ddef48657bcf4f3bf1",
+      "size": 18840
+    },
+    {
+      "path": "migrations/versions/0118_evidence_gap_recovery.py",
+      "sha256": "d08cf70dc06658e03361c7fc65e74f185f56e82b817e15b622157fad6c191d0c",
+      "size": 9624
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "016f3bc6b06e2ebc845461fa7f3758c29c28d2db92a5268ea7fdae6f29730b09",
+      "size": 1352
+    },
+    {
+      "path": "research/__init__.py",
+      "sha256": "bffccf7c2db1d300281ae3ab06c8f07c88110f746ab90305ebebc03cb7056775",
+      "size": 83
+    },
+    {
+      "path": "research/weather_gfs_feasibility/__init__.py",
+      "sha256": "2b2beee25253b169c29c7468f65711cc2c5c2f4e5a0ebc2f3927ffa2a1026eef",
+      "size": 218
+    },
+    {
+      "path": "research/weather_gfs_feasibility/archive.py",
+      "sha256": "8f8fe8738675d43142650a74d3c5b5cef4cc3f1a0aeb6aadb7e54bb284ece09b",
+      "size": 12045
+    },
+    {
+      "path": "research/weather_gfs_feasibility/binding.json",
+      "sha256": "e170d4a8e694d14e7aeeae0adbc36d1ab7983bda0a52c3099512f29e289c6700",
+      "size": 1477
+    },
+    {
+      "path": "research/weather_gfs_feasibility/core.py",
+      "sha256": "c8e0d5c4808d3746f614f1d805001c035315448915c887bdd5c311074ea894e8",
+      "size": 16765
+    },
+    {
+      "path": "research/weather_gfs_feasibility/edge.py",
+      "sha256": "e2417f7a2c53dbb5e2023808ba4d5458fb722a096ba8c56b58deb096048b3770",
+      "size": 48675
+    },
+    {
+      "path": "research/weather_gfs_feasibility/kalshi.py",
+      "sha256": "4cd924480d43735cfbffe406b97df924f1187b0f3b635e605c9f4e9dff411168",
+      "size": 23474
+    },
+    {
+      "path": "research/weather_gfs_feasibility/run.py",
+      "sha256": "2e1fcbcf691e2acd16be1d822363f694647bf21a2c2e058c8031025e6c1cbdaf",
+      "size": 17609
+    },
+    {
+      "path": "research/weather_gfs_feasibility/tests/test_feasibility.py",
+      "sha256": "7eb7dbed8a03ee4a8a82317643c70e2f22e99d35e39fcb29342f307bf12e5a6c",
+      "size": 8943
+    },
+    {
+      "path": "research/weather_gfs_feasibility/tests/test_weather_edge.py",
+      "sha256": "7a8e5bd5c6aa1a87526e718d5be2c9d333cf2cc5e86b3531a642659a9d53d290",
+      "size": 10086
+    },
+    {
+      "path": "scripts/benchmark_followups_read_model.py",
+      "sha256": "50e9e74938439476d2f6aa84ed2703340afbb95ad709c7d48e225be4c40f6af5",
+      "size": 10745
+    },
+    {
+      "path": "scripts/benchmark_home_read_model.py",
+      "sha256": "ab8eb55e2d0e35c299732622b4e67072744063f1e15c7e2c2b3ee620f31c1419",
+      "size": 10887
+    },
+    {
+      "path": "scripts/benchmark_live_readiness_read_model.py",
+      "sha256": "1a659810d626869f96a51af2f5116d80674cca9428e4038e87e74b5a13015039",
+      "size": 11410
+    },
+    {
+      "path": "scripts/demo/generate_demo_outcomes.py",
+      "sha256": "f807c0701c9f995d9eaed69fdf8d957a0f31b6c07c157359c1a6cf0de8b3697a",
+      "size": 2985
+    },
+    {
+      "path": "scripts/demo/generate_demo_snapshot.py",
+      "sha256": "ce580974824d732805b7b6e08959446928de3c06672cfe995b393141453fd003",
+      "size": 7318
+    },
+    {
+      "path": "scripts/demo/regenerate_demo_data.sh",
+      "sha256": "f619d6676f1069f02dec1c64fa2eea0e67645727707e32b2817cf1717b2d97dc",
+      "size": 1741
+    },
+    {
+      "path": "scripts/dev.py",
+      "sha256": "38bfb5b3464e043ee723bb7fff1040458c9896bfdcc445410514ecb3c0c4aa6a",
+      "size": 800083
+    },
+    {
+      "path": "scripts/securities_bridge_demo.py",
+      "sha256": "3e9a443983ea70929d35ba5f8ecce96615660976204fd5a8b5752de9258b91f2",
+      "size": 8284
+    },
+    {
+      "path": "src/apex/__init__.py",
+      "sha256": "75cc80bdfd71b3f3b97cdb17352475190c1f916c4cee40dd337909872af66210",
+      "size": 99
+    },
+    {
+      "path": "src/apex/adapters/__init__.py",
+      "sha256": "f76a0844a5db8f612d3475323433a685e4d6bd413fb35a878bac1db047fd0f3b",
+      "size": 771
+    },
+    {
+      "path": "src/apex/adapters/alpaca_canonicalization.py",
+      "sha256": "c3acbb76f6f13eaf343502fe18aaf2899b60f460839d3a7ace9428543dfc8c9c",
+      "size": 15870
+    },
+    {
+      "path": "src/apex/adapters/alpaca_market_data.py",
+      "sha256": "2ac80fd51328df77b2c9cbfa29d281db18a2e54260ceed6d3a1089e889fdce50",
+      "size": 26876
+    },
+    {
+      "path": "src/apex/adapters/alpaca_options_quote_source.py",
+      "sha256": "5f480b05b31843424430e6bcd7db00ed39fb873156ac04596a7159f44f8818a9",
+      "size": 28711
+    },
+    {
+      "path": "src/apex/adapters/alpaca_paper_broker.py",
+      "sha256": "d4119958e1b22d36ddb4bd1087fbd281b99abbcaee6a2c4fa011511af83dc8ba",
+      "size": 18256
+    },
+    {
+      "path": "src/apex/adapters/alpaca_reference_capability.py",
+      "sha256": "20b78e310134d41ed8ea1bbaf34c3712c7f96808281ce04bbed7580fb891759c",
+      "size": 2275
+    },
+    {
+      "path": "src/apex/adapters/alpaca_securities_normalizer.py",
+      "sha256": "15d2b7c3ea796cbe531655caa02e1b6ae0b63d8759eb9b19197fd4650d346d98",
+      "size": 12407
+    },
+    {
+      "path": "src/apex/adapters/autopilot_fixture.py",
+      "sha256": "35cd0947d3cef0444c4b4e99c969cbbc98cf4ce96a34954ace3e097bf8e37a63",
+      "size": 21336
+    },
+    {
+      "path": "src/apex/adapters/batch_learning_demo.py",
+      "sha256": "82560d04256cb4eb90bbbd6c83a26da17b23ef97ad7c1818ccf7f28628490243",
+      "size": 25530
+    },
+    {
+      "path": "src/apex/adapters/batch_learning_operations.py",
+      "sha256": "0cd00c2039dc30b96e0ed972dd1430d893563ee288ba42190bac43b0272c114d",
+      "size": 38398
+    },
+    {
+      "path": "src/apex/adapters/batch_learning_postgres.py",
+      "sha256": "85b352a2017c1f21078ebb3bf0d330bd865c2d9e9b02ea083bd254366f4a86b6",
+      "size": 33958
+    },
+    {
+      "path": "src/apex/adapters/broad_equity_postgres.py",
+      "sha256": "86f6aece7ba8ecae9f2073c9b05784d9480d39ccf142863090ff23676058444f",
+      "size": 9253
+    },
+    {
+      "path": "src/apex/adapters/broad_options_demo.py",
+      "sha256": "41b88fd65efaecfb015cb4ae2515960911c65d1dc3cc1a2a01747c989865e470",
+      "size": 14303
+    },
+    {
+      "path": "src/apex/adapters/candidate_generation_demo.py",
+      "sha256": "b13ae77adac6d1f4d829da84bdeb87b5a1da6a0d823030293b13f4a122e9e9a3",
+      "size": 31233
+    },
+    {
+      "path": "src/apex/adapters/candidate_generation_operations.py",
+      "sha256": "dedd49844527ebd2d2d77c23b01742e2ed4c63b3a8241ac520143acf0ba60f80",
+      "size": 16634
+    },
+    {
+      "path": "src/apex/adapters/candidate_generation_postgres.py",
+      "sha256": "cfaaff3ee63ed1daf43ad1c4539fe1eba4a6a1ee86f83b9076abf890e2a6fe92",
+      "size": 34304
+    },
+    {
+      "path": "src/apex/adapters/candidate_generation_tools.py",
+      "sha256": "750c88504b2d68c2b8fc51c9c6b6252d8d379fa8eee26ab2ed3cde9489a935e1",
+      "size": 23215
+    },
+    {
+      "path": "src/apex/adapters/canonical_rehydrate.py",
+      "sha256": "e056a09bffb07400cc18a34d7bf2612432fc2fa78308483e99d918e84e39b423",
+      "size": 3555
+    },
+    {
+      "path": "src/apex/adapters/canonical_report.py",
+      "sha256": "7a777957c5f518cd67028342d20f1f5936e4a2ba6cb0a57d1ccd96895a5758b6",
+      "size": 15408
+    },
+    {
+      "path": "src/apex/adapters/coinbase_provider_preview.py",
+      "sha256": "b3aa663cd510e0f8446ac821673398395aec37e85bf81618250f9173722aae4d",
+      "size": 5740
+    },
+    {
+      "path": "src/apex/adapters/coinbase_public.py",
+      "sha256": "9ce8c7615b348ec6adeb444eebd685d750f9f3610f45b66b155239b1a9b9e771",
+      "size": 11527
+    },
+    {
+      "path": "src/apex/adapters/coinbase_read_only.py",
+      "sha256": "cd28f613deed80202135ac464c2371dd63f5a019a968cad903305ee2e50285b7",
+      "size": 11384
+    },
+    {
+      "path": "src/apex/adapters/coinbase_read_only_acceptance.py",
+      "sha256": "a75ca76dfff478c164a9f6821890a0a7c970194844c29e26a886582dfa6f88f7",
+      "size": 3875
+    },
+    {
+      "path": "src/apex/adapters/coinbase_read_only_postgres.py",
+      "sha256": "ace05a4fd1436ecf5792ffdae95019d2b1111f1a97fd841a10a430b374112c0e",
+      "size": 16477
+    },
+    {
+      "path": "src/apex/adapters/coinbase_universe_public.py",
+      "sha256": "7df76130f6cc6cc0d9f96a1bec3262e5601cf68b9dd704209eb962c3167ace8d",
+      "size": 21127
+    },
+    {
+      "path": "src/apex/adapters/combined_crypto_historical_evidence.py",
+      "sha256": "5937ca123788255b5b90f4cc5bb91c39d21205ff2f42926d8b374a79c34caff0",
+      "size": 3966
+    },
+    {
+      "path": "src/apex/adapters/corporate_calibration_depth_postgres.py",
+      "sha256": "cfb095c734ba7ca315d4a5b44b2e5eaeedba6be20a82208354a3c9af928ed0b0",
+      "size": 22955
+    },
+    {
+      "path": "src/apex/adapters/corporate_evidence_capture.py",
+      "sha256": "44f5ed4e9b0d9d7c7d0695235464b012737fa9b24c7e330005ed79d2e5c3b530",
+      "size": 10348
+    },
+    {
+      "path": "src/apex/adapters/corporate_filings_source.py",
+      "sha256": "85ea888d539a0dfd525369624deb94bce82d61a1ea157df7ecb09f0878241998",
+      "size": 23189
+    },
+    {
+      "path": "src/apex/adapters/corporate_fundamentals_postgres.py",
+      "sha256": "b6183189b644bb66f64b80f4fc2938848c46a41ca79473c7a1b5b230ff388a3a",
+      "size": 35933
+    },
+    {
+      "path": "src/apex/adapters/corporate_market_research_postgres.py",
+      "sha256": "762edd87ccaf669c10a045a3d6d57f4a41b712abb9db95dd18648afc5ab6156a",
+      "size": 24359
+    },
+    {
+      "path": "src/apex/adapters/corporate_regime_followup_postgres.py",
+      "sha256": "5732282fd276170b3a7ae0bc62b4224b3423918bf7fc85678f628b2ef152c638",
+      "size": 10609
+    },
+    {
+      "path": "src/apex/adapters/counterfactual_followup_postgres.py",
+      "sha256": "f46e9262d73a6499344c7171e84cdcaaa92044b8686a8feb4b5ce6167415c036",
+      "size": 59487
+    },
+    {
+      "path": "src/apex/adapters/counterfactual_followup_sources.py",
+      "sha256": "da1f9e4eabcae5155baf9f0bf791375de0613a7622cb352bc4e85aec6bd1f183",
+      "size": 10195
+    },
+    {
+      "path": "src/apex/adapters/counterfactual_ledger_postgres.py",
+      "sha256": "3c5547b3101731412371f7b026cecafcb9a1cca462e43112b8fcb07fa7063ac5",
+      "size": 25047
+    },
+    {
+      "path": "src/apex/adapters/counterfactual_outcome_postgres.py",
+      "sha256": "9d4b97ae708a97296d10a4b71c52cac1ff30af50db57105f7377b0290c299080",
+      "size": 16706
+    },
+    {
+      "path": "src/apex/adapters/counterfactual_outcome_sources.py",
+      "sha256": "20b6a7d205dd3504ce54c0f26f2df45b23fd5f4a46020f20e1960c65c88dcc0c",
+      "size": 3696
+    },
+    {
+      "path": "src/apex/adapters/cross_market_research_postgres.py",
+      "sha256": "8540b72f7672c1b3c096f493b2c2ee70375f8122a007b8dccb8b9dbf65bc356f",
+      "size": 22950
+    },
+    {
+      "path": "src/apex/adapters/cross_venue_allocation_acceptance.py",
+      "sha256": "17fa358d76e8288e5ef6dc0d58f877c4f0775b146fa1fd131526da48b5bd7f9a",
+      "size": 6762
+    },
+    {
+      "path": "src/apex/adapters/cross_venue_allocation_postgres.py",
+      "sha256": "39a3559c327b1fe7113785ff2bd0128c4070aee4e8cad4a26e91ec733ad20a0b",
+      "size": 20533
+    },
+    {
+      "path": "src/apex/adapters/crypto_campaign_candidate_postgres.py",
+      "sha256": "2e1b7c3f5d1daa2f5cf27d6909499cea94411f193fc551d13000fb2f35b7c722",
+      "size": 60203
+    },
+    {
+      "path": "src/apex/adapters/crypto_campaign_generic_fixtures.py",
+      "sha256": "875955374aa08701108e708dfa4ad369e01d4785c47ea8eff9962935d27d5e99",
+      "size": 10875
+    },
+    {
+      "path": "src/apex/adapters/crypto_campaign_generic_postgres.py",
+      "sha256": "a58d079ec50503abeec0879e5e232cbedf28d198b346a1b55ce95863b532ff54",
+      "size": 8312
+    },
+    {
+      "path": "src/apex/adapters/crypto_campaign_postgres.py",
+      "sha256": "9119f270865f9b0acd840b064c2f97d35792116c95f20f6dbf5d0a1746e55de8",
+      "size": 23040
+    },
+    {
+      "path": "src/apex/adapters/crypto_challenger_postgres.py",
+      "sha256": "955101e7235cb645fc7dfa372d90b024b0524fe19481fde201ce36a89cd357e7",
+      "size": 27445
+    },
+    {
+      "path": "src/apex/adapters/crypto_dossier_postgres.py",
+      "sha256": "4f16584a62462ff1aaf4008d7395728c361e02488b7063abf827110487efabfa",
+      "size": 21290
+    },
+    {
+      "path": "src/apex/adapters/crypto_market_pulse_postgres.py",
+      "sha256": "67ec03eff17f6d6a0f8399e07819f3c84b4779bbba34d348a3e5945a33a73c96",
+      "size": 24574
+    },
+    {
+      "path": "src/apex/adapters/crypto_paper_acceptance.py",
+      "sha256": "698b02606ab9d8fce93bbae62ece5f51fcecfd890df2e730721b765968a876c9",
+      "size": 17043
+    },
+    {
+      "path": "src/apex/adapters/crypto_paper_postgres.py",
+      "sha256": "9a13de9c1e44dacc48776feb61693c69bb823896d52c578b6e830b5a06442e90",
+      "size": 19971
+    },
+    {
+      "path": "src/apex/adapters/crypto_research_postgres.py",
+      "sha256": "9dea7b9b1e930949a32789d4407f0af2815db686361f4bdb7eaa74bd559e000b",
+      "size": 31515
+    },
+    {
+      "path": "src/apex/adapters/crypto_stateful_research_postgres.py",
+      "sha256": "2a862c2666b0f5b21d6ddd23befcb3ecfd46ca9f35bfed6bd476a7db45e923f8",
+      "size": 10274
+    },
+    {
+      "path": "src/apex/adapters/crypto_stateful_research_sources.py",
+      "sha256": "49c1865fa1a2bfda3aaef85587c9e686abc3774e9fceb8ba5adfa4d28cf23b78",
+      "size": 4477
+    },
+    {
+      "path": "src/apex/adapters/crypto_universe_postgres.py",
+      "sha256": "e22ce8ce8c60bcd0aadabc0609c9d55d5979cdf67f9e1ba3f7352d853524fda5",
+      "size": 40206
+    },
+    {
+      "path": "src/apex/adapters/evidence_recovery_postgres.py",
+      "sha256": "ae5b6c39e7a3680c49371963ce1592847513074f327a255956e9d69d95496a57",
+      "size": 26253
+    },
+    {
+      "path": "src/apex/adapters/evidence_recovery_runner.py",
+      "sha256": "56d0d0f282766752e36e331df20b21fb4653e86d98edf039fa4fd7548172a3eb",
+      "size": 11100
+    },
+    {
+      "path": "src/apex/adapters/evidence_recovery_sources.py",
+      "sha256": "8db7eb7b73b69cfe282da6afcaa834cf443ab62455fef58924ea340dcbdf34b6",
+      "size": 13045
+    },
+    {
+      "path": "src/apex/adapters/external_paper_demo.py",
+      "sha256": "d89373f970eb639d6b0dc03d1ad47077dc06bb22a40330bdbaf935eb355a52f0",
+      "size": 33613
+    },
+    {
+      "path": "src/apex/adapters/external_paper_fixture.py",
+      "sha256": "4fd56bb1c18daaa1c68e87b50a2468076ed9dc94a6da2c5ae7c8d6a693f979cc",
+      "size": 8133
+    },
+    {
+      "path": "src/apex/adapters/external_paper_postgres.py",
+      "sha256": "45febd4cd7d31f0f8eed3b72aef7e4732655a52f35287585429fd74f35401194",
+      "size": 57185
+    },
+    {
+      "path": "src/apex/adapters/external_strategy_research_postgres.py",
+      "sha256": "8784ec57d636de0b233f03a2f6796223e3170c96c97883fbc27ef8b2ec4ea5b8",
+      "size": 22559
+    },
+    {
+      "path": "src/apex/adapters/first_generated_research_method_acceptance.py",
+      "sha256": "09de686a1df228ccfd19d65b07fd43677ae35a89857259d5dae7f6af9312de49",
+      "size": 5426
+    },
+    {
+      "path": "src/apex/adapters/first_generated_research_method_sources.py",
+      "sha256": "757c4190609e0a6f9439e827dbd2d71cb4553a29931e6f106bbf6ecbbaf3b25b",
+      "size": 3349
+    },
+    {
+      "path": "src/apex/adapters/fixtures.py",
+      "sha256": "7c1d624b9ec7c74aa139294cd8eb2746a234c8688301db9198832e7bd6304275",
+      "size": 68303
+    },
+    {
+      "path": "src/apex/adapters/generated_crypto_challenger_acceptance.py",
+      "sha256": "d021e879d96e725c2b6dc55594ed3763a21f30e6d254a5f178de050d418e373c",
+      "size": 13153
+    },
+    {
+      "path": "src/apex/adapters/genuine_multi_asset_history_postgres.py",
+      "sha256": "ea46491141822a89187d961f379b2c5136e9b937bd61824066f6188b46fe517b",
+      "size": 8962
+    },
+    {
+      "path": "src/apex/adapters/historical_market_data_postgres.py",
+      "sha256": "96c0038494aa142e1bf209383652174d23e23f4a65d4d253f54926dfad899643",
+      "size": 17774
+    },
+    {
+      "path": "src/apex/adapters/historical_replay_postgres.py",
+      "sha256": "c7e1a09e2d0e522bfc12545a947ee260801b3238f609356cee4719c162ecd98b",
+      "size": 22617
+    },
+    {
+      "path": "src/apex/adapters/historical_total_market_context_sources.py",
+      "sha256": "f6bcdf6db0d208aff2ebcd3df89eab1694174aed4b4b714e62f59342d4740ac7",
+      "size": 13142
+    },
+    {
+      "path": "src/apex/adapters/investment_mandate_postgres.py",
+      "sha256": "fbb67e74e555e363b7595bfc3ebb82fc36b240fa7cd2ddc5df9a6567c8c9b8d0",
+      "size": 16993
+    },
+    {
+      "path": "src/apex/adapters/kalshi_baseline_quote_postgres.py",
+      "sha256": "efbb76a936a1e4db48fbe359329ecc7e44e1e9793e690daa0b281829ace835f1",
+      "size": 41407
+    },
+    {
+      "path": "src/apex/adapters/kalshi_capture_fixtures.py",
+      "sha256": "c0fc22e78211269ce932c54cde385e8b1a32324ecc16d521e7a6fd08e825da35",
+      "size": 5830
+    },
+    {
+      "path": "src/apex/adapters/kalshi_comparison_fixtures.py",
+      "sha256": "bd69fd50f2e24f7d764b58c1c22a8bbde8a313786c7cb9be746f6b6085936b37",
+      "size": 8691
+    },
+    {
+      "path": "src/apex/adapters/kalshi_complement_fixtures.py",
+      "sha256": "c5c1f9b3f9ada70619b951fc5db73d9790accf7e4f6b86218d0fb98ef8965225",
+      "size": 8699
+    },
+    {
+      "path": "src/apex/adapters/kalshi_consistency_fixtures.py",
+      "sha256": "f70e18353f9c5ce5970eb57f8e78bdf32a09aaf11d61da359e6c0c077bb0ca31",
+      "size": 8266
+    },
+    {
+      "path": "src/apex/adapters/kalshi_history_fixtures.py",
+      "sha256": "da214a4af86c90b56201b6541563c04eba85d8ad5ea471e81a88d5490c6b1b14",
+      "size": 5235
+    },
+    {
+      "path": "src/apex/adapters/kalshi_market_fixtures.py",
+      "sha256": "348fa7e7a5b21df008c1c572af0b869175b48e8d1b12dfed80981d33edd9fe53",
+      "size": 4925
+    },
+    {
+      "path": "src/apex/adapters/kalshi_operating_acceptance.py",
+      "sha256": "6b9234b264928bd949f188f1b8ca63a66087883c78df1feb01a182edf276799d",
+      "size": 11169
+    },
+    {
+      "path": "src/apex/adapters/kalshi_operating_postgres.py",
+      "sha256": "fd759c11a87c3f495c95161d8d2ef530bbd742b9745e3f1005dca5989fefbc98",
+      "size": 32804
+    },
+    {
+      "path": "src/apex/adapters/kalshi_orderbook_history_fixtures.py",
+      "sha256": "21cfc9c370e4e0a7209f9a94631741bd2f119b35bffd792f2447672808127784",
+      "size": 7139
+    },
+    {
+      "path": "src/apex/adapters/kalshi_public.py",
+      "sha256": "48c4cad176130ec26d476117276bc2cf04e36b1ec1ae6c04adce3bb95896995d",
+      "size": 39287
+    },
+    {
+      "path": "src/apex/adapters/kalshi_read_only.py",
+      "sha256": "197d150a5437055f0123095fa04fc72ed23d5d73d2686d442fb1beeaae6684c1",
+      "size": 10553
+    },
+    {
+      "path": "src/apex/adapters/kalshi_read_only_acceptance.py",
+      "sha256": "4590795c2c7bd92ab2fe747f5bda00ea0ba90cd2e4d0dc84a58251badb53af3c",
+      "size": 4483
+    },
+    {
+      "path": "src/apex/adapters/kalshi_read_only_postgres.py",
+      "sha256": "6f13868a7817f52cd6d4996455423e9ba3b3d046f421a6540f2b650bf5ffee59",
+      "size": 17087
+    },
+    {
+      "path": "src/apex/adapters/kalshi_resolution_postgres.py",
+      "sha256": "27c74c2194f45cb57a44d9d9e2e4363bc0af4a0a699ee49ca99aa76d9db9a6c6",
+      "size": 10059
+    },
+    {
+      "path": "src/apex/adapters/kalshi_sweep_fixtures.py",
+      "sha256": "ce946b61f492ebaeae94bea538e7a53dc254e8ebe226801273539bc39768c341",
+      "size": 14621
+    },
+    {
+      "path": "src/apex/adapters/kalshi_threshold_fixtures.py",
+      "sha256": "e5a50fb4375c94a1f2dfad90abea051beb071dddfe76ebaf7c8fdefc7384b5f3",
+      "size": 14488
+    },
+    {
+      "path": "src/apex/adapters/live_market_observation_postgres.py",
+      "sha256": "8663e069aa45c230ba4825c6288dc163242d8edafee40ffd54440155fea95f10",
+      "size": 16635
+    },
+    {
+      "path": "src/apex/adapters/live_observation_requirements.py",
+      "sha256": "f007c244436971960a12fc115588497427b3a7e0ac06997d3e31ca7df46b69d9",
+      "size": 8649
+    },
+    {
+      "path": "src/apex/adapters/live_preflight_acceptance.py",
+      "sha256": "a8c2875e35c7618a2d5cab9e809b2632c6331e89730fc22335d2d108421cf45c",
+      "size": 14687
+    },
+    {
+      "path": "src/apex/adapters/live_preflight_postgres.py",
+      "sha256": "1d22012d59c9a459eea597f9508267c0fbbbf59ab4cb6211e7c2a837260e1434",
+      "size": 16844
+    },
+    {
+      "path": "src/apex/adapters/live_readiness_acceptance.py",
+      "sha256": "d955f0595ec3d9969db025e56315cfe85f2679126d4a72e5c8c4cdcee0571462",
+      "size": 16744
+    },
+    {
+      "path": "src/apex/adapters/live_readiness_postgres.py",
+      "sha256": "21f6538f26981f7c34c7a0152c929121ecb66e938651c899449898052ae04e11",
+      "size": 24844
+    },
+    {
+      "path": "src/apex/adapters/operating_cycle_postgres.py",
+      "sha256": "47f18fe4d355b6afe28fd81b5f5a7950886b9a9687371db995a94fa1003baa89",
+      "size": 50884
+    },
+    {
+      "path": "src/apex/adapters/operating_cycle_tasks.py",
+      "sha256": "ce8f631b3d882ffb5f46097a2bd1601e3ffd9829e3aa7d1142cc26065fd32a51",
+      "size": 273321
+    },
+    {
+      "path": "src/apex/adapters/operational_backup.py",
+      "sha256": "366eec92a831013e41193c188c164196adaeefa00c5c755445c582ecbb4c4d35",
+      "size": 13357
+    },
+    {
+      "path": "src/apex/adapters/operational_reliability_acceptance.py",
+      "sha256": "4027692be58c455ae00bf8a4dc24f31ae64e538f28f20f4d9fd223493ba3a3e9",
+      "size": 22100
+    },
+    {
+      "path": "src/apex/adapters/operational_reliability_postgres.py",
+      "sha256": "d03853d6f90a2d64d8eb0afde86d60f7e368c572f43fc05865b7f5b24e42a347",
+      "size": 19641
+    },
+    {
+      "path": "src/apex/adapters/options_intelligence_postgres.py",
+      "sha256": "2aecdffb60f1c66ceee5ca88121830dc74d6bdf9e831bba5ccd3638320327868",
+      "size": 15105
+    },
+    {
+      "path": "src/apex/adapters/options_quote_intelligence_postgres.py",
+      "sha256": "6de626effc569eaceb13ab5ee36ca90a2e6c32e98a9f3411edeeec4083d2e9b7",
+      "size": 24864
+    },
+    {
+      "path": "src/apex/adapters/options_reference.py",
+      "sha256": "7bca21ac1fe451c544cdf2985c570499b89cf9ccdc7c884e1c73b0767a9f3859",
+      "size": 15936
+    },
+    {
+      "path": "src/apex/adapters/options_reference_source.py",
+      "sha256": "d9e1e8c64a97811722c3ccf43d478a1f73122b40693446db26220fe1b98251a3",
+      "size": 8220
+    },
+    {
+      "path": "src/apex/adapters/options_research_capture.py",
+      "sha256": "6bfdc7484167d078cb815a469f4ae044372124c176cfd87b6c12720522efa56b",
+      "size": 27196
+    },
+    {
+      "path": "src/apex/adapters/options_research_operations_postgres.py",
+      "sha256": "d5a4eaa0dfbf9d04f80cbc93d6a17ae8bd143c432dbcbdb8d7d70a593e2891cc",
+      "size": 8489
+    },
+    {
+      "path": "src/apex/adapters/options_structures_postgres.py",
+      "sha256": "24a73b9b5f5a4cf9f929d7dd33cc1842505b61efc6d040e996cbc695300849b9",
+      "size": 30096
+    },
+    {
+      "path": "src/apex/adapters/performance_attribution_acceptance.py",
+      "sha256": "61029c9ee4ad32f47fbb742a5df1009e84fc4ccecf626f0bd30484887ffcc79c",
+      "size": 7442
+    },
+    {
+      "path": "src/apex/adapters/performance_attribution_postgres.py",
+      "sha256": "42ee5b9f039b07f07bc27ab5765f42eeace94b3bf8b837bba46d5e47ecf4006c",
+      "size": 19598
+    },
+    {
+      "path": "src/apex/adapters/performance_attribution_sources.py",
+      "sha256": "8ab8ff55bd0eda8318897ea14ebe43599f07f3398726f7022526bc7dbbf52f01",
+      "size": 21240
+    },
+    {
+      "path": "src/apex/adapters/portfolio_intelligence_postgres.py",
+      "sha256": "b3068dca304052227dd61f5d8158adf236f4f3e921f5ab7cce9733b23cf7fee2",
+      "size": 5786
+    },
+    {
+      "path": "src/apex/adapters/portfolio_state_postgres.py",
+      "sha256": "385e31e45a999f8ab91fc68204e9d7672d348d169cb914e2e6f903454b580700",
+      "size": 19795
+    },
+    {
+      "path": "src/apex/adapters/portfolio_state_sources.py",
+      "sha256": "032f77c48890cdee0afa46ad54c706a8b2a5224d065aa6a2397fe6220a292f4e",
+      "size": 2512
+    },
+    {
+      "path": "src/apex/adapters/postgres.py",
+      "sha256": "eced634a08d41c4d4b26de91355405842bc89b4e00079ba8eb8cabfd7ddf0ba7",
+      "size": 1199360
+    },
+    {
+      "path": "src/apex/adapters/postgres_unfilled.py",
+      "sha256": "150953eef36ac70405400311f695612eca7ecd6a99d809b5fef7160774031d86",
+      "size": 1992
+    },
+    {
+      "path": "src/apex/adapters/real_securities_postgres.py",
+      "sha256": "9421b0d88f00d800c8ec60b5efec6c5f52b020b51b5b69abf97980a99da2818c",
+      "size": 42859
+    },
+    {
+      "path": "src/apex/adapters/research_calibration_postgres.py",
+      "sha256": "d3878317bd7e3b79e5e1bb2d5a564f5934aed2f9970c8d88e440f803e0c4addf",
+      "size": 27439
+    },
+    {
+      "path": "src/apex/adapters/research_calibration_v2_postgres.py",
+      "sha256": "ff7694add55da98d05ec3018b62d48346ff9452fd1152b17b06be6804cd399c4",
+      "size": 19287
+    },
+    {
+      "path": "src/apex/adapters/research_evidence_postgres.py",
+      "sha256": "d23116cd42047ff0b5f6a37481150acb75dd3c73c52cecd5c9d777f58f61a808",
+      "size": 32337
+    },
+    {
+      "path": "src/apex/adapters/research_evidence_source.py",
+      "sha256": "129662df56af9a656d0f36370524b43599eb9d5c09b7d93cbd60adee1f0af54a",
+      "size": 10571
+    },
+    {
+      "path": "src/apex/adapters/research_integrity_artifacts.py",
+      "sha256": "60d85384bd23bcb78bc5033bb090e700f571c0f1fbc05a59dfcc5ee32461ba85",
+      "size": 7202
+    },
+    {
+      "path": "src/apex/adapters/research_integrity_demo.py",
+      "sha256": "c2065938f784e636b94ee5b8868cde061b2e5ae9df446043562b430aa98ab438",
+      "size": 23469
+    },
+    {
+      "path": "src/apex/adapters/research_integrity_postgres.py",
+      "sha256": "cbc92f20438072fdd1badb32cdb559389ebc2a579eee9272ccb938be31c9754c",
+      "size": 35862
+    },
+    {
+      "path": "src/apex/adapters/research_methodology_postgres.py",
+      "sha256": "a64b635a14d5a194fed1e9de0caf99b1715beb828574f313137dc7dd8b958315",
+      "size": 30957
+    },
+    {
+      "path": "src/apex/adapters/research_operations_acceptance.py",
+      "sha256": "e778adc3db967dabf718eee067fc2557f014122f24454e25c2e80e789d4fbe75",
+      "size": 8770
+    },
+    {
+      "path": "src/apex/adapters/research_operations_executor.py",
+      "sha256": "f2ca7b4a9129de50014adfc514b37e935b5b25e21a7afd11149c5fba1c29a24b",
+      "size": 16454
+    },
+    {
+      "path": "src/apex/adapters/research_operations_postgres.py",
+      "sha256": "707a1030ca6f5789b5285c47029375c6b6a03e67f25c7aada6a725b8f7d2c248",
+      "size": 29536
+    },
+    {
+      "path": "src/apex/adapters/research_operations_sources.py",
+      "sha256": "0f12f4932c5cb27b8d7ff19b30acfa76ea9d5024ae4e937bc5088e4ef71f3dc7",
+      "size": 22112
+    },
+    {
+      "path": "src/apex/adapters/research_replication_postgres.py",
+      "sha256": "3f71522b128c121e9a176f747b22113d5cdd6abad45f9f7b17847a1aa27cb166",
+      "size": 18241
+    },
+    {
+      "path": "src/apex/adapters/schema_compatibility_postgres.py",
+      "sha256": "8ef0284dd4cc7cd932d720af61520e14418f0f99e0da0fc2ddc29767018378b3",
+      "size": 4693
+    },
+    {
+      "path": "src/apex/adapters/securities_baseline_simulators.py",
+      "sha256": "cdf58fb2db634ad088f761030f05f974c400e3f034892026e11185a63bbec02e",
+      "size": 14909
+    },
+    {
+      "path": "src/apex/adapters/securities_baselines_postgres.py",
+      "sha256": "22cf46f0db74ff5546b6c2f181c3bc482b5a87f4f706bf0732eafa131e35b74a",
+      "size": 33438
+    },
+    {
+      "path": "src/apex/adapters/securities_baselines_synthetic.py",
+      "sha256": "61e78e72e96f86b720ebe505808e3e191cce058b023097ea2d75b627af36df73",
+      "size": 15174
+    },
+    {
+      "path": "src/apex/adapters/securities_data.py",
+      "sha256": "92181905ab91e86c74f8ec7ea3884d4d741c6a43ff5292b52bfe7d50bad7c23c",
+      "size": 24045
+    },
+    {
+      "path": "src/apex/adapters/securities_ensemble_postgres.py",
+      "sha256": "3a573d952f1dddaefe2aa1799796627f1eb12515ef5304e00c724fd713745505",
+      "size": 4022
+    },
+    {
+      "path": "src/apex/adapters/securities_external.py",
+      "sha256": "e678c658b45a716926c197e0bb59e4af933d5bfaf3562f5e4e0b1c7ca942dd3a",
+      "size": 5631
+    },
+    {
+      "path": "src/apex/adapters/securities_paper_external.py",
+      "sha256": "bcab6c82bd08c401c0acf28dfca3d19d688ef46f3a992e335d8d82307a042b27",
+      "size": 4276
+    },
+    {
+      "path": "src/apex/adapters/securities_paper_postgres.py",
+      "sha256": "c47cb5008d01df8f2edb81b22510ee8e4cd98324185e4a427060b8d095c0c3b2",
+      "size": 76517
+    },
+    {
+      "path": "src/apex/adapters/securities_paper_synthetic.py",
+      "sha256": "234c1502dccc5e4f1b2081aa293cbe841e782caca8c9182cc702d84116eb25df",
+      "size": 31806
+    },
+    {
+      "path": "src/apex/adapters/securities_postgres.py",
+      "sha256": "92296e67955795ae119f49ed7dd4cc83773dc3c0701d9906e559e4e43cac5b70",
+      "size": 39963
+    },
+    {
+      "path": "src/apex/adapters/securities_strategy_intelligence_postgres.py",
+      "sha256": "ad79f7c52b1fb90f382a12bea1eab482d77ee950da643ab17a19b6513dead1cf",
+      "size": 6218
+    },
+    {
+      "path": "src/apex/adapters/securities_strategy_lab.py",
+      "sha256": "72057798fe12fac72094b57d0352cf2d161b523793d8220143fee75183f5b996",
+      "size": 8689
+    },
+    {
+      "path": "src/apex/adapters/securities_strategy_lab_dataset_postgres.py",
+      "sha256": "26a4af10f91c536c86cd825137b9024240c32b9c701004279557cab59c0398cf",
+      "size": 9036
+    },
+    {
+      "path": "src/apex/adapters/securities_structure_outcome_postgres.py",
+      "sha256": "c372f728c437d122206af9d10ae4f8806b80e87ebb1c2e737c6e7d494042fded",
+      "size": 12735
+    },
+    {
+      "path": "src/apex/adapters/securities_synthetic.py",
+      "sha256": "b6d0aeae1ec0f1c50b7af9ebff9be969482747bd4fb57bfc8cf007181fc8d98a",
+      "size": 24397
+    },
+    {
+      "path": "src/apex/adapters/securities_total_return.py",
+      "sha256": "a3898762367596ec5b1140dce71624cef84c7413f9dbf9df4e6def5aeaa5e665",
+      "size": 1769
+    },
+    {
+      "path": "src/apex/adapters/security_identity_postgres.py",
+      "sha256": "5d4b51019f32b54fec2e9c734bcbef76c574e7b3b0cb5ab4fc1454e325f10d90",
+      "size": 16162
+    },
+    {
+      "path": "src/apex/adapters/security_reference.py",
+      "sha256": "5cccc165b168c05b89a387de6f563a821b26f41bb5e0a9669f68dcfaba46b3d6",
+      "size": 16242
+    },
+    {
+      "path": "src/apex/adapters/security_reference_postgres.py",
+      "sha256": "f8e85ad77ec642b671ce0e38c0ad19df4e71e6f97b012566d47173e05efbf3ee",
+      "size": 19945
+    },
+    {
+      "path": "src/apex/adapters/shared_opportunity_postgres.py",
+      "sha256": "771914913196c56ca7362197623b99017e732d45f05b620b22df3bc9adf135b1",
+      "size": 28126
+    },
+    {
+      "path": "src/apex/adapters/shared_opportunity_sources.py",
+      "sha256": "6f4e05f439cbf2a53cbe94172497e29819723098c57ef997ad59fb6d86a54734",
+      "size": 126163
+    },
+    {
+      "path": "src/apex/adapters/simulator.py",
+      "sha256": "fcf45409588b589e2c94fb5c4b2f5e11b20864e21852afb937e27bf4a44bd0b7",
+      "size": 12026
+    },
+    {
+      "path": "src/apex/adapters/strategy_evaluation_history_postgres.py",
+      "sha256": "465fe75e7cb3897960a7a9ce3240b9a8de0ca394b155be5484c8efe5d0e79946",
+      "size": 18075
+    },
+    {
+      "path": "src/apex/adapters/strategy_lab_artifacts.py",
+      "sha256": "80b08d52c6e923dc5dd2094811fe90f8ef5cc2cf319a0a075d72bb8f97eb58be",
+      "size": 5213
+    },
+    {
+      "path": "src/apex/adapters/strategy_lab_event_markets.py",
+      "sha256": "58e1362a2194d7151e17d11761f80d2743fc1b0b49e284f47d55a0e40a2e4309",
+      "size": 19076
+    },
+    {
+      "path": "src/apex/adapters/strategy_lab_postgres.py",
+      "sha256": "5ba1d8964f6020113c4a65185212492162a34585f0641195d7f17ee3443d5c2d",
+      "size": 61085
+    },
+    {
+      "path": "src/apex/adapters/strategy_lab_shadow_models.py",
+      "sha256": "f9d5c2d656a158cd0361a27753427613c22dd77b58d399394f3fda24a767ff16",
+      "size": 4649
+    },
+    {
+      "path": "src/apex/adapters/strategy_lab_shadow_synthetic.py",
+      "sha256": "585f53e283272a7efa1b6e9a3d61c151a7d63e49295a9e3772d46cadb2363c97",
+      "size": 15085
+    },
+    {
+      "path": "src/apex/adapters/strategy_lab_synthetic.py",
+      "sha256": "999109cd09bd5e6e563690136ad39a9272cf837fc2588fc147122612dbf3252c",
+      "size": 8359
+    },
+    {
+      "path": "src/apex/adapters/strategy_paper_trial_lifecycle_postgres.py",
+      "sha256": "7437e7d053cb5830b0b51c7e48a95098b4b2ddcad306a38c032242b7943b46ed",
+      "size": 19676
+    },
+    {
+      "path": "src/apex/adapters/strategy_trial_outcome_assessment_postgres.py",
+      "sha256": "57bcea1ce7bdb0f35116576cd6f049caca1e410db6d6dbd858d0555e3ab8b97c",
+      "size": 15637
+    },
+    {
+      "path": "src/apex/adapters/strategy_version_provenance_postgres.py",
+      "sha256": "9d9910ec8b5e2b116972b6d679ee10536a3d462815835c0848b0c080dc394ec4",
+      "size": 23288
+    },
+    {
+      "path": "src/apex/adapters/sustained_shadow_operations_postgres.py",
+      "sha256": "25af2b0f60573cb58a35c99b5fd559ebca9131ab31317cd2f42c0f191f771a68",
+      "size": 6173
+    },
+    {
+      "path": "src/apex/adapters/sustained_shadow_postgres.py",
+      "sha256": "1136ea816a17185e43a1ef76cf80a6ae84707b5fccd611a96542849d91842c39",
+      "size": 11145
+    },
+    {
+      "path": "src/apex/adapters/total_market_context_postgres.py",
+      "sha256": "3e6717cb8a4590ed85acb88df9d6716e3c096495b3320906c439bf22b8fe645b",
+      "size": 25813
+    },
+    {
+      "path": "src/apex/adapters/total_market_context_sources.py",
+      "sha256": "7287b8cf2ddd5372d5e177336ca0dbd27a06c0a78267a3c88dcb77e90169ae1f",
+      "size": 12083
+    },
+    {
+      "path": "src/apex/adapters/xnys_calendar.py",
+      "sha256": "9cc5b9a46c9139829c130e303e01b3fdf0e5b3f8932e18442ca78a96ea07cb58",
+      "size": 3223
+    },
+    {
+      "path": "src/apex/application/__init__.py",
+      "sha256": "738baef73ea88275e9f9998862ced9a73108e19c47fa837828bde207ff0d6c07",
+      "size": 60
+    },
+    {
+      "path": "src/apex/application/authorize_order.py",
+      "sha256": "84488e6a100822b9407541b312ea06350c09de8a2992a800e95f455fcccd6c72",
+      "size": 17539
+    },
+    {
+      "path": "src/apex/application/autopilot.py",
+      "sha256": "3e4bd6c2c77a14244691dc172a874131665c634c1a0bbe56114b2f32c5b84acf",
+      "size": 36020
+    },
+    {
+      "path": "src/apex/application/batch_learning.py",
+      "sha256": "0c27e6db7c33dce7cc0172bfc1bb3eb690d5a213a125df4512b45850dfc37c47",
+      "size": 67080
+    },
+    {
+      "path": "src/apex/application/broad_equity.py",
+      "sha256": "d4e1d54a145faa9a60bfea54198104ced4d974b6e911fa53a4fcf548082458b8",
+      "size": 6542
+    },
+    {
+      "path": "src/apex/application/build_event_observation_history.py",
+      "sha256": "c68f53af46e5c2eb203f542c971a2bc557a31b2c4831cb66435ea04992357562",
+      "size": 25557
+    },
+    {
+      "path": "src/apex/application/build_orderbook_observation_history.py",
+      "sha256": "406aaa1373b56e1aedd196bcf1333769c43f06240b3cb5a231b0d7be8418b8ce",
+      "size": 29817
+    },
+    {
+      "path": "src/apex/application/candidate_generation.py",
+      "sha256": "963b740432d337456b0151662083e81b89a4dc69eaa53640ce191eb404074b88",
+      "size": 66811
+    },
+    {
+      "path": "src/apex/application/capture_public_orderbook_session.py",
+      "sha256": "aa93798a11aecdd1b3ff2c900ab705de5bd55525b8426103c24ba93d4d1cdfbd",
+      "size": 71462
+    },
+    {
+      "path": "src/apex/application/coinbase_read_only.py",
+      "sha256": "959fabe69e9e053fa9de78fb29f77f54203923aab3e1235be2bde76e29f06752",
+      "size": 36340
+    },
+    {
+      "path": "src/apex/application/compare_public_scans.py",
+      "sha256": "a026ddc584731a8942cbfd4019b93c4d06f1cc04f0e138b232f3ebd95b1c2c83",
+      "size": 11784
+    },
+    {
+      "path": "src/apex/application/corporate_calibration_depth.py",
+      "sha256": "2b0f0187727138b051e3b71b9db9c8ba5de96795b5108c19f79743af1109daa9",
+      "size": 117836
+    },
+    {
+      "path": "src/apex/application/corporate_fundamentals.py",
+      "sha256": "520e2e8ac0f777756f2cb8a7ccdfa9935909818356f4ed0af7d6968047236bd7",
+      "size": 26247
+    },
+    {
+      "path": "src/apex/application/corporate_market_research.py",
+      "sha256": "cf02e940b20a3e9a2ebf8ff79590cde971fe0de8b61ac56f064ceafdd9985a07",
+      "size": 151124
+    },
+    {
+      "path": "src/apex/application/corporate_regime_followup.py",
+      "sha256": "830285be543c282117531e642b17e9c8939a5943adfbcbbb1a80eee16dfb71cb",
+      "size": 80984
+    },
+    {
+      "path": "src/apex/application/counterfactual_classification.py",
+      "sha256": "eb4544f79c7679168e181146c5d3569ce03b9bf8307e0cd1362f7d6df909b994",
+      "size": 3885
+    },
+    {
+      "path": "src/apex/application/counterfactual_followup.py",
+      "sha256": "57fe285e3c748de5c2e9836e00c3e17020559524fedca398822d23dd0893d6b9",
+      "size": 123507
+    },
+    {
+      "path": "src/apex/application/counterfactual_ledger.py",
+      "sha256": "eae07bbd0fc8292518fd2e832c9c72c140383e2152c9c4b5ea9f715503e6bf29",
+      "size": 8408
+    },
+    {
+      "path": "src/apex/application/counterfactual_outcome.py",
+      "sha256": "a5d5441e56ef9ebad4850ecee9f70edb7d25efc479c546d30f68c2471d42488e",
+      "size": 13311
+    },
+    {
+      "path": "src/apex/application/cross_market_research.py",
+      "sha256": "f3c3bb361dc7dcd4395c54c5ee5156ee854a7fd99f461dddc56e25cda9ba92f7",
+      "size": 123792
+    },
+    {
+      "path": "src/apex/application/cross_venue_allocation.py",
+      "sha256": "7c41dda3f237fd11d9c3d26380f65f49b1631c7d865e4e4fcee9b82ce4754538",
+      "size": 4878
+    },
+    {
+      "path": "src/apex/application/crypto_campaign.py",
+      "sha256": "a560e290a35614cc96274aeeb850954b46ebcb577431c69ca4ba03cd6e00d4d7",
+      "size": 45177
+    },
+    {
+      "path": "src/apex/application/crypto_campaign_candidate.py",
+      "sha256": "9ab54afccefa199fbe836df99dd1d671e9afc3cbc9516f82de6d2c85b541327a",
+      "size": 53579
+    },
+    {
+      "path": "src/apex/application/crypto_campaign_candidate_2.py",
+      "sha256": "eeb46742947fc538723ca40826a7c1f762b9577abc3a40d18c5f0257ad7a5cf9",
+      "size": 60225
+    },
+    {
+      "path": "src/apex/application/crypto_campaign_generic.py",
+      "sha256": "38533d4ef36d8b52429e0e0becf8a236e86f9593f8a516794db353b19133b52f",
+      "size": 45115
+    },
+    {
+      "path": "src/apex/application/crypto_challenger.py",
+      "sha256": "342bbc54feda62e018423ab5cb885bdf60303ebafd854b7d19dbc5559aba9cbb",
+      "size": 38449
+    },
+    {
+      "path": "src/apex/application/crypto_dossier.py",
+      "sha256": "04361d9d1edd029a4b05bc126df4db674fa9a784669b44e6270dfacda1a90e86",
+      "size": 31048
+    },
+    {
+      "path": "src/apex/application/crypto_market_pulse.py",
+      "sha256": "87de6cf3ca5abecdf6c345a009ff3eac07c3a69d9d940aca48d97f62b337aa43",
+      "size": 40415
+    },
+    {
+      "path": "src/apex/application/crypto_paper.py",
+      "sha256": "174a0e42448a3dc9fa0338faea0675c5dae4e5f997c837c03a69f41ac4603ca4",
+      "size": 44316
+    },
+    {
+      "path": "src/apex/application/crypto_research.py",
+      "sha256": "eab74ed7dcb6a77d0a69a21e7c44f4c8d5ae24661cf7d9e349bc14336f2e5cfe",
+      "size": 39265
+    },
+    {
+      "path": "src/apex/application/crypto_stateful_research.py",
+      "sha256": "fe337c25ebb14b850434d78685d22b8417eb69a3b0dde0104234f272dd73930e",
+      "size": 27623
+    },
+    {
+      "path": "src/apex/application/crypto_universe.py",
+      "sha256": "94ec31574c876009f091427763b4ea5f016164738a53decf0eea93ac7c629de4",
+      "size": 34129
+    },
+    {
+      "path": "src/apex/application/discover_public_events.py",
+      "sha256": "d27d0c1446957a4760786287574230a394cd05c42eae12056919857a873e5551",
+      "size": 24692
+    },
+    {
+      "path": "src/apex/application/discover_public_markets.py",
+      "sha256": "a02a6c2ec928d1a8328bdf2aff999e6aab266443c22c1ef7d7eae3a5485f2877",
+      "size": 19302
+    },
+    {
+      "path": "src/apex/application/evidence_recovery.py",
+      "sha256": "d79808c6605583c9bb8df1d790811cf41e7c7c1f1a2ac385c0d8ffd8a93789a7",
+      "size": 45946
+    },
+    {
+      "path": "src/apex/application/evidence_review.py",
+      "sha256": "d940704c594cc1b658a8ecf33fbd549a7d25b49a5382137bf831ce21a2c8fbaa",
+      "size": 68640
+    },
+    {
+      "path": "src/apex/application/execute_partial_fill_canceled_order.py",
+      "sha256": "33ea592a04238aaaf4b6a717cb9b39f5bb94d3f9ce1d192d5b3fbbf8583ea307",
+      "size": 21470
+    },
+    {
+      "path": "src/apex/application/execute_unfilled_order.py",
+      "sha256": "a4b7d1127873ac48d271fc7ad67e38684eee9ff9c6bdc26cb9389396c26a5299",
+      "size": 15877
+    },
+    {
+      "path": "src/apex/application/external_paper.py",
+      "sha256": "3ecba4bcae3496323b1f41e0c309e36e26b146575331402e4a6f94fb4c9d93dc",
+      "size": 98183
+    },
+    {
+      "path": "src/apex/application/external_strategy_research.py",
+      "sha256": "559d5bf4d3b4bb266d7edbc9874643d5822f227f5a192bb5cc33cf072d8bb786",
+      "size": 23805
+    },
+    {
+      "path": "src/apex/application/first_generated_research_method.py",
+      "sha256": "eff122d07ff660d3e188bfae1116d1a9e9aaf477730052abf526a99007e23ff3",
+      "size": 12762
+    },
+    {
+      "path": "src/apex/application/genuine_multi_asset_history.py",
+      "sha256": "e717e96b34d8ac78016ac8c2dbf61b58bc61fe07c4b7f8ed02ffb209fee2c1eb",
+      "size": 18052
+    },
+    {
+      "path": "src/apex/application/historical_market_data.py",
+      "sha256": "4a08cbf2fb52c3861139d833435ad9f337c64c522a28d5c021f7382f3253d39d",
+      "size": 34432
+    },
+    {
+      "path": "src/apex/application/historical_replay.py",
+      "sha256": "77629c7af1594d8b8b55d3ec3639a583e9b6711ef61ce39b6fcea452908863cb",
+      "size": 57046
+    },
+    {
+      "path": "src/apex/application/interfaces.py",
+      "sha256": "43a6efe20dd91f6d6ab0546d8a0d25721509bbfff1f7c14c204755c45b1faa1d",
+      "size": 55359
+    },
+    {
+      "path": "src/apex/application/investment_mandate.py",
+      "sha256": "a0fe873ca2e343046f5ea2e5c9b1f804280a67fc9bd08da921c9d3025313b5d8",
+      "size": 8054
+    },
+    {
+      "path": "src/apex/application/kalshi_baseline_quote.py",
+      "sha256": "fc0da18218afd7c3d5d87697a83f23d15d8b383d7e117d374c3c53246666cc86",
+      "size": 24467
+    },
+    {
+      "path": "src/apex/application/kalshi_operating.py",
+      "sha256": "d8536ef0c157ec297daf758b56a002ff9d8fdf8874e9681f4ec1c62d5eccfb99",
+      "size": 31432
+    },
+    {
+      "path": "src/apex/application/kalshi_read_only.py",
+      "sha256": "a6e8899f28072357c59365ae156f1e1e1e4e12ad4d53c9aa3a6a3941c0687cd7",
+      "size": 35646
+    },
+    {
+      "path": "src/apex/application/kalshi_resolution.py",
+      "sha256": "0b50c7901995d96c3c0b77db20c69cc8fa82befc9edde08d5657d82f0b62fcc4",
+      "size": 6752
+    },
+    {
+      "path": "src/apex/application/live_market_observation.py",
+      "sha256": "c67b4eee0d83311db58dee1882b1418076db275eed3ce0b98bf2fefebd735d69",
+      "size": 13677
+    },
+    {
+      "path": "src/apex/application/live_preflight.py",
+      "sha256": "a8e3d272e05559231040ddad65eb6db48bfb671b120eb943f39715c9848cfc31",
+      "size": 29608
+    },
+    {
+      "path": "src/apex/application/live_readiness.py",
+      "sha256": "568ae425fc0ff7b832c7a63bedc508f14be2da5ab636457513e0c935807a575e",
+      "size": 22294
+    },
+    {
+      "path": "src/apex/application/market_dynamics_shadow.py",
+      "sha256": "eef42504118f2363e30d7c4a5896a83e630222814fe260b02c7a89edeba01671",
+      "size": 15771
+    },
+    {
+      "path": "src/apex/application/multi_strategy_shadow.py",
+      "sha256": "5fae0edafaa8c641113341dc2ad6df1b772e2a4a699fb75bcac6de6a0e167a8a",
+      "size": 29258
+    },
+    {
+      "path": "src/apex/application/operating_cycle.py",
+      "sha256": "ce20b0eb684f444d0ab7153257a62ee03c26d829f494c976b8937fdcccf36b9c",
+      "size": 38057
+    },
+    {
+      "path": "src/apex/application/operational_reliability.py",
+      "sha256": "81ab9aa6e79e65db58d1c91040b233789cf446b424587e27993f22fd6be95daf",
+      "size": 14931
+    },
+    {
+      "path": "src/apex/application/operator_console.py",
+      "sha256": "b49ce9fc52ebfbae699d895b201706eb3b404242123ee315d762d74825ee4902",
+      "size": 5620
+    },
+    {
+      "path": "src/apex/application/operator_console_evidence.py",
+      "sha256": "5afb5a7e70f714f6c83d8ae39b24b78fd742064ceaccf0bf36dfbb7b31a104b4",
+      "size": 54354
+    },
+    {
+      "path": "src/apex/application/operator_console_v1.py",
+      "sha256": "6e9ce25c07eded9b71fda83f5d66d9067137895ea04b19480de7c364e5d114bb",
+      "size": 99623
+    },
+    {
+      "path": "src/apex/application/options_intelligence.py",
+      "sha256": "b22929bf05ba897191ad90d46aefd0973bfa3330b17935b66196c94d98020c0e",
+      "size": 7498
+    },
+    {
+      "path": "src/apex/application/options_quote_intelligence.py",
+      "sha256": "cf13bb6a55e4d6edc17884d201367c40d8628d66494b33e8454cd069f6ff1c59",
+      "size": 20414
+    },
+    {
+      "path": "src/apex/application/options_research_operations.py",
+      "sha256": "554063f7eb74ae4aacde4d6650cab96d25adefc9fc0f978ad2153fe5dd476fc2",
+      "size": 9346
+    },
+    {
+      "path": "src/apex/application/options_structures.py",
+      "sha256": "79f99ebcc0a012fad54199187e735811dc2fce29a339b844c2f30c66ceec9c7f",
+      "size": 16280
+    },
+    {
+      "path": "src/apex/application/orderbook_microstructure_shadow.py",
+      "sha256": "5c2e9b3f2af6ca6dfd4a5d215a11e377cf9694308ba147e9963e67beb199f18f",
+      "size": 21351
+    },
+    {
+      "path": "src/apex/application/paper_portfolio.py",
+      "sha256": "577be4b9fa8918aef7be4f239bc7d2639d7d2377b66b61992abac37fc0bb3e1d",
+      "size": 22850
+    },
+    {
+      "path": "src/apex/application/performance_attribution.py",
+      "sha256": "bc0c5ed53c295823c7fc6d4076402e9665132c6cbacef12c68a4cbe30843cf7c",
+      "size": 10159
+    },
+    {
+      "path": "src/apex/application/portfolio_intelligence.py",
+      "sha256": "a588bba4a75403569f4ba7e54d1782caef1213156f16e4a50b118a9d0031e9be",
+      "size": 3468
+    },
+    {
+      "path": "src/apex/application/portfolio_state.py",
+      "sha256": "9dd41d05b9b9ccd391938c3310cc203b01cfc0c2e490ba4283299c31ecc5c152",
+      "size": 10536
+    },
+    {
+      "path": "src/apex/application/real_securities_data.py",
+      "sha256": "bfdf1856a495bbb938e998179565a596c8337e9bfe19e404093bb2a2fb416171",
+      "size": 33652
+    },
+    {
+      "path": "src/apex/application/reconcile_public_outcome_identity.py",
+      "sha256": "d0ef0ef0bf0f42dd1f6008e8e0f6877d2efab56192c20475fcb08470fc8e78e0",
+      "size": 11523
+    },
+    {
+      "path": "src/apex/application/research_calibration.py",
+      "sha256": "06b6e3890c8a966cae7ad341279b55a1bab742b17b119b20c9f34a5155ffb139",
+      "size": 97241
+    },
+    {
+      "path": "src/apex/application/research_calibration_v2.py",
+      "sha256": "7c62edb6b265aef9f9f5468b386be12a73c8b95d7957353232f7fb32fc216cec",
+      "size": 122584
+    },
+    {
+      "path": "src/apex/application/research_evidence.py",
+      "sha256": "3b8a43524fde2704b083d565b89211cd61206c7f26d7e1ba1da1f5705e413f15",
+      "size": 58888
+    },
+    {
+      "path": "src/apex/application/research_integrity.py",
+      "sha256": "5fe754889bab23242ab0a878ae85b64fdc21fb743cd4255b0fc2dcd1841c9faa",
+      "size": 57119
+    },
+    {
+      "path": "src/apex/application/research_methodology.py",
+      "sha256": "07bc67b301c4160041692d84427ca48a311046dae92b538f477b27757a91132e",
+      "size": 57954
+    },
+    {
+      "path": "src/apex/application/research_operations.py",
+      "sha256": "818792e1446209f13425f329fa1c9723871ed8e78024b11b541d2147d309cc1c",
+      "size": 68111
+    },
+    {
+      "path": "src/apex/application/research_replication.py",
+      "sha256": "830fbff783bcb971caf3ddcdec9de68d1f5f9681520511f6cbfdcfeb34f3c2db",
+      "size": 74907
+    },
+    {
+      "path": "src/apex/application/run_simulation.py",
+      "sha256": "0caa641e0f45c678f24e537b44c99242ba948eaff6b6a87f62a7fc29f7907607",
+      "size": 52916
+    },
+    {
+      "path": "src/apex/application/scan_public_binary_complements.py",
+      "sha256": "8fbcaa620fa7aa3ef65a815e08293b636b728af10ab33df603b48f8bd4e577c7",
+      "size": 32499
+    },
+    {
+      "path": "src/apex/application/scan_public_threshold_ladders.py",
+      "sha256": "b240744a43ca24604008f0428a5de6768b7f89ed5e7cdfa8110c53819b9ca7c5",
+      "size": 49711
+    },
+    {
+      "path": "src/apex/application/securities.py",
+      "sha256": "a50e95c8003a7450d0ef0c98834767cc1853b3df3273a66a7f01146428ec9ce7",
+      "size": 28826
+    },
+    {
+      "path": "src/apex/application/securities_baselines.py",
+      "sha256": "4e1e49bdb8c791f999d96ebb17fead3cf38432abb48de57bb8b0ed5dc44ed026",
+      "size": 19381
+    },
+    {
+      "path": "src/apex/application/securities_candidate_evaluation.py",
+      "sha256": "ac9359252d7165ca540ba9293d6ea121265aae238ed8ee0dd9aff5619d70c7cc",
+      "size": 7814
+    },
+    {
+      "path": "src/apex/application/securities_ensemble.py",
+      "sha256": "320d84e499d17d060b7224c6140e6b509ebea30b06cbab941d95b2cb54cb2d69",
+      "size": 14767
+    },
+    {
+      "path": "src/apex/application/securities_paper.py",
+      "sha256": "87c4d3e269af57927937dbb5d887bd1e127c21d62be19f564417dcb40aaae0ae",
+      "size": 60961
+    },
+    {
+      "path": "src/apex/application/securities_strategy_intelligence.py",
+      "sha256": "6392abf175408d02e33e54b600932fb3eb0ce0db16f1e2b07fea44efb1d13116",
+      "size": 34056
+    },
+    {
+      "path": "src/apex/application/securities_strategy_lab_dataset.py",
+      "sha256": "8562e470f9f33c655a5c5763c3cbecc8f76cb15c8d1df6bedd8013e48fe54d44",
+      "size": 35902
+    },
+    {
+      "path": "src/apex/application/securities_structure_outcome.py",
+      "sha256": "067f2dc2b98c3a283b78e4c499acad8e64ac7873de92ca5e4e3eabb58ad6092f",
+      "size": 8848
+    },
+    {
+      "path": "src/apex/application/security_identity.py",
+      "sha256": "db790059a279a43cc9a894750df5cf7a9fcc6982f63389fcd289671434ccddf0",
+      "size": 17526
+    },
+    {
+      "path": "src/apex/application/security_reference.py",
+      "sha256": "fd76dcd10f72e9090e76a7525caa446ebddf74fa428913cfe0123440f42d5f8e",
+      "size": 4911
+    },
+    {
+      "path": "src/apex/application/settle_partial_fill_canceled_no.py",
+      "sha256": "d5a9c7acc36bd62b642e68f21640162272e95a29e7638842c5b1090e64a01d39",
+      "size": 14073
+    },
+    {
+      "path": "src/apex/application/shadow_operations.py",
+      "sha256": "2fb231845510b6ca0ea5077406b4f01714547b13afc4701877b0d6582bcbdb1d",
+      "size": 124622
+    },
+    {
+      "path": "src/apex/application/shared_opportunity.py",
+      "sha256": "a3367713d4268bb9258d9eb1dc7ab872d97f042129fcbd99d67a1ada1968a107",
+      "size": 6268
+    },
+    {
+      "path": "src/apex/application/strategy_evaluation_history.py",
+      "sha256": "d1822cbc9e96b5ac5095dd9423dc64fc1bd0d7c73cae240f25f0a25543e49d15",
+      "size": 18056
+    },
+    {
+      "path": "src/apex/application/strategy_lab.py",
+      "sha256": "a3a5467133deb8dfa3d3e7829dc6e86b7a722a110d35cf20e37616930fc41ef1",
+      "size": 60047
+    },
+    {
+      "path": "src/apex/application/strategy_lab_shadow.py",
+      "sha256": "30c4dcab38da292b388867233cc6306a7a08ccc4ebc2a4019e65ca87a4b7c0be",
+      "size": 58110
+    },
+    {
+      "path": "src/apex/application/strategy_paper_trial.py",
+      "sha256": "7b8bf57cb79b650a3c3150afca6a5a709329b7cb37e46336e560e3c705e50c59",
+      "size": 26745
+    },
+    {
+      "path": "src/apex/application/strategy_paper_trial_lifecycle.py",
+      "sha256": "93188133a0af905007a22be053991c3a9a2d9c3147226b24fb6c286955f452c3",
+      "size": 12254
+    },
+    {
+      "path": "src/apex/application/strategy_shadow.py",
+      "sha256": "f70fe7bff76956cebd920adc45f7556668362aa4146a1e68c36220ea4e7297bb",
+      "size": 40252
+    },
+    {
+      "path": "src/apex/application/strategy_trial_outcome_assessment.py",
+      "sha256": "3f05b04b3d16092e9e859c1974530d048036ab4f3c4bc0a7000607eface225d7",
+      "size": 19992
+    },
+    {
+      "path": "src/apex/application/strategy_version_provenance.py",
+      "sha256": "76096e92ea51096820c3d7f98d7e2c67e91478595192b9db009abd3ea7f3558a",
+      "size": 19513
+    },
+    {
+      "path": "src/apex/application/sustained_shadow.py",
+      "sha256": "551b93dc409db0b95edc862683355ad6c0c11f886402d8fa0ef7a632661fc905",
+      "size": 9459
+    },
+    {
+      "path": "src/apex/application/sustained_shadow_operations.py",
+      "sha256": "105438551026bfa1a36e9d09d0e5ec3f2d191c4d3a89c58c9535666274b4cd7b",
+      "size": 7177
+    },
+    {
+      "path": "src/apex/application/sweep_public_kalshi_orderbooks.py",
+      "sha256": "da5ced35d6999c4e9e24fd218f6fddd64446c7e0b25eedd21d27a3d3afe82e39",
+      "size": 25207
+    },
+    {
+      "path": "src/apex/application/total_market_context.py",
+      "sha256": "12a48b7621f629c30677421e8793da3a9542098616718243f9bafc40b9a60df3",
+      "size": 6955
+    },
+    {
+      "path": "src/apex/cli.py",
+      "sha256": "a9a119e1e5f858566c4fe0cdff7141227d18b531255686964731440a7f18fd06",
+      "size": 588626
+    },
+    {
+      "path": "src/apex/domain/__init__.py",
+      "sha256": "5d48dc20ac86b68bf608a26c13e031d04c78ded95a4555b5345e67b5d0d14984",
+      "size": 755
+    },
+    {
+      "path": "src/apex/domain/autopilot.py",
+      "sha256": "f33fd51eec3b7419f2b9e1d23e5563134806efd158b57baa6add167d59b7989d",
+      "size": 16904
+    },
+    {
+      "path": "src/apex/domain/broad_equity.py",
+      "sha256": "9e3bf94f2a7e2d6add6c4e659e5485d8c7657e4d9ede0aaa395d170ab771619e",
+      "size": 27289
+    },
+    {
+      "path": "src/apex/domain/campaign.py",
+      "sha256": "d81b182aca3c817431614f306483bb41be2e027c409b2acbecba5371d8b0daa1",
+      "size": 5176
+    },
+    {
+      "path": "src/apex/domain/candidate_generation.py",
+      "sha256": "6f28b63c7104f12f1eb9557ca4c66a05ba46d52587f906a8db5662c9c1405754",
+      "size": 9349
+    },
+    {
+      "path": "src/apex/domain/coinbase_read_only.py",
+      "sha256": "8e4645e96570332a6af4a6fc152059fd6894d2fcc52607b1d513c425bef96e19",
+      "size": 25696
+    },
+    {
+      "path": "src/apex/domain/corporate_action_consistency.py",
+      "sha256": "83d3cd437e4a3f8cc389c76fc399a1efe3dedb3545a8c18f5ce63cf981ddacb0",
+      "size": 6395
+    },
+    {
+      "path": "src/apex/domain/corporate_calibration_depth.py",
+      "sha256": "ba8d31fcfa8410a8bf395014442572463f5b7fd3bc075de1b29a8ad8e0129d29",
+      "size": 49318
+    },
+    {
+      "path": "src/apex/domain/corporate_fundamentals.py",
+      "sha256": "5fb9ce72df6b69446e8d6b5927f90453b60156eab8a2a12ef1640c9013e22a3a",
+      "size": 117276
+    },
+    {
+      "path": "src/apex/domain/corporate_market_research.py",
+      "sha256": "4e80695426f76491a9a8deaedfbdd018b189d2b38d618d0c36a0f3243a65d00a",
+      "size": 45296
+    },
+    {
+      "path": "src/apex/domain/corporate_regime_followup.py",
+      "sha256": "db1018e88d87bbe8e0286b9b989e9f6a16364d190aac2fa4879a759e018d1eb6",
+      "size": 46218
+    },
+    {
+      "path": "src/apex/domain/counterfactual_classification.py",
+      "sha256": "18d3bcc08a7e6f0191d62b95a8fc2a887fbd97386ec6ac3909db710d1019dace",
+      "size": 29217
+    },
+    {
+      "path": "src/apex/domain/counterfactual_followup.py",
+      "sha256": "a3640b13a8dff7aa60b59e41520d4175bcd16e39b64cd6c875b3094a787521f4",
+      "size": 177724
+    },
+    {
+      "path": "src/apex/domain/counterfactual_ledger.py",
+      "sha256": "cfd0da20d04e42d7956b49f078326928c9440f16bc89846e70f82607391f7963",
+      "size": 17084
+    },
+    {
+      "path": "src/apex/domain/counterfactual_outcome.py",
+      "sha256": "e2172b7f80df5dcabde49bde92aabc1f3391338a0c24b1e3c4e05fa0ef151e16",
+      "size": 91031
+    },
+    {
+      "path": "src/apex/domain/cross_market_alignment.py",
+      "sha256": "8a038998c7c1f7c958f1478dad26e51637199c57a3e9989b425cae4051f4807a",
+      "size": 8908
+    },
+    {
+      "path": "src/apex/domain/cross_market_dataset.py",
+      "sha256": "39145d2e5f621c98fba2da780cbc58010330e8104c3956d349d9a097e829ef05",
+      "size": 6695
+    },
+    {
+      "path": "src/apex/domain/cross_market_research.py",
+      "sha256": "c841aa4438ad4478e004a34a05732e795eb41f03e46251832c426cd0ab100adc",
+      "size": 74066
+    },
+    {
+      "path": "src/apex/domain/cross_venue_allocation.py",
+      "sha256": "89b4cdf120e13697033b04b087ce54b05e7ccedddbc38c5b322a31a11d9fa5bc",
+      "size": 22393
+    },
+    {
+      "path": "src/apex/domain/crypto_campaign.py",
+      "sha256": "16d07f55d6eafb16e689993ebeb4a5dce7936f5098072e3461861cbf7bbcf5e7",
+      "size": 35807
+    },
+    {
+      "path": "src/apex/domain/crypto_campaign_candidate.py",
+      "sha256": "70f1d7e7c867121faa0d2d23cc1d2b5529aa492f773873e7172dca36bea21545",
+      "size": 32604
+    },
+    {
+      "path": "src/apex/domain/crypto_campaign_candidate_2.py",
+      "sha256": "965581baa43fa4a7bc033fe577d22db439d7a0be37204872d404b81a7a88597d",
+      "size": 40087
+    },
+    {
+      "path": "src/apex/domain/crypto_campaign_generic.py",
+      "sha256": "ed12928d489f57d0d0d4d6db9f9614b28cfed2b77b6c4b6d1a7637dbf68a059b",
+      "size": 55471
+    },
+    {
+      "path": "src/apex/domain/crypto_challenger.py",
+      "sha256": "c26612653cda8ab943ee96b6e27562b5bda2df8601629519bb88057bb7ca5163",
+      "size": 29793
+    },
+    {
+      "path": "src/apex/domain/crypto_dossier.py",
+      "sha256": "2b7c75f3c886d8941372dcfb06a26b728497ac53403936899a2574faaff67b57",
+      "size": 32213
+    },
+    {
+      "path": "src/apex/domain/crypto_market_pulse.py",
+      "sha256": "fc96829b00c9d4ae881a6726d4044fade406438d469b4bbc93d42328d24a9f87",
+      "size": 27183
+    },
+    {
+      "path": "src/apex/domain/crypto_paper.py",
+      "sha256": "3671b00a6dcad8eb52da3b5762ad79b767c40c6f0c65a3c88c78723fc2ab1793",
+      "size": 92023
+    },
+    {
+      "path": "src/apex/domain/crypto_research.py",
+      "sha256": "8b81500502eff0fccaf5d9f37dc9d6d2df74d62c008ff4a21ca2f2f9369d81bf",
+      "size": 34559
+    },
+    {
+      "path": "src/apex/domain/crypto_stateful_research.py",
+      "sha256": "f7230088d65d08acebc2fafedd22ba37eedb5ea6dafbe5e8d16d43d181b6c778",
+      "size": 38490
+    },
+    {
+      "path": "src/apex/domain/crypto_universe.py",
+      "sha256": "8fea2abf73fdd0c948899b5e6b9554be35d26e8d9c08434749f039caf455fd43",
+      "size": 112125
+    },
+    {
+      "path": "src/apex/domain/decisions.py",
+      "sha256": "614af9439fe90af50c8b2f2b6d24a10fd34e55ebadd5dc67167865c1a87a03ca",
+      "size": 28101
+    },
+    {
+      "path": "src/apex/domain/evidence_recovery.py",
+      "sha256": "2d3a823a428fb2d0f45d5b58905dc4d4832349c0d1edb416c081d8d95b288951",
+      "size": 27657
+    },
+    {
+      "path": "src/apex/domain/execution.py",
+      "sha256": "c58e713d6885aeaa3152842f30eaa84af61c7e2bf108f98790af934852baf058",
+      "size": 49014
+    },
+    {
+      "path": "src/apex/domain/external_paper.py",
+      "sha256": "15c6b927d102cb9b456e5c236658fb0a246b315f5057f48966424a022edb88cf",
+      "size": 32067
+    },
+    {
+      "path": "src/apex/domain/external_strategy.py",
+      "sha256": "c456964dfcd8e5c84144c2732796021d1f641ad2507dab8e93965a7ca4478565",
+      "size": 24112
+    },
+    {
+      "path": "src/apex/domain/first_generated_research_method.py",
+      "sha256": "463c43042bc08ea0be3b1cb15c8cd139de16732826d920a68695bcbf1ba4f5fa",
+      "size": 15190
+    },
+    {
+      "path": "src/apex/domain/genuine_data_quality_gate.py",
+      "sha256": "c0676783852e6514b263503afa89eefab0015a8cc2fe63b63f473c420572efb2",
+      "size": 13279
+    },
+    {
+      "path": "src/apex/domain/historical_market_data.py",
+      "sha256": "c8457b18a8791a68e68abbe72278012cbf2144b6c71f2c09cded77dbcffaa692",
+      "size": 46368
+    },
+    {
+      "path": "src/apex/domain/historical_replay.py",
+      "sha256": "3befec8640f2ceb1fe93c36bf891e295f628a19f348cdef1da9f362410b8dcb9",
+      "size": 75492
+    },
+    {
+      "path": "src/apex/domain/investment_mandate.py",
+      "sha256": "e551fd2076d0b4806d172f11437fb6febd8cd355ee5035bf9ab6e1a6fd56a2c1",
+      "size": 29316
+    },
+    {
+      "path": "src/apex/domain/kalshi_baseline_quote.py",
+      "sha256": "acb62cfe1d71ed4253251b444d6fef7503f8fa8bdf34fb98db19ce8704a7d973",
+      "size": 67479
+    },
+    {
+      "path": "src/apex/domain/kalshi_operating.py",
+      "sha256": "e206f1a6340c6f2b90c64940dbc405e2acd00edbc40320ca81c9a173878c2018",
+      "size": 54750
+    },
+    {
+      "path": "src/apex/domain/kalshi_read_only.py",
+      "sha256": "35b94c4c0acfa7432b54a929d4d0822231acfaf9671300e1af8ef41744f80e30",
+      "size": 22004
+    },
+    {
+      "path": "src/apex/domain/kalshi_resolution.py",
+      "sha256": "60c4151daa8cbc735c545f25cfee38b9a8db0aa2b2aeb3c6be2670da2a5a4014",
+      "size": 18445
+    },
+    {
+      "path": "src/apex/domain/ledger.py",
+      "sha256": "0ef0954bbd8eafdbcd165dceec9b8f48a21f418e4c7a37a1178b8f0592dcbfd2",
+      "size": 11478
+    },
+    {
+      "path": "src/apex/domain/live_market_observation.py",
+      "sha256": "7b0c1cddd021b7ff0cda13fcdce846f98d89aba318c1a86ac800e0e9b59f9502",
+      "size": 21906
+    },
+    {
+      "path": "src/apex/domain/live_preflight.py",
+      "sha256": "bbbd51fe442fc235b7a7aa2361cf9c5c7dba416c74485ed40fffe81f6d3c495c",
+      "size": 45400
+    },
+    {
+      "path": "src/apex/domain/live_readiness.py",
+      "sha256": "443b1847c9d441dbfeb952889fb2ee007076ce11fde2f96f05ffbd33f725eb9d",
+      "size": 45178
+    },
+    {
+      "path": "src/apex/domain/market.py",
+      "sha256": "122bc9daaafe36a2ee3d50b139252490961cde1c2891bce089d6fc860b4a1e12",
+      "size": 10470
+    },
+    {
+      "path": "src/apex/domain/market_dynamics.py",
+      "sha256": "e19b98eaa3798b836550537708f5bb22bbbe4a65e80e364324dd0dee93654730",
+      "size": 27837
+    },
+    {
+      "path": "src/apex/domain/multi_strategy.py",
+      "sha256": "75b5db39589dc9aa0d0f19b3302910bfd94a642131f55fbf5f2f9232faaeac7f",
+      "size": 14221
+    },
+    {
+      "path": "src/apex/domain/operating_cycle.py",
+      "sha256": "231d6534e0ef7f03de7560e734e8ad81fb252a70308a65427e56852ac56b6702",
+      "size": 73371
+    },
+    {
+      "path": "src/apex/domain/operational_reliability.py",
+      "sha256": "51c7a08299483a982c48bcf8f582782bfa203fb80ba1c0fa8e0e5ed6c7214dfe",
+      "size": 27174
+    },
+    {
+      "path": "src/apex/domain/options_intelligence.py",
+      "sha256": "caf3ab10e1f30e6fe80248dd3b5a8116763b35ebedfda7002924935e9140b882",
+      "size": 39328
+    },
+    {
+      "path": "src/apex/domain/options_quote_intelligence.py",
+      "sha256": "d9a4c88874ce7567644293832fc7b9e4f110c513674b3501d7e062a6b89c6395",
+      "size": 130865
+    },
+    {
+      "path": "src/apex/domain/options_research_operations.py",
+      "sha256": "9fcec32c9f310bb5bdbd6ee0c18bcb271b6e70b7609d3bbc86b96cd7841b4f1e",
+      "size": 37238
+    },
+    {
+      "path": "src/apex/domain/options_structures.py",
+      "sha256": "090704049143e7383ab14f16240db33882aa22e3c9ec1b45b05b1b3c5367a42b",
+      "size": 86334
+    },
+    {
+      "path": "src/apex/domain/orderbook_microstructure.py",
+      "sha256": "4c909245a0d18d19ad2c11e41d05e2365c76f9a56ff8af66b1af9113729b4042",
+      "size": 29251
+    },
+    {
+      "path": "src/apex/domain/paper.py",
+      "sha256": "f781d506683af87d81df291fd1e2e8ce1e36076a0fd8114f212c9d07382d8910",
+      "size": 16975
+    },
+    {
+      "path": "src/apex/domain/performance_attribution.py",
+      "sha256": "154149fe13547a622542b3bb3d44c690b92629573ed3aea327fccd36adec3329",
+      "size": 30336
+    },
+    {
+      "path": "src/apex/domain/portfolio_intelligence.py",
+      "sha256": "4a36ee03486fb2e602d1dc6e87ab648760f7a2f248e3bb6dde1fae15c53d6aef",
+      "size": 11281
+    },
+    {
+      "path": "src/apex/domain/portfolio_state.py",
+      "sha256": "6dedfcdc276df7589a9015b7770acfb3f25aadbd3f9ce0ca37ece0a30a3d5b9c",
+      "size": 31824
+    },
+    {
+      "path": "src/apex/domain/public_comparison.py",
+      "sha256": "9c1545c7052eba5e3bc57eac3a2a117c4807a256aaad932b7bfc36d8e43f18ed",
+      "size": 25807
+    },
+    {
+      "path": "src/apex/domain/public_complement.py",
+      "sha256": "e86e4cd0bd9d9c7e93ad0793ba69805a3cb8e67a4c1d4569528acc1b60caf0eb",
+      "size": 28549
+    },
+    {
+      "path": "src/apex/domain/public_event.py",
+      "sha256": "21a839bf3e2f9722e71048db1bbbd3351984686952cad67e34ebd04e4268c3f3",
+      "size": 22877
+    },
+    {
+      "path": "src/apex/domain/public_exhaustive.py",
+      "sha256": "ad67585ca3b42b1f48564e3d1e04a1df712214c1d28e3f62471128dec4038837",
+      "size": 14191
+    },
+    {
+      "path": "src/apex/domain/public_history.py",
+      "sha256": "c96316a4adeaba16241d069af30de9912d64cbc1653b04ed670dc544fecf9e03",
+      "size": 11685
+    },
+    {
+      "path": "src/apex/domain/public_market.py",
+      "sha256": "4a9d4aee5ceded9b31b9d139cc39e7f5d0e4e15114b8075300546c9ff3e1879e",
+      "size": 10141
+    },
+    {
+      "path": "src/apex/domain/public_orderbook_history.py",
+      "sha256": "36cc9cb1c8be55c3e94819b688f2e98828cb7dacbb1cd703faadf3eb6b6055c5",
+      "size": 12868
+    },
+    {
+      "path": "src/apex/domain/public_threshold.py",
+      "sha256": "b59af7ee91b14f24063a5924ac5d75a5cda8adcaefb00c91142576edf0a7abcd",
+      "size": 43175
+    },
+    {
+      "path": "src/apex/domain/published_fee_schedule.py",
+      "sha256": "3920958ca396b9df7455458a9d2625d54115edb92b9982560cc0f29b986816f3",
+      "size": 22918
+    },
+    {
+      "path": "src/apex/domain/real_securities_data.py",
+      "sha256": "f2d49e89fdb86d2ad89d6eda63e7d044c540482c404cc7effa7bca204179c186",
+      "size": 42810
+    },
+    {
+      "path": "src/apex/domain/research_calibration.py",
+      "sha256": "1930666a5bcdf33425753e7ca82dfc7f6e2f57a4ce23ec4cc47bdf72d96a22d6",
+      "size": 63940
+    },
+    {
+      "path": "src/apex/domain/research_calibration_v2.py",
+      "sha256": "f0ddfd9e62bbf5c968e35c0e91cef2ffdb8101c76804171f2c4bb768f5358817",
+      "size": 34176
+    },
+    {
+      "path": "src/apex/domain/research_cohort.py",
+      "sha256": "e84dc5f9011b2257f9c38c4ab42a077eb1ad8ca64959479b5850bb489d374f01",
+      "size": 21593
+    },
+    {
+      "path": "src/apex/domain/research_evidence.py",
+      "sha256": "49b1c47a19eb191c76da4acc887fecfe34d0a1069454d05555c82ba30eb3c30a",
+      "size": 25082
+    },
+    {
+      "path": "src/apex/domain/research_integrity.py",
+      "sha256": "ccfc33414bb6e6a8b1f882c9a8ccc2ea8d9f1b0ad361a526bed87ba4dadd7892",
+      "size": 28712
+    },
+    {
+      "path": "src/apex/domain/research_methodology.py",
+      "sha256": "2ce9f75098c7c788aa6f6dc0f62925df3078c5c021a5e1402d23bbb8dcd9f53d",
+      "size": 85400
+    },
+    {
+      "path": "src/apex/domain/research_operations.py",
+      "sha256": "de80a8f5eb31e23a407810b304d27a62238bcf57fe8d2287492655d929cfac94",
+      "size": 47386
+    },
+    {
+      "path": "src/apex/domain/research_replication.py",
+      "sha256": "5ffd4565bc2dabf985c4d365d71c360e1ecced514a0365ab487a0d62f8396dd6",
+      "size": 44952
+    },
+    {
+      "path": "src/apex/domain/schema_compatibility.py",
+      "sha256": "905555e73038f885bec17617ffde249e4bf3c7476f1296fa2a565749de46a14c",
+      "size": 10273
+    },
+    {
+      "path": "src/apex/domain/securities.py",
+      "sha256": "c6594b74d9ef22403ec9e2253c2515893c1f1b1c6cbeb5c0dc9bfe3fd9486999",
+      "size": 46655
+    },
+    {
+      "path": "src/apex/domain/securities_baselines.py",
+      "sha256": "9e9a2246e626ba757b40b84805340c7ec0f424640643de61f9b9c53cadabeb39",
+      "size": 77816
+    },
+    {
+      "path": "src/apex/domain/securities_ensemble.py",
+      "sha256": "5ba36acfe65128dae6271441c809beb98410747eb991a9ebdc66c795becbd282",
+      "size": 13973
+    },
+    {
+      "path": "src/apex/domain/securities_paper.py",
+      "sha256": "fa0cab6ca5adfe9fb5d3179281fef97d3055e67b67b46e432b83bfc3ff596f41",
+      "size": 44901
+    },
+    {
+      "path": "src/apex/domain/securities_structure_outcome.py",
+      "sha256": "6c609687e8a4b8c73ddd52e4834783f71adf9a803b5fd357debb2f2a5cb38c03",
+      "size": 31331
+    },
+    {
+      "path": "src/apex/domain/securities_total_return.py",
+      "sha256": "819b8e5f224f1cba6c7d0d0eb5e77d09bf73eef59f7f383a40a36f30ffa55d2d",
+      "size": 4690
+    },
+    {
+      "path": "src/apex/domain/security_identity.py",
+      "sha256": "049780ae29d3d7f58363fb1895bc9c9035d705994e6ddabd506736840a944d32",
+      "size": 29609
+    },
+    {
+      "path": "src/apex/domain/security_reference.py",
+      "sha256": "cdc5b3ca87ad090ab53d568d76d5d96f96c1da01a996f98f71664be1bf54d61c",
+      "size": 22553
+    },
+    {
+      "path": "src/apex/domain/shared_opportunity.py",
+      "sha256": "8c2cf07a76a045d9c8c31f59c599c5c81028119039f37d26693fed4560472aa9",
+      "size": 52945
+    },
+    {
+      "path": "src/apex/domain/strategy_benchmark.py",
+      "sha256": "4490068bbd9bdd7ce29aedae7439b34f6a7c9a4f11a9b08b78a3861318ca36ff",
+      "size": 21057
+    },
+    {
+      "path": "src/apex/domain/strategy_definition.py",
+      "sha256": "55ea08530cbcec649c88fe8974a889ffd996de9be1912d33816adab4f48664a8",
+      "size": 17607
+    },
+    {
+      "path": "src/apex/domain/strategy_evaluation.py",
+      "sha256": "b395e0bd1f6c208ce097e9b0acd9958210e5799e55a5b23c8e82d9e7e8dab8d2",
+      "size": 25361
+    },
+    {
+      "path": "src/apex/domain/strategy_evaluation_history.py",
+      "sha256": "4288f0feb23b81a5c48839e60ca0aba131bbaef4e8b73cb616da578d6fe98c4c",
+      "size": 18484
+    },
+    {
+      "path": "src/apex/domain/strategy_intelligence.py",
+      "sha256": "d1568a42e103b129682d1149733e4b3a68bce1484bd3f5feedfd338d4eca02c7",
+      "size": 19386
+    },
+    {
+      "path": "src/apex/domain/strategy_paper_trial.py",
+      "sha256": "63a0b5d81dac921f3133f4ce3cd03d818a8b204c8821460450932fef6be4b28c",
+      "size": 27948
+    },
+    {
+      "path": "src/apex/domain/strategy_paper_trial_evidence_coverage.py",
+      "sha256": "6d83c15045e70c053397c9e425653e231d697a317017f4fe550c46375ec6cbcb",
+      "size": 12809
+    },
+    {
+      "path": "src/apex/domain/strategy_paper_trial_lifecycle.py",
+      "sha256": "8ef079f1892f3aa94b64bf7bd06b1cfdca91ecdede9a9283a331ce96183408a2",
+      "size": 34992
+    },
+    {
+      "path": "src/apex/domain/strategy_trial_outcome_assessment.py",
+      "sha256": "a82f24148409cefe22db67e9d33d2cdac786d40e9d5933e5d46eb699afd1b289",
+      "size": 35222
+    },
+    {
+      "path": "src/apex/domain/strategy_version_provenance.py",
+      "sha256": "d432eb1b576e9649101bad4233754a22588dbde4aa5f4f1f8f2d4da466e88226",
+      "size": 22697
+    },
+    {
+      "path": "src/apex/domain/sustained_shadow.py",
+      "sha256": "54f08cde8ac059b78a884a3f063c9722a152f2577735a3fbe7e596ce3bde1783",
+      "size": 7726
+    },
+    {
+      "path": "src/apex/domain/sustained_shadow_operations.py",
+      "sha256": "0b59a32da6147d0b4741c2c818fbfc798f2d0a1e995dea62b41eebe42cfc01e2",
+      "size": 5222
+    },
+    {
+      "path": "src/apex/domain/total_market_context.py",
+      "sha256": "04d01b55baadd4751e4b8a9f813235e21dde0595ec16b2c69d98487150a596e4",
+      "size": 26392
+    },
+    {
+      "path": "src/apex/domain/values.py",
+      "sha256": "c3956414f1070013d6157ebd23fa8e029e6eea8e627dd5ee8c48569c46607a5d",
+      "size": 9500
+    },
+    {
+      "path": "src/apex/operator_api.py",
+      "sha256": "ad68a5c20215b45e89d81e5a69cb69ddcde769bdcdd621e39cf77a6503afef04",
+      "size": 598155
+    },
+    {
+      "path": "tests/integration/test_vertical_slice.py",
+      "sha256": "437649a8480878a16dacca9dd4a91abb6102c492f18e410b12eb0881aa85234d",
+      "size": 159685
+    },
+    {
+      "path": "tests/persistence/conftest.py",
+      "sha256": "d1fc295e49d92b3138b3f9f81a23551d8767923390f96dc9863143024c6fc34b",
+      "size": 10026
+    },
+    {
+      "path": "tests/persistence/test_disposable_demo_database.py",
+      "sha256": "7a35596658abdb0e40e35403fb951470459f5bda2adbb80bb8dd35cc7bab7612",
+      "size": 7702
+    },
+    {
+      "path": "tests/persistence/test_genuine_multi_asset_history_acceptance.py",
+      "sha256": "b74944e8225bee3f44d9d5387e0214f708fa93bd52c39ef8e6abe3020e91b9ff",
+      "size": 13259
+    },
+    {
+      "path": "tests/persistence/test_historical_replay_genuine_acceptance.py",
+      "sha256": "f2df117815014a87ffd1c9eb8be70d5535f2eb08c40494366ea6c49668d3bf68",
+      "size": 8832
+    },
+    {
+      "path": "tests/persistence/test_historical_total_market_context_sources.py",
+      "sha256": "8587006016f3cc5f65c766ae32686fce275c73532a087a5c90d34ac6d17e05e6",
+      "size": 10230
+    },
+    {
+      "path": "tests/persistence/test_postgres_alpaca_paper_acceptance_authority.py",
+      "sha256": "1e31db7686e9245044872897e07943d3f9e001591883ae0053ad1b57ddd061ae",
+      "size": 10811
+    },
+    {
+      "path": "tests/persistence/test_postgres_authorization.py",
+      "sha256": "7aea9306c77f257d81ca8c0c44f347368df1b5a5533c52bd9d67bf22106a44dc",
+      "size": 13810
+    },
+    {
+      "path": "tests/persistence/test_postgres_autopilot.py",
+      "sha256": "11f97bdaf1a62e26aeada2ad5ef3aa88b96728a1edc894b4c1d01c31970843ee",
+      "size": 9963
+    },
+    {
+      "path": "tests/persistence/test_postgres_batch_learning.py",
+      "sha256": "77140d8be41fc0670b24d0df6ccbf32508c81a5fb7873367f04b5fc245f1a7c8",
+      "size": 9120
+    },
+    {
+      "path": "tests/persistence/test_postgres_binary_complements.py",
+      "sha256": "33f5728c2682aa631c5e15605ac030a1583ed0eb18010ab250adf80adf93e45d",
+      "size": 13909
+    },
+    {
+      "path": "tests/persistence/test_postgres_broad_equity.py",
+      "sha256": "415819c4ae90f16510257aa4e2f4afe308e115f7a9272de6934f81cfebc2d90c",
+      "size": 6976
+    },
+    {
+      "path": "tests/persistence/test_postgres_candidate_generation.py",
+      "sha256": "63cd62bb87e977b71c15ac4d44181be508ef7339ddebbcc39a9028d2fa1fc11c",
+      "size": 13687
+    },
+    {
+      "path": "tests/persistence/test_postgres_coinbase_read_only.py",
+      "sha256": "a806469838ba6608760712a074cf472f9283d545bb93da4bec1a80e56391781f",
+      "size": 4854
+    },
+    {
+      "path": "tests/persistence/test_postgres_concurrency.py",
+      "sha256": "d96094e1aef86faefbd191ad7d897519e2fcd1d20b12d1dec99104b7b6ac0e5b",
+      "size": 4214
+    },
+    {
+      "path": "tests/persistence/test_postgres_corporate_calibration_depth.py",
+      "sha256": "5985f67f3265bee6278bed073bfcbecc1417d21d5ad5ccafb6e7594c2f7d0758",
+      "size": 34234
+    },
+    {
+      "path": "tests/persistence/test_postgres_corporate_fundamentals.py",
+      "sha256": "cfa9d4e275c8953cdb8ca47698d40031bed0d75f3ff14df10c4dd495c4d8e2fa",
+      "size": 27793
+    },
+    {
+      "path": "tests/persistence/test_postgres_corporate_market_research.py",
+      "sha256": "57e8ed03954effa54ec33ce8eae75735eb1924f02dacc1e69239036c0ebba22d",
+      "size": 28798
+    },
+    {
+      "path": "tests/persistence/test_postgres_corporate_regime_followup.py",
+      "sha256": "b793153bae99acfff41bfc50857f9af742993b6f5612f6cfc34fbda7cc5a4f13",
+      "size": 30751
+    },
+    {
+      "path": "tests/persistence/test_postgres_counterfactual_classification.py",
+      "sha256": "31895f93b642c91b8bbef7a01d73f312ed0d90b1cd93b35581028c531a7d306c",
+      "size": 25549
+    },
+    {
+      "path": "tests/persistence/test_postgres_counterfactual_followup.py",
+      "sha256": "084cb5cf3911d886df413f9c33d077447fb4297e3dc95afc698025b43e6877b3",
+      "size": 140904
+    },
+    {
+      "path": "tests/persistence/test_postgres_counterfactual_followup_recurring.py",
+      "sha256": "feda2bf943742dbbb47e7fb4385e1c627a4332a6e92bd6d63759cab8f2e9294d",
+      "size": 88200
+    },
+    {
+      "path": "tests/persistence/test_postgres_counterfactual_ledger.py",
+      "sha256": "4bd41200907fd7d79afe62e4823f278305a41db3408597209d45c84104aaf2f9",
+      "size": 20187
+    },
+    {
+      "path": "tests/persistence/test_postgres_counterfactual_outcome.py",
+      "sha256": "8562f3ffcdf16e909878b71b6eeeae7d5d8aa60fb2d98684b27396e237cbc35c",
+      "size": 24069
+    },
+    {
+      "path": "tests/persistence/test_postgres_counterfactual_outcome_recurring.py",
+      "sha256": "131c210e878f593c91722af2a04124b71d7048456b67d1ace498a28a6e41a3b9",
+      "size": 23930
+    },
+    {
+      "path": "tests/persistence/test_postgres_counterfactual_outcome_research_operations.py",
+      "sha256": "928e2870cd18e7d7119a2ad050a1924fe172cd2b844af31081e5436aeb21bf53",
+      "size": 31987
+    },
+    {
+      "path": "tests/persistence/test_postgres_counterfactual_outcome_specificity.py",
+      "sha256": "1053872e496a2a285256f0ebff231faa6cf3f86b96d2876449e10621bdd87119",
+      "size": 23285
+    },
+    {
+      "path": "tests/persistence/test_postgres_cross_market_research.py",
+      "sha256": "707170d5448a96eabdd23745b455f7ff7bef2c4737e302b386ec1c6317b9d9f6",
+      "size": 24195
+    },
+    {
+      "path": "tests/persistence/test_postgres_cross_venue_allocation.py",
+      "sha256": "30c02bb42d2d734fad2fd722b50718a8190fe46e7b3d8fdc485c782a003d22f0",
+      "size": 16063
+    },
+    {
+      "path": "tests/persistence/test_postgres_crypto_campaign.py",
+      "sha256": "86093523153ba7ee0d3f2c9051ff40abfa18ad4971ae1e6f07006284c679b390",
+      "size": 4240
+    },
+    {
+      "path": "tests/persistence/test_postgres_crypto_campaign_candidate.py",
+      "sha256": "918348e6ef3563803cb9b0bc3b73dc3a4c44ae01b7ed06bee1153cca3c949f2d",
+      "size": 5554
+    },
+    {
+      "path": "tests/persistence/test_postgres_crypto_campaign_generic.py",
+      "sha256": "64691d42d7339d252d73e328c8259a1f605b205e74adb12022ee094daca0ecb2",
+      "size": 3399
+    },
+    {
+      "path": "tests/persistence/test_postgres_crypto_challenger.py",
+      "sha256": "8dd35fbfdc1f8e67bf848539659759d4d583f5c74ed7fc349a74af2c3c3457d0",
+      "size": 3041
+    },
+    {
+      "path": "tests/persistence/test_postgres_crypto_dossier.py",
+      "sha256": "9f4066022556676b6c13e25f68849b7bad049cf182e4f37bf257227cde31af1f",
+      "size": 8899
+    },
+    {
+      "path": "tests/persistence/test_postgres_crypto_market_pulse.py",
+      "sha256": "8a91cd92ed0543651fed6afa603a3f34cebc4522b5478dc51b89850a9b4fe6c0",
+      "size": 14379
+    },
+    {
+      "path": "tests/persistence/test_postgres_crypto_paper.py",
+      "sha256": "ba7f0d8e6cb9f2deb0dff950cd81319f875e9d940de339980c2b83904ea828f8",
+      "size": 6383
+    },
+    {
+      "path": "tests/persistence/test_postgres_crypto_paper_ledger_close_accounting.py",
+      "sha256": "f087fba977a4d536a81ba338c822ff57844d0ad8965b9c612de5ccb2fca372e6",
+      "size": 5760
+    },
+    {
+      "path": "tests/persistence/test_postgres_crypto_research.py",
+      "sha256": "19ef8bbc2c38ced2a1d109f22a6e1dd2c6ac90469c41922e416367bee85064b1",
+      "size": 6327
+    },
+    {
+      "path": "tests/persistence/test_postgres_crypto_stateful_opportunity_lineage.py",
+      "sha256": "7b473d2773d7054586edefe7c335b07f044188b8623058c1e2b64093d6a2e02a",
+      "size": 44214
+    },
+    {
+      "path": "tests/persistence/test_postgres_crypto_universe.py",
+      "sha256": "1859e858bb2661b938950be9c2c2a990e4763cee1d6e32ead4150451183ac7a0",
+      "size": 4581
+    },
+    {
+      "path": "tests/persistence/test_postgres_event_history.py",
+      "sha256": "0ced7c621829815dd1b88a7b72e3e95803b3b3b4a484dd0a24daf41d5d9c5804",
+      "size": 10380
+    },
+    {
+      "path": "tests/persistence/test_postgres_evidence_recovery.py",
+      "sha256": "47ea12a8b2caa999184d71e7af05b279ba6cbb49e7c47ecd9adfe6a362ea565f",
+      "size": 44999
+    },
+    {
+      "path": "tests/persistence/test_postgres_external_paper.py",
+      "sha256": "d0a4a32228e02abf56a3577a171577df7f7c936ee6883c9a000147eb257b3099",
+      "size": 908
+    },
+    {
+      "path": "tests/persistence/test_postgres_external_strategy_research.py",
+      "sha256": "963b27f2649e2c500b1ed9e3286d893acf91e2b301f3c4e4636f397130a929aa",
+      "size": 18831
+    },
+    {
+      "path": "tests/persistence/test_postgres_genuine_multi_asset_history.py",
+      "sha256": "eae3eed34ba1ab336f1f5324cd17679b297a15373877c23ac2477e617f0b2e77",
+      "size": 9045
+    },
+    {
+      "path": "tests/persistence/test_postgres_historical_market_data.py",
+      "sha256": "1eb57036ad5fbe96afc078180b3df510bcef89b27f8bff42a387d95f59c6e117",
+      "size": 26132
+    },
+    {
+      "path": "tests/persistence/test_postgres_historical_replay.py",
+      "sha256": "08e3ee18ee365a8bf198e8a9d936f22f3541e768c7dfd6925a6f343805b7a319",
+      "size": 26482
+    },
+    {
+      "path": "tests/persistence/test_postgres_investment_mandate.py",
+      "sha256": "de479e1123c169cb739b10a772dbd97d8447573f68a44c49c7e4323d417ebff1",
+      "size": 20270
+    },
+    {
+      "path": "tests/persistence/test_postgres_kalshi_baseline_quote.py",
+      "sha256": "b7a53ac0085b5781ee1fd940367937265d1b5488fae2abc5a2e01ca06d160483",
+      "size": 75556
+    },
+    {
+      "path": "tests/persistence/test_postgres_kalshi_operating.py",
+      "sha256": "74bed164339e74a391e26412feac6ab816a5f614b908f69f417a85ee56b34223",
+      "size": 5140
+    },
+    {
+      "path": "tests/persistence/test_postgres_kalshi_read_only.py",
+      "sha256": "a35e0588c2da46bbf9602678d55e33b3b11cb5b145e3debebb37438d57134fb9",
+      "size": 4796
+    },
+    {
+      "path": "tests/persistence/test_postgres_kalshi_resolution.py",
+      "sha256": "d1060dfafb5e406958228280dbf96b244d287e42e597efa0a8065e2af4336d78",
+      "size": 11724
+    },
+    {
+      "path": "tests/persistence/test_postgres_live_market_observation.py",
+      "sha256": "0ada7a7bcef6e19113753a29dfd7f9d57459ecef7d89f3f63bfba948e75133b8",
+      "size": 14232
+    },
+    {
+      "path": "tests/persistence/test_postgres_live_preflight.py",
+      "sha256": "022982d5ca52291285fd6a52cdf7baa86a7c43fc6c87d1f05f0ef417a329f216",
+      "size": 6677
+    },
+    {
+      "path": "tests/persistence/test_postgres_live_readiness.py",
+      "sha256": "1ef663b6d847e67e4c040196cca4d6cc291b3ad772687dc40aed571a2d4a6653",
+      "size": 6900
+    },
+    {
+      "path": "tests/persistence/test_postgres_migrations.py",
+      "sha256": "5bfacd32ef4de35e28567c08619d9c698eac9bca6f1e7e7fdd4232b709f42240",
+      "size": 76127
+    },
+    {
+      "path": "tests/persistence/test_postgres_operating_cycle.py",
+      "sha256": "205e29bb7cac74a6d2bb82e1b3dac02fe2a20752fb18da9e2df75fe35cc3424f",
+      "size": 87644
+    },
+    {
+      "path": "tests/persistence/test_postgres_operational_reliability.py",
+      "sha256": "b2c03789a4e5af3c05a54fdc81b450727eddcce8d552d98500f78da1039861c8",
+      "size": 5894
+    },
+    {
+      "path": "tests/persistence/test_postgres_operator_console.py",
+      "sha256": "8edc4727c8091b0d4c03f6ddb4a15c70502d5bf26d7e75593e7b7baa571a5bc7",
+      "size": 3196
+    },
+    {
+      "path": "tests/persistence/test_postgres_operator_console_followups_performance.py",
+      "sha256": "a8a6e9f4064f72bbe78bb665e8f6c545dbfeebda6f7daf09745da3d7cdbeca34",
+      "size": 25730
+    },
+    {
+      "path": "tests/persistence/test_postgres_operator_console_home_performance.py",
+      "sha256": "e76deae26a280001392daced28e68ccbfc0ad78c720c11b43ce1529ed8f18e3d",
+      "size": 33748
+    },
+    {
+      "path": "tests/persistence/test_postgres_operator_console_live_readiness_performance.py",
+      "sha256": "235b18555caeba516b1585f62dd0075f62eb52fa291d8effbd4e5a36bb138cef",
+      "size": 24616
+    },
+    {
+      "path": "tests/persistence/test_postgres_options_capture_parent_persistence.py",
+      "sha256": "8e27be2c74e4c796999aa6cdad0c436d6649e4ae51fe8a2ee049064a60658d0c",
+      "size": 44786
+    },
+    {
+      "path": "tests/persistence/test_postgres_options_intelligence.py",
+      "sha256": "5b65c3845a5f0f80341c9819ce8e87d87d725b7defd41d9b05fcd20d15bf174a",
+      "size": 7920
+    },
+    {
+      "path": "tests/persistence/test_postgres_options_quote_intelligence.py",
+      "sha256": "aa808f412e3e49b792efecacf8e54af30c2cf1a08bc9128d336a330f7d927185",
+      "size": 15972
+    },
+    {
+      "path": "tests/persistence/test_postgres_options_research_operations.py",
+      "sha256": "5febc5441484acbb6c30fa3b52e79dcd9af9eb7412ea784772cd5cd737b8bd1b",
+      "size": 12858
+    },
+    {
+      "path": "tests/persistence/test_postgres_options_structures.py",
+      "sha256": "dd520977b398b89755c41b6ccdb5ef25c93022390ef87752a7a42afdb961e564",
+      "size": 19296
+    },
+    {
+      "path": "tests/persistence/test_postgres_orderbook_capture.py",
+      "sha256": "30252de633372e2d31b50b772a2f4239ff6651c0cfdab01ef7fa0d8d79ea699d",
+      "size": 12658
+    },
+    {
+      "path": "tests/persistence/test_postgres_orderbook_history.py",
+      "sha256": "6d52cc257cac6d35fd5d84b9fc0875903c2b8281baa1b7b04ff929c9af2858d4",
+      "size": 11682
+    },
+    {
+      "path": "tests/persistence/test_postgres_orderbook_sweep.py",
+      "sha256": "da9c08d018050286fff5be38ad444cc0cbbb9f9b6089120675de090672c4c919",
+      "size": 3591
+    },
+    {
+      "path": "tests/persistence/test_postgres_paper_portfolio.py",
+      "sha256": "9ea7905a3f891661a2eb543fff2c01c2345ceb14f5a4817ce3b658bd1e7c561f",
+      "size": 14503
+    },
+    {
+      "path": "tests/persistence/test_postgres_partial_fill_concurrency.py",
+      "sha256": "2079df6655652079d8f79b91605bb62745d4653d9899032cd65a135a4f88d987",
+      "size": 10222
+    },
+    {
+      "path": "tests/persistence/test_postgres_partial_fill_execution.py",
+      "sha256": "ff7dd21d434a0b2cd1d38522db038b2e5c5805da51852e3906f29a651a6803c4",
+      "size": 40463
+    },
+    {
+      "path": "tests/persistence/test_postgres_performance_attribution.py",
+      "sha256": "0605c694bcb487fa81116a96151d2a773b6334a46b28bf03cde91ef1d2a78ed4",
+      "size": 7231
+    },
+    {
+      "path": "tests/persistence/test_postgres_portfolio_state.py",
+      "sha256": "e10f7c0d5e9185c507a8a88e9644a8e3fa73a90f68f5ae3bbfb0778e07c6bc73",
+      "size": 15849
+    },
+    {
+      "path": "tests/persistence/test_postgres_post_close_integration.py",
+      "sha256": "64af5282e7d74a8a66325ab96be6434383f718a439bb4605ee8ee4459cfcd84c",
+      "size": 12206
+    },
+    {
+      "path": "tests/persistence/test_postgres_public_event_consistency.py",
+      "sha256": "b504ab76d6a3a2e94212711930f05db35d2d38ed14622456e1d94c67b9c17226",
+      "size": 10107
+    },
+    {
+      "path": "tests/persistence/test_postgres_public_market_discovery.py",
+      "sha256": "2f296e52aee66da1ee27e9f5e8adb5d957916ff917ed98f5f54fb456597e5876",
+      "size": 7790
+    },
+    {
+      "path": "tests/persistence/test_postgres_public_scan_comparison.py",
+      "sha256": "a596723260e1a0b8a546c69d9cf0032b4d9de2d5256d12ab5af01ada19adf78c",
+      "size": 7203
+    },
+    {
+      "path": "tests/persistence/test_postgres_real_securities_data.py",
+      "sha256": "c6620bf28487a8be06708ee7c5d38806f2871e584aa1425857c9fb208f7868bd",
+      "size": 5339
+    },
+    {
+      "path": "tests/persistence/test_postgres_recurring_paper_trial.py",
+      "sha256": "8c59c2c5c5ef4bd0614a3355d759af2a39abf957cc9190a41ca70750fcdc75b0",
+      "size": 82656
+    },
+    {
+      "path": "tests/persistence/test_postgres_research_calibration.py",
+      "sha256": "12103b8965b11f97f12007c1c84e0cb76464c1317ae78bbd7929784a2b70c7eb",
+      "size": 24575
+    },
+    {
+      "path": "tests/persistence/test_postgres_research_calibration_v2.py",
+      "sha256": "68171b9fc2bcf8e30a5210a27bbbc3b9b53a4bde40d8aa018af4d710b0c542e9",
+      "size": 25720
+    },
+    {
+      "path": "tests/persistence/test_postgres_research_evidence.py",
+      "sha256": "bc4f567e520c6d34e318048bbdcac8e4f50368346b6b5af68b1f9488876fa9cc",
+      "size": 13336
+    },
+    {
+      "path": "tests/persistence/test_postgres_research_integrity.py",
+      "sha256": "dd2da5466280be94438a7f82f2b0d97cd4267bc93e0c27fc6c49fd0690f69e37",
+      "size": 12174
+    },
+    {
+      "path": "tests/persistence/test_postgres_research_methodology.py",
+      "sha256": "53a4f39b6a48a994e6ec2b3d90ab7faf1a15d214a476b6d0a6a076f01ab21f9b",
+      "size": 28593
+    },
+    {
+      "path": "tests/persistence/test_postgres_research_operations.py",
+      "sha256": "e27c643b266ff6bbddb3e9329890293293c84792d8f5e74d022574f9ffdf0f16",
+      "size": 14193
+    },
+    {
+      "path": "tests/persistence/test_postgres_research_replication.py",
+      "sha256": "17b7d73ba95432414434785a982572864e9c3e9aee37b619886c1b94f31d6f70",
+      "size": 29340
+    },
+    {
+      "path": "tests/persistence/test_postgres_schema_compatibility.py",
+      "sha256": "c2ece28e6912641346729510462c3131e4142a01f41f5e6add8167b1873a73c5",
+      "size": 14039
+    },
+    {
+      "path": "tests/persistence/test_postgres_securities.py",
+      "sha256": "431753b3dbae3f6f8c0360758febf1ccf9f4a63b879922aebaed88c65c9fd5a5",
+      "size": 13129
+    },
+    {
+      "path": "tests/persistence/test_postgres_securities_baselines.py",
+      "sha256": "fdd635dbddd3e1b0d317f197da069c5a0570314652025cbc84bdab7d1c41d852",
+      "size": 9953
+    },
+    {
+      "path": "tests/persistence/test_postgres_securities_followup_temporal_integrity.py",
+      "sha256": "8b45d53e03c8890285c298eb27d8b64c171f25a01860bddf7c1dd398e225999d",
+      "size": 18318
+    },
+    {
+      "path": "tests/persistence/test_postgres_securities_paper.py",
+      "sha256": "b7ce9620240e06015de8cdb453937dcba55ae4e2e69ca79c9474314b63809dc9",
+      "size": 23926
+    },
+    {
+      "path": "tests/persistence/test_postgres_securities_shared_opportunity_bridge.py",
+      "sha256": "e51c395cb474fcdcf2c09203ab2c62417ca35740fba37305c69e49ff305d76ca",
+      "size": 24126
+    },
+    {
+      "path": "tests/persistence/test_postgres_securities_structure_outcome.py",
+      "sha256": "22492d494a868d5f95b85b54fe7d200b5777f0234bb4044c3ca936769e337ee5",
+      "size": 30081
+    },
+    {
+      "path": "tests/persistence/test_postgres_securities_structure_outcome_research_operations.py",
+      "sha256": "f929c9406539bcf35482883e61ff19e3d03501104d09955bfdb9672231a2b4a5",
+      "size": 16909
+    },
+    {
+      "path": "tests/persistence/test_postgres_security.py",
+      "sha256": "107710f58f0e9a6c552130abc13038a5b246dc55682637391dc1ff5e94d1690b",
+      "size": 44699
+    },
+    {
+      "path": "tests/persistence/test_postgres_security_identity.py",
+      "sha256": "da596e18f52dab6fe0b5706fcf6148152135099af8079871f82862e1f19fdc29",
+      "size": 14327
+    },
+    {
+      "path": "tests/persistence/test_postgres_security_reference.py",
+      "sha256": "94757d4b881ee3797b5cf3499bbf7c2c89ae3bcc4cc354502bad5e3bc4a95897",
+      "size": 19271
+    },
+    {
+      "path": "tests/persistence/test_postgres_shadow_operations.py",
+      "sha256": "de28dc5c675913f64ee795483bd6991885d63e61a23e85035fffbe1fd9294100",
+      "size": 59893
+    },
+    {
+      "path": "tests/persistence/test_postgres_shared_opportunity.py",
+      "sha256": "7dda2c09fc6d3651458d663b9d51cd1270dd5a5d814ce19890b7f88a6135128a",
+      "size": 12591
+    },
+    {
+      "path": "tests/persistence/test_postgres_shared_opportunity_sources_paper_eligibility.py",
+      "sha256": "028822bc4ea22fe2b8ff19b89f8389eb3a1d89692d62e40695bbeda85ba6322b",
+      "size": 6337
+    },
+    {
+      "path": "tests/persistence/test_postgres_strategy_evaluation_history.py",
+      "sha256": "bf1ce1d6352090497780eab8deee22b4d78bb7e2ae7bbcb1fd4fc8bf26de29e1",
+      "size": 14494
+    },
+    {
+      "path": "tests/persistence/test_postgres_strategy_lab.py",
+      "sha256": "df4675796458352aeef46bdf3758f6a638899751779ea836d8385a93b401dc57",
+      "size": 2562
+    },
+    {
+      "path": "tests/persistence/test_postgres_strategy_lab_shadow.py",
+      "sha256": "f30c6c7176622f58d1b4bc270f7c839d78f86b1554dde96d02a4ebc814a661e1",
+      "size": 4692
+    },
+    {
+      "path": "tests/persistence/test_postgres_strategy_paper_trial.py",
+      "sha256": "8a0ee9e9c1207f4c017f707dd2248f59027763fdadaaa0e1a19a5ddc1728572d",
+      "size": 19276
+    },
+    {
+      "path": "tests/persistence/test_postgres_strategy_paper_trial_closure_readiness.py",
+      "sha256": "f6f4645680de5e4c8aaaa48959a9fc6c9f5da75f1c0ee1e5765ea40ff3a0d626",
+      "size": 63597
+    },
+    {
+      "path": "tests/persistence/test_postgres_strategy_paper_trial_lifecycle.py",
+      "sha256": "d195487389adedc5f8264e227e53adddccc408d5490f85f064c543483d9efd3d",
+      "size": 17023
+    },
+    {
+      "path": "tests/persistence/test_postgres_strategy_paper_trial_recurring.py",
+      "sha256": "c7dc102962f82ce077490f6cd23bd1b2de9d9fab9647ba929fa66a5514fd8814",
+      "size": 116885
+    },
+    {
+      "path": "tests/persistence/test_postgres_strategy_shadow.py",
+      "sha256": "f7bdca0475739eb0086097ea6df075cccc4be2dccf2ec51e7b69835bddaf3e27",
+      "size": 15304
+    },
+    {
+      "path": "tests/persistence/test_postgres_strategy_trial_outcome_assessment.py",
+      "sha256": "16fa1bb4c466d18bc94c351b466d2dc3ea7c64432b5a4ffeec00a80d9dea58e7",
+      "size": 20525
+    },
+    {
+      "path": "tests/persistence/test_postgres_strategy_version_provenance.py",
+      "sha256": "04b9b0ad715b92c1cd2bbceb1f1fc7d6154ddbbc9d56521f020e44be49d8b90d",
+      "size": 20580
+    },
+    {
+      "path": "tests/persistence/test_postgres_threshold_ladders.py",
+      "sha256": "e6dea37f1d676d513d13b1fc3a465141f0d02344fe70deee3ee85168aa4726c7",
+      "size": 13749
+    },
+    {
+      "path": "tests/persistence/test_postgres_total_market_context.py",
+      "sha256": "656c4fdb82ac5b6932991e2fbea79029462baa0b07a4876cb4c2fabd1287930b",
+      "size": 24491
+    },
+    {
+      "path": "tests/persistence/test_postgres_unfilled_concurrency.py",
+      "sha256": "d56338ec2139c7a553b3e839f4049880488f71d65fffa13d0e6d34daecfb9394",
+      "size": 15761
+    },
+    {
+      "path": "tests/persistence/test_postgres_unfilled_execution.py",
+      "sha256": "1fa99f6cd1d260573a87fc2fcd3865037f3d0ede778f81e2fa9e485a658d67ae",
+      "size": 32195
+    },
+    {
+      "path": "tests/persistence/test_research_methodology_genuine_acceptance.py",
+      "sha256": "0c48aedc76d3d8ab164640bb849c820e9ecd6f3d2af475b7b6361126b71c7bc4",
+      "size": 14658
+    },
+    {
+      "path": "tests/property/test_financial_invariants.py",
+      "sha256": "5e6a382e2d64c01f3786817daa158c5901039170075bd8214bf38c78bf2cdbbb",
+      "size": 92888
+    },
+    {
+      "path": "tests/security/test_architecture_boundaries.py",
+      "sha256": "3f677093e740430ab298b6296674242ba383f25eb1c23220cc3646d0f6343058",
+      "size": 29523
+    },
+    {
+      "path": "tests/security/test_no_live_path.py",
+      "sha256": "ab400a11c9b11c6f5598649dfe153bd406969f96db4c5b592a71e115b8bd46af",
+      "size": 75679
+    },
+    {
+      "path": "tests/test_alpaca_options_quote_source.py",
+      "sha256": "ee858b00f1111d6176f7bf4cdd7559410f3ea3e244ecc04751d959cb27bc97a0",
+      "size": 26247
+    },
+    {
+      "path": "tests/test_autopilot.py",
+      "sha256": "05688255c2453aed5d79ed2510ac465f4903b5a04f3bfbb05722166a937619ac",
+      "size": 14672
+    },
+    {
+      "path": "tests/test_batch_learning.py",
+      "sha256": "c2b86663ff4aa040b3cf814bc8941c14137ca364ccdda6a7b03dbbeed28a221f",
+      "size": 20080
+    },
+    {
+      "path": "tests/test_broad_equity.py",
+      "sha256": "6e731ea2311c8033c051e0f441206e9f4ccdc9fa9be8bd16cdc4c680781996f4",
+      "size": 7837
+    },
+    {
+      "path": "tests/test_candidate_generation.py",
+      "sha256": "7a1b178f0c6ed4977b44d8c28c6a34aed01243421b15299550238ec7dff6cf58",
+      "size": 18879
+    },
+    {
+      "path": "tests/test_coinbase_read_only.py",
+      "sha256": "88e2c247cad5dcd9b3d000d34c94d19abb76859c6340d79f57fc3d084f68980e",
+      "size": 22142
+    },
+    {
+      "path": "tests/test_combined_crypto_historical_evidence.py",
+      "sha256": "029e694f128f20409ff25a819aba0a24d7714f880c336539e87455ce3978a6fb",
+      "size": 2601
+    },
+    {
+      "path": "tests/test_corporate_action_consistency.py",
+      "sha256": "a7361b0186513142fe991ce00fcbe477f6ad030e76253ebc035c9ce26836d0fd",
+      "size": 4550
+    },
+    {
+      "path": "tests/test_corporate_calibration_depth.py",
+      "sha256": "804c39f105e9c204fac19048d6ccdfa21a7afad6a9846bb7aa662485197bc5a3",
+      "size": 30328
+    },
+    {
+      "path": "tests/test_corporate_calibration_depth_application.py",
+      "sha256": "e787be3ec0f175864d7ac0d7bb25f73ed0e164885c1558a0ad0ac592ed0539d5",
+      "size": 35580
+    },
+    {
+      "path": "tests/test_corporate_filings_source.py",
+      "sha256": "fcf11ece6098cfbfc11661effccba59a45bf5168dd85090c97d839633a0e46db",
+      "size": 18596
+    },
+    {
+      "path": "tests/test_corporate_fundamentals.py",
+      "sha256": "9e9eed30e46382675f79052f9e600f79fac045805decb0c2b427a3670a6b41fa",
+      "size": 68016
+    },
+    {
+      "path": "tests/test_corporate_fundamentals_application.py",
+      "sha256": "23cc3eaaf41eaa84480800d142c52ea667b419200c990b0b8fa40a759de1611a",
+      "size": 39985
+    },
+    {
+      "path": "tests/test_corporate_fundamentals_interfaces.py",
+      "sha256": "0d7a4c73c3d9b5abcc1a730e019d37ac1d25a60cd8625700c22022d38719bbd4",
+      "size": 10812
+    },
+    {
+      "path": "tests/test_corporate_market_research.py",
+      "sha256": "75fb579805add78332a211c1bd48506a595f855340ae2790967f8230b096e3df",
+      "size": 16558
+    },
+    {
+      "path": "tests/test_corporate_market_research_application.py",
+      "sha256": "7cbe84bc180c8a6182bc4cde810c6570073af05fc37b951b74912bed5867bad9",
+      "size": 47105
+    },
+    {
+      "path": "tests/test_corporate_regime_followup.py",
+      "sha256": "d53daae21809c4283492d93c36ff26e6b6665aa683c7be47ff4b575643d5daff",
+      "size": 36727
+    },
+    {
+      "path": "tests/test_corporate_regime_followup_application.py",
+      "sha256": "9b2b35c80ba1b7ba56ddce3022b16a217f4f07740c23705a422ee7313710ad87",
+      "size": 28841
+    },
+    {
+      "path": "tests/test_corporate_regime_followup_cli.py",
+      "sha256": "017c4f300c5a81c44e0f9e74edbe3ff2075b3e43bcd1a1e6b9ce430daf49cf5f",
+      "size": 5662
+    },
+    {
+      "path": "tests/test_counterfactual_classification.py",
+      "sha256": "31768d94321aca701478c53429de3c3acef958d9bcf969d5919e04efbd7327ec",
+      "size": 17954
+    },
+    {
+      "path": "tests/test_counterfactual_followup.py",
+      "sha256": "1c97fb6a0cadd91a9442645b85a0f9c6aa4e7c4510ba2ba15c42442fb5d9b8a9",
+      "size": 199022
+    },
+    {
+      "path": "tests/test_counterfactual_followup_daily_ceiling_lane_scope.py",
+      "sha256": "576571a3908259ea3d3267c949deb0b3900ff2118f6834397a79f7134f796b88",
+      "size": 7182
+    },
+    {
+      "path": "tests/test_counterfactual_ledger.py",
+      "sha256": "d0f2e46a0b53222911beb09878c93e2a2078ea43296d8a50c247891a59eb5e78",
+      "size": 17885
+    },
+    {
+      "path": "tests/test_counterfactual_outcome.py",
+      "sha256": "a30e0b8d780b7b9b922b97ebdf2b0bca7cd48aa7cb9fb84c4e7937f530953a0d",
+      "size": 64377
+    },
+    {
+      "path": "tests/test_counterfactual_outcome_refresh.py",
+      "sha256": "00ec5d96d6423fd8d92df9faff8ff8fde7af0f8c9b6787ea0d13ccd06e0e3193",
+      "size": 17428
+    },
+    {
+      "path": "tests/test_counterfactual_outcome_specificity.py",
+      "sha256": "494af6915d10079241bca7db601c7934ff2db0e0feb4a5b3df11eb6926401d7c",
+      "size": 52546
+    },
+    {
+      "path": "tests/test_counterfactual_v2_research_quarantine.py",
+      "sha256": "65a315447395458eda8df01caa59b841edac33e0444889cb3bda4dc864ceafe2",
+      "size": 4469
+    },
+    {
+      "path": "tests/test_cross_market_alignment.py",
+      "sha256": "598b1e19c62f571db75b69e45abf2e143ce5681a675042013d50abcc01889cb9",
+      "size": 6127
+    },
+    {
+      "path": "tests/test_cross_market_dataset.py",
+      "sha256": "e8f2eb19f018725c3676b346d34e9b095b2bd8014e0c3bd0ba651919e192ed8e",
+      "size": 3157
+    },
+    {
+      "path": "tests/test_cross_market_research.py",
+      "sha256": "eb8af67f68e74a73fd56d2c87c2c3ebd8262d43136fade8afe896d457e9e8132",
+      "size": 25867
+    },
+    {
+      "path": "tests/test_cross_market_research_application.py",
+      "sha256": "59244809544249097435a86cc292443a9e48aeee38b43d39994740e9b9eef470",
+      "size": 20848
+    },
+    {
+      "path": "tests/test_cross_venue_allocation.py",
+      "sha256": "3654a3a6106cdaa888e2a168f500083f88074379c213a4fb6abb226ef7ba67cb",
+      "size": 12792
+    },
+    {
+      "path": "tests/test_crypto_campaign.py",
+      "sha256": "5ceb3babcbeac5838b8ad5db282e46b06af390540b810c74d8e346881dc27605",
+      "size": 15729
+    },
+    {
+      "path": "tests/test_crypto_campaign_generic.py",
+      "sha256": "05b73bb1f5cfc6f18643b22bbc559ac148d96cc962345b6f01cb7415b005087a",
+      "size": 15960
+    },
+    {
+      "path": "tests/test_crypto_challenger.py",
+      "sha256": "f0573981c5a2fdbb357c6d5b54c9a9a90bdd0cd047bb029359a36ad72a836bd5",
+      "size": 64030
+    },
+    {
+      "path": "tests/test_crypto_dossier.py",
+      "sha256": "65abe9e451a8fb4bfad53e32d7c919517b15210c6e91199099639ed375907330",
+      "size": 15641
+    },
+    {
+      "path": "tests/test_crypto_market_pulse.py",
+      "sha256": "8384c9f85bdb26b5ca1b1bc3fa0b369f6f0a895a2f421476fc5611451966d204",
+      "size": 31465
+    },
+    {
+      "path": "tests/test_crypto_paper.py",
+      "sha256": "67361fd93400239393beddbb0189ef4a41aabec4c78a98a4385ea9d20689f3b2",
+      "size": 42397
+    },
+    {
+      "path": "tests/test_crypto_paper_ledger_close_accounting.py",
+      "sha256": "50c7988a027c4ef307a5ba0e88e55ddb207d771df5949241be35f6c58054f424",
+      "size": 32826
+    },
+    {
+      "path": "tests/test_crypto_research.py",
+      "sha256": "fb6395875f3e11ad352cf3cf49b35200fdc87de16fb11ea65661034c177bb74f",
+      "size": 14923
+    },
+    {
+      "path": "tests/test_crypto_stateful_research.py",
+      "sha256": "6230a58ceb216d606675380bd9166959cc1a6cb592243967d1e79b1a3aaf0a8e",
+      "size": 17931
+    },
+    {
+      "path": "tests/test_crypto_universe.py",
+      "sha256": "512757d47a5fae8dc6ae0b9b3e3bda3e64df6d2d476a646e9f34bf187cf50df3",
+      "size": 23594
+    },
+    {
+      "path": "tests/test_dev_runner.py",
+      "sha256": "411c04a879e40aeca3168398e6df22a11f4976157e1a5d8a4a84d0ef1c540cea",
+      "size": 18439
+    },
+    {
+      "path": "tests/test_evidence_recovery.py",
+      "sha256": "f70485c9f167304888a89f23dc17f9ecaead335c353a1ea220af29a5547f1f53",
+      "size": 52200
+    },
+    {
+      "path": "tests/test_evidence_review.py",
+      "sha256": "283c7529c6d5a3001d3a43852250222ea4fc32696056b4af11071a367059c2a8",
+      "size": 10283
+    },
+    {
+      "path": "tests/test_external_paper.py",
+      "sha256": "38fe0a1c1b15a2442ba9315d61b5aa6fc71cfc091f7c31d7ca718de86917a6c0",
+      "size": 41633
+    },
+    {
+      "path": "tests/test_external_strategy.py",
+      "sha256": "4c5a6a52c3ca90d9cfb4a0e280e4adf5a3e7f046f046582bce2f6bfd00a82998",
+      "size": 22864
+    },
+    {
+      "path": "tests/test_external_strategy_research.py",
+      "sha256": "a57170da54f52b84878bb620fd1f90104ea773f1285849229c7d4516ca1ac9e8",
+      "size": 23406
+    },
+    {
+      "path": "tests/test_first_generated_research_method.py",
+      "sha256": "b08f6f34f052a08934bc44c677e22fcb6100f6524e787c099e24a2bda630c489",
+      "size": 7523
+    },
+    {
+      "path": "tests/test_genuine_data_quality_gate.py",
+      "sha256": "c4850b35703c3d3d6283af549c5797ad0a98abed3424b08c741e5fb3d370e4ad",
+      "size": 9519
+    },
+    {
+      "path": "tests/test_genuine_multi_asset_history_application.py",
+      "sha256": "d210cf9ed252a2dbad60c1e6b4e5e5227f83f1c8d25558f57708e14313858de7",
+      "size": 10490
+    },
+    {
+      "path": "tests/test_genuine_multi_asset_registry.py",
+      "sha256": "d061f862985a1418edc779da8bc5130d25bfd71f6f4c06908900564fa0b5567d",
+      "size": 7959
+    },
+    {
+      "path": "tests/test_historical_market_data.py",
+      "sha256": "a9ba811741a0885da95125dec1e9371a8886532a510c4f505ef235f0bcefe72d",
+      "size": 27006
+    },
+    {
+      "path": "tests/test_historical_market_data_application.py",
+      "sha256": "213cd0f28eaaca4bbe7f845205cea9029f3a7fa42582a5d541d8f7bd19dc1652",
+      "size": 22452
+    },
+    {
+      "path": "tests/test_historical_replay.py",
+      "sha256": "e356ea5baf3545319898d0ec0a8c8edb4e9909b5d1a2596667612c4e3507b105",
+      "size": 33301
+    },
+    {
+      "path": "tests/test_historical_replay_application.py",
+      "sha256": "ba6e4db9b25e2c6ddd27da55f2f66f794bbe61a7baa5f5348dfe866cc7546dd3",
+      "size": 37485
+    },
+    {
+      "path": "tests/test_investment_mandate.py",
+      "sha256": "9949775c958ec33a35b39b49c60c78691eaff38e10aecadc4afdc53cda0f22d3",
+      "size": 23864
+    },
+    {
+      "path": "tests/test_kalshi_baseline_quote.py",
+      "sha256": "fbfb80ef5b6242ebccd974b0b1694161779ce3d8a7ea77e41547c03c00010707",
+      "size": 53769
+    },
+    {
+      "path": "tests/test_kalshi_baseline_quote_sync.py",
+      "sha256": "b18119484e46e6300082575eeb104ea308b50b53c1cbcfa58b36a769616a8735",
+      "size": 13340
+    },
+    {
+      "path": "tests/test_kalshi_operating.py",
+      "sha256": "f1e77c134ab7ec830d1a28770daa51511affddb67d1cd393baba15ca69d9421c",
+      "size": 22434
+    },
+    {
+      "path": "tests/test_kalshi_read_only.py",
+      "sha256": "ae834adcc95c581e2f8c96dfb337a895cd71c4de5e5997c78cce85060acc72ac",
+      "size": 16539
+    },
+    {
+      "path": "tests/test_kalshi_resolution.py",
+      "sha256": "7e24ae020d7ed4811a69b00de299474cea3e39630f95b3b9ecf02ff175748fdf",
+      "size": 12846
+    },
+    {
+      "path": "tests/test_kalshi_resolution_application.py",
+      "sha256": "224546d4fb47b2efd3d58c4a6bcb4abe1fbf13d649c1182b3102dca85d70f4f3",
+      "size": 9653
+    },
+    {
+      "path": "tests/test_live_market_observation.py",
+      "sha256": "77506f876f2759932c73d3924ea3fb40cee9e5f77ee8d6cfecd35a5a6def1a8a",
+      "size": 13260
+    },
+    {
+      "path": "tests/test_live_market_observation_application.py",
+      "sha256": "b0d3abb7884c3c3fba028ec67d2162e89dad95f3a11b83bd6f21201c237f67ad",
+      "size": 22040
+    },
+    {
+      "path": "tests/test_live_preflight.py",
+      "sha256": "43e06251024d7059418bc8d53d069865384eab30819efeb5a62d9d0fec98546c",
+      "size": 16072
+    },
+    {
+      "path": "tests/test_live_readiness.py",
+      "sha256": "a35ba9f9cb1802acbd795151f729a5ce0d14ec2bd05b9150f92c32dacc06f443",
+      "size": 11075
+    },
+    {
+      "path": "tests/test_market_dynamics.py",
+      "sha256": "923813c04499cb386345491e2d006de7f59b73168870d85b96090b95c272c2c2",
+      "size": 6936
+    },
+    {
+      "path": "tests/test_migration_0095_reproducibility.py",
+      "sha256": "eb481da566261497beaf1ce820e969eff0179cb84ab5064d03c75bda26b65ad1",
+      "size": 12180
+    },
+    {
+      "path": "tests/test_multi_strategy_shadow.py",
+      "sha256": "3d2bae414fbadc24e8baceacdfc2ae2dd07d6252ac4b1157d0308a44f547d9a3",
+      "size": 7183
+    },
+    {
+      "path": "tests/test_operating_cycle.py",
+      "sha256": "b869d11474a762e799222d9fc5ae22c4a0ca7339219ae7c93333b9ef97d79f17",
+      "size": 189627
+    },
+    {
+      "path": "tests/test_operational_reliability.py",
+      "sha256": "f2ba1f696b9a9f1175fae66c182eb7a67a8f6f047c72a5c8cf1d758f08a461d6",
+      "size": 11460
+    },
+    {
+      "path": "tests/test_operator_console.py",
+      "sha256": "0848ea677c535ad8391b9b6a21c50f610994cf3b883cbb31e8e89e7bc63e27b2",
+      "size": 19360
+    },
+    {
+      "path": "tests/test_operator_console_evidence.py",
+      "sha256": "0330701c6df10ab8e48e103c622d75e0052b00914e22ff7f094553f05b6b66aa",
+      "size": 52507
+    },
+    {
+      "path": "tests/test_operator_console_v1.py",
+      "sha256": "5bde007dfe454a5a6137968610c9b3665e12f1077096f6f3ab1e6021d178f507",
+      "size": 60321
+    },
+    {
+      "path": "tests/test_options_intelligence.py",
+      "sha256": "8ab871c8ab6aee0f319ef3c0bd875d662b04a57ba7d1b2c1704bbaa53342c46c",
+      "size": 29951
+    },
+    {
+      "path": "tests/test_options_quote_intelligence.py",
+      "sha256": "8a9cb645a45d35101aaa0b553668ffe400ea1728ee6595e638259585b55556f1",
+      "size": 71427
+    },
+    {
+      "path": "tests/test_options_quote_intelligence_application.py",
+      "sha256": "9a75f83bb2170f71deaca11577452143a7fda01b99ecaac68513a7190f102ac3",
+      "size": 24298
+    },
+    {
+      "path": "tests/test_options_quote_intelligence_interfaces.py",
+      "sha256": "e47eb4162dd7fc86f35b59ecdfa92ba874e7e01278c66ce1d33a8bb18f8335c3",
+      "size": 5563
+    },
+    {
+      "path": "tests/test_options_research_capture.py",
+      "sha256": "bda6637d27abd6b9961177534ec8223e8af6a01e083fcd163cf976ee46ef0d22",
+      "size": 17422
+    },
+    {
+      "path": "tests/test_options_research_operations.py",
+      "sha256": "dcb738d64f221742b6e90f9e00c3ff36a6f064a9691fbb16554f9160caa0b7b4",
+      "size": 31432
+    },
+    {
+      "path": "tests/test_options_research_operations_application.py",
+      "sha256": "3dc72a05b33c87363c794f1e046abfe8f307febd4bec1b389645f80e89efc32f",
+      "size": 10212
+    },
+    {
+      "path": "tests/test_options_research_operations_interfaces.py",
+      "sha256": "c61a0a48f38edf02fe9b130e1927a208a4ccc0334b70a102f5263244de14368a",
+      "size": 6982
+    },
+    {
+      "path": "tests/test_options_structures.py",
+      "sha256": "ae88e5135acddb4fe8a9e6677488a40a3ab8fdadc6536e9a7ba3a8de9647f0fd",
+      "size": 64803
+    },
+    {
+      "path": "tests/test_options_structures_application.py",
+      "sha256": "fef470a25f8316e756367aec5525c48167bbcfe72412ff30750a21265eff6b10",
+      "size": 12380
+    },
+    {
+      "path": "tests/test_options_structures_interfaces.py",
+      "sha256": "9d71f763d5f84be19ee7503cbcda3f2441159a036eb9882d9e5a179c46169d4a",
+      "size": 7364
+    },
+    {
+      "path": "tests/test_orderbook_microstructure.py",
+      "sha256": "ddd87a803b93994655bf6c822bf8268050d4b0830788534ab202b9324afe295a",
+      "size": 12002
+    },
+    {
+      "path": "tests/test_paper_portfolio.py",
+      "sha256": "96fbe068c4976d72100a45f8e0b3568219db0384ce66b195c3476db5f6f3f2f7",
+      "size": 6818
+    },
+    {
+      "path": "tests/test_performance_attribution.py",
+      "sha256": "b2522db7cb80b569c478a06cd8c3960c8be417c64989c686094cd5aa5458403c",
+      "size": 12337
+    },
+    {
+      "path": "tests/test_portfolio_intelligence.py",
+      "sha256": "869105ad656182ddb10a4f8fb28f05d1dfee266fae4cebb64f220a87e216fa08",
+      "size": 4298
+    },
+    {
+      "path": "tests/test_portfolio_state.py",
+      "sha256": "0da8e54ae97a410dce7d7501de15bfb34713b29c11932ee165351d2bc7bd769d",
+      "size": 19338
+    },
+    {
+      "path": "tests/test_public_binary_complements.py",
+      "sha256": "4cc930c256d3bf087b49787d38d62277566d58d25ea5d3e0772adcd2d1639634",
+      "size": 17027
+    },
+    {
+      "path": "tests/test_public_event_consistency.py",
+      "sha256": "cb1fd6dd3ce4074d3ce16a8e8d8db3d559ac3a82548d30846aef3da687111c60",
+      "size": 7125
+    },
+    {
+      "path": "tests/test_public_event_history.py",
+      "sha256": "cc2d7dc96595ad45316168bec6007babf9b929e7385b2951d6d595b5e966edd4",
+      "size": 4660
+    },
+    {
+      "path": "tests/test_public_exhaustive.py",
+      "sha256": "638e2b88e45e847896f3abdc3b9c264f6138236c361376aeac6b3f4b2aa448e1",
+      "size": 5604
+    },
+    {
+      "path": "tests/test_public_market_discovery.py",
+      "sha256": "a6469564d8a43b46b47865670c8583226c87ccfca75fbfa0af6e42746bc6f705",
+      "size": 11654
+    },
+    {
+      "path": "tests/test_public_orderbook_capture.py",
+      "sha256": "0b3bad171587807951a010dc51a6f7aaa3a08e5089ef886bd19d5a29ff62722a",
+      "size": 27040
+    },
+    {
+      "path": "tests/test_public_orderbook_history.py",
+      "sha256": "64bfc41e7cf0f6f289f4009b9728b2f05a25a04d06c3fa1dbb7b276c0b7120cb",
+      "size": 2808
+    },
+    {
+      "path": "tests/test_public_orderbook_sweep.py",
+      "sha256": "85d2e58894bd65f45a94ef4fa7f1aa74dc53e76209d228552e9001f72070fc9c",
+      "size": 8770
+    },
+    {
+      "path": "tests/test_public_outcome_reconciliation.py",
+      "sha256": "72750f81abb8c3023c3b009632e631beebd9e515a33f8d78c381d51f4d28da68",
+      "size": 10884
+    },
+    {
+      "path": "tests/test_public_scan_comparison.py",
+      "sha256": "d086a1cb5a419a80bfa7752fc355371a9a79812c1c12067b530ab6f441b7b40a",
+      "size": 4217
+    },
+    {
+      "path": "tests/test_public_threshold_ladders.py",
+      "sha256": "f598778691458a2f73daf24a52931f3c4e39b794de7370875c5728c89ff3f0be",
+      "size": 11458
+    },
+    {
+      "path": "tests/test_published_fee_schedule.py",
+      "sha256": "e5ccc5b266f06640c683f42948caed5bcd8b2bc45991f17aa6e0e0d95ee99165",
+      "size": 5496
+    },
+    {
+      "path": "tests/test_real_securities_data.py",
+      "sha256": "295474af29c2d9020829b4e017e5992cac568f47f99153750bb254db1385fb99",
+      "size": 13798
+    },
+    {
+      "path": "tests/test_research_calibration.py",
+      "sha256": "0f73cac60f2c5042c435617c83039c95f233fd0db3f3687ebfb4a90c23bdfcb0",
+      "size": 28921
+    },
+    {
+      "path": "tests/test_research_calibration_application.py",
+      "sha256": "a6b81bf8b95334a3dd1ba2f43f34f1b5b1b0286d49cfebd32a29353022bfb024",
+      "size": 25384
+    },
+    {
+      "path": "tests/test_research_calibration_v2.py",
+      "sha256": "e7251966270141123551c1e97acdece6fa69fb075ecc9506d8cdf7b10f1df271",
+      "size": 21675
+    },
+    {
+      "path": "tests/test_research_calibration_v2_application.py",
+      "sha256": "a7ffc2ba58d2efa3373ff3ca2735f321068c69a9df100d3a3445b4fc3ce006c2",
+      "size": 35018
+    },
+    {
+      "path": "tests/test_research_calibration_v2_interfaces.py",
+      "sha256": "1fd14f082533eac12a4178f23998ac4a6656a9d72a82ce451b4ad58850aa0470",
+      "size": 7609
+    },
+    {
+      "path": "tests/test_research_cohort.py",
+      "sha256": "3a53662987cd424db47d89a461400bb6cc90b2a1b762ba39d61da60e0398f9aa",
+      "size": 6487
+    },
+    {
+      "path": "tests/test_research_evidence.py",
+      "sha256": "591ce8dadb74f8c867e7c2bf8b87bf5ef97171b1529d2ed11b41035bf59a3f35",
+      "size": 55520
+    },
+    {
+      "path": "tests/test_research_integrity.py",
+      "sha256": "70d7fb51ebaec8adbf053513967444276687acecc5fdc9b6051fcd0f51f1ed7a",
+      "size": 17236
+    },
+    {
+      "path": "tests/test_research_methodology.py",
+      "sha256": "ef9717cbaacaeb715e60797723a1e238b959decbdbd78ca85cc1b8f888e51191",
+      "size": 65373
+    },
+    {
+      "path": "tests/test_research_methodology_application.py",
+      "sha256": "b0f142a342e9b8ffe0aad5d8ec796ac42375b757f6f2fc3ca9eb504f70a8c2e8",
+      "size": 57427
+    },
+    {
+      "path": "tests/test_research_operations.py",
+      "sha256": "dabe6872348d75f2a57a2b49fce207427f20c53409cc82ab79f8b1724788ff59",
+      "size": 58683
+    },
+    {
+      "path": "tests/test_research_replication.py",
+      "sha256": "89609d036a956c8e928f306138d7beb91b8499c419db5e26bc8bd533c1c35d4e",
+      "size": 22620
+    },
+    {
+      "path": "tests/test_research_replication_application.py",
+      "sha256": "ab1dd636ddc1167840ac29ce296ff7bbf230e7b1b8188784cdd61097d9ea8764",
+      "size": 18857
+    },
+    {
+      "path": "tests/test_research_replication_interfaces.py",
+      "sha256": "32f64ebb6e5e0f1b999ff3c45db7a444c933ca3566cc5c48a8ec6da2d4c8a39b",
+      "size": 6186
+    },
+    {
+      "path": "tests/test_schema_compatibility.py",
+      "sha256": "c96b81e1c5109dafd2b984bd3719a4bb8a98cbaf16c88f96c5d6c9cb32358210",
+      "size": 12625
+    },
+    {
+      "path": "tests/test_securities.py",
+      "sha256": "58ef376c64e8fa92dbb4dc3a52403e84b16453ca201e150e1a2bdf211e9377ab",
+      "size": 19104
+    },
+    {
+      "path": "tests/test_securities_baselines.py",
+      "sha256": "54f3e86d20d181752aa326a04ebfc8eabd2659220f9ccbcd42b85b5212c09d4f",
+      "size": 15225
+    },
+    {
+      "path": "tests/test_securities_ensemble.py",
+      "sha256": "2cccc9962bb483327afe09e939bd3cfe270dd9a6f10905268f51dd4aefcd06ef",
+      "size": 1601
+    },
+    {
+      "path": "tests/test_securities_followup_temporal_integrity.py",
+      "sha256": "1b117996de9ba1aba197d6c9a6cd5f5aaebc9dfd9c764eba0edd2575360fe26b",
+      "size": 33941
+    },
+    {
+      "path": "tests/test_securities_paper.py",
+      "sha256": "db912ea7aaf80f26ff9f667965ae052d46e7319c4c454019645af9bd0edd2fea",
+      "size": 42260
+    },
+    {
+      "path": "tests/test_securities_shared_opportunity_bridge.py",
+      "sha256": "1dc8aededf190ce7c3e58d29e122af38340780b95704afb91ebc3fc96e026017",
+      "size": 38426
+    },
+    {
+      "path": "tests/test_securities_strategy_intelligence.py",
+      "sha256": "09b2bba289d9b4959ad9dfa39ac0ae3e25e80f855c24023f6a7b734d6eb46c44",
+      "size": 5168
+    },
+    {
+      "path": "tests/test_securities_strategy_lab_dataset.py",
+      "sha256": "b6c4df43122fdbab0ca9cc1852c1c9033cf803105e4913f09b3a9d8335774c90",
+      "size": 4226
+    },
+    {
+      "path": "tests/test_securities_structure_outcome.py",
+      "sha256": "a47df04050f7e96cf3a7ce286f6cf76de2665bf38090fb51080ac19038bbe008",
+      "size": 31354
+    },
+    {
+      "path": "tests/test_securities_structure_outcome_refresh.py",
+      "sha256": "366ef9e79eb62778d35ac745f3e107e703a0866f4d79b3631f6c66c177835671",
+      "size": 6579
+    },
+    {
+      "path": "tests/test_security_identity.py",
+      "sha256": "7621c405f93da0aec9044678b273d2f6a39f509e50007f877672bb20a9880c5e",
+      "size": 30731
+    },
+    {
+      "path": "tests/test_security_identity_application.py",
+      "sha256": "0d371895c962f089fd4b286e2e56699f476cf2e5879e6beb8f38ca13e18675e8",
+      "size": 12624
+    },
+    {
+      "path": "tests/test_security_reference.py",
+      "sha256": "56b4e65869d3851e934f4acae7d0671b0236e4104bbdb714d1970fcad9a8b38a",
+      "size": 20509
+    },
+    {
+      "path": "tests/test_security_reference_postgres_compat.py",
+      "sha256": "36ef63140619662804eb0d061fea158a21823bbf2c6bdd7d250cb6f8edddcccf",
+      "size": 9906
+    },
+    {
+      "path": "tests/test_shadow_operations.py",
+      "sha256": "76e63742d8e77fe650b623209ea9dc18cabfb585ced2ccfb5786a493137a238b",
+      "size": 49140
+    },
+    {
+      "path": "tests/test_shared_opportunity.py",
+      "sha256": "4e1603a8dfb1c2fda0d2c0bcf9b13ab15c111ce572b8bce4e549f871d883ce50",
+      "size": 15737
+    },
+    {
+      "path": "tests/test_shared_opportunity_ranking_benchmark_v1.py",
+      "sha256": "9522c1ea40d189cd52cf6de432582e1ca7ad30c97caecfdee1b62f750ca9352b",
+      "size": 18159
+    },
+    {
+      "path": "tests/test_shared_opportunity_ranking_v1.py",
+      "sha256": "b3695455d5bd74397cd274d564778f6f299d715d8a608e49cfffbb08a6498150",
+      "size": 37549
+    },
+    {
+      "path": "tests/test_strategy_benchmark.py",
+      "sha256": "409134b673bc570a73947e00c726faa55de49d5c27c3d903254e12d53808eaeb",
+      "size": 15404
+    },
+    {
+      "path": "tests/test_strategy_definition.py",
+      "sha256": "f479eb791c849548feb96e3cf7931cfce38d588007917801d75e80fdbc64eaa1",
+      "size": 13913
+    },
+    {
+      "path": "tests/test_strategy_evaluation.py",
+      "sha256": "0ea0c79e03485ae725d498a38e3608ec7a11181398338d85f3683a8908b24681",
+      "size": 24009
+    },
+    {
+      "path": "tests/test_strategy_evaluation_history.py",
+      "sha256": "023cd2c071cd305699902d5de89de61ced86e00ad9dad58618d79ab41b3256f3",
+      "size": 16757
+    },
+    {
+      "path": "tests/test_strategy_evaluation_history_application.py",
+      "sha256": "669f78650b9efa807ec69cb8ae238c598001890a9032f7782d4dafc17c3d8cb3",
+      "size": 15778
+    },
+    {
+      "path": "tests/test_strategy_lab.py",
+      "sha256": "9b85734fad0729e0b89c07064aa25100a945239a0478ee2ab2a9c8f2278e1e2d",
+      "size": 5383
+    },
+    {
+      "path": "tests/test_strategy_lab_shadow.py",
+      "sha256": "3986d497f2d07118c4cddba45d20eba62a243353dc2cfb8cca6e6458265d8c62",
+      "size": 1581
+    },
+    {
+      "path": "tests/test_strategy_paper_trial.py",
+      "sha256": "cab20b8fcf38c4dbdf10da8eb64388cdf049391f4e1b57b14bd7471a324e170f",
+      "size": 26638
+    },
+    {
+      "path": "tests/test_strategy_paper_trial_application.py",
+      "sha256": "16be7da134d4192d20c99bb4cb8a2318efe06887cb5060c3cb84d7e9c612a16d",
+      "size": 7943
+    },
+    {
+      "path": "tests/test_strategy_paper_trial_close_attempts.py",
+      "sha256": "bb07d0a7085244358498c533a7a7c595ce2eede0f8e6d5efd81d45ebffd47ae2",
+      "size": 7426
+    },
+    {
+      "path": "tests/test_strategy_paper_trial_evidence_coverage.py",
+      "sha256": "f5dcf266d205594a2bde1d3069ea963763eead6e2ec7b3bf19a461347e7602c7",
+      "size": 15965
+    },
+    {
+      "path": "tests/test_strategy_paper_trial_lifecycle.py",
+      "sha256": "5c60d71e816f69d307c39499637aa887d6ce0a07d1063c404b68470a0fa4fb71",
+      "size": 24680
+    },
+    {
+      "path": "tests/test_strategy_paper_trial_lifecycle_application.py",
+      "sha256": "7cfaa1eb18e559aaadadac414f2230d1bcde8188ff9cdc11707db4dda196bf5f",
+      "size": 11212
+    },
+    {
+      "path": "tests/test_strategy_shadow.py",
+      "sha256": "bb3e384382e91885352fbb939aa92949b954e70ea7aea7ed65223582bca08a37",
+      "size": 7801
+    },
+    {
+      "path": "tests/test_strategy_trial_outcome_assessment.py",
+      "sha256": "a1c898572ed08ae4287fd462966745738287efb6193d07b540c762ea2fb14cd2",
+      "size": 47734
+    },
+    {
+      "path": "tests/test_strategy_version_provenance.py",
+      "sha256": "0fbf62fc8b4372e9658ff427d7a614dc72164b32cf72a9b3b71dec15ed6f1785",
+      "size": 28812
+    },
+    {
+      "path": "tests/test_strategy_version_provenance_gaps.py",
+      "sha256": "e7bd1b07c3aeb471e0a36c4bb6e172457ff39e95176d97955fa6c52753c028ab",
+      "size": 10524
+    },
+    {
+      "path": "tests/test_sustained_shadow.py",
+      "sha256": "7b4e4ef1f3f042739c69453f477ec4b5872fe3f3a8de07d89e4fc905b3e40fd1",
+      "size": 3360
+    },
+    {
+      "path": "tests/test_sustained_shadow_operations.py",
+      "sha256": "02870f2f93422e39d3a899c95b83dbb73bbc3331eb32981b8fadfeb376c37e2c",
+      "size": 4607
+    },
+    {
+      "path": "tests/test_total_market_context.py",
+      "sha256": "55f1d869656bbe4ffacd539a8634709cc8cc36681c1632161b7cf85652037d29",
+      "size": 15372
+    },
+    {
+      "path": "tests/unit/test_ledger.py",
+      "sha256": "5cfc5cde3bd060c4b99494146f3e30fdaa1417b7cab308bff363de3dcadddadf",
+      "size": 2981
+    },
+    {
+      "path": "tests/unit/test_values.py",
+      "sha256": "9dfa0540cbee89c34e47a3882ab8a25be71b528eb0d9b3e21c24a75c6eebfbf7",
+      "size": 5039
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "b96a6e5113e68324e6db4c37c633428e96c978512d97847dc641e4f258fa3e90",
+      "size": 187828
+    }
+  ],
+  "source_commit": "c70cf09490262a8545dad5066add6d3b160b8f05"
+}

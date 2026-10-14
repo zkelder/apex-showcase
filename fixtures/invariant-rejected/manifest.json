@@ -1,0 +1,8 @@
+{
+  "fixture_id": "invariant-rejected",
+  "schema_version": "1",
+  "evidence": "SYNTHETIC",
+  "files": {
+    "decision_inputs.json": "473ab185df51d9884d4f7e00d43dfc86cdd97c7a87f342330879cef78fc721f9"
+  }
+}

@@ -1,0 +1,20 @@
+{
+ "body": {
+  "capability": "OPERATOR_READ_ONLY",
+  "data": {
+   "account_balances": [],
+   "authority": "NONE",
+   "latest_evaluation_count": 0,
+   "latest_evaluations": [],
+   "mandate": null,
+   "mandate_empty_state": "NO_MANDATE_AUTHORED",
+   "mandate_versions": [],
+   "portfolio_empty_state": "NO_PORTFOLIO_SNAPSHOT_RETAINED",
+   "portfolio_snapshot": null,
+   "positions": []
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/operator-console/portfolio-mandate",
+ "status": 200
+}

@@ -1,0 +1,118 @@
+{
+ "body": {
+  "capability": "SIMULATION_PAPER_ONLY",
+  "data": {
+   "items": [
+    {
+     "available_settlement_facts": [],
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "canonical_payload_hash": "3d09595350d88f492482c2932e9380c580d8d436e011fb320f5ab937822ea28a",
+     "cost_basis": "0",
+     "created_at": "2026-07-25T12:00:00Z",
+     "instrument_id": "fixture-autopilot-evidence-review-paper-trial-demo-v7-governed-paper-loss",
+     "latest_mark": null,
+     "lineage": {
+      "canonical_payload_hash": "44cb2cef36dee5d0182ecfb2ea11e859b82363c048006ee37c089f88c7f349b0",
+      "created_at": "2026-07-25T12:00:00Z",
+      "economics_id": "opportunity_economics_538521b92c2b3362ca716844",
+      "execution_model": "PAPER_IMMEDIATE_CROSS_V1",
+      "paper_execution_id": "paper_execution_7efc8287f89993d50c42fe2d",
+      "position_id": "position_7eb643c404c163d48facf2b1",
+      "resolution_at": "2026-07-25T12:15:02Z",
+      "strategy_id": "fixture-governed-evidence-paper-v1",
+      "strategy_version": "fixture-v1"
+     },
+     "maximum_remaining_loss": "0",
+     "open_quantity": "0",
+     "originating_fill_event_id": "execution_event_4788eb65755506f1327cb185",
+     "originating_order_id": "order_9fc92628ba0da9d2fade9658",
+     "position_id": "position_7eb643c404c163d48facf2b1",
+     "quantity_increment": "1",
+     "rule_version_id": "fixture-autopilot-rule-evidence-review-paper-trial-demo-v7-governed-paper-loss",
+     "settlement": {
+      "campaign_id": "evidence-review-paper-trial-demo-v7",
+      "canonical_payload_hash": "7e4c67d58f93c497cf040d3be5cdd94d5f21efbca7d7c9ebb499c356a3ed58b4",
+      "classification": "NO",
+      "created_at": "2026-07-25T12:00:00Z",
+      "position_id": "position_7eb643c404c163d48facf2b1",
+      "position_settlement_id": "paper_position_settlement_b58000d5309db8e4d85f4d1b",
+      "realized_contract_pnl": "-0.5",
+      "settled_quantity": "1",
+      "settlement_cash": "0",
+      "settlement_fact_id": "paper_settlement_fact_59edbbf9c7828048d835b2df",
+      "settlement_journal_id": "journal_dc19f9b596236800a34b5c2e",
+      "settlement_value": "0"
+     },
+     "settlement_state": "SETTLED",
+     "side": "YES"
+    },
+    {
+     "available_settlement_facts": [],
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "canonical_payload_hash": "70fcbda5ceb18033381896585b0ac1a3facd5d2cdd241f1f6dec0ef313756a62",
+     "cost_basis": "0",
+     "created_at": "2026-07-25T12:00:00Z",
+     "instrument_id": "fixture-autopilot-evidence-review-paper-trial-demo-v7-governed-paper-open",
+     "latest_mark": {
+      "campaign_id": "evidence-review-paper-trial-demo-v7",
+      "conservative_liquidation_value": "0.49",
+      "created_at": "2026-07-25T12:00:00Z",
+      "estimated_close_fee": "0",
+      "evidence_id": "fixture-paper-evidence-evidence-review-paper-trial-demo-v7-governed-paper-open-2026-07-25T12:00:02+00:00",
+      "informational_midpoint_value": "0.495",
+      "input_hash": "855822385f97501e635edf7c1764eb4c83bd118670e5d758b975a371685d582e",
+      "mark_id": "paper_position_mark_7575c9aa4fd2ca5cbfab5930",
+      "mark_model_version": "PAPER_CONSERVATIVE_LIQUIDATION_V1",
+      "observed_at": "2026-07-25T12:00:01Z",
+      "position_id": "position_e7806f2381112aff3b484f5f",
+      "reason_codes": [
+       "PAPER_MARK_VISIBLE_BID_DEPTH"
+      ],
+      "result_hash": "24fffcd439c913387c610bdd75b564fb25ff66ee0123ae6ac865f0ee0c6111e5",
+      "retained_position_cost": "0.5",
+      "slippage_reserve": "0",
+      "supported_quantity": "1",
+      "unsupported_quantity": "0"
+     },
+     "lineage": {
+      "canonical_payload_hash": "5fddd74748d6f66a680ea3d66046cc62200b7e107ac5c29290c4b26436f80782",
+      "created_at": "2026-07-25T12:00:00Z",
+      "economics_id": "opportunity_economics_f824743ac72dae6b4a54500d",
+      "execution_model": "PAPER_IMMEDIATE_CROSS_V1",
+      "paper_execution_id": "paper_execution_d7f0fc479d5ebe5fdcc5222d",
+      "position_id": "position_e7806f2381112aff3b484f5f",
+      "resolution_at": "2026-07-25T12:15:02Z",
+      "strategy_id": "fixture-governed-evidence-paper-v1",
+      "strategy_version": "fixture-v1"
+     },
+     "maximum_remaining_loss": "0",
+     "open_quantity": "0",
+     "originating_fill_event_id": "execution_event_5205e890af71c81f6570f590",
+     "originating_order_id": "order_0dc9d1a72fe20c57c91bda8b",
+     "position_id": "position_e7806f2381112aff3b484f5f",
+     "quantity_increment": "1",
+     "rule_version_id": "fixture-autopilot-rule-evidence-review-paper-trial-demo-v7-governed-paper-open",
+     "settlement": {
+      "campaign_id": "evidence-review-paper-trial-demo-v7",
+      "canonical_payload_hash": "3b2f9840c52c94bcc8a74370c3559cbf2ab91c275e1f681ee21df7c77dde374d",
+      "classification": "YES",
+      "created_at": "2026-07-25T12:00:00Z",
+      "position_id": "position_e7806f2381112aff3b484f5f",
+      "position_settlement_id": "paper_position_settlement_5b17dc9139c4f34c12b73da3",
+      "realized_contract_pnl": "0.5",
+      "settled_quantity": "1",
+      "settlement_cash": "1",
+      "settlement_fact_id": "paper_settlement_fact_73a690f05691b9b79a262863",
+      "settlement_journal_id": "journal_2f810ddc02806a7779bb73dc",
+      "settlement_value": "1"
+     },
+     "settlement_state": "SETTLED",
+     "side": "YES"
+    }
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/campaigns/evidence-review-paper-trial-demo-v7/positions",
+ "status": 200
+}

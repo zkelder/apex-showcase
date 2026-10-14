@@ -1,0 +1,8 @@
+{
+  "fixture_id": "no-proposal",
+  "schema_version": "1",
+  "evidence": "SYNTHETIC",
+  "files": {
+    "decision_inputs.json": "25bfbc00773ee5baddda76b734bbd2fcb03dc578d17deb874a1aa67fc34c43eb"
+  }
+}

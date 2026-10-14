@@ -1,0 +1,10 @@
+{
+  "fixture_id": "partial-fill-canceled-settled-void",
+  "schema_version": "1",
+  "evidence": "SYNTHETIC",
+  "files": {
+    "decision_inputs.json": "2ce4897a581d3ca7ac28bef305f4b1c4d87f6e3451da21143fd7fd4742573fdc",
+    "execution_script.json": "9b4fdcfefb105296ee1f79b83219e9ac37210a22ac7fde9591e54dae0c63965d",
+    "settlement_outcome.json": "4f1296544c941e7696aa74cfddae568ad577f7079dbb1e6f1b304e087585e57e"
+  }
+}

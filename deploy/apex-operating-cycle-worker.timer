@@ -1,0 +1,13 @@
+# TEMPLATE systemd user timer paired with apex-operating-cycle-worker.service.
+# Persistent=true runs one catch-up firing after the host resumes; it never backfills evidence.
+
+[Unit]
+Description=Periodic trigger for the Apex operating-cycle worker
+
+[Timer]
+OnCalendar=*:0/5
+Persistent=true
+RandomizedDelaySec=15s
+
+[Install]
+WantedBy=timers.target

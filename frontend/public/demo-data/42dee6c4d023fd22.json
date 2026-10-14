@@ -1,0 +1,62 @@
+{
+ "body": {
+  "capability": "SIMULATION_PAPER_ONLY",
+  "data": {
+   "active_order_reservation_risk": {
+    "amount": "0",
+    "currency": "USD"
+   },
+   "campaign_id": "evidence-review-paper-trial-demo-v7",
+   "conservative_marked_value": {
+    "amount": "0",
+    "currency": "USD"
+   },
+   "conservative_unrealized_paper_pnl": "0",
+   "contributions": {
+    "amount": "1000",
+    "currency": "USD"
+   },
+   "control_state": "RUNNING",
+   "execution_fees": {
+    "amount": "0",
+    "currency": "USD"
+   },
+   "informational_midpoint_value": {
+    "amount": "0",
+    "currency": "USD"
+   },
+   "ledger_equity_at_cost": {
+    "amount": "1000",
+    "currency": "USD"
+   },
+   "net_realized_paper_pnl": "0",
+   "open_position_risk": {
+    "amount": "0",
+    "currency": "USD"
+   },
+   "open_positions": 0,
+   "orders_by_state": {
+    "FILLED": 2
+   },
+   "realized_contract_pnl": "0",
+   "remaining_campaign_loss_capacity": {
+    "amount": "500",
+    "currency": "USD"
+   },
+   "risk_by_correlation_bucket": {},
+   "risk_by_strategy": {},
+   "settled_cash": {
+    "amount": "1000",
+    "currency": "USD"
+   },
+   "settled_positions": 2,
+   "total_active_risk": {
+    "amount": "0",
+    "currency": "USD"
+   }
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/campaigns/evidence-review-paper-trial-demo-v7/portfolio",
+ "status": 200
+}

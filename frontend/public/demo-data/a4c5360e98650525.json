@@ -1,0 +1,28 @@
+{
+ "body": {
+  "capability": "OPERATOR_READ_ONLY",
+  "data": {
+   "authority": "NONE",
+   "empty_state": "NO_RETAINED_OPPORTUNITIES",
+   "filters": {
+    "allocation": "ALL",
+    "eligibility": "ALL",
+    "paper_readiness": "ALL",
+    "priority": "ALL",
+    "query": "",
+    "venue": "ALL"
+   },
+   "items": [],
+   "limit": 25,
+   "live_authority": "NONE",
+   "offset": 0,
+   "opportunity_set_id": null,
+   "paper_authority": "NONE",
+   "source_manifest_hash": null,
+   "total": 0
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/operator-console/opportunities",
+ "status": 200
+}

@@ -1,0 +1,40 @@
+{
+ "body": {
+  "capability": "SIMULATION_PAPER_ONLY",
+  "data": {
+   "items": [
+    {
+     "canonical_request_hash": {
+      "value": "77abba48749b0d45112155624a05aafeb5bc6a6caaeb071f652372e11c722bbe"
+     },
+     "canonical_result_hash": {
+      "value": "1326071e7f5a991c4054d5bae3fe0c4217c4d6ffd74953c6843922362ab4747a"
+     },
+     "decided_at": "2026-07-25T12:00:00Z",
+     "decision_action_id": "operator_action_377d1f23da73c9228f970476",
+     "expires_at": "2026-07-25T16:00:00Z",
+     "idempotency_key": "fixture-governed-evidence-review-v7",
+     "operator_reason": "approve bounded fixture PAPER trial",
+     "reason_codes": [
+      "ALL_HARD_GATES_PASS",
+      "PAPER_TRIAL_AUTHORIZED"
+     ],
+     "request_action_id": "operator_action_4be267521775d0785eebd376",
+     "requested_at": "2026-07-25T12:00:00Z",
+     "requested_authority": "PAPER",
+     "requested_campaign_id": "evidence-review-paper-trial-demo-v7",
+     "review_id": "strategy_evidence_review_c44d5619d808b14e0e10a414",
+     "review_started_at": "2026-07-25T12:00:00Z",
+     "reviewer_note": "exact confirmation supplied by local operator",
+     "snapshot_id": "strategy_evidence_snapshot_487eeee3f43dc9beacd7230a",
+     "state": "APPROVED",
+     "strategy_id": "fixture-governed-evidence-paper-v1",
+     "strategy_version": "fixture-v1"
+    }
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/strategies/fixture-governed-evidence-paper-v1/reviews",
+ "status": 200
+}

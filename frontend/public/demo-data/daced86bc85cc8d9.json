@@ -1,0 +1,24 @@
+{
+ "body": {
+  "capability": "SIMULATION_PAPER_ONLY",
+  "data": {
+   "items": [
+    {
+     "authorized_loss": "500",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "contribution": "1000",
+     "expires_at": "2026-07-26T12:00:00Z",
+     "name": "Governed evidence-review fixture demonstration",
+     "operating_mode": "PAPER",
+     "starts_at": "2026-07-25T11:59:00Z",
+     "state": "RUNNING"
+    }
+   ],
+   "limit": 50,
+   "offset": 0
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/campaigns",
+ "status": 200
+}

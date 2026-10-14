@@ -1,0 +1,20 @@
+{
+  "schema_version": "v1",
+  "pages": {
+    "first": {
+      "filename": "page-1.json",
+      "sha256": "bc445d33fa53e6414b9ac261cb28cefeeddee27843d58fcabef11299d684774a",
+      "received_at": "2026-07-20T12:01:00Z"
+    },
+    "terminal": {
+      "filename": "page-2.json",
+      "sha256": "1bcaedff27e206790d764110ac481cb7afe167d64b99014e6763a5713870d1e1",
+      "received_at": "2026-07-20T12:02:00Z"
+    },
+    "repeated_cursor": {
+      "filename": "repeated-cursor.json",
+      "sha256": "11f018b2594d1e7eacf834d0a5270213f5dde6bc505dc82552302c9041d3ec7b",
+      "received_at": "2026-07-20T12:03:00Z"
+    }
+  }
+}

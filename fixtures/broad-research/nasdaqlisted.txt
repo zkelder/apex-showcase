@@ -1,0 +1,5 @@
+Symbol|Security Name|Market Category|Test Issue|Financial Status|Round Lot Size|ETF|NextShares
+ACME|Acme Corporation Common Stock|Q|N|N|100|N|N
+REIT|Example REIT Common Shares|Q|N|N|100|N|N
+FUND|Example Index ETF|G|N|N|100|Y|N
+File Creation Time: 0729202612:00|||||||

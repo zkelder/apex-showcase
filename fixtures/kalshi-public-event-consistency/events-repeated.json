@@ -1,0 +1,1 @@
+{"events":[{"event_ticker":"EVT-REPEAT","series_ticker":"SYN","title":"Repeated cursor","sub_title":"Synthetic","category":"TEST","status":"open","mutually_exclusive":true,"settlement_sources":[{"name":"Synthetic source","url":"https://example.invalid/source"}],"markets":[]}],"cursor":"fixture-event-repeat"}

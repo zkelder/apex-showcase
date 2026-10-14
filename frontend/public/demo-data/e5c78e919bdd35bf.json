@@ -1,0 +1,45 @@
+{
+ "body": {
+  "capability": "RESEARCH_OPERATIONS",
+  "data": {
+   "agenda_count": 0,
+   "agenda_items": [],
+   "approved_not_run_count": 0,
+   "authority": "NONE",
+   "automatic_approval": false,
+   "automatic_experiment_execution": false,
+   "awaiting_review_count": 0,
+   "experiment_queue": [],
+   "external_ai_model_calls_enabled": false,
+   "financial_mutation_capability": "NONE",
+   "first_generated_method_implementation": null,
+   "first_generated_method_runs": [],
+   "first_generated_method_selection": null,
+   "follow_up_attention": [],
+   "generated_crypto_challenger": {
+    "authority": "NONE",
+    "automatic_paper_action": false,
+    "current_signals": [],
+    "execution_histories": [],
+    "experiment_runs": [],
+    "live_authority": "NONE",
+    "refinements": [],
+    "specifications": []
+   },
+   "generated_proposal_count": 0,
+   "generator_runs": [],
+   "live_authority": "NONE",
+   "paper_authority": "NONE",
+   "paper_candidate_count": 0,
+   "proposals": [],
+   "provider_write_capability": "NONE",
+   "queued_experiment_count": 0,
+   "recommendations": [],
+   "review_queue": [],
+   "running_experiment_count": 0
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/operator-console/research-operations",
+ "status": 200
+}

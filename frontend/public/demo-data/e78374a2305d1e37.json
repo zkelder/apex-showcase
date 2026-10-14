@@ -1,0 +1,459 @@
+{
+ "body": {
+  "capability": "SECURITIES_SHADOW_ONLY",
+  "data": {
+   "items": [
+    {
+     "analytical_short_behavior": "NONE",
+     "baseline_id": "canonical_securities_baseline_fceda9d5be15e1cf25c0db36",
+     "benchmark_identity": "CASH",
+     "canonical_hash": "fceda9d5be15e1cf25c0db36de2ff0f3f64d8cfb97bb5b39264bb1e254bb78c1",
+     "canonical_payload": {
+      "analytical_short_behavior": "NONE",
+      "benchmark_identity": "CASH",
+      "display_name": "Cash Baseline V1",
+      "exact_decision_rules": [
+       "TARGET_WEIGHT_ZERO_FOR_EVERY_INSTRUMENT"
+      ],
+      "exact_feature_rules": [
+       "NO_PRICE_FEATURES"
+      ],
+      "family": "CASH",
+      "holding_policy": "CASH_FOR_FULL_PERIOD",
+      "paper_compatibility_state": "COMPATIBLE_LONG_ONLY",
+      "rebalance_policy": "NO_REBALANCE",
+      "required_adjustment_state": "TOTAL_RETURN_ADJUSTED",
+      "required_interval": "ONE_DAY",
+      "research_description": "Remain fully in simulated cash at every decision.",
+      "source_reference_identity": "APEX_TRANSPARENT_SPECIFICATION_V1",
+      "specification_version": "1",
+      "universe_requirements": [
+       "EXPLICIT_NONEMPTY_UNIVERSE"
+      ]
+     },
+     "created_at": "2026-07-25T12:00:00Z",
+     "display_name": "Cash Baseline V1",
+     "exact_decision_rules": [
+      "TARGET_WEIGHT_ZERO_FOR_EVERY_INSTRUMENT"
+     ],
+     "exact_feature_rules": [
+      "NO_PRICE_FEATURES"
+     ],
+     "family": "CASH",
+     "holding_policy": "CASH_FOR_FULL_PERIOD",
+     "paper_compatibility_state": "COMPATIBLE_LONG_ONLY",
+     "rebalance_policy": "NO_REBALANCE",
+     "required_adjustment_state": "TOTAL_RETURN_ADJUSTED",
+     "required_interval": "ONE_DAY",
+     "research_description": "Remain fully in simulated cash at every decision.",
+     "source_reference_identity": "APEX_TRANSPARENT_SPECIFICATION_V1",
+     "specification_version": "1",
+     "state": "ACTIVE",
+     "superseded_at": null,
+     "universe_requirements": [
+      "EXPLICIT_NONEMPTY_UNIVERSE"
+     ]
+    },
+    {
+     "analytical_short_behavior": "NONE",
+     "baseline_id": "canonical_securities_baseline_e2045c9c6d88eac9e40d5c31",
+     "benchmark_identity": "BUY_AND_HOLD_UNIVERSE",
+     "canonical_hash": "e2045c9c6d88eac9e40d5c31f6df143ba17279ed60bd32511542176567e16c18",
+     "canonical_payload": {
+      "analytical_short_behavior": "NONE",
+      "benchmark_identity": "BUY_AND_HOLD_UNIVERSE",
+      "display_name": "Buy and Hold V1",
+      "exact_decision_rules": [
+       "EQUAL_WEIGHT_LONG_AT_FIRST_DECISION",
+       "NO_INTERMEDIATE_REBALANCE"
+      ],
+      "exact_feature_rules": [
+       "FIRST_ELIGIBLE_TOTAL_RETURN_CLOSE"
+      ],
+      "family": "BUY_AND_HOLD",
+      "holding_policy": "TERMINAL_DATE",
+      "paper_compatibility_state": "COMPATIBLE_LONG_ONLY",
+      "rebalance_policy": "INITIAL_ONLY",
+      "required_adjustment_state": "TOTAL_RETURN_ADJUSTED",
+      "required_interval": "ONE_DAY",
+      "research_description": "Equal-weight eligible instruments once and hold through the terminal date.",
+      "source_reference_identity": "APEX_TRANSPARENT_SPECIFICATION_V1",
+      "specification_version": "1",
+      "universe_requirements": [
+       "COMPLETE_ALIGNED_DAILY_ROWS"
+      ]
+     },
+     "created_at": "2026-07-25T12:00:00Z",
+     "display_name": "Buy and Hold V1",
+     "exact_decision_rules": [
+      "EQUAL_WEIGHT_LONG_AT_FIRST_DECISION",
+      "NO_INTERMEDIATE_REBALANCE"
+     ],
+     "exact_feature_rules": [
+      "FIRST_ELIGIBLE_TOTAL_RETURN_CLOSE"
+     ],
+     "family": "BUY_AND_HOLD",
+     "holding_policy": "TERMINAL_DATE",
+     "paper_compatibility_state": "COMPATIBLE_LONG_ONLY",
+     "rebalance_policy": "INITIAL_ONLY",
+     "required_adjustment_state": "TOTAL_RETURN_ADJUSTED",
+     "required_interval": "ONE_DAY",
+     "research_description": "Equal-weight eligible instruments once and hold through the terminal date.",
+     "source_reference_identity": "APEX_TRANSPARENT_SPECIFICATION_V1",
+     "specification_version": "1",
+     "state": "ACTIVE",
+     "superseded_at": null,
+     "universe_requirements": [
+      "COMPLETE_ALIGNED_DAILY_ROWS"
+     ]
+    },
+    {
+     "analytical_short_behavior": "NONE",
+     "baseline_id": "canonical_securities_baseline_9ffb6b160b4c221ec6e46c6f",
+     "benchmark_identity": "EQUAL_WEIGHT_UNIVERSE",
+     "canonical_hash": "9ffb6b160b4c221ec6e46c6f6b36c41c5b5afd70a093541a427e89ae1db55018",
+     "canonical_payload": {
+      "analytical_short_behavior": "NONE",
+      "benchmark_identity": "EQUAL_WEIGHT_UNIVERSE",
+      "display_name": "Equal Weight Rebalance V1",
+      "exact_decision_rules": [
+       "EQUAL_WEIGHT_LONG",
+       "REBALANCE_EVERY_20_SESSIONS"
+      ],
+      "exact_feature_rules": [
+       "ELIGIBLE_UNIVERSE_MEMBERSHIP"
+      ],
+      "family": "EQUAL_WEIGHT_REBALANCE",
+      "holding_policy": "UNTIL_NEXT_REBALANCE",
+      "paper_compatibility_state": "COMPATIBLE_LONG_ONLY",
+      "rebalance_policy": "EVERY_20_SESSIONS",
+      "required_adjustment_state": "TOTAL_RETURN_ADJUSTED",
+      "required_interval": "ONE_DAY",
+      "research_description": "Long-only equal-weight universe with deterministic 20-session rebalance.",
+      "source_reference_identity": "APEX_TRANSPARENT_SPECIFICATION_V1",
+      "specification_version": "1",
+      "universe_requirements": [
+       "COMPLETE_ALIGNED_DAILY_ROWS"
+      ]
+     },
+     "created_at": "2026-07-25T12:00:00Z",
+     "display_name": "Equal Weight Rebalance V1",
+     "exact_decision_rules": [
+      "EQUAL_WEIGHT_LONG",
+      "REBALANCE_EVERY_20_SESSIONS"
+     ],
+     "exact_feature_rules": [
+      "ELIGIBLE_UNIVERSE_MEMBERSHIP"
+     ],
+     "family": "EQUAL_WEIGHT_REBALANCE",
+     "holding_policy": "UNTIL_NEXT_REBALANCE",
+     "paper_compatibility_state": "COMPATIBLE_LONG_ONLY",
+     "rebalance_policy": "EVERY_20_SESSIONS",
+     "required_adjustment_state": "TOTAL_RETURN_ADJUSTED",
+     "required_interval": "ONE_DAY",
+     "research_description": "Long-only equal-weight universe with deterministic 20-session rebalance.",
+     "source_reference_identity": "APEX_TRANSPARENT_SPECIFICATION_V1",
+     "specification_version": "1",
+     "state": "ACTIVE",
+     "superseded_at": null,
+     "universe_requirements": [
+      "COMPLETE_ALIGNED_DAILY_ROWS"
+     ]
+    },
+    {
+     "analytical_short_behavior": "OPTIONAL_NEGATIVE_RETURN_SHORT_RESEARCH_ONLY",
+     "baseline_id": "canonical_securities_baseline_b0ac964023f542c09636e4ba",
+     "benchmark_identity": "EQUAL_WEIGHT_UNIVERSE",
+     "canonical_hash": "b0ac964023f542c09636e4badb0660403df8bcdf3ee97664c81092d380a37ace",
+     "canonical_payload": {
+      "analytical_short_behavior": "OPTIONAL_NEGATIVE_RETURN_SHORT_RESEARCH_ONLY",
+      "benchmark_identity": "EQUAL_WEIGHT_UNIVERSE",
+      "display_name": "Time-Series Momentum V1",
+      "exact_decision_rules": [
+       "POSITIVE_RETURN_LONG",
+       "NONPOSITIVE_RETURN_FLAT"
+      ],
+      "exact_feature_rules": [
+       "TRAILING_20_SESSION_TOTAL_RETURN",
+       "PRIOR_AVAILABLE_ROWS_ONLY"
+      ],
+      "family": "TIME_SERIES_MOMENTUM",
+      "holding_policy": "UNTIL_NEXT_REBALANCE",
+      "paper_compatibility_state": "COMPATIBLE_LONG_ONLY",
+      "rebalance_policy": "EVERY_5_SESSIONS",
+      "required_adjustment_state": "TOTAL_RETURN_ADJUSTED",
+      "required_interval": "ONE_DAY",
+      "research_description": "Long instruments with positive prior 20-session return; otherwise cash.",
+      "source_reference_identity": "APEX_TRANSPARENT_SPECIFICATION_V1",
+      "specification_version": "1",
+      "universe_requirements": [
+       "AT_LEAST_21_ALIGNED_DAILY_ROWS"
+      ]
+     },
+     "created_at": "2026-07-25T12:00:00Z",
+     "display_name": "Time-Series Momentum V1",
+     "exact_decision_rules": [
+      "POSITIVE_RETURN_LONG",
+      "NONPOSITIVE_RETURN_FLAT"
+     ],
+     "exact_feature_rules": [
+      "TRAILING_20_SESSION_TOTAL_RETURN",
+      "PRIOR_AVAILABLE_ROWS_ONLY"
+     ],
+     "family": "TIME_SERIES_MOMENTUM",
+     "holding_policy": "UNTIL_NEXT_REBALANCE",
+     "paper_compatibility_state": "COMPATIBLE_LONG_ONLY",
+     "rebalance_policy": "EVERY_5_SESSIONS",
+     "required_adjustment_state": "TOTAL_RETURN_ADJUSTED",
+     "required_interval": "ONE_DAY",
+     "research_description": "Long instruments with positive prior 20-session return; otherwise cash.",
+     "source_reference_identity": "APEX_TRANSPARENT_SPECIFICATION_V1",
+     "specification_version": "1",
+     "state": "ACTIVE",
+     "superseded_at": null,
+     "universe_requirements": [
+      "AT_LEAST_21_ALIGNED_DAILY_ROWS"
+     ]
+    },
+    {
+     "analytical_short_behavior": "NONE",
+     "baseline_id": "canonical_securities_baseline_f333ab203d6c89bc7e425817",
+     "benchmark_identity": "EQUAL_WEIGHT_UNIVERSE",
+     "canonical_hash": "f333ab203d6c89bc7e4258173639348ca180292e35c5bd9879d50bc7c8ef135c",
+     "canonical_payload": {
+      "analytical_short_behavior": "NONE",
+      "benchmark_identity": "EQUAL_WEIGHT_UNIVERSE",
+      "display_name": "Cross-Sectional Momentum V1",
+      "exact_decision_rules": [
+       "LONG_TOP_POSITIVE_QUARTILE",
+       "FLAT_REMAINDER"
+      ],
+      "exact_feature_rules": [
+       "TRAILING_20_SESSION_TOTAL_RETURN",
+       "CROSS_SECTIONAL_RANK"
+      ],
+      "family": "CROSS_SECTIONAL_MOMENTUM",
+      "holding_policy": "UNTIL_NEXT_REBALANCE",
+      "paper_compatibility_state": "COMPATIBLE_LONG_ONLY",
+      "rebalance_policy": "EVERY_5_SESSIONS",
+      "required_adjustment_state": "TOTAL_RETURN_ADJUSTED",
+      "required_interval": "ONE_DAY",
+      "research_description": "Equal-weight top positive-return quartile across the exact universe.",
+      "source_reference_identity": "APEX_TRANSPARENT_SPECIFICATION_V1",
+      "specification_version": "1",
+      "universe_requirements": [
+       "AT_LEAST_4_INSTRUMENTS",
+       "ALIGNED_DAILY_ROWS"
+      ]
+     },
+     "created_at": "2026-07-25T12:00:00Z",
+     "display_name": "Cross-Sectional Momentum V1",
+     "exact_decision_rules": [
+      "LONG_TOP_POSITIVE_QUARTILE",
+      "FLAT_REMAINDER"
+     ],
+     "exact_feature_rules": [
+      "TRAILING_20_SESSION_TOTAL_RETURN",
+      "CROSS_SECTIONAL_RANK"
+     ],
+     "family": "CROSS_SECTIONAL_MOMENTUM",
+     "holding_policy": "UNTIL_NEXT_REBALANCE",
+     "paper_compatibility_state": "COMPATIBLE_LONG_ONLY",
+     "rebalance_policy": "EVERY_5_SESSIONS",
+     "required_adjustment_state": "TOTAL_RETURN_ADJUSTED",
+     "required_interval": "ONE_DAY",
+     "research_description": "Equal-weight top positive-return quartile across the exact universe.",
+     "source_reference_identity": "APEX_TRANSPARENT_SPECIFICATION_V1",
+     "specification_version": "1",
+     "state": "ACTIVE",
+     "superseded_at": null,
+     "universe_requirements": [
+      "AT_LEAST_4_INSTRUMENTS",
+      "ALIGNED_DAILY_ROWS"
+     ]
+    },
+    {
+     "analytical_short_behavior": "NONE",
+     "baseline_id": "canonical_securities_baseline_0eb2dda3f84c12af9feed893",
+     "benchmark_identity": "EQUAL_WEIGHT_UNIVERSE",
+     "canonical_hash": "0eb2dda3f84c12af9feed89354ed1c58a2aa8192bd222b5d35d0d71979c9f143",
+     "canonical_payload": {
+      "analytical_short_behavior": "NONE",
+      "benchmark_identity": "EQUAL_WEIGHT_UNIVERSE",
+      "display_name": "Short-Horizon Mean Reversion V1",
+      "exact_decision_rules": [
+       "LONG_NEGATIVE_BOTTOM_QUARTILE",
+       "FLAT_REMAINDER"
+      ],
+      "exact_feature_rules": [
+       "TRAILING_5_SESSION_TOTAL_RETURN",
+       "CROSS_SECTIONAL_ASCENDING_RANK"
+      ],
+      "family": "SHORT_HORIZON_MEAN_REVERSION",
+      "holding_policy": "FIXED_5_SESSION_HORIZON",
+      "paper_compatibility_state": "COMPATIBLE_LONG_ONLY",
+      "rebalance_policy": "EVERY_5_SESSIONS",
+      "required_adjustment_state": "TOTAL_RETURN_ADJUSTED",
+      "required_interval": "ONE_DAY",
+      "research_description": "Long the bottom negative-return quartile for a fixed five-session horizon.",
+      "source_reference_identity": "APEX_TRANSPARENT_SPECIFICATION_V1",
+      "specification_version": "1",
+      "universe_requirements": [
+       "AT_LEAST_4_LIQUID_INSTRUMENTS",
+       "ALIGNED_DAILY_ROWS"
+      ]
+     },
+     "created_at": "2026-07-25T12:00:00Z",
+     "display_name": "Short-Horizon Mean Reversion V1",
+     "exact_decision_rules": [
+      "LONG_NEGATIVE_BOTTOM_QUARTILE",
+      "FLAT_REMAINDER"
+     ],
+     "exact_feature_rules": [
+      "TRAILING_5_SESSION_TOTAL_RETURN",
+      "CROSS_SECTIONAL_ASCENDING_RANK"
+     ],
+     "family": "SHORT_HORIZON_MEAN_REVERSION",
+     "holding_policy": "FIXED_5_SESSION_HORIZON",
+     "paper_compatibility_state": "COMPATIBLE_LONG_ONLY",
+     "rebalance_policy": "EVERY_5_SESSIONS",
+     "required_adjustment_state": "TOTAL_RETURN_ADJUSTED",
+     "required_interval": "ONE_DAY",
+     "research_description": "Long the bottom negative-return quartile for a fixed five-session horizon.",
+     "source_reference_identity": "APEX_TRANSPARENT_SPECIFICATION_V1",
+     "specification_version": "1",
+     "state": "ACTIVE",
+     "superseded_at": null,
+     "universe_requirements": [
+      "AT_LEAST_4_LIQUID_INSTRUMENTS",
+      "ALIGNED_DAILY_ROWS"
+     ]
+    },
+    {
+     "analytical_short_behavior": "FULL_PAIR_SHORT_RESEARCH_ONLY_LONG_LEG_SCORE_SEPARATE",
+     "baseline_id": "canonical_securities_baseline_86690e2fcca524779a667314",
+     "benchmark_identity": "EQUAL_WEIGHT_UNIVERSE",
+     "canonical_hash": "86690e2fcca524779a66731444bd2c940feffc29d7d53b3e1159a4d7121073aa",
+     "canonical_payload": {
+      "analytical_short_behavior": "FULL_PAIR_SHORT_RESEARCH_ONLY_LONG_LEG_SCORE_SEPARATE",
+      "benchmark_identity": "EQUAL_WEIGHT_UNIVERSE",
+      "display_name": "Pairs Distance Mean Reversion V1",
+      "exact_decision_rules": [
+       "ABS_Z_AT_LEAST_1_LONG_WEAK_LEG",
+       "ANALYTICAL_SHORT_STRONG_LEG",
+       "ABS_Z_AT_MOST_0_25_EXIT"
+      ],
+      "exact_feature_rules": [
+       "PREDECLARED_ADJACENT_INSTRUMENT_PAIRS",
+       "FIRST_60_SESSIONS_TRAINING_ONLY",
+       "NORMALIZED_PRICE_DISTANCE"
+      ],
+      "family": "PAIRS_DISTANCE_MEAN_REVERSION",
+      "holding_policy": "UNTIL_FIXED_Z_SCORE_EXIT",
+      "paper_compatibility_state": "RESEARCH_ONLY",
+      "rebalance_policy": "DAILY_AFTER_TRAINING",
+      "required_adjustment_state": "TOTAL_RETURN_ADJUSTED",
+      "required_interval": "ONE_DAY",
+      "research_description": "Predeclared pairs use training-only normalization and fixed z-score rules.",
+      "source_reference_identity": "APEX_TRANSPARENT_SPECIFICATION_V1",
+      "specification_version": "1",
+      "universe_requirements": [
+       "EVEN_INSTRUMENT_COUNT",
+       "AT_LEAST_120_ALIGNED_DAILY_ROWS"
+      ]
+     },
+     "created_at": "2026-07-25T12:00:00Z",
+     "display_name": "Pairs Distance Mean Reversion V1",
+     "exact_decision_rules": [
+      "ABS_Z_AT_LEAST_1_LONG_WEAK_LEG",
+      "ANALYTICAL_SHORT_STRONG_LEG",
+      "ABS_Z_AT_MOST_0_25_EXIT"
+     ],
+     "exact_feature_rules": [
+      "PREDECLARED_ADJACENT_INSTRUMENT_PAIRS",
+      "FIRST_60_SESSIONS_TRAINING_ONLY",
+      "NORMALIZED_PRICE_DISTANCE"
+     ],
+     "family": "PAIRS_DISTANCE_MEAN_REVERSION",
+     "holding_policy": "UNTIL_FIXED_Z_SCORE_EXIT",
+     "paper_compatibility_state": "RESEARCH_ONLY",
+     "rebalance_policy": "DAILY_AFTER_TRAINING",
+     "required_adjustment_state": "TOTAL_RETURN_ADJUSTED",
+     "required_interval": "ONE_DAY",
+     "research_description": "Predeclared pairs use training-only normalization and fixed z-score rules.",
+     "source_reference_identity": "APEX_TRANSPARENT_SPECIFICATION_V1",
+     "specification_version": "1",
+     "state": "ACTIVE",
+     "superseded_at": null,
+     "universe_requirements": [
+      "EVEN_INSTRUMENT_COUNT",
+      "AT_LEAST_120_ALIGNED_DAILY_ROWS"
+     ]
+    },
+    {
+     "analytical_short_behavior": "NONE",
+     "baseline_id": "canonical_securities_baseline_5098b0a0cf0d60c96b4916ec",
+     "benchmark_identity": "EQUAL_WEIGHT_UNIVERSE",
+     "canonical_hash": "5098b0a0cf0d60c96b4916ec9b030414e0dd293a5753ce5e2cbb691b99487c63",
+     "canonical_payload": {
+      "analytical_short_behavior": "NONE",
+      "benchmark_identity": "EQUAL_WEIGHT_UNIVERSE",
+      "display_name": "Volatility-Targeted Long-Only V1",
+      "exact_decision_rules": [
+       "TARGET_VOLATILITY_10_PERCENT",
+       "EXPOSURE_CAPPED_AT_1"
+      ],
+      "exact_feature_rules": [
+       "TRAILING_20_SESSION_EQUAL_WEIGHT_RETURN_VOLATILITY",
+       "ANNUALIZATION_SQRT_252"
+      ],
+      "family": "VOLATILITY_TARGETED_LONG_ONLY",
+      "holding_policy": "UNTIL_NEXT_REBALANCE",
+      "paper_compatibility_state": "COMPATIBLE_LONG_ONLY",
+      "rebalance_policy": "EVERY_5_SESSIONS",
+      "required_adjustment_state": "TOTAL_RETURN_ADJUSTED",
+      "required_interval": "ONE_DAY",
+      "research_description": "Scale equal-weight long exposure to a 10% target using prior volatility.",
+      "source_reference_identity": "APEX_TRANSPARENT_SPECIFICATION_V1",
+      "specification_version": "1",
+      "universe_requirements": [
+       "AT_LEAST_21_ALIGNED_DAILY_ROWS"
+      ]
+     },
+     "created_at": "2026-07-25T12:00:00Z",
+     "display_name": "Volatility-Targeted Long-Only V1",
+     "exact_decision_rules": [
+      "TARGET_VOLATILITY_10_PERCENT",
+      "EXPOSURE_CAPPED_AT_1"
+     ],
+     "exact_feature_rules": [
+      "TRAILING_20_SESSION_EQUAL_WEIGHT_RETURN_VOLATILITY",
+      "ANNUALIZATION_SQRT_252"
+     ],
+     "family": "VOLATILITY_TARGETED_LONG_ONLY",
+     "holding_policy": "UNTIL_NEXT_REBALANCE",
+     "paper_compatibility_state": "COMPATIBLE_LONG_ONLY",
+     "rebalance_policy": "EVERY_5_SESSIONS",
+     "required_adjustment_state": "TOTAL_RETURN_ADJUSTED",
+     "required_interval": "ONE_DAY",
+     "research_description": "Scale equal-weight long exposure to a 10% target using prior volatility.",
+     "source_reference_identity": "APEX_TRANSPARENT_SPECIFICATION_V1",
+     "specification_version": "1",
+     "state": "ACTIVE",
+     "superseded_at": null,
+     "universe_requirements": [
+      "AT_LEAST_21_ALIGNED_DAILY_ROWS"
+     ]
+    }
+   ],
+   "warnings": [
+    "CANONICAL BASELINE \u2014 TRANSPARENT RESEARCH SPECIFICATION",
+    "BASELINES ARE RESEARCH BENCHMARKS, NOT PERFORMANCE PROMISES",
+    "EXTERNAL SIMULATOR OUTPUT IS EVIDENCE, NOT APEX AUTHORITY"
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/securities/baselines",
+ "status": 200
+}

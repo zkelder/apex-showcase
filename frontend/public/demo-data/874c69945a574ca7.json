@@ -1,0 +1,37 @@
+{
+ "body": {
+  "capability": "SECURITIES_SHADOW_ONLY",
+  "data": {
+   "items": {
+    "APEX_PAPER": [
+     true,
+     "APEX_PAPER_STAGE2_GOVERNED_NOT_EXECUTED"
+    ],
+    "APEX_RESEARCH": [
+     true,
+     "APEX_RESEARCH_V1"
+    ],
+    "DETERMINISTIC_FIXTURE": [
+     true,
+     "PROTOCOL_FIXTURE_NOT_EXTERNAL_ENGINE"
+    ],
+    "LEAN": [
+     false,
+     "LEAN_RUNTIME_UNAVAILABLE"
+    ],
+    "VECTORBT": [
+     true,
+     "1.1.0"
+    ]
+   },
+   "warnings": [
+    "CANONICAL BASELINE \u2014 TRANSPARENT RESEARCH SPECIFICATION",
+    "BASELINES ARE RESEARCH BENCHMARKS, NOT PERFORMANCE PROMISES",
+    "EXTERNAL SIMULATOR OUTPUT IS EVIDENCE, NOT APEX AUTHORITY"
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/securities/simulator-status",
+ "status": 200
+}

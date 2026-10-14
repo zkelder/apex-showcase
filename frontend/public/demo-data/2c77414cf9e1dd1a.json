@@ -1,0 +1,18 @@
+{
+ "body": {
+  "capability": "SIMULATION_PAPER_ONLY",
+  "data": {
+   "authority": "REJECTED",
+   "evidence_state": "DEPRIORITIZED",
+   "family": "MARKET_STRUCTURE",
+   "implementation_state": "IMPLEMENTED",
+   "last_evidence_decision": "STRATEGY_DEPRIORITIZE",
+   "runnable": false,
+   "strategy_id": "kalshi-same-market-complement",
+   "version": "v1"
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/strategies/kalshi-same-market-complement",
+ "status": 200
+}

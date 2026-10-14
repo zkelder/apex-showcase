@@ -1,0 +1,27 @@
+{
+  "cursor": null,
+  "markets": [
+    {
+      "ticker": "KXTEST-SECOND",
+      "event_ticker": "KXTEST-EVENT-SECOND",
+      "title": "Synthetic terminal page market",
+      "subtitle": "Terminal fixture page",
+      "status": "open",
+      "open_time": "2026-07-20T12:00:00Z",
+      "close_time": "2026-08-21T12:00:00Z",
+      "latest_expiration_time": "2026-08-21T13:00:00Z",
+      "yes_bid_dollars": "0.30",
+      "yes_ask_dollars": "0.31",
+      "no_bid_dollars": "0.69",
+      "no_ask_dollars": "0.70",
+      "yes_bid_size_fp": "3.00",
+      "yes_ask_size_fp": "4.00",
+      "volume_fp": "3.00",
+      "volume_24h_fp": "2.00",
+      "open_interest_fp": "5.00",
+      "liquidity_dollars": "0",
+      "rules_primary": "Synthetic terminal rule text.",
+      "rules_secondary": null
+    }
+  ]
+}

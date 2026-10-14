@@ -1,0 +1,21 @@
+{
+  "fixture_id": "partial-fill-canceled",
+  "schema_version": "1",
+  "script_id": "execution-partial-fill-canceled-v1",
+  "kind": "PARTIAL_FILL_THEN_CANCEL",
+  "side": "YES",
+  "executable_yes_ask": "0.40",
+  "executable_no_ask": "0.62",
+  "visible_yes_quantity": "1000",
+  "ordered_quantity": "250",
+  "fill_quantity": "100",
+  "remaining_quantity": "150",
+  "opened_at": "2026-07-15T15:00:03Z",
+  "filled_at": "2026-07-15T15:00:04Z",
+  "canceled_at": "2026-07-15T15:00:05Z",
+  "opened_sequence": "1",
+  "fill_sequence": "2",
+  "canceled_sequence": "3",
+  "fill_price": "0.39",
+  "fee_per_contract": "0.01"
+}

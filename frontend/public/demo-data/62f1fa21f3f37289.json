@@ -1,0 +1,18 @@
+{
+ "body": {
+  "capability": "RESEARCH_EVIDENCE_ONLY",
+  "data": {
+   "items": [],
+   "latest_evaluation": null,
+   "latest_snapshot": null,
+   "warnings": [
+    "STRATEGY INTELLIGENCE IS RESEARCH ONLY",
+    "ABSTENTION IS A VALID DECISION",
+    "GENUINE HISTORICAL PERFORMANCE DOES NOT ESTABLISH A TRADING EDGE"
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/strategy-intelligence/runs",
+ "status": 200
+}

@@ -1,0 +1,29 @@
+{
+  "markets": {
+    "first": {"filename": "markets-1.json", "sha256": "1a9c38cf7394dcd345bcf983373fb40c276b955f01f1b9081664167096d7ff75", "received_at": "2026-07-20T12:00:00Z"},
+    "terminal": {"filename": "markets-2.json", "sha256": "a83e783a42518af36e9e2b250b98093ec18f491cb51237890688fd9ded38b3a8", "received_at": "2026-07-20T12:00:01Z"}
+  },
+  "events": {
+    "first": {"filename": "events-1.json", "sha256": "531e3d5313289be82dbaa8f6007d612096bf56890181e75b15cfab259d27cab9", "received_at": "2026-07-20T12:00:02Z"},
+    "terminal": {"filename": "events-2.json", "sha256": "9589ef7e8e24fe7d4bbbcca837a910fd1afcdf96b2dba4de12ca44951083a73f", "received_at": "2026-07-20T12:00:03Z"},
+    "repeated": {"filename": "events-repeated.json", "sha256": "c21b8b6993fcefdcb8e55fe4dd5d0f8d5ce88dd1bb5bc3f08ef5c0b305c28230", "received_at": "2026-07-20T12:00:04Z"}
+  },
+  "fixture_exhaustiveness": {
+    "EVT-CONSISTENT": "VERIFIED",
+    "EVT-CANDIDATE": "VERIFIED",
+    "EVT-INCOMPLETE": "VERIFIED",
+    "EVT-SOURCE": "VERIFIED",
+    "EVT-RULE": "VERIFIED",
+    "EVT-CLOSE": "VERIFIED"
+  },
+  "fixture_nested_settlement_hashes": {
+    "EVT-UNKNOWN": {"EVT-UNKNOWN-A": "ad4da325174cb736b8d873771a214267cb1ba94b4df2da5c62a915240669e0fe", "EVT-UNKNOWN-B": "ad4da325174cb736b8d873771a214267cb1ba94b4df2da5c62a915240669e0fe"},
+    "EVT-CONSISTENT": {"EVT-CONSISTENT-A": "ad4da325174cb736b8d873771a214267cb1ba94b4df2da5c62a915240669e0fe", "EVT-CONSISTENT-B": "ad4da325174cb736b8d873771a214267cb1ba94b4df2da5c62a915240669e0fe"},
+    "EVT-CANDIDATE": {"EVT-CANDIDATE-A": "ad4da325174cb736b8d873771a214267cb1ba94b4df2da5c62a915240669e0fe", "EVT-CANDIDATE-B": "ad4da325174cb736b8d873771a214267cb1ba94b4df2da5c62a915240669e0fe"},
+    "EVT-INCOMPLETE": {"EVT-INCOMPLETE-A": "ad4da325174cb736b8d873771a214267cb1ba94b4df2da5c62a915240669e0fe", "EVT-INCOMPLETE-B": "ad4da325174cb736b8d873771a214267cb1ba94b4df2da5c62a915240669e0fe"},
+    "EVT-SOURCE": {"EVT-SOURCE-A": "0000000000000000000000000000000000000000000000000000000000000000"},
+    "EVT-RULE": {"EVT-RULE-A": "ad4da325174cb736b8d873771a214267cb1ba94b4df2da5c62a915240669e0fe"},
+    "EVT-CLOSE": {"EVT-CLOSE-A": "ad4da325174cb736b8d873771a214267cb1ba94b4df2da5c62a915240669e0fe"},
+    "EVT-PAGED": {"EVT-PAGED-A": "ad4da325174cb736b8d873771a214267cb1ba94b4df2da5c62a915240669e0fe"}
+  }
+}

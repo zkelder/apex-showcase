@@ -1,0 +1,9 @@
+{
+  "fixture_id": "partial-fill-canceled",
+  "schema_version": "1",
+  "evidence": "SYNTHETIC",
+  "files": {
+    "decision_inputs.json": "8d9a0fc099373fa01a6beecabe3fc94f3bb1d3c05b0152760d43046adba1d1db",
+    "execution_script.json": "6ba4d1399530c4945bcf8ae8508405b85410f6ee482e8bf0eac93d3cc697611f"
+  }
+}

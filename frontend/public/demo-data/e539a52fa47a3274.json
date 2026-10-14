@@ -1,0 +1,21 @@
+{
+ "body": {
+  "capability": "OPERATOR_READ_ONLY",
+  "data": {
+   "authority": "NONE",
+   "current_classifier_version": "REASON_CLASSIFIER_V2",
+   "empty_state": "NO_RETAINED_DECISIONS",
+   "items": [],
+   "known_classifier_versions": [
+    "REASON_CLASSIFIER_V1",
+    "REASON_CLASSIFIER_V2"
+   ],
+   "limit": 25,
+   "offset": 0,
+   "total": 0
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/operator-console/decisions",
+ "status": 200
+}

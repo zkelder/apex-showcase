@@ -1,0 +1,97 @@
+{
+ "body": {
+  "capability": "OPERATOR_READ_ONLY",
+  "data": {
+   "authority": "NONE",
+   "coverage": {
+    "decision_count": 0,
+    "decisions_with_at_least_one_observation": 0,
+    "most_recent_observed_at": null,
+    "observation_count": 0,
+    "observation_count_by_baseline_kind": {},
+    "observation_count_by_disposition": {},
+    "observation_count_by_horizon_kind": {},
+    "observation_count_by_observation_type": {},
+    "observation_count_by_policy_version": {},
+    "observation_count_by_provenance": {},
+    "observation_count_by_venue": {}
+   },
+   "current_policy_version": "FOLLOWUP_POLICY_V2 \u00b7 FOLLOWUP_POLICY_V3",
+   "current_policy_versions": [
+    "FOLLOWUP_POLICY_V2",
+    "FOLLOWUP_POLICY_V3"
+   ],
+   "empty_state": "NO_RETAINED_OR_PENDING_FOLLOWUP",
+   "items": [],
+   "limit": 25,
+   "offset": 0,
+   "plan_summary": {
+    "as_of": "2026-07-25T12:00:00Z",
+    "considered_decisions": 0,
+    "considered_pairs": 0,
+    "policy_version": "FOLLOWUP_POLICY_V2 \u00b7 FOLLOWUP_POLICY_V3",
+    "policy_version_by_venue": [
+     [
+      "KALSHI",
+      "FOLLOWUP_POLICY_V2"
+     ],
+     [
+      "SECURITIES",
+      "FOLLOWUP_POLICY_V2"
+     ],
+     [
+      "CRYPTO",
+      "FOLLOWUP_POLICY_V3"
+     ]
+    ],
+    "policy_versions": [
+     "FOLLOWUP_POLICY_V2",
+     "FOLLOWUP_POLICY_V3"
+    ],
+    "state_counts": [],
+    "state_counts_by_venue": []
+   },
+   "progress": {
+    "currently_due": 0,
+    "currently_not_yet_due": 0,
+    "currently_permanently_unavailable": 0,
+    "kalshi_baseline_quote_latest_captured_at": null,
+    "kalshi_baseline_quote_market_quote_rows": 0,
+    "kalshi_baseline_quote_matched_trade_rows": 0,
+    "kalshi_baseline_quote_rows_retained": 0,
+    "kalshi_budget_exhausted_last_cycle": false,
+    "kalshi_request_budget_per_cycle": 20,
+    "kalshi_resolution_current_state_by_market": {},
+    "kalshi_resolution_distinct_markets_tracked": 0,
+    "kalshi_resolution_facts_retained": 0,
+    "kalshi_resolution_latest_captured_at": null,
+    "kalshi_resolution_markets_unresolved": 0,
+    "last_cycle_candidate_scan_limit": null,
+    "last_cycle_candidates_examined": null,
+    "last_cycle_completed_at": null,
+    "last_cycle_created": null,
+    "last_cycle_genuine_attempts": null,
+    "last_cycle_permanently_unavailable_skipped": null,
+    "last_cycle_provider_requests": null,
+    "last_cycle_reused_idempotent": null,
+    "last_cycle_sample_limit": null,
+    "last_cycle_skipped_already_observed": null,
+    "last_cycle_skipped_not_yet_due": null,
+    "last_cycle_skipped_unsupported": null,
+    "last_cycle_status": null,
+    "last_cycle_transiently_blocked": null,
+    "scan_cursor_baseline_kind": null,
+    "scan_cursor_decision_id": null,
+    "scan_cursor_empty_state": "NO_COMPLETED_SCAN_YET",
+    "scan_cursor_horizon_kind": null,
+    "scan_cursor_policy_version": null,
+    "scan_cursor_updated_at": null,
+    "scan_cursors": []
+   },
+   "total": 0
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/operator-console/followups",
+ "status": 200
+}

@@ -1,0 +1,851 @@
+{
+ "body": {
+  "capability": "SIMULATION_PAPER_ONLY",
+  "data": {
+   "items": [
+    {
+     "action": "CAMPAIGN_PAUSE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "CAMPAIGN_CONTROL",
+     "operator_note": "prove trial path respects campaign pause",
+     "reason_codes": [
+      "CAMPAIGN_PAUSED"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "campaign_control_843b69f67af56b37a4287799",
+      "evidence-review-paper-trial-demo-v7"
+     ],
+     "target_id": "campaign_control_843b69f67af56b37a4287799",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "CAMPAIGN_RESUME",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "CAMPAIGN_CONTROL",
+     "operator_note": "resume explicit fixture PAPER trial",
+     "reason_codes": [
+      "CAMPAIGN_RESUMED"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "campaign_control_9f094beb04da810d393aa735",
+      "evidence-review-paper-trial-demo-v7"
+     ],
+     "target_id": "campaign_control_9f094beb04da810d393aa735",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "CREATE_CAMPAIGN",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "fixture-only governed PAPER demonstration; no provider authority",
+     "reason_codes": [
+      "CAMPAIGN_CREATED"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "evidence-review-paper-trial-demo-v7",
+      "journal_25702c0df67caaa4871ea96a"
+     ],
+     "target_id": "operator_action_57128ab859664e8d812e2534",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "CYCLE",
+     "actor": "AUTOPILOT",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "CYCLE",
+     "operator_note": "must be blocked by revoked trial",
+     "reason_codes": [],
+     "result_state": "PARTIAL",
+     "target_entity_ids": [
+      "autopilot_cycle_1c2f10f079029d437fa75654"
+     ],
+     "target_id": "autopilot_cycle_1c2f10f079029d437fa75654",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "CYCLE",
+     "actor": "AUTOPILOT",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "CYCLE",
+     "operator_note": "one governed fixture PAPER cycle",
+     "reason_codes": [],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "autopilot_cycle_517749c74c4947924393032d"
+     ],
+     "target_id": "autopilot_cycle_517749c74c4947924393032d",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "DECIDE_STRATEGY_EVIDENCE_REVIEW",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "exact confirmation supplied by local operator",
+     "reason_codes": [
+      "ALL_HARD_GATES_PASS",
+      "PAPER_TRIAL_AUTHORIZED"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "strategy_evidence_review_c44d5619d808b14e0e10a414",
+      "strategy_evidence_snapshot_487eeee3f43dc9beacd7230a"
+     ],
+     "target_id": "operator_action_377d1f23da73c9228f970476",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_226da72db8a46a178314aa33"
+     ],
+     "target_id": "operator_action_09532bdab0bbba0a1fc6f0e2",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_31e3e28c5c4b83702d6b278a"
+     ],
+     "target_id": "operator_action_9ab2341b70e424267fa7a93f",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_33b2b5f62afd9e8b235c12cc"
+     ],
+     "target_id": "operator_action_572c7fbcb37efe7ccb026db2",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_35e34662b96067c0d8d791d5"
+     ],
+     "target_id": "operator_action_915c630bedb04b8177107f93",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_3784ca027b885dc5269654b1"
+     ],
+     "target_id": "operator_action_eee4dd6619dc2beeeb10ae0e",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_37989a47ae7bc9d144dcd837"
+     ],
+     "target_id": "operator_action_e4df6aab2473327167650b16",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_403efff16376d40637291044"
+     ],
+     "target_id": "operator_action_582ec797ca9e23179252611e",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_41a5b7640bbd85aa09bca3f7"
+     ],
+     "target_id": "operator_action_7debea88776eeb92c4d346e5",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_437e579eca4216dde283e1dd"
+     ],
+     "target_id": "operator_action_0bd1c753f22ef149a9caba48",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_482f0371e8259eca7ebf9ff9"
+     ],
+     "target_id": "operator_action_835f53724a4df88a5552c9b5",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_4a98dfca5adea9b1ca16cbe2"
+     ],
+     "target_id": "operator_action_877a34cd9dba459af547761f",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_4b8d13724c251c89fb91a6d6"
+     ],
+     "target_id": "operator_action_37a8391abf8998ae6a871cb4",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_4c57eec24a59e7a394ab50cd"
+     ],
+     "target_id": "operator_action_00c1d2b35f7281001c9206cc",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_4ecd477aae4ee16fa5c2dbcd"
+     ],
+     "target_id": "operator_action_068d823e1efa64e2f3d9ecca",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_556b12909b7d6c99b58853b0"
+     ],
+     "target_id": "operator_action_cb6a1f439ce0b3c5da422ae1",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_58d86a9c3d3f8e00a10e1869"
+     ],
+     "target_id": "operator_action_4c4351d3e2121df1df6962d7",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_5900a7ee7a813706e5741d59"
+     ],
+     "target_id": "operator_action_c78e17e54e03f9833f684e96",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_59fe4df41a9d131d7b2b0d16"
+     ],
+     "target_id": "operator_action_33da3572676dd8f409a671de",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_5ab8ce0e32c1d092c292812d"
+     ],
+     "target_id": "operator_action_59ba13b3e9c1aec0e4c802db",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_5b137cda81ce8ba1ad7bbc47"
+     ],
+     "target_id": "operator_action_efd71033fcc3d1ce680efe56",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_666cf8816dac6923e86d1a7e"
+     ],
+     "target_id": "operator_action_52c3021dfe7350ae9bd5ad62",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_690fe7a6ac6567c1b18cb651"
+     ],
+     "target_id": "operator_action_832c328037b5b083de963390",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_6cd889e395b183f131ae67d2"
+     ],
+     "target_id": "operator_action_d44046d6f6548826b1ea1b40",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_6e1023882f1181f251b1d9d5"
+     ],
+     "target_id": "operator_action_848e66a90aec99bef960a9bf",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_738172e44d4e948eaab993de"
+     ],
+     "target_id": "operator_action_f4b34bf39c1eab132ace683a",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_75aea6ebc29c27b7da89cb6c"
+     ],
+     "target_id": "operator_action_1f13c7d0158d5fe1cc13c38b",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_79b37d1cb22e67ae1725fd1a"
+     ],
+     "target_id": "operator_action_ce3558871aa74d2e80be1783",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_7c53d289ee72d927fad38470"
+     ],
+     "target_id": "operator_action_4f1fdb1ce3cd5589718e5503",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_7e0d3269b81e4396a57a7541"
+     ],
+     "target_id": "operator_action_43453cafd31643d4a620b4e7",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_7e6f74408c03eabc75dd6259"
+     ],
+     "target_id": "operator_action_e1e009e2c35ea09cfc669856",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_7e99de26093dbc5859bd27ab"
+     ],
+     "target_id": "operator_action_e7bd8ac43e84ec6e7c100fc1",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_7fa4c0048cde7271fbaa47bc"
+     ],
+     "target_id": "operator_action_0fa43e3b8a855619576dff0a",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_7fbc7edecfcbe054e2f7fb7a"
+     ],
+     "target_id": "operator_action_43a1941472e96e9a52a9fe17",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "OPPORTUNITY_ASSESSED",
+     "actor": "AUTOPILOT",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPPORTUNITY",
+     "operator_note": "",
+     "reason_codes": [
+      "PAPER_AUTHORIZATION_ELIGIBLE"
+     ],
+     "result_state": "VALID",
+     "target_entity_ids": [
+      "proposal_09bceeabf1a2dd88eae32fdd"
+     ],
+     "target_id": "proposal_09bceeabf1a2dd88eae32fdd",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "OPPORTUNITY_ASSESSED",
+     "actor": "AUTOPILOT",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPPORTUNITY",
+     "operator_note": "",
+     "reason_codes": [
+      "PAPER_AUTHORIZATION_ELIGIBLE"
+     ],
+     "result_state": "VALID",
+     "target_entity_ids": [
+      "proposal_20b24c76e75a93845e91661d"
+     ],
+     "target_id": "proposal_20b24c76e75a93845e91661d",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "PAPER_EXECUTION",
+     "actor": "PAPER_ENGINE",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "ORDER",
+     "operator_note": "",
+     "reason_codes": [
+      "PAPER_DISPLAYED_DEPTH_MATCHED"
+     ],
+     "result_state": "FULL_FILL",
+     "target_entity_ids": [
+      "paper_execution_7efc8287f89993d50c42fe2d",
+      "order_9fc92628ba0da9d2fade9658"
+     ],
+     "target_id": "order_9fc92628ba0da9d2fade9658",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "PAPER_EXECUTION",
+     "actor": "PAPER_ENGINE",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "ORDER",
+     "operator_note": "",
+     "reason_codes": [
+      "PAPER_DISPLAYED_DEPTH_MATCHED"
+     ],
+     "result_state": "FULL_FILL",
+     "target_entity_ids": [
+      "paper_execution_d7f0fc479d5ebe5fdcc5222d",
+      "order_0dc9d1a72fe20c57c91bda8b"
+     ],
+     "target_id": "order_0dc9d1a72fe20c57c91bda8b",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "POSITION_MARKED",
+     "actor": "PAPER_ENGINE",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "MARK",
+     "operator_note": "",
+     "reason_codes": [
+      "PAPER_MARK_VISIBLE_BID_DEPTH"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "paper_position_mark_7575c9aa4fd2ca5cbfab5930",
+      "position_e7806f2381112aff3b484f5f"
+     ],
+     "target_id": "position_e7806f2381112aff3b484f5f",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "POSITION_SETTLED",
+     "actor": "PAPER_ENGINE",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "SETTLEMENT",
+     "operator_note": "",
+     "reason_codes": [],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "paper_position_settlement_5b17dc9139c4f34c12b73da3",
+      "position_e7806f2381112aff3b484f5f",
+      "paper_settlement_fact_73a690f05691b9b79a262863"
+     ],
+     "target_id": "position_e7806f2381112aff3b484f5f",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "POSITION_SETTLED",
+     "actor": "PAPER_ENGINE",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "SETTLEMENT",
+     "operator_note": "",
+     "reason_codes": [],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "paper_position_settlement_b58000d5309db8e4d85f4d1b",
+      "position_7eb643c404c163d48facf2b1",
+      "paper_settlement_fact_59edbbf9c7828048d835b2df"
+     ],
+     "target_id": "position_7eb643c404c163d48facf2b1",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "RECONCILE_PAPER_TRIAL_LIMITS",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "MAXIMUM_CAPITAL_LOCKUP_REACHED,MAXIMUM_DRAWDOWN_REACHED,MAXIMUM_PAPER_CYCLES_REACHED,MAXIMUM_REALIZED_LOSS_REACHED",
+     "reason_codes": [
+      "MAXIMUM_CAPITAL_LOCKUP_REACHED,MAXIMUM_DRAWDOWN_REACHED,MAXIMUM_PAPER_CYCLES_REACHED,MAXIMUM_REALIZED_LOSS_REACHED"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "paper_trial_authorization_856265d4043f452dfc8b862a"
+     ],
+     "target_id": "operator_action_8d187ff05cae45ce94fe1249",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "REQUEST_STRATEGY_EVIDENCE_REVIEW",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "all metrics are derived from retained production scoring rows",
+     "reason_codes": [
+      "REVIEW_REQUESTED"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "fixture-governed-evidence-paper-v1",
+      "strategy_evidence_snapshot_487eeee3f43dc9beacd7230a"
+     ],
+     "target_id": "operator_action_4be267521775d0785eebd376",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "REVOKE_PAPER_TRIAL_AUTHORIZATION",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "operator revokes suspended fixture trial",
+     "reason_codes": [
+      "operator revokes suspended fixture trial"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "paper_trial_authorization_856265d4043f452dfc8b862a"
+     ],
+     "target_id": "operator_action_70a987483f51fbbae535719f",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "START_STRATEGY_EVIDENCE_REVIEW",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "fixture-only review",
+     "reason_codes": [
+      "REVIEW_STARTED"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "strategy_evidence_review_c44d5619d808b14e0e10a414",
+      "strategy_evidence_snapshot_487eeee3f43dc9beacd7230a"
+     ],
+     "target_id": "operator_action_22e437bb735c27b4e8bf7929",
+     "timestamp": "2026-07-25T12:00:00Z"
+    }
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/campaigns/evidence-review-paper-trial-demo-v7/activity",
+ "status": 200
+}

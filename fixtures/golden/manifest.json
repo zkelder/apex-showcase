@@ -1,0 +1,9 @@
+{
+  "fixture_id": "golden",
+  "schema_version": "1",
+  "evidence": "SYNTHETIC",
+  "files": {
+    "decision_inputs.json": "ddf0ca53351faf7af81d850aae522a20cc4ee88c7410da103ed99b1530bf4f13",
+    "settlement_outcome.json": "abfc9b4f51ea0ac36dfeab1949025db394218b6bc69811ac5c23f0521d51b78c"
+  }
+}

@@ -1,0 +1,56 @@
+{
+ "body": {
+  "capability": "SIMULATION_PAPER_ONLY",
+  "data": {
+   "items": [
+    {
+     "approved_count": 0,
+     "assessment_count": 0,
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "completed_at": "2026-07-25T13:00:05Z",
+     "cycle_id": "autopilot_cycle_1c2f10f079029d437fa75654",
+     "deadline_at": "2026-07-25T13:01:00Z",
+     "idempotency_key": "fixture-governed-evidence-revoked-cycle-v1",
+     "invocation_count": 1,
+     "last_error_code": null,
+     "maximum_proposals": 2,
+     "maximum_strategies": 1,
+     "operator_note": "must be blocked by revoked trial",
+     "portfolio_snapshot_hash": "063c8c830d159dbf6f8ccb6ee28bde9f84dcfc02fd134056bc50718f727c9983",
+     "portfolio_snapshot_payload": "{\"active_risk_by_correlation_bucket\":[],\"active_risk_by_strategy\":[],\"campaign_id\":\"evidence-review-paper-trial-demo-v7\",\"current_open_position_risk\":\"0\",\"current_reservation_risk\":\"0\",\"earliest_capital_release_at\":null,\"fees\":\"0\",\"funded_capital\":\"1000\",\"latest_capital_release_at\":null,\"ledger_equity\":\"1000\",\"open_position_count\":0,\"realized_trading_pnl\":\"0\",\"remaining_loss_capacity\":\"500\",\"reservation_count\":0,\"settled_cash\":\"1000\",\"snapshot_hash\":\"063c8c830d159dbf6f8ccb6ee28bde9f84dcfc02fd134056bc50718f727c9983\"}",
+     "registry_hash": "dc6d89c81ae8cee1754b3af721b798596951a6acbb0fcb66438d4cd6a29b5e81",
+     "rejected_count": 0,
+     "request_hash": "e16455c830ecfd921b639ab688b35bef43ef7443a202b93584928bad241feb75",
+     "result_hash": "be541ffc1b587ec05f285bc029c2a6021df1f3f464814c5ad5f77a8e1cbf0327",
+     "started_at": "2026-07-25T13:00:05Z",
+     "state": "PARTIAL"
+    },
+    {
+     "approved_count": 2,
+     "assessment_count": 2,
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "completed_at": "2026-07-25T12:00:02Z",
+     "cycle_id": "autopilot_cycle_517749c74c4947924393032d",
+     "deadline_at": "2026-07-25T12:00:32Z",
+     "idempotency_key": "fixture-governed-evidence-cycle-v1",
+     "invocation_count": 1,
+     "last_error_code": null,
+     "maximum_proposals": 2,
+     "maximum_strategies": 1,
+     "operator_note": "one governed fixture PAPER cycle",
+     "portfolio_snapshot_hash": "063c8c830d159dbf6f8ccb6ee28bde9f84dcfc02fd134056bc50718f727c9983",
+     "portfolio_snapshot_payload": "{\"active_risk_by_correlation_bucket\":[],\"active_risk_by_strategy\":[],\"campaign_id\":\"evidence-review-paper-trial-demo-v7\",\"current_open_position_risk\":\"0\",\"current_reservation_risk\":\"0\",\"earliest_capital_release_at\":null,\"fees\":\"0\",\"funded_capital\":\"1000\",\"latest_capital_release_at\":null,\"ledger_equity\":\"1000\",\"open_position_count\":0,\"realized_trading_pnl\":\"0\",\"remaining_loss_capacity\":\"500\",\"reservation_count\":0,\"settled_cash\":\"1000\",\"snapshot_hash\":\"063c8c830d159dbf6f8ccb6ee28bde9f84dcfc02fd134056bc50718f727c9983\"}",
+     "registry_hash": "dc6d89c81ae8cee1754b3af721b798596951a6acbb0fcb66438d4cd6a29b5e81",
+     "rejected_count": 0,
+     "request_hash": "899738234a88e545334b8cfd619a8e09022d55ed4a0637a8aad5073804bd1e23",
+     "result_hash": "ccb439255ca3fd147b1ccde1c4b860be035bf1dbae3aa984e3cf0198729fecdc",
+     "started_at": "2026-07-25T12:00:02Z",
+     "state": "COMPLETED"
+    }
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/campaigns/evidence-review-paper-trial-demo-v7/cycles",
+ "status": 200
+}

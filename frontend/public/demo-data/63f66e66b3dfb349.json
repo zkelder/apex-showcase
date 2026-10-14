@@ -1,0 +1,24 @@
+{
+ "body": {
+  "capability": "SECURITIES_SHADOW_ONLY",
+  "data": {
+   "adapter": "DETERMINISTIC_PAPER_BROKER_FIXTURE_V1",
+   "authority": "NONE",
+   "cancel": true,
+   "credentials_available": false,
+   "environment": "FIXTURE_PAPER",
+   "kill_state": "NOT_AUTHORIZED",
+   "order_read": true,
+   "order_submit": true,
+   "readiness": "FIXTURE_READY",
+   "warnings": [
+    "PAPER EXECUTION IS SIMULATED",
+    "EXTERNAL BROKER PAPER STATE IS EVIDENCE, NOT AUTOMATIC APEX TRUTH",
+    "LIVE TRADING IS NOT ENABLED"
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/external-paper/readiness",
+ "status": 200
+}

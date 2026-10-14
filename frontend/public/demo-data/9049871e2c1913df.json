@@ -1,0 +1,133 @@
+{
+ "body": {
+  "capability": "SIMULATION_PAPER_ONLY",
+  "data": {
+   "items": [
+    {
+     "account_code": "CASH",
+     "amount": "1",
+     "journal_id": "journal_2f810ddc02806a7779bb73dc",
+     "journal_type": "SETTLEMENT",
+     "occurred_at": "2026-07-25T13:00:04Z",
+     "side": "DEBIT",
+     "source_id": "paper_position_settlement_5b17dc9139c4f34c12b73da3",
+     "source_kind": "settlement",
+     "status": "POSTED"
+    },
+    {
+     "account_code": "POSITION_COST",
+     "amount": "0.5",
+     "journal_id": "journal_2f810ddc02806a7779bb73dc",
+     "journal_type": "SETTLEMENT",
+     "occurred_at": "2026-07-25T13:00:04Z",
+     "side": "CREDIT",
+     "source_id": "paper_position_settlement_5b17dc9139c4f34c12b73da3",
+     "source_kind": "settlement",
+     "status": "POSTED"
+    },
+    {
+     "account_code": "REALIZED_PNL",
+     "amount": "0.5",
+     "journal_id": "journal_2f810ddc02806a7779bb73dc",
+     "journal_type": "SETTLEMENT",
+     "occurred_at": "2026-07-25T13:00:04Z",
+     "side": "CREDIT",
+     "source_id": "paper_position_settlement_5b17dc9139c4f34c12b73da3",
+     "source_kind": "settlement",
+     "status": "POSTED"
+    },
+    {
+     "account_code": "REALIZED_PNL",
+     "amount": "0.5",
+     "journal_id": "journal_dc19f9b596236800a34b5c2e",
+     "journal_type": "SETTLEMENT",
+     "occurred_at": "2026-07-25T13:00:00Z",
+     "side": "DEBIT",
+     "source_id": "paper_position_settlement_b58000d5309db8e4d85f4d1b",
+     "source_kind": "settlement",
+     "status": "POSTED"
+    },
+    {
+     "account_code": "POSITION_COST",
+     "amount": "0.5",
+     "journal_id": "journal_dc19f9b596236800a34b5c2e",
+     "journal_type": "SETTLEMENT",
+     "occurred_at": "2026-07-25T13:00:00Z",
+     "side": "CREDIT",
+     "source_id": "paper_position_settlement_b58000d5309db8e4d85f4d1b",
+     "source_kind": "settlement",
+     "status": "POSTED"
+    },
+    {
+     "account_code": "POSITION_COST",
+     "amount": "0.5",
+     "journal_id": "journal_8018ec69b1599e315a45ac72",
+     "journal_type": "PURCHASE",
+     "occurred_at": "2026-07-25T12:00:03Z",
+     "side": "DEBIT",
+     "source_id": "execution_event_5205e890af71c81f6570f590",
+     "source_kind": "execution_purchase",
+     "status": "POSTED"
+    },
+    {
+     "account_code": "POSITION_COST",
+     "amount": "0.5",
+     "journal_id": "journal_1b1c02b29a5d4644fcfb3881",
+     "journal_type": "PURCHASE",
+     "occurred_at": "2026-07-25T12:00:03Z",
+     "side": "DEBIT",
+     "source_id": "execution_event_4788eb65755506f1327cb185",
+     "source_kind": "execution_purchase",
+     "status": "POSTED"
+    },
+    {
+     "account_code": "CASH",
+     "amount": "0.5",
+     "journal_id": "journal_8018ec69b1599e315a45ac72",
+     "journal_type": "PURCHASE",
+     "occurred_at": "2026-07-25T12:00:03Z",
+     "side": "CREDIT",
+     "source_id": "execution_event_5205e890af71c81f6570f590",
+     "source_kind": "execution_purchase",
+     "status": "POSTED"
+    },
+    {
+     "account_code": "CASH",
+     "amount": "0.5",
+     "journal_id": "journal_1b1c02b29a5d4644fcfb3881",
+     "journal_type": "PURCHASE",
+     "occurred_at": "2026-07-25T12:00:03Z",
+     "side": "CREDIT",
+     "source_id": "execution_event_4788eb65755506f1327cb185",
+     "source_kind": "execution_purchase",
+     "status": "POSTED"
+    },
+    {
+     "account_code": "CASH",
+     "amount": "1000",
+     "journal_id": "journal_25702c0df67caaa4871ea96a",
+     "journal_type": "CONTRIBUTION",
+     "occurred_at": "2026-07-25T11:59:00Z",
+     "side": "DEBIT",
+     "source_id": "evidence-review-paper-trial-demo-v7",
+     "source_kind": "campaign_contribution",
+     "status": "POSTED"
+    },
+    {
+     "account_code": "CONTRIBUTED_CAPITAL",
+     "amount": "1000",
+     "journal_id": "journal_25702c0df67caaa4871ea96a",
+     "journal_type": "CONTRIBUTION",
+     "occurred_at": "2026-07-25T11:59:00Z",
+     "side": "CREDIT",
+     "source_id": "evidence-review-paper-trial-demo-v7",
+     "source_kind": "campaign_contribution",
+     "status": "POSTED"
+    }
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/campaigns/evidence-review-paper-trial-demo-v7/ledger",
+ "status": 200
+}

@@ -1,0 +1,22 @@
+{
+ "body": {
+  "capability": "SECURITIES_SHADOW_ONLY",
+  "data": {
+   "campaign_id": "evidence-review-paper-trial-demo-v7",
+   "environment": "PAPER",
+   "instruction_count": 0,
+   "instructions": [],
+   "kill_state": "OPENINGS_NOT_AUTHORIZED",
+   "live_authority": "NONE",
+   "unknown_broker_activity_block": false,
+   "warnings": [
+    "CANONICAL BASELINE \u2014 TRANSPARENT RESEARCH SPECIFICATION",
+    "BASELINES ARE RESEARCH BENCHMARKS, NOT PERFORMANCE PROMISES",
+    "EXTERNAL SIMULATOR OUTPUT IS EVIDENCE, NOT APEX AUTHORITY"
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/external-paper/campaigns/evidence-review-paper-trial-demo-v7/status",
+ "status": 200
+}

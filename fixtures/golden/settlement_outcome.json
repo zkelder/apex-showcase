@@ -1,0 +1,12 @@
+{
+  "fixture_id": "golden",
+  "schema_version": "1",
+  "source_id": "settlement-golden-yes",
+  "instrument_id": "SYNTH-WEATHER-20260715",
+  "rule_version_id": "rule-golden-v1",
+  "source_event_at": "2026-07-15T17:00:00Z",
+  "available_at": "2026-07-15T17:00:03Z",
+  "settlement_value": "1.00",
+  "raw_payload": "resolution:YES;settlement_value=1.00;rule=rule-golden-v1",
+  "raw_payload_hash": "b941135013df5f7b0011705638ee3b993e9845efd456b9c4877b792cb7161d25"
+}

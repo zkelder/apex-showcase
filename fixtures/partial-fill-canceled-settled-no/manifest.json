@@ -1,0 +1,10 @@
+{
+  "fixture_id": "partial-fill-canceled-settled-no",
+  "schema_version": "1",
+  "evidence": "SYNTHETIC",
+  "files": {
+    "decision_inputs.json": "beb7284e276cfa58027299f0de0a8011e8f769e50a6d74e0309de67db9d99256",
+    "execution_script.json": "9c941a0572c4c05e9386b37dc39e8b7775a510ef807226bf85ccbea9e9daaafa",
+    "settlement_outcome.json": "9dde3967063d5ebd5730dc9994deb400b4086437fa5ca887e9373f9f44832550"
+  }
+}

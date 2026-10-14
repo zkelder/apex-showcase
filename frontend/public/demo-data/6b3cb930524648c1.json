@@ -1,0 +1,11 @@
+{
+ "body": {
+  "capability": "SIMULATION_PAPER_ONLY",
+  "data": {
+   "items": []
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/strategies/kalshi-same-market-complement/authority-history",
+ "status": 200
+}

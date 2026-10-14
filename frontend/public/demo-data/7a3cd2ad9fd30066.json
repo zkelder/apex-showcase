@@ -1,0 +1,66 @@
+{
+ "body": {
+  "capability": "OPERATOR_READ_ONLY",
+  "data": {
+   "authority": "NONE",
+   "decision": null,
+   "empty_state": "NO_CROSS_VENUE_ALLOCATION_RETAINED",
+   "evidence_href": null,
+   "explanations": [],
+   "lines": [],
+   "live_authority": "NONE",
+   "orders_created": 0,
+   "paper_authorization_created": false,
+   "paper_trial_proposals": [],
+   "policy": {
+    "allocation_method": "DETERMINISTIC_RANK_ORDER_INCREMENTAL_V1",
+    "authority": "NONE",
+    "canonical_hash": "2190a45969f844411f0bd2445f36d72ede343484a611ac8c140757a347b81dd8",
+    "context_cash_fractions": [
+     [
+      "RISK_SUPPORTIVE",
+      "0.25"
+     ],
+     [
+      "MIXED",
+      "0.35"
+     ],
+     [
+      "RISK_CAUTIONARY",
+      "0.5"
+     ],
+     [
+      "MARKET_STRESS",
+      "0.75"
+     ],
+     [
+      "INSUFFICIENT_CONTEXT",
+      "1"
+     ]
+    ],
+    "exclusions": [
+     "EXCLUDE_NON_ELIGIBLE_SHARED_OPPORTUNITIES",
+     "EXCLUDE_STALE_EXPIRED_OR_MISSING_EVIDENCE",
+     "EXCLUDE_UNAVAILABLE_VENUE_PAPER_BOUNDARY",
+     "NEVER_EXCEED_SOURCE_MAXIMUM"
+    ],
+    "live_authority": "NONE",
+    "long_lockup_days": 30,
+    "maximum_aggregate_downside_fraction": "0.1",
+    "maximum_instrument_fraction": "0.25",
+    "maximum_long_lockup_fraction": "0.25",
+    "maximum_opportunity_fraction": "0.2",
+    "maximum_strategy_fraction": "0.25",
+    "maximum_venue_fraction": "0.4",
+    "minimum_retained_cash_fraction": "0.25",
+    "order_authority": "NONE",
+    "paper_authorization": false,
+    "policy_id": "CROSS_VENUE_ALLOCATION_POLICY_V1",
+    "total_hypothetical_capital": "1000"
+   }
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/operator-console/allocation",
+ "status": 200
+}

@@ -1,0 +1,71 @@
+{
+ "body": {
+  "capability": "SIMULATION_PAPER_ONLY",
+  "data": {
+   "items": [
+    {
+     "calibration_coverage": "0.6",
+     "calibration_summary_identity": {
+      "value": "989dacb8ade918778919b986253ae0801edd71c99ffa34c16d4993dd5a76be39"
+     },
+     "canonical_input_hash": {
+      "value": "ebe95135e7dc0f3503e6ab19d59ad10d21416ec962208fa11fb46a84c46b541b"
+     },
+     "canonical_snapshot_hash": {
+      "value": "487eeee3f43dc9beacd7230a38168351367240c80b99266b6b9de6b15cc60618"
+     },
+     "configuration_exclusion_counts": [],
+     "configuration_hash": {
+      "value": "660e80f99f539b69b1ab65f595444bab2a6d1a0c9c6f28bb9f06a81bb764d513"
+     },
+     "configuration_lineage_complete": true,
+     "conflict_frequency": "0",
+     "consensus_brier": "0.25",
+     "consensus_log_loss": "0.69314718",
+     "conservative_brier": "0.126186",
+     "conservative_brier_difference": "-0.123814",
+     "conservative_log_loss": "0.41812461",
+     "conservative_log_loss_difference": "-0.27502257",
+     "created_at": "2026-07-25T12:00:00Z",
+     "cutoff_at": "2026-07-25T12:00:00Z",
+     "direction_accuracy": "1",
+     "distinct_events": 100,
+     "distinct_markets": 100,
+     "full_history_started_at": "2026-06-25T12:00:00Z",
+     "hypothetical_admission_frequency": "0",
+     "integrity_warnings": [],
+     "opportunity_frequency": "0",
+     "outcome_lineage_complete": true,
+     "paper_cycles": 0,
+     "paper_orders": 0,
+     "paper_positions": 0,
+     "point_brier": "0.10185",
+     "point_brier_difference": "-0.14815",
+     "point_log_loss": "0.35573628",
+     "point_log_loss_difference": "-0.3374109",
+     "policy_id": "fixture-governed-evidence-paper-v2",
+     "policy_version": "apex-evidence-review-policy-v1",
+     "probability_range_coverage": 3,
+     "recent_brier_degradation": "0",
+     "recent_conservative_brier": "0.126186",
+     "recent_conservative_log_loss": "0.41812461",
+     "recent_history_started_at": "2026-07-18T12:00:00Z",
+     "recent_log_loss_degradation": "0",
+     "recent_resolved_predictions": 100,
+     "resolved_predictions": 100,
+     "snapshot_id": "strategy_evidence_snapshot_487eeee3f43dc9beacd7230a",
+     "source_set_hash": {
+      "value": "03f94bd11852b92fb913ae08ca5e058704f04d8136b3555d8e0c498a6b64ec45"
+     },
+     "strategy_id": "fixture-governed-evidence-paper-v1",
+     "strategy_version": "fixture-v1",
+     "total_predictions": 100,
+     "unresolved_predictions": 0
+    }
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/strategies/fixture-governed-evidence-paper-v1/evidence-snapshots",
+ "status": 200
+}

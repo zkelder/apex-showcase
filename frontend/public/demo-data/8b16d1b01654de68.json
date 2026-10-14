@@ -1,0 +1,89 @@
+{
+ "body": {
+  "capability": "SIMULATION_PAPER_ONLY",
+  "data": {
+   "items": [
+    {
+     "authorization_id": "paper_trial_authorization_856265d4043f452dfc8b862a",
+     "authorized_at": "2026-07-25T12:00:00Z",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "canonical_input_hash": {
+      "value": "624d2f308a76b6965114b8781ffa5988d56557b2326449c3718429e5bc3d791d"
+     },
+     "canonical_result_hash": {
+      "value": "fdb6dd7943429a34217564d5e1f3878e362b02104386127be86e9417c5be2978"
+     },
+     "configuration_hash": {
+      "value": "b985ecd60887069e41abcdb36bbbaee5cfedd10068803bab990b4ad15469518a"
+     },
+     "limits": {
+      "allowed_instrument_class": "BOUNDED_PREDICTION_MARKET",
+      "allowed_provider": "FIXTURE",
+      "expires_at": "2026-07-25T14:00:00Z",
+      "maximum_approved_opportunities": 4,
+      "maximum_capital_lockup_seconds": 3600,
+      "maximum_cumulative_authorized_risk": {
+       "amount": "500",
+       "currency": "USD"
+      },
+      "maximum_cumulative_realized_paper_loss": {
+       "amount": "0.1",
+       "currency": "USD"
+      },
+      "maximum_paper_cycles": 1,
+      "maximum_paper_drawdown": {
+       "amount": "0.1",
+       "currency": "USD"
+      },
+      "maximum_paper_orders": 4,
+      "maximum_per_opportunity_risk_fraction": {
+       "value": "0.2"
+      },
+      "maximum_simultaneous_open_positions": 2,
+      "maximum_strategy_active_risk_fraction": {
+       "value": "0.5"
+      },
+      "paper_execution_policy_hash": {
+       "value": "1ad992be78a6f1f68db6c70d85c0fb1adcb1edfedce9ebac8ad83abf1ea5cfea"
+      },
+      "paper_execution_policy_id": "paper-portfolio-demo-execution-policy-v1",
+      "starts_at": "2026-07-25T11:59:59Z"
+     },
+     "operator_action_id": "operator_action_377d1f23da73c9228f970476",
+     "review_id": "strategy_evidence_review_c44d5619d808b14e0e10a414",
+     "revocation_reason": "operator revokes suspended fixture trial",
+     "state": "REVOKED",
+     "strategy_configuration_hash": {
+      "value": "660e80f99f539b69b1ab65f595444bab2a6d1a0c9c6f28bb9f06a81bb764d513"
+     },
+     "strategy_id": "fixture-governed-evidence-paper-v1",
+     "strategy_version": "fixture-v1",
+     "suspension_reason": "MAXIMUM_CAPITAL_LOCKUP_REACHED,MAXIMUM_DRAWDOWN_REACHED,MAXIMUM_PAPER_CYCLES_REACHED,MAXIMUM_REALIZED_LOSS_REACHED",
+     "usage": {
+      "active_strategy_risk": {
+       "amount": "0",
+       "currency": "USD"
+      },
+      "approved_opportunities": 2,
+      "completed_cycles": 1,
+      "cumulative_authorized_risk": {
+       "amount": "1",
+       "currency": "USD"
+      },
+      "cumulative_realized_result": "0",
+      "maximum_capital_lockup_seconds": 0,
+      "open_positions": 0,
+      "paper_drawdown": {
+       "amount": "0.5",
+       "currency": "USD"
+      },
+      "paper_orders": 2
+     }
+    }
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/campaigns/evidence-review-paper-trial-demo-v7/paper-trials",
+ "status": 200
+}

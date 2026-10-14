@@ -1,0 +1,92 @@
+{
+ "body": {
+  "capability": "SIMULATION_PAPER_ONLY",
+  "data": {
+   "items": [
+    {
+     "authority": "PAPER",
+     "evidence_state": "FIXTURE",
+     "family": "FIXTURE_ONLY",
+     "implementation_state": "FIXTURE",
+     "last_evidence_decision": "FIXTURE_ONLY",
+     "runnable": false,
+     "strategy_id": "fixture-governed-evidence-paper-v1",
+     "version": "fixture-v1"
+    },
+    {
+     "authority": "RESEARCH",
+     "evidence_state": "INCOMPLETE",
+     "family": "EXTERNAL_PREDICTIVE",
+     "implementation_state": "RESEARCH",
+     "last_evidence_decision": "INSUFFICIENT_DATA",
+     "runnable": false,
+     "strategy_id": "gfs-weather-research",
+     "version": "v1"
+    },
+    {
+     "authority": "SHADOW",
+     "evidence_state": "INCOMPLETE",
+     "family": "MARKET_DYNAMICS",
+     "implementation_state": "IMPLEMENTED",
+     "last_evidence_decision": "FORWARD_VALIDATION",
+     "runnable": true,
+     "strategy_id": "kalshi-market-dynamics-v1",
+     "version": "v1"
+    },
+    {
+     "authority": "SHADOW",
+     "evidence_state": "INCOMPLETE",
+     "family": "MARKET_STRUCTURE",
+     "implementation_state": "IMPLEMENTED",
+     "last_evidence_decision": "FORWARD_VALIDATION",
+     "runnable": true,
+     "strategy_id": "kalshi-orderbook-microstructure-v1",
+     "version": "v1"
+    },
+    {
+     "authority": "REJECTED",
+     "evidence_state": "DEPRIORITIZED",
+     "family": "MARKET_STRUCTURE",
+     "implementation_state": "IMPLEMENTED",
+     "last_evidence_decision": "STRATEGY_DEPRIORITIZE",
+     "runnable": false,
+     "strategy_id": "kalshi-same-market-complement",
+     "version": "v1"
+    },
+    {
+     "authority": "REJECTED",
+     "evidence_state": "DEPRIORITIZED",
+     "family": "CROSS_MARKET",
+     "implementation_state": "IMPLEMENTED",
+     "last_evidence_decision": "THRESHOLD_STRATEGY_DEPRIORITIZE",
+     "runnable": false,
+     "strategy_id": "kalshi-threshold-ladder",
+     "version": "v1"
+    },
+    {
+     "authority": "SHADOW",
+     "evidence_state": "INCOMPLETE",
+     "family": "MARKET_STRUCTURE",
+     "implementation_state": "IMPLEMENTED",
+     "last_evidence_decision": "RETAINED_MARKET_BASELINE",
+     "runnable": true,
+     "strategy_id": "market-consensus-baseline-v1",
+     "version": "v1"
+    },
+    {
+     "authority": "SHADOW",
+     "evidence_state": "INCOMPLETE",
+     "family": "OPERATOR_SUPPLIED",
+     "implementation_state": "IMPLEMENTED",
+     "last_evidence_decision": "OPERATOR_CONTROLLED_SHADOW",
+     "runnable": true,
+     "strategy_id": "operator-thesis-v1",
+     "version": "v1"
+    }
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/strategies",
+ "status": 200
+}

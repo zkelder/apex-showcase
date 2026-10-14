@@ -1,0 +1,41 @@
+{
+ "body": {
+  "capability": "SIMULATION_PAPER_ONLY",
+  "data": {
+   "items": [
+    {
+     "approvals": 2,
+     "assessment_count": 2,
+     "failures": 1,
+     "fees": {
+      "amount": "0",
+      "currency": "USD"
+     },
+     "full_fills": 2,
+     "health_reason_codes": [
+      "PAPER_EVIDENCE_ONLY"
+     ],
+     "invocation_count": 2,
+     "last_activity": "2026-07-25T12:00:00Z",
+     "last_paper_activity": "2026-07-25T12:00:02Z",
+     "maximum_active_risk": {
+      "amount": "0",
+      "currency": "USD"
+     },
+     "no_fill_expirations": 0,
+     "open_positions": 0,
+     "paper_orders": 2,
+     "partial_fills": 0,
+     "proposals": 2,
+     "rejections": 0,
+     "settled_positions": 2,
+     "strategy_id": "fixture-governed-evidence-paper-v1",
+     "strategy_version": "fixture-v1"
+    }
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/campaigns/evidence-review-paper-trial-demo-v7/strategies/scorecards",
+ "status": 200
+}

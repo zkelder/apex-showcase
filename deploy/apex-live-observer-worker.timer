@@ -1,0 +1,13 @@
+# TEMPLATE systemd user timer paired with apex-live-observer-worker.service.
+# Persistent=true runs one catch-up firing after the host resumes; it never backfills evidence.
+
+[Unit]
+Description=Periodic trigger for the Apex live market-observer worker
+
+[Timer]
+OnCalendar=minutely
+Persistent=true
+RandomizedDelaySec=5s
+
+[Install]
+WantedBy=timers.target

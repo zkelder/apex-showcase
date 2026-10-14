@@ -1,0 +1,3309 @@
+{
+  "capital": "1000.00",
+  "outcomes": [
+    {
+      "fixture": "golden",
+      "report": {
+        "allocation": {
+          "accepted": true,
+          "allocation_id": "allocation_aa2d0ea709497227f52de361",
+          "maximum_loss": {
+            "amount": "99.63",
+            "currency": "USD"
+          },
+          "proposal_id": "proposal_1f5c574472833f999b9aefb4",
+          "quantity": {
+            "increment": "1",
+            "value": "243"
+          },
+          "reason_codes": [
+            "ALLOCATED"
+          ],
+          "snapshot_hash": "9c7f34ce093ff966491d6a56acd3d7c63c2ee06b34fdcf8a19dc2415f0ad0bc1"
+        },
+        "calibration_evidence": "NONE",
+        "campaign": {
+          "authorized_campaign_loss": "1000",
+          "campaign_id": "campaign-golden",
+          "contribution": "1000",
+          "policy_version": "policy-golden-v1"
+        },
+        "edge_evidence": "NONE",
+        "engine_version": "0.1.0",
+        "execution_events": [
+          {
+            "event_id": "execution_event_2a25f147c9caf281afac93c4",
+            "event_type": "OPENED",
+            "fee": {
+              "amount": "0",
+              "currency": "USD"
+            },
+            "occurred_at": "2026-07-15T15:00:01Z",
+            "order_id": "order_fa65adf32b6b8cd07e6dda3a",
+            "payload_hash": {
+              "value": "2a25f147c9caf281afac93c42ca580c0adc03cfafe0451afaa992d2e4c307404"
+            },
+            "price": null,
+            "quantity": {
+              "increment": "1",
+              "value": "0"
+            },
+            "sequence": 1
+          },
+          {
+            "event_id": "execution_event_0d0de79a08cb5d0c34ab4aee",
+            "event_type": "FILL",
+            "fee": {
+              "amount": "2.43",
+              "currency": "USD"
+            },
+            "occurred_at": "2026-07-15T15:00:02Z",
+            "order_id": "order_fa65adf32b6b8cd07e6dda3a",
+            "payload_hash": {
+              "value": "0d0de79a08cb5d0c34ab4aee6bb884d6508cf742091b7485e05341e0a44d7d5c"
+            },
+            "price": {
+              "tick": "0.01",
+              "value": "0.4"
+            },
+            "quantity": {
+              "increment": "1",
+              "value": "243"
+            },
+            "sequence": 2
+          }
+        ],
+        "execution_evidence": "SYNTHETIC",
+        "fees": "2.43",
+        "final_ledger_equity": "1143.37",
+        "fixture_id": "golden",
+        "fixture_manifest_hash": "80222924591d6a03224d5d57a6be8b349f1f1ab9400b3dbd90fe286e310e9ba3",
+        "information_set": {
+          "content_hash": {
+            "value": "09428621ff9c8e9e0d7fc58ad2cde22d59692bb5d53d4281d5dc32b639311ebd"
+          },
+          "cutoff": {
+            "value": "2026-07-15T15:00:00Z"
+          },
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "instrument": {
+            "category": "WEATHER",
+            "instrument_id": "SYNTH-WEATHER-20260715",
+            "no_settlement_value": "0",
+            "payout_unit": "1",
+            "price_tick": "0.01",
+            "quantity_increment": "1",
+            "void_settlement_value": "0.4",
+            "yes_settlement_value": "1"
+          },
+          "market": {
+            "no_ask": {
+              "tick": "0.01",
+              "value": "0.62"
+            },
+            "visible_yes_quantity": {
+              "increment": "1",
+              "value": "1000"
+            },
+            "yes_ask": {
+              "tick": "0.01",
+              "value": "0.4"
+            }
+          },
+          "ordered_members": [
+            {
+              "available_at": "2026-07-15T14:58:01Z",
+              "content_hash": {
+                "value": "189ffa4ebfd4bfe9082c3e3e244ae80fa779f627efaa8e18898ac14a47500e6c"
+              },
+              "sequence": 1,
+              "source_id": "source-book-1"
+            },
+            {
+              "available_at": "2026-07-15T14:59:02Z",
+              "content_hash": {
+                "value": "7d09e4e24133fb7c063228bba76a0d7240406668c505b8797f0ec6abab4dec76"
+              },
+              "sequence": 2,
+              "source_id": "source-estimate-2"
+            }
+          ],
+          "rule": {
+            "close_at": "2026-07-15T16:30:00Z",
+            "content_hash": {
+              "value": "742ac2b67c6ebd52f63cc960e890a03cb98b86ba344c68a248a2c2d54d07747d"
+            },
+            "determination_at": "2026-07-15T17:00:00Z",
+            "effective_at": "2026-07-15T14:00:00Z",
+            "exact_text": "This synthetic contract settles to 1.00 if the recorded fixture value is YES, 0.00 if it is NO, and 0.40 if it is VOID. Only the frozen synthetic resolution record identified by this rule is authoritative.",
+            "expected_settlement_at": "2026-07-15T17:05:00Z",
+            "resolution_source": "Frozen synthetic golden settlement record",
+            "rule_version_id": "rule-golden-v1"
+          },
+          "valid": true
+        },
+        "information_set_hash": "09428621ff9c8e9e0d7fc58ad2cde22d59692bb5d53d4281d5dc32b639311ebd",
+        "ledger_journals": [
+          {
+            "journal_id": "journal_557f7ff9e65d7011d29b5b18",
+            "journal_type": "SETTLEMENT",
+            "occurred_at": "2026-07-15T17:00:03Z",
+            "postings": [
+              {
+                "account_code": "CASH",
+                "amount": {
+                  "amount": "243",
+                  "currency": "USD"
+                },
+                "side": "DEBIT"
+              },
+              {
+                "account_code": "POSITION_COST",
+                "amount": {
+                  "amount": "97.2",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              },
+              {
+                "account_code": "REALIZED_PNL",
+                "amount": {
+                  "amount": "145.8",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              }
+            ],
+            "source_id": "settlement-golden-yes",
+            "source_kind": "settlement"
+          },
+          {
+            "journal_id": "journal_67e4a2ca936342e8528dca8e",
+            "journal_type": "CONTRIBUTION",
+            "occurred_at": "2026-07-15T14:00:00Z",
+            "postings": [
+              {
+                "account_code": "CASH",
+                "amount": {
+                  "amount": "1000",
+                  "currency": "USD"
+                },
+                "side": "DEBIT"
+              },
+              {
+                "account_code": "CONTRIBUTED_CAPITAL",
+                "amount": {
+                  "amount": "1000",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              }
+            ],
+            "source_id": "contribution_9318a724ba8ea1783e0f1905",
+            "source_kind": "campaign_contribution"
+          },
+          {
+            "journal_id": "journal_72f3815d4d053956b2eb906b",
+            "journal_type": "PURCHASE",
+            "occurred_at": "2026-07-15T15:00:02Z",
+            "postings": [
+              {
+                "account_code": "POSITION_COST",
+                "amount": {
+                  "amount": "97.2",
+                  "currency": "USD"
+                },
+                "side": "DEBIT"
+              },
+              {
+                "account_code": "CASH",
+                "amount": {
+                  "amount": "97.2",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              }
+            ],
+            "source_id": "execution_event_0d0de79a08cb5d0c34ab4aee",
+            "source_kind": "execution_purchase"
+          },
+          {
+            "journal_id": "journal_90f4162f9e5c3f84db4b771a",
+            "journal_type": "FEE",
+            "occurred_at": "2026-07-15T15:00:02Z",
+            "postings": [
+              {
+                "account_code": "FEE_EXPENSE",
+                "amount": {
+                  "amount": "2.43",
+                  "currency": "USD"
+                },
+                "side": "DEBIT"
+              },
+              {
+                "account_code": "CASH",
+                "amount": {
+                  "amount": "2.43",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              }
+            ],
+            "source_id": "execution_event_0d0de79a08cb5d0c34ab4aee",
+            "source_kind": "execution_fee"
+          }
+        ],
+        "logical_time": "2026-07-15T18:00:00Z",
+        "net_trading_pnl": "143.37",
+        "order": {
+          "client_order_id": "client_order_fa65adf32b6b8cd07e6dda3a",
+          "exact_order_fingerprint": "31dbfbba0739dda8b66e31cc1556e763ff60783b32ff3a98f8670b7069ea01c5",
+          "filled_quantity": {
+            "increment": "1",
+            "value": "243"
+          },
+          "last_execution_sequence": 2,
+          "limit_price": {
+            "tick": "0.01",
+            "value": "0.4"
+          },
+          "order_id": "order_fa65adf32b6b8cd07e6dda3a",
+          "proposal_id": "proposal_1f5c574472833f999b9aefb4",
+          "quantity": {
+            "increment": "1",
+            "value": "243"
+          },
+          "reserved_maximum_loss": {
+            "amount": "0",
+            "currency": "USD"
+          },
+          "risk_decision_id": "risk_decision_95b027736ad96d02e30b25da",
+          "side": "YES",
+          "state": "FILLED"
+        },
+        "policy_version": "policy-golden-v1",
+        "position": {
+          "cost_basis": {
+            "amount": "0",
+            "currency": "USD"
+          },
+          "instrument_id": "SYNTH-WEATHER-20260715",
+          "maximum_remaining_loss": {
+            "amount": "0",
+            "currency": "USD"
+          },
+          "open_quantity": {
+            "increment": "1",
+            "value": "0"
+          },
+          "rule_version_id": "rule-golden-v1",
+          "settlement_state": "SETTLED"
+        },
+        "proposal": {
+          "executable_ask": {
+            "tick": "0.01",
+            "value": "0.4"
+          },
+          "expected_net_value_per_unit": "0.31",
+          "expires_at": "2026-07-15T15:05:00Z",
+          "fee_model_version": "synthetic-flat-per-contract-v1",
+          "fee_per_unit": {
+            "amount": "0.01",
+            "currency": "USD"
+          },
+          "fingerprint": "1f5c574472833f999b9aefb4962284fc999c9c4a11d54b17b6d6ac3ec6716179",
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "instrument_id": "SYNTH-WEATHER-20260715",
+          "maximum_loss_per_unit": {
+            "amount": "0.41",
+            "currency": "USD"
+          },
+          "proposal_id": "proposal_1f5c574472833f999b9aefb4",
+          "requested_risk_fraction": {
+            "value": "0.1"
+          },
+          "rule_version_id": "rule-golden-v1",
+          "side": "YES",
+          "strategy_version": "reference-edge-v1"
+        },
+        "realized_trading_pnl_before_fees": "145.8",
+        "reservation": {
+          "campaign_id": "campaign-golden",
+          "exact_order_fingerprint": "31dbfbba0739dda8b66e31cc1556e763ff60783b32ff3a98f8670b7069ea01c5",
+          "maximum_loss": {
+            "amount": "0",
+            "currency": "USD"
+          },
+          "order_id": "order_fa65adf32b6b8cd07e6dda3a",
+          "reservation_id": "reservation_fa65adf32b6b8cd07e6dda3a",
+          "risk_decision_id": "risk_decision_95b027736ad96d02e30b25da",
+          "state": "RELEASED"
+        },
+        "risk_decision": {
+          "accepted": true,
+          "allocation_id": "allocation_aa2d0ea709497227f52de361",
+          "context_hash": "1e0a15c247e9cdebf72d9cd4c89543cc180047567915881001ffaa5ce0af8b1f",
+          "exact_order_fingerprint": "31dbfbba0739dda8b66e31cc1556e763ff60783b32ff3a98f8670b7069ea01c5",
+          "reason_codes": [
+            "ALL_INVARIANTS_PASSED"
+          ],
+          "risk_decision_id": "risk_decision_95b027736ad96d02e30b25da"
+        },
+        "run_id": "run_95c8da91833a4580debe69fa",
+        "run_outcome": "SETTLED_TRADE",
+        "runtime_capability": "SIMULATION_ONLY",
+        "schema_version": "2",
+        "seed": 20260716,
+        "selected_instrument": "SYNTH-WEATHER-20260715",
+        "settlement": {
+          "filled_quantity": {
+            "increment": "1",
+            "value": "243"
+          },
+          "realized_pnl": "145.8",
+          "reservation_release": {
+            "amount": "97.2",
+            "currency": "USD"
+          },
+          "settlement_cash": {
+            "amount": "243",
+            "currency": "USD"
+          },
+          "settlement_id": "settlement_74a69e19f7d5c3794609a46e",
+          "source_id": "settlement-golden-yes"
+        },
+        "strategy_evaluation": {
+          "evaluation_id": "evaluation_b09ca2ae3146183f6aaef95e",
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "outcome": "PROPOSAL",
+          "proposal": {
+            "executable_ask": {
+              "tick": "0.01",
+              "value": "0.4"
+            },
+            "expected_net_value_per_unit": "0.31",
+            "expires_at": "2026-07-15T15:05:00Z",
+            "fee_model_version": "synthetic-flat-per-contract-v1",
+            "fee_per_unit": {
+              "amount": "0.01",
+              "currency": "USD"
+            },
+            "fingerprint": "1f5c574472833f999b9aefb4962284fc999c9c4a11d54b17b6d6ac3ec6716179",
+            "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+            "instrument_id": "SYNTH-WEATHER-20260715",
+            "maximum_loss_per_unit": {
+              "amount": "0.41",
+              "currency": "USD"
+            },
+            "proposal_id": "proposal_1f5c574472833f999b9aefb4",
+            "requested_risk_fraction": {
+              "value": "0.1"
+            },
+            "rule_version_id": "rule-golden-v1",
+            "side": "YES",
+            "strategy_version": "reference-edge-v1"
+          },
+          "reason_codes": [
+            "SYNTHETIC_THRESHOLD_MET"
+          ],
+          "strategy_version": "reference-edge-v1"
+        },
+        "strategy_version": "reference-edge-v1"
+      },
+      "report_hash": "4894ae9e6de37af8190b36689faff639f7efafc26afba51901b19c5bb41c7ee2",
+      "title": "Settled trade"
+    },
+    {
+      "fixture": "no-proposal",
+      "report": {
+        "calibration_evidence": "NONE",
+        "campaign": {
+          "authorized_campaign_loss": "1000",
+          "campaign_id": "campaign-no-proposal",
+          "contribution": "1000",
+          "policy_version": "policy-golden-v1"
+        },
+        "edge_evidence": "NONE",
+        "engine_version": "0.1.0",
+        "execution_evidence": "SYNTHETIC",
+        "fees": "0",
+        "final_ledger_equity": "1000",
+        "fixture_id": "no-proposal",
+        "fixture_manifest_hash": "b369f13f6c1d7eb2d55018081027d32024e6a779526676587448b52a8cab1e33",
+        "information_set": {
+          "content_hash": {
+            "value": "1746780265faa924e38ca97287578ec30f4a01f3290c75de5adc9edf67804398"
+          },
+          "cutoff": {
+            "value": "2026-07-15T15:00:00Z"
+          },
+          "information_set_id": "information_set_1746780265faa924e38ca972",
+          "instrument": {
+            "category": "WEATHER",
+            "instrument_id": "SYNTH-WEATHER-20260715",
+            "no_settlement_value": "0",
+            "payout_unit": "1",
+            "price_tick": "0.01",
+            "quantity_increment": "1",
+            "void_settlement_value": "0.4",
+            "yes_settlement_value": "1"
+          },
+          "market": {
+            "no_ask": {
+              "tick": "0.01",
+              "value": "0.62"
+            },
+            "visible_yes_quantity": {
+              "increment": "1",
+              "value": "1000"
+            },
+            "yes_ask": {
+              "tick": "0.01",
+              "value": "0.4"
+            }
+          },
+          "ordered_members": [
+            {
+              "available_at": "2026-07-15T14:58:01Z",
+              "content_hash": {
+                "value": "189ffa4ebfd4bfe9082c3e3e244ae80fa779f627efaa8e18898ac14a47500e6c"
+              },
+              "sequence": 1,
+              "source_id": "source-book-1"
+            },
+            {
+              "available_at": "2026-07-15T14:59:02Z",
+              "content_hash": {
+                "value": "6782cdee02295bcf9387a7583bc790c8443364cd4262492dcfcf899fdb6bb569"
+              },
+              "sequence": 2,
+              "source_id": "source-estimate-no-proposal-2"
+            }
+          ],
+          "rule": {
+            "close_at": "2026-07-15T16:30:00Z",
+            "content_hash": {
+              "value": "742ac2b67c6ebd52f63cc960e890a03cb98b86ba344c68a248a2c2d54d07747d"
+            },
+            "determination_at": "2026-07-15T17:00:00Z",
+            "effective_at": "2026-07-15T14:00:00Z",
+            "exact_text": "This synthetic contract settles to 1.00 if the recorded fixture value is YES, 0.00 if it is NO, and 0.40 if it is VOID. Only the frozen synthetic resolution record identified by this rule is authoritative.",
+            "expected_settlement_at": "2026-07-15T17:05:00Z",
+            "resolution_source": "Frozen synthetic golden settlement record",
+            "rule_version_id": "rule-golden-v1"
+          },
+          "valid": true
+        },
+        "information_set_hash": "1746780265faa924e38ca97287578ec30f4a01f3290c75de5adc9edf67804398",
+        "ledger_journals": [
+          {
+            "journal_id": "journal_01c682b2bcc0c4cbf7b795bc",
+            "journal_type": "CONTRIBUTION",
+            "occurred_at": "2026-07-15T14:00:00Z",
+            "postings": [
+              {
+                "account_code": "CASH",
+                "amount": {
+                  "amount": "1000",
+                  "currency": "USD"
+                },
+                "side": "DEBIT"
+              },
+              {
+                "account_code": "CONTRIBUTED_CAPITAL",
+                "amount": {
+                  "amount": "1000",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              }
+            ],
+            "source_id": "contribution_0556f13f64cf0fbb63715a70",
+            "source_kind": "campaign_contribution"
+          }
+        ],
+        "logical_time": "2026-07-15T15:00:01Z",
+        "net_trading_pnl": "0",
+        "policy_version": "policy-golden-v1",
+        "realized_trading_pnl_before_fees": "0",
+        "run_id": "run_467d767aefd80ae466eef2b0",
+        "run_outcome": "NO_PROPOSAL",
+        "runtime_capability": "SIMULATION_ONLY",
+        "schema_version": "2",
+        "seed": 20260716,
+        "selected_instrument": "SYNTH-WEATHER-20260715",
+        "strategy_evaluation": {
+          "evaluation_id": "evaluation_1adb435d767aa61bff2c2bf6",
+          "information_set_id": "information_set_1746780265faa924e38ca972",
+          "outcome": "NO_PROPOSAL",
+          "proposal": null,
+          "reason_codes": [
+            "SYNTHETIC_EDGE_BELOW_THRESHOLD"
+          ],
+          "strategy_version": "reference-edge-v1"
+        },
+        "strategy_version": "reference-edge-v1"
+      },
+      "report_hash": "6b50ba28cdab4630e84f83d8f5f1117668eb25a8d60f314275a5aadc73547e1f",
+      "title": "No proposal"
+    },
+    {
+      "fixture": "policy-rejected",
+      "report": {
+        "allocation": {
+          "accepted": false,
+          "allocation_id": "allocation_74913a4a1570a05e4d4f4327",
+          "maximum_loss": {
+            "amount": "0",
+            "currency": "USD"
+          },
+          "proposal_id": "proposal_e3a3ad741a2f380e8407870f",
+          "quantity": {
+            "increment": "1",
+            "value": "0"
+          },
+          "reason_codes": [
+            "POLICY_MAX_CAPITAL_LOCKUP_EXCEEDED"
+          ],
+          "snapshot_hash": "e2004636899b26443a06a7933fb072d568b2c2160eaeb9e3bc89f56d1dfb4e80"
+        },
+        "calibration_evidence": "NONE",
+        "campaign": {
+          "authorized_campaign_loss": "1000",
+          "campaign_id": "campaign-policy-rejected",
+          "contribution": "1000",
+          "policy_version": "policy-policy-rejected-v1"
+        },
+        "edge_evidence": "NONE",
+        "engine_version": "0.1.0",
+        "execution_evidence": "SYNTHETIC",
+        "fees": "0",
+        "final_ledger_equity": "1000",
+        "fixture_id": "policy-rejected",
+        "fixture_manifest_hash": "95fa3c6214b13b70a896ef12472eaa2cc87111b412105ce2bd1f3e8b1fe35c1a",
+        "information_set": {
+          "content_hash": {
+            "value": "09428621ff9c8e9e0d7fc58ad2cde22d59692bb5d53d4281d5dc32b639311ebd"
+          },
+          "cutoff": {
+            "value": "2026-07-15T15:00:00Z"
+          },
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "instrument": {
+            "category": "WEATHER",
+            "instrument_id": "SYNTH-WEATHER-20260715",
+            "no_settlement_value": "0",
+            "payout_unit": "1",
+            "price_tick": "0.01",
+            "quantity_increment": "1",
+            "void_settlement_value": "0.4",
+            "yes_settlement_value": "1"
+          },
+          "market": {
+            "no_ask": {
+              "tick": "0.01",
+              "value": "0.62"
+            },
+            "visible_yes_quantity": {
+              "increment": "1",
+              "value": "1000"
+            },
+            "yes_ask": {
+              "tick": "0.01",
+              "value": "0.4"
+            }
+          },
+          "ordered_members": [
+            {
+              "available_at": "2026-07-15T14:58:01Z",
+              "content_hash": {
+                "value": "189ffa4ebfd4bfe9082c3e3e244ae80fa779f627efaa8e18898ac14a47500e6c"
+              },
+              "sequence": 1,
+              "source_id": "source-book-1"
+            },
+            {
+              "available_at": "2026-07-15T14:59:02Z",
+              "content_hash": {
+                "value": "7d09e4e24133fb7c063228bba76a0d7240406668c505b8797f0ec6abab4dec76"
+              },
+              "sequence": 2,
+              "source_id": "source-estimate-2"
+            }
+          ],
+          "rule": {
+            "close_at": "2026-07-15T16:30:00Z",
+            "content_hash": {
+              "value": "742ac2b67c6ebd52f63cc960e890a03cb98b86ba344c68a248a2c2d54d07747d"
+            },
+            "determination_at": "2026-07-15T17:00:00Z",
+            "effective_at": "2026-07-15T14:00:00Z",
+            "exact_text": "This synthetic contract settles to 1.00 if the recorded fixture value is YES, 0.00 if it is NO, and 0.40 if it is VOID. Only the frozen synthetic resolution record identified by this rule is authoritative.",
+            "expected_settlement_at": "2026-07-15T17:05:00Z",
+            "resolution_source": "Frozen synthetic golden settlement record",
+            "rule_version_id": "rule-golden-v1"
+          },
+          "valid": true
+        },
+        "information_set_hash": "09428621ff9c8e9e0d7fc58ad2cde22d59692bb5d53d4281d5dc32b639311ebd",
+        "ledger_journals": [
+          {
+            "journal_id": "journal_fdfb208ccfca3d39a503ea0a",
+            "journal_type": "CONTRIBUTION",
+            "occurred_at": "2026-07-15T14:00:00Z",
+            "postings": [
+              {
+                "account_code": "CASH",
+                "amount": {
+                  "amount": "1000",
+                  "currency": "USD"
+                },
+                "side": "DEBIT"
+              },
+              {
+                "account_code": "CONTRIBUTED_CAPITAL",
+                "amount": {
+                  "amount": "1000",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              }
+            ],
+            "source_id": "contribution_f49ef1af8e19851c3eebcb1e",
+            "source_kind": "campaign_contribution"
+          }
+        ],
+        "logical_time": "2026-07-15T15:00:01Z",
+        "net_trading_pnl": "0",
+        "policy_explanation": "Expected capital lockup of 7499 seconds exceeds campaign policy maximum of 3600 seconds.",
+        "policy_reason_codes": [
+          "POLICY_MAX_CAPITAL_LOCKUP_EXCEEDED"
+        ],
+        "policy_version": "policy-policy-rejected-v1",
+        "proposal": {
+          "executable_ask": {
+            "tick": "0.01",
+            "value": "0.4"
+          },
+          "expected_net_value_per_unit": "0.31",
+          "expires_at": "2026-07-15T15:05:00Z",
+          "fee_model_version": "synthetic-flat-per-contract-v1",
+          "fee_per_unit": {
+            "amount": "0.01",
+            "currency": "USD"
+          },
+          "fingerprint": "e3a3ad741a2f380e8407870ff92f82622bb7a7f3c3029771fb867629c25991e6",
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "instrument_id": "SYNTH-WEATHER-20260715",
+          "maximum_loss_per_unit": {
+            "amount": "0.41",
+            "currency": "USD"
+          },
+          "proposal_id": "proposal_e3a3ad741a2f380e8407870f",
+          "requested_risk_fraction": {
+            "value": "0.1"
+          },
+          "rule_version_id": "rule-golden-v1",
+          "side": "YES",
+          "strategy_version": "reference-edge-v1"
+        },
+        "realized_trading_pnl_before_fees": "0",
+        "run_id": "run_d9d2701a3bc6094c23bd60af",
+        "run_outcome": "POLICY_REJECTED",
+        "runtime_capability": "SIMULATION_ONLY",
+        "schema_version": "2",
+        "seed": 20260716,
+        "selected_instrument": "SYNTH-WEATHER-20260715",
+        "strategy_evaluation": {
+          "evaluation_id": "evaluation_ea919634f630b84dc890cd96",
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "outcome": "PROPOSAL",
+          "proposal": {
+            "executable_ask": {
+              "tick": "0.01",
+              "value": "0.4"
+            },
+            "expected_net_value_per_unit": "0.31",
+            "expires_at": "2026-07-15T15:05:00Z",
+            "fee_model_version": "synthetic-flat-per-contract-v1",
+            "fee_per_unit": {
+              "amount": "0.01",
+              "currency": "USD"
+            },
+            "fingerprint": "e3a3ad741a2f380e8407870ff92f82622bb7a7f3c3029771fb867629c25991e6",
+            "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+            "instrument_id": "SYNTH-WEATHER-20260715",
+            "maximum_loss_per_unit": {
+              "amount": "0.41",
+              "currency": "USD"
+            },
+            "proposal_id": "proposal_e3a3ad741a2f380e8407870f",
+            "requested_risk_fraction": {
+              "value": "0.1"
+            },
+            "rule_version_id": "rule-golden-v1",
+            "side": "YES",
+            "strategy_version": "reference-edge-v1"
+          },
+          "reason_codes": [
+            "SYNTHETIC_THRESHOLD_MET"
+          ],
+          "strategy_version": "reference-edge-v1"
+        },
+        "strategy_version": "reference-edge-v1"
+      },
+      "report_hash": "0342bb592cf5158e7d8d7920aa91d9e5bd4b760f7538c3c18e0ab25275f0ed73",
+      "title": "Rejected by allocation policy"
+    },
+    {
+      "fixture": "invariant-rejected",
+      "report": {
+        "allocation": {
+          "accepted": true,
+          "allocation_id": "allocation_ac90d3d041c03cd6fc6266dd",
+          "maximum_loss": {
+            "amount": "99.63",
+            "currency": "USD"
+          },
+          "proposal_id": "proposal_1f5c574472833f999b9aefb4",
+          "quantity": {
+            "increment": "1",
+            "value": "243"
+          },
+          "reason_codes": [
+            "ALLOCATED"
+          ],
+          "snapshot_hash": "e3bf4b404b4992d9747a21468203ffb1fe3745dd972e723e65c5e487c35e9f7c"
+        },
+        "calibration_evidence": "NONE",
+        "campaign": {
+          "authorized_campaign_loss": "1000",
+          "campaign_id": "campaign-invariant-rejected",
+          "contribution": "1000",
+          "policy_version": "policy-golden-v1"
+        },
+        "edge_evidence": "NONE",
+        "engine_version": "0.1.0",
+        "execution_evidence": "SYNTHETIC",
+        "fees": "0",
+        "final_ledger_equity": "1000",
+        "fixture_id": "invariant-rejected",
+        "fixture_manifest_hash": "61ce1cc7154b93b3d4656340898e3b2dfae03e1c5c7049f6bc3020749aee8c84",
+        "freshness_evidence": {
+          "authorization_at": "2026-07-15T15:03:02Z",
+          "information_set_hash": {
+            "value": "09428621ff9c8e9e0d7fc58ad2cde22d59692bb5d53d4281d5dc32b639311ebd"
+          },
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "maximum_age_seconds": 300,
+          "observation_available_at": "2026-07-15T14:58:01Z",
+          "observation_source_id": "source-book-1",
+          "observed_age_seconds": 301
+        },
+        "information_set": {
+          "content_hash": {
+            "value": "09428621ff9c8e9e0d7fc58ad2cde22d59692bb5d53d4281d5dc32b639311ebd"
+          },
+          "cutoff": {
+            "value": "2026-07-15T15:00:00Z"
+          },
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "instrument": {
+            "category": "WEATHER",
+            "instrument_id": "SYNTH-WEATHER-20260715",
+            "no_settlement_value": "0",
+            "payout_unit": "1",
+            "price_tick": "0.01",
+            "quantity_increment": "1",
+            "void_settlement_value": "0.4",
+            "yes_settlement_value": "1"
+          },
+          "market": {
+            "no_ask": {
+              "tick": "0.01",
+              "value": "0.62"
+            },
+            "visible_yes_quantity": {
+              "increment": "1",
+              "value": "1000"
+            },
+            "yes_ask": {
+              "tick": "0.01",
+              "value": "0.4"
+            }
+          },
+          "ordered_members": [
+            {
+              "available_at": "2026-07-15T14:58:01Z",
+              "content_hash": {
+                "value": "189ffa4ebfd4bfe9082c3e3e244ae80fa779f627efaa8e18898ac14a47500e6c"
+              },
+              "sequence": 1,
+              "source_id": "source-book-1"
+            },
+            {
+              "available_at": "2026-07-15T14:59:02Z",
+              "content_hash": {
+                "value": "7d09e4e24133fb7c063228bba76a0d7240406668c505b8797f0ec6abab4dec76"
+              },
+              "sequence": 2,
+              "source_id": "source-estimate-2"
+            }
+          ],
+          "rule": {
+            "close_at": "2026-07-15T16:30:00Z",
+            "content_hash": {
+              "value": "742ac2b67c6ebd52f63cc960e890a03cb98b86ba344c68a248a2c2d54d07747d"
+            },
+            "determination_at": "2026-07-15T17:00:00Z",
+            "effective_at": "2026-07-15T14:00:00Z",
+            "exact_text": "This synthetic contract settles to 1.00 if the recorded fixture value is YES, 0.00 if it is NO, and 0.40 if it is VOID. Only the frozen synthetic resolution record identified by this rule is authoritative.",
+            "expected_settlement_at": "2026-07-15T17:05:00Z",
+            "resolution_source": "Frozen synthetic golden settlement record",
+            "rule_version_id": "rule-golden-v1"
+          },
+          "valid": true
+        },
+        "information_set_hash": "09428621ff9c8e9e0d7fc58ad2cde22d59692bb5d53d4281d5dc32b639311ebd",
+        "invariant_explanation": "Market observation source-book-1 available at 2026-07-15T14:58:01Z was 301 seconds old at authorization 2026-07-15T15:03:02Z, exceeding the sealed operational maximum of 300 seconds for information set information_set_09428621ff9c8e9e0d7fc58a.",
+        "invariant_reason_codes": [
+          "INVARIANT_MARKET_DATA_STALE"
+        ],
+        "ledger_journals": [
+          {
+            "journal_id": "journal_a08a51c5b4fc40dd6c425531",
+            "journal_type": "CONTRIBUTION",
+            "occurred_at": "2026-07-15T14:00:00Z",
+            "postings": [
+              {
+                "account_code": "CASH",
+                "amount": {
+                  "amount": "1000",
+                  "currency": "USD"
+                },
+                "side": "DEBIT"
+              },
+              {
+                "account_code": "CONTRIBUTED_CAPITAL",
+                "amount": {
+                  "amount": "1000",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              }
+            ],
+            "source_id": "contribution_b8ecca3913ff90753e17a5e9",
+            "source_kind": "campaign_contribution"
+          }
+        ],
+        "logical_time": "2026-07-15T15:03:02Z",
+        "net_trading_pnl": "0",
+        "policy_version": "policy-golden-v1",
+        "proposal": {
+          "executable_ask": {
+            "tick": "0.01",
+            "value": "0.4"
+          },
+          "expected_net_value_per_unit": "0.31",
+          "expires_at": "2026-07-15T15:05:00Z",
+          "fee_model_version": "synthetic-flat-per-contract-v1",
+          "fee_per_unit": {
+            "amount": "0.01",
+            "currency": "USD"
+          },
+          "fingerprint": "1f5c574472833f999b9aefb4962284fc999c9c4a11d54b17b6d6ac3ec6716179",
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "instrument_id": "SYNTH-WEATHER-20260715",
+          "maximum_loss_per_unit": {
+            "amount": "0.41",
+            "currency": "USD"
+          },
+          "proposal_id": "proposal_1f5c574472833f999b9aefb4",
+          "requested_risk_fraction": {
+            "value": "0.1"
+          },
+          "rule_version_id": "rule-golden-v1",
+          "side": "YES",
+          "strategy_version": "reference-edge-v1"
+        },
+        "realized_trading_pnl_before_fees": "0",
+        "risk_decision": {
+          "accepted": false,
+          "allocation_id": "allocation_ac90d3d041c03cd6fc6266dd",
+          "authorization_at": "2026-07-15T15:03:02Z",
+          "context_hash": "4d99e9a8d652032275b6091b1b4b5ef824ab40e0125cec1e7943f68b07094ba2",
+          "exact_order_fingerprint": "1bc8cc00ff8bd34d35b1ddd0d8d1f3c78a77f467a43e5cef32d2d11cdda64819",
+          "information_set_hash": {
+            "value": "09428621ff9c8e9e0d7fc58ad2cde22d59692bb5d53d4281d5dc32b639311ebd"
+          },
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "invariant_explanation": "Market observation source-book-1 available at 2026-07-15T14:58:01Z was 301 seconds old at authorization 2026-07-15T15:03:02Z, exceeding the sealed operational maximum of 300 seconds for information set information_set_09428621ff9c8e9e0d7fc58a.",
+          "maximum_age_seconds": 300,
+          "observation_available_at": "2026-07-15T14:58:01Z",
+          "observation_source_id": "source-book-1",
+          "observed_age_seconds": 301,
+          "reason_codes": [
+            "INVARIANT_MARKET_DATA_STALE"
+          ],
+          "risk_decision_id": "risk_decision_1b099e4860764c66c7d5f334"
+        },
+        "run_id": "run_68c052a70a61f57cfa7e69f0",
+        "run_outcome": "INVARIANT_REJECTED",
+        "runtime_capability": "SIMULATION_ONLY",
+        "schema_version": "2",
+        "seed": 20260716,
+        "selected_instrument": "SYNTH-WEATHER-20260715",
+        "strategy_evaluation": {
+          "evaluation_id": "evaluation_b09ca2ae3146183f6aaef95e",
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "outcome": "PROPOSAL",
+          "proposal": {
+            "executable_ask": {
+              "tick": "0.01",
+              "value": "0.4"
+            },
+            "expected_net_value_per_unit": "0.31",
+            "expires_at": "2026-07-15T15:05:00Z",
+            "fee_model_version": "synthetic-flat-per-contract-v1",
+            "fee_per_unit": {
+              "amount": "0.01",
+              "currency": "USD"
+            },
+            "fingerprint": "1f5c574472833f999b9aefb4962284fc999c9c4a11d54b17b6d6ac3ec6716179",
+            "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+            "instrument_id": "SYNTH-WEATHER-20260715",
+            "maximum_loss_per_unit": {
+              "amount": "0.41",
+              "currency": "USD"
+            },
+            "proposal_id": "proposal_1f5c574472833f999b9aefb4",
+            "requested_risk_fraction": {
+              "value": "0.1"
+            },
+            "rule_version_id": "rule-golden-v1",
+            "side": "YES",
+            "strategy_version": "reference-edge-v1"
+          },
+          "reason_codes": [
+            "SYNTHETIC_THRESHOLD_MET"
+          ],
+          "strategy_version": "reference-edge-v1"
+        },
+        "strategy_version": "reference-edge-v1"
+      },
+      "report_hash": "38af1172ec7db536da5e98ea56eb7849c110f56738186022433362408ab3e341",
+      "title": "Rejected by the risk kernel"
+    },
+    {
+      "fixture": "unfilled-expired",
+      "report": {
+        "allocation": {
+          "accepted": true,
+          "allocation_id": "allocation_a56d427003ab7f3e28d0a9ae",
+          "maximum_loss": {
+            "amount": "100",
+            "currency": "USD"
+          },
+          "proposal_id": "proposal_0ca5fdabaebd4e5e7b0103ee",
+          "quantity": {
+            "increment": "1",
+            "value": "250"
+          },
+          "reason_codes": [
+            "ALLOCATED"
+          ],
+          "snapshot_hash": "2b56bfd58561c73d68d49d9c806fc85cd733fb4c7a3fa34498240746bc9fe3da"
+        },
+        "calibration_evidence": "NONE",
+        "campaign": {
+          "authorized_campaign_loss": "1000",
+          "campaign_id": "campaign-unfilled-expired",
+          "contribution": "1000",
+          "policy_version": "policy-golden-v1"
+        },
+        "edge_evidence": "NONE",
+        "engine_version": "0.1.0",
+        "execution_events": [
+          {
+            "event_id": "execution_event_9fa0cbd6ff3b9927191acd00",
+            "event_type": "OPENED",
+            "fee": {
+              "amount": "0",
+              "currency": "USD"
+            },
+            "occurred_at": "2026-07-15T15:00:03Z",
+            "order_id": "order_830525d5a8e8268fa787a13c",
+            "payload_hash": {
+              "value": "9fa0cbd6ff3b9927191acd006f9761d4d00423b84ee479c422ab541563cc62ec"
+            },
+            "price": null,
+            "quantity": {
+              "increment": "1",
+              "value": "0"
+            },
+            "sequence": 1
+          },
+          {
+            "event_id": "execution_event_787ecfc7bdb11b296ea2c29f",
+            "event_type": "EXPIRED",
+            "fee": {
+              "amount": "0",
+              "currency": "USD"
+            },
+            "occurred_at": "2026-07-15T15:04:00Z",
+            "order_id": "order_830525d5a8e8268fa787a13c",
+            "payload_hash": {
+              "value": "787ecfc7bdb11b296ea2c29f7c1813917e3aaa35ba58ed7c82e01f74aa36c68b"
+            },
+            "price": null,
+            "quantity": {
+              "increment": "1",
+              "value": "0"
+            },
+            "sequence": 2
+          }
+        ],
+        "execution_evidence": "SYNTHETIC",
+        "fees": "0",
+        "filled_quantity": {
+          "increment": "1",
+          "value": "0"
+        },
+        "final_cash": {
+          "amount": "1000",
+          "currency": "USD"
+        },
+        "final_ledger_equity": "1000",
+        "final_reservation": {
+          "campaign_id": "campaign-unfilled-expired",
+          "exact_order_fingerprint": "7dc98b06bef4a18fd6f344a924d022d5daa381b21076d194aa3611fe852cbace",
+          "maximum_loss": {
+            "amount": "0",
+            "currency": "USD"
+          },
+          "order_id": "order_830525d5a8e8268fa787a13c",
+          "reservation_id": "reservation_830525d5a8e8268fa787a13c",
+          "risk_decision_id": "risk_decision_0daa2354b8f135c9441de6a0",
+          "state": "RELEASED"
+        },
+        "fixture_id": "unfilled-expired",
+        "fixture_manifest_hash": "ec7da14e07f50f96401a10fa7add6edca5ba8f2cb8acd4e0701533560b2fc0f5",
+        "information_set": {
+          "content_hash": {
+            "value": "09428621ff9c8e9e0d7fc58ad2cde22d59692bb5d53d4281d5dc32b639311ebd"
+          },
+          "cutoff": {
+            "value": "2026-07-15T15:00:00Z"
+          },
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "instrument": {
+            "category": "WEATHER",
+            "instrument_id": "SYNTH-WEATHER-20260715",
+            "no_settlement_value": "0",
+            "payout_unit": "1",
+            "price_tick": "0.01",
+            "quantity_increment": "1",
+            "void_settlement_value": "0.4",
+            "yes_settlement_value": "1"
+          },
+          "market": {
+            "no_ask": {
+              "tick": "0.01",
+              "value": "0.62"
+            },
+            "visible_yes_quantity": {
+              "increment": "1",
+              "value": "1000"
+            },
+            "yes_ask": {
+              "tick": "0.01",
+              "value": "0.4"
+            }
+          },
+          "ordered_members": [
+            {
+              "available_at": "2026-07-15T14:58:01Z",
+              "content_hash": {
+                "value": "189ffa4ebfd4bfe9082c3e3e244ae80fa779f627efaa8e18898ac14a47500e6c"
+              },
+              "sequence": 1,
+              "source_id": "source-book-1"
+            },
+            {
+              "available_at": "2026-07-15T14:59:02Z",
+              "content_hash": {
+                "value": "7d09e4e24133fb7c063228bba76a0d7240406668c505b8797f0ec6abab4dec76"
+              },
+              "sequence": 2,
+              "source_id": "source-estimate-2"
+            }
+          ],
+          "rule": {
+            "close_at": "2026-07-15T16:30:00Z",
+            "content_hash": {
+              "value": "742ac2b67c6ebd52f63cc960e890a03cb98b86ba344c68a248a2c2d54d07747d"
+            },
+            "determination_at": "2026-07-15T17:00:00Z",
+            "effective_at": "2026-07-15T14:00:00Z",
+            "exact_text": "This synthetic contract settles to 1.00 if the recorded fixture value is YES, 0.00 if it is NO, and 0.40 if it is VOID. Only the frozen synthetic resolution record identified by this rule is authoritative.",
+            "expected_settlement_at": "2026-07-15T17:05:00Z",
+            "resolution_source": "Frozen synthetic golden settlement record",
+            "rule_version_id": "rule-golden-v1"
+          },
+          "valid": true
+        },
+        "information_set_hash": "09428621ff9c8e9e0d7fc58ad2cde22d59692bb5d53d4281d5dc32b639311ebd",
+        "initial_reserved_maximum_loss": {
+          "amount": "100",
+          "currency": "USD"
+        },
+        "ledger_journals": [
+          {
+            "journal_id": "journal_e7c94377f61b61454eb02261",
+            "journal_type": "CONTRIBUTION",
+            "occurred_at": "2026-07-15T14:00:00Z",
+            "postings": [
+              {
+                "account_code": "CASH",
+                "amount": {
+                  "amount": "1000",
+                  "currency": "USD"
+                },
+                "side": "DEBIT"
+              },
+              {
+                "account_code": "CONTRIBUTED_CAPITAL",
+                "amount": {
+                  "amount": "1000",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              }
+            ],
+            "source_id": "contribution_3a2bfd6f0ec53ccf87a94c72",
+            "source_kind": "campaign_contribution"
+          }
+        ],
+        "logical_time": "2026-07-15T15:04:00Z",
+        "net_trading_pnl": "0",
+        "order": {
+          "client_order_id": "client_order_830525d5a8e8268fa787a13c",
+          "exact_order_fingerprint": "7dc98b06bef4a18fd6f344a924d022d5daa381b21076d194aa3611fe852cbace",
+          "executable_ask": {
+            "tick": "0.01",
+            "value": "0.4"
+          },
+          "expires_at": "2026-07-15T15:04:00Z",
+          "filled_quantity": {
+            "increment": "1",
+            "value": "0"
+          },
+          "last_execution_sequence": 2,
+          "limit_price": {
+            "tick": "0.01",
+            "value": "0.39"
+          },
+          "order_id": "order_830525d5a8e8268fa787a13c",
+          "proposal_id": "proposal_0ca5fdabaebd4e5e7b0103ee",
+          "quantity": {
+            "increment": "1",
+            "value": "250"
+          },
+          "reserved_maximum_loss": {
+            "amount": "0",
+            "currency": "USD"
+          },
+          "risk_decision_id": "risk_decision_0daa2354b8f135c9441de6a0",
+          "side": "YES",
+          "state": "EXPIRED"
+        },
+        "order_limit_price": {
+          "tick": "0.01",
+          "value": "0.39"
+        },
+        "ordered_quantity": {
+          "increment": "1",
+          "value": "250"
+        },
+        "policy_version": "policy-golden-v1",
+        "proposal": {
+          "executable_ask": {
+            "tick": "0.01",
+            "value": "0.4"
+          },
+          "expected_net_value_per_unit": "0.32",
+          "expires_at": "2026-07-15T15:05:00Z",
+          "fee_model_version": "synthetic-flat-per-contract-v1",
+          "fee_per_unit": {
+            "amount": "0.01",
+            "currency": "USD"
+          },
+          "fingerprint": "0ca5fdabaebd4e5e7b0103eee746ed4f7da56e01f6fef8d472906c95908d89f7",
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "instrument_id": "SYNTH-WEATHER-20260715",
+          "limit_price": {
+            "tick": "0.01",
+            "value": "0.39"
+          },
+          "maximum_loss_per_unit": {
+            "amount": "0.4",
+            "currency": "USD"
+          },
+          "order_expires_at": "2026-07-15T15:04:00Z",
+          "proposal_id": "proposal_0ca5fdabaebd4e5e7b0103ee",
+          "requested_risk_fraction": {
+            "value": "0.1"
+          },
+          "rule_version_id": "rule-golden-v1",
+          "side": "YES",
+          "strategy_version": "reference-edge-v1"
+        },
+        "realized_trading_pnl_before_fees": "0",
+        "released_reservation_amount": {
+          "amount": "100",
+          "currency": "USD"
+        },
+        "remaining_quantity": {
+          "increment": "1",
+          "value": "250"
+        },
+        "reservation_lifecycle": [
+          {
+            "campaign_id": "campaign-unfilled-expired",
+            "exact_order_fingerprint": "7dc98b06bef4a18fd6f344a924d022d5daa381b21076d194aa3611fe852cbace",
+            "maximum_loss": {
+              "amount": "100",
+              "currency": "USD"
+            },
+            "order_id": "order_830525d5a8e8268fa787a13c",
+            "reservation_id": "reservation_830525d5a8e8268fa787a13c",
+            "risk_decision_id": "risk_decision_0daa2354b8f135c9441de6a0",
+            "state": "HELD"
+          },
+          {
+            "campaign_id": "campaign-unfilled-expired",
+            "exact_order_fingerprint": "7dc98b06bef4a18fd6f344a924d022d5daa381b21076d194aa3611fe852cbace",
+            "maximum_loss": {
+              "amount": "100",
+              "currency": "USD"
+            },
+            "order_id": "order_830525d5a8e8268fa787a13c",
+            "reservation_id": "reservation_830525d5a8e8268fa787a13c",
+            "risk_decision_id": "risk_decision_0daa2354b8f135c9441de6a0",
+            "state": "OPEN"
+          },
+          {
+            "campaign_id": "campaign-unfilled-expired",
+            "exact_order_fingerprint": "7dc98b06bef4a18fd6f344a924d022d5daa381b21076d194aa3611fe852cbace",
+            "maximum_loss": {
+              "amount": "0",
+              "currency": "USD"
+            },
+            "order_id": "order_830525d5a8e8268fa787a13c",
+            "reservation_id": "reservation_830525d5a8e8268fa787a13c",
+            "risk_decision_id": "risk_decision_0daa2354b8f135c9441de6a0",
+            "state": "RELEASED"
+          }
+        ],
+        "risk_capacity_after_expiration": {
+          "amount": "1000",
+          "currency": "USD"
+        },
+        "risk_capacity_before_order": {
+          "amount": "1000",
+          "currency": "USD"
+        },
+        "risk_capacity_while_open": {
+          "amount": "900",
+          "currency": "USD"
+        },
+        "risk_decision": {
+          "accepted": true,
+          "allocation_id": "allocation_a56d427003ab7f3e28d0a9ae",
+          "context_hash": "72b7ce985917258f2db2904d71247d88e07969bce71a7e032684ff6de8ce3309",
+          "exact_order_fingerprint": "7dc98b06bef4a18fd6f344a924d022d5daa381b21076d194aa3611fe852cbace",
+          "reason_codes": [
+            "ALL_INVARIANTS_PASSED"
+          ],
+          "risk_decision_id": "risk_decision_0daa2354b8f135c9441de6a0"
+        },
+        "run_id": "run_2d9842716502a6f6b5de5720",
+        "run_outcome": "UNFILLED_EXPIRED",
+        "runtime_capability": "SIMULATION_ONLY",
+        "schema_version": "2",
+        "seed": 20260716,
+        "selected_instrument": "SYNTH-WEATHER-20260715",
+        "strategy_evaluation": {
+          "evaluation_id": "evaluation_4c381fdb084c914f8123d12e",
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "outcome": "PROPOSAL",
+          "proposal": {
+            "executable_ask": {
+              "tick": "0.01",
+              "value": "0.4"
+            },
+            "expected_net_value_per_unit": "0.32",
+            "expires_at": "2026-07-15T15:05:00Z",
+            "fee_model_version": "synthetic-flat-per-contract-v1",
+            "fee_per_unit": {
+              "amount": "0.01",
+              "currency": "USD"
+            },
+            "fingerprint": "0ca5fdabaebd4e5e7b0103eee746ed4f7da56e01f6fef8d472906c95908d89f7",
+            "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+            "instrument_id": "SYNTH-WEATHER-20260715",
+            "limit_price": {
+              "tick": "0.01",
+              "value": "0.39"
+            },
+            "maximum_loss_per_unit": {
+              "amount": "0.4",
+              "currency": "USD"
+            },
+            "order_expires_at": "2026-07-15T15:04:00Z",
+            "proposal_id": "proposal_0ca5fdabaebd4e5e7b0103ee",
+            "requested_risk_fraction": {
+              "value": "0.1"
+            },
+            "rule_version_id": "rule-golden-v1",
+            "side": "YES",
+            "strategy_version": "reference-edge-v1"
+          },
+          "reason_codes": [
+            "SYNTHETIC_THRESHOLD_MET"
+          ],
+          "strategy_version": "reference-edge-v1"
+        },
+        "strategy_version": "reference-edge-v1",
+        "synthetic_executable_ask": {
+          "tick": "0.01",
+          "value": "0.4"
+        }
+      },
+      "report_hash": "6c3449f12080127227ad585f48e8738e4f97be7794f880cd33a154ef9e27017f",
+      "title": "Resting order expires unfilled"
+    },
+    {
+      "fixture": "partial-fill-canceled",
+      "report": {
+        "active_risk_after_partial_fill": {
+          "amount": "100",
+          "currency": "USD"
+        },
+        "allocation": {
+          "accepted": true,
+          "allocation_id": "allocation_cdf230e7b18880907dcce0f0",
+          "maximum_loss": {
+            "amount": "100",
+            "currency": "USD"
+          },
+          "proposal_id": "proposal_0ca5fdabaebd4e5e7b0103ee",
+          "quantity": {
+            "increment": "1",
+            "value": "250"
+          },
+          "reason_codes": [
+            "ALLOCATED"
+          ],
+          "snapshot_hash": "286de3aae3dd62c8dd40511cb20981457762d8d101063c6d19df20c7b990372c"
+        },
+        "calibration_evidence": "NONE",
+        "campaign": {
+          "authorized_campaign_loss": "1000",
+          "campaign_id": "campaign-partial-fill-canceled",
+          "contribution": "1000",
+          "policy_version": "policy-golden-v1"
+        },
+        "edge_evidence": "NONE",
+        "engine_version": "0.1.0",
+        "execution_events": [
+          {
+            "event_id": "execution_event_59bb5ae363a8e680204773f8",
+            "event_type": "OPENED",
+            "fee": {
+              "amount": "0",
+              "currency": "USD"
+            },
+            "occurred_at": "2026-07-15T15:00:03Z",
+            "order_id": "order_99e09bf4972cbf1ecd3c9019",
+            "payload_hash": {
+              "value": "59bb5ae363a8e680204773f82a3517525edb8e6d5f604b998e5541552b28c5d3"
+            },
+            "price": null,
+            "quantity": {
+              "increment": "1",
+              "value": "0"
+            },
+            "sequence": 1
+          },
+          {
+            "event_id": "execution_event_5cc2b68d5c9e032c9d55f682",
+            "event_type": "FILL",
+            "fee": {
+              "amount": "1",
+              "currency": "USD"
+            },
+            "occurred_at": "2026-07-15T15:00:04Z",
+            "order_id": "order_99e09bf4972cbf1ecd3c9019",
+            "payload_hash": {
+              "value": "5cc2b68d5c9e032c9d55f6825484c01c6539bd7fe3f8825e214b2b63755381a5"
+            },
+            "price": {
+              "tick": "0.01",
+              "value": "0.39"
+            },
+            "quantity": {
+              "increment": "1",
+              "value": "100"
+            },
+            "sequence": 2
+          },
+          {
+            "event_id": "execution_event_ef9168d36a430063475e1fee",
+            "event_type": "CANCELED",
+            "fee": {
+              "amount": "0",
+              "currency": "USD"
+            },
+            "occurred_at": "2026-07-15T15:00:05Z",
+            "order_id": "order_99e09bf4972cbf1ecd3c9019",
+            "payload_hash": {
+              "value": "ef9168d36a430063475e1fee52ada808f8a5d6a494e461e1d92d67f1cc4e74ca"
+            },
+            "price": null,
+            "quantity": {
+              "increment": "1",
+              "value": "0"
+            },
+            "sequence": 3
+          }
+        ],
+        "execution_evidence": "SYNTHETIC",
+        "fee_accounting_basis": "EXPENSED_SEPARATELY",
+        "fees": "1",
+        "filled_quantity": {
+          "increment": "1",
+          "value": "100"
+        },
+        "final_cash": {
+          "amount": "960",
+          "currency": "USD"
+        },
+        "final_ledger_equity": "999",
+        "final_reservation": {
+          "campaign_id": "campaign-partial-fill-canceled",
+          "exact_order_fingerprint": "9eb84575fcad3e29446583a80a1331086e99fb5d56f60714a5b3d2ab4646b6b9",
+          "maximum_loss": {
+            "amount": "0",
+            "currency": "USD"
+          },
+          "order_id": "order_99e09bf4972cbf1ecd3c9019",
+          "reservation_id": "reservation_99e09bf4972cbf1ecd3c9019",
+          "risk_decision_id": "risk_decision_013116857c0fb85e0c48f217",
+          "state": "RELEASED"
+        },
+        "fixture_id": "partial-fill-canceled",
+        "fixture_manifest_hash": "7e7c017c4bffd9f74dde5991f718a2ca8330430b4d3b1364320f5155a7ed712f",
+        "information_set": {
+          "content_hash": {
+            "value": "09428621ff9c8e9e0d7fc58ad2cde22d59692bb5d53d4281d5dc32b639311ebd"
+          },
+          "cutoff": {
+            "value": "2026-07-15T15:00:00Z"
+          },
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "instrument": {
+            "category": "WEATHER",
+            "instrument_id": "SYNTH-WEATHER-20260715",
+            "no_settlement_value": "0",
+            "payout_unit": "1",
+            "price_tick": "0.01",
+            "quantity_increment": "1",
+            "void_settlement_value": "0.4",
+            "yes_settlement_value": "1"
+          },
+          "market": {
+            "no_ask": {
+              "tick": "0.01",
+              "value": "0.62"
+            },
+            "visible_yes_quantity": {
+              "increment": "1",
+              "value": "1000"
+            },
+            "yes_ask": {
+              "tick": "0.01",
+              "value": "0.4"
+            }
+          },
+          "ordered_members": [
+            {
+              "available_at": "2026-07-15T14:58:01Z",
+              "content_hash": {
+                "value": "189ffa4ebfd4bfe9082c3e3e244ae80fa779f627efaa8e18898ac14a47500e6c"
+              },
+              "sequence": 1,
+              "source_id": "source-book-1"
+            },
+            {
+              "available_at": "2026-07-15T14:59:02Z",
+              "content_hash": {
+                "value": "7d09e4e24133fb7c063228bba76a0d7240406668c505b8797f0ec6abab4dec76"
+              },
+              "sequence": 2,
+              "source_id": "source-estimate-2"
+            }
+          ],
+          "rule": {
+            "close_at": "2026-07-15T16:30:00Z",
+            "content_hash": {
+              "value": "742ac2b67c6ebd52f63cc960e890a03cb98b86ba344c68a248a2c2d54d07747d"
+            },
+            "determination_at": "2026-07-15T17:00:00Z",
+            "effective_at": "2026-07-15T14:00:00Z",
+            "exact_text": "This synthetic contract settles to 1.00 if the recorded fixture value is YES, 0.00 if it is NO, and 0.40 if it is VOID. Only the frozen synthetic resolution record identified by this rule is authoritative.",
+            "expected_settlement_at": "2026-07-15T17:05:00Z",
+            "resolution_source": "Frozen synthetic golden settlement record",
+            "rule_version_id": "rule-golden-v1"
+          },
+          "valid": true
+        },
+        "information_set_hash": "09428621ff9c8e9e0d7fc58ad2cde22d59692bb5d53d4281d5dc32b639311ebd",
+        "initial_reserved_maximum_loss": {
+          "amount": "100",
+          "currency": "USD"
+        },
+        "ledger_journals": [
+          {
+            "journal_id": "journal_5ee7f33fa24343955e5cdd6c",
+            "journal_type": "FEE",
+            "occurred_at": "2026-07-15T15:00:04Z",
+            "postings": [
+              {
+                "account_code": "FEE_EXPENSE",
+                "amount": {
+                  "amount": "1",
+                  "currency": "USD"
+                },
+                "side": "DEBIT"
+              },
+              {
+                "account_code": "CASH",
+                "amount": {
+                  "amount": "1",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              }
+            ],
+            "source_id": "execution_event_5cc2b68d5c9e032c9d55f682",
+            "source_kind": "execution_fee"
+          },
+          {
+            "journal_id": "journal_7833da982c27f03713fcf9d3",
+            "journal_type": "CONTRIBUTION",
+            "occurred_at": "2026-07-15T14:00:00Z",
+            "postings": [
+              {
+                "account_code": "CASH",
+                "amount": {
+                  "amount": "1000",
+                  "currency": "USD"
+                },
+                "side": "DEBIT"
+              },
+              {
+                "account_code": "CONTRIBUTED_CAPITAL",
+                "amount": {
+                  "amount": "1000",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              }
+            ],
+            "source_id": "contribution_b63cbbcddf673ad8565f4ba3",
+            "source_kind": "campaign_contribution"
+          },
+          {
+            "journal_id": "journal_a5bf83d0a33a72ee0dea9d1b",
+            "journal_type": "PURCHASE",
+            "occurred_at": "2026-07-15T15:00:04Z",
+            "postings": [
+              {
+                "account_code": "POSITION_COST",
+                "amount": {
+                  "amount": "39",
+                  "currency": "USD"
+                },
+                "side": "DEBIT"
+              },
+              {
+                "account_code": "CASH",
+                "amount": {
+                  "amount": "39",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              }
+            ],
+            "source_id": "execution_event_5cc2b68d5c9e032c9d55f682",
+            "source_kind": "execution_purchase"
+          }
+        ],
+        "logical_time": "2026-07-15T15:00:05Z",
+        "mark_evidence": "NONE",
+        "net_trading_pnl": "-1",
+        "order": {
+          "client_order_id": "client_order_99e09bf4972cbf1ecd3c9019",
+          "exact_order_fingerprint": "9eb84575fcad3e29446583a80a1331086e99fb5d56f60714a5b3d2ab4646b6b9",
+          "executable_ask": {
+            "tick": "0.01",
+            "value": "0.4"
+          },
+          "expires_at": "2026-07-15T15:04:00Z",
+          "filled_quantity": {
+            "increment": "1",
+            "value": "100"
+          },
+          "last_execution_sequence": 3,
+          "limit_price": {
+            "tick": "0.01",
+            "value": "0.39"
+          },
+          "order_id": "order_99e09bf4972cbf1ecd3c9019",
+          "proposal_id": "proposal_0ca5fdabaebd4e5e7b0103ee",
+          "quantity": {
+            "increment": "1",
+            "value": "250"
+          },
+          "reserved_maximum_loss": {
+            "amount": "0",
+            "currency": "USD"
+          },
+          "risk_decision_id": "risk_decision_013116857c0fb85e0c48f217",
+          "side": "YES",
+          "state": "CANCELED"
+        },
+        "order_limit_price": {
+          "tick": "0.01",
+          "value": "0.39"
+        },
+        "ordered_quantity": {
+          "increment": "1",
+          "value": "250"
+        },
+        "policy_version": "policy-golden-v1",
+        "position": {
+          "cost_basis": {
+            "amount": "39",
+            "currency": "USD"
+          },
+          "instrument_id": "SYNTH-WEATHER-20260715",
+          "maximum_remaining_loss": {
+            "amount": "40",
+            "currency": "USD"
+          },
+          "open_quantity": {
+            "increment": "1",
+            "value": "100"
+          },
+          "originating_fill_event_id": "execution_event_5cc2b68d5c9e032c9d55f682",
+          "originating_order_id": "order_99e09bf4972cbf1ecd3c9019",
+          "rule_version_id": "rule-golden-v1",
+          "settlement_state": "OPEN",
+          "side": "YES"
+        },
+        "position_cost": {
+          "amount": "39",
+          "currency": "USD"
+        },
+        "position_maximum_remaining_loss": {
+          "amount": "40",
+          "currency": "USD"
+        },
+        "position_valuation_basis": "CARRIED_AT_COST",
+        "proposal": {
+          "executable_ask": {
+            "tick": "0.01",
+            "value": "0.4"
+          },
+          "expected_net_value_per_unit": "0.32",
+          "expires_at": "2026-07-15T15:05:00Z",
+          "fee_model_version": "synthetic-flat-per-contract-v1",
+          "fee_per_unit": {
+            "amount": "0.01",
+            "currency": "USD"
+          },
+          "fingerprint": "0ca5fdabaebd4e5e7b0103eee746ed4f7da56e01f6fef8d472906c95908d89f7",
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "instrument_id": "SYNTH-WEATHER-20260715",
+          "limit_price": {
+            "tick": "0.01",
+            "value": "0.39"
+          },
+          "maximum_loss_per_unit": {
+            "amount": "0.4",
+            "currency": "USD"
+          },
+          "order_expires_at": "2026-07-15T15:04:00Z",
+          "proposal_id": "proposal_0ca5fdabaebd4e5e7b0103ee",
+          "requested_risk_fraction": {
+            "value": "0.1"
+          },
+          "rule_version_id": "rule-golden-v1",
+          "side": "YES",
+          "strategy_version": "reference-edge-v1"
+        },
+        "realized_settlement_pnl": "0",
+        "realized_trading_pnl_before_fees": "0",
+        "released_at_cancellation": {
+          "amount": "60",
+          "currency": "USD"
+        },
+        "remaining_quantity": {
+          "increment": "1",
+          "value": "150"
+        },
+        "reservation_after_partial_fill": {
+          "campaign_id": "campaign-partial-fill-canceled",
+          "exact_order_fingerprint": "9eb84575fcad3e29446583a80a1331086e99fb5d56f60714a5b3d2ab4646b6b9",
+          "maximum_loss": {
+            "amount": "60",
+            "currency": "USD"
+          },
+          "order_id": "order_99e09bf4972cbf1ecd3c9019",
+          "reservation_id": "reservation_99e09bf4972cbf1ecd3c9019",
+          "risk_decision_id": "risk_decision_013116857c0fb85e0c48f217",
+          "state": "OPEN"
+        },
+        "reservation_lifecycle": [
+          {
+            "campaign_id": "campaign-partial-fill-canceled",
+            "exact_order_fingerprint": "9eb84575fcad3e29446583a80a1331086e99fb5d56f60714a5b3d2ab4646b6b9",
+            "maximum_loss": {
+              "amount": "100",
+              "currency": "USD"
+            },
+            "order_id": "order_99e09bf4972cbf1ecd3c9019",
+            "reservation_id": "reservation_99e09bf4972cbf1ecd3c9019",
+            "risk_decision_id": "risk_decision_013116857c0fb85e0c48f217",
+            "state": "HELD"
+          },
+          {
+            "campaign_id": "campaign-partial-fill-canceled",
+            "exact_order_fingerprint": "9eb84575fcad3e29446583a80a1331086e99fb5d56f60714a5b3d2ab4646b6b9",
+            "maximum_loss": {
+              "amount": "100",
+              "currency": "USD"
+            },
+            "order_id": "order_99e09bf4972cbf1ecd3c9019",
+            "reservation_id": "reservation_99e09bf4972cbf1ecd3c9019",
+            "risk_decision_id": "risk_decision_013116857c0fb85e0c48f217",
+            "state": "OPEN"
+          },
+          {
+            "campaign_id": "campaign-partial-fill-canceled",
+            "exact_order_fingerprint": "9eb84575fcad3e29446583a80a1331086e99fb5d56f60714a5b3d2ab4646b6b9",
+            "maximum_loss": {
+              "amount": "60",
+              "currency": "USD"
+            },
+            "order_id": "order_99e09bf4972cbf1ecd3c9019",
+            "reservation_id": "reservation_99e09bf4972cbf1ecd3c9019",
+            "risk_decision_id": "risk_decision_013116857c0fb85e0c48f217",
+            "state": "OPEN"
+          },
+          {
+            "campaign_id": "campaign-partial-fill-canceled",
+            "exact_order_fingerprint": "9eb84575fcad3e29446583a80a1331086e99fb5d56f60714a5b3d2ab4646b6b9",
+            "maximum_loss": {
+              "amount": "0",
+              "currency": "USD"
+            },
+            "order_id": "order_99e09bf4972cbf1ecd3c9019",
+            "reservation_id": "reservation_99e09bf4972cbf1ecd3c9019",
+            "risk_decision_id": "risk_decision_013116857c0fb85e0c48f217",
+            "state": "RELEASED"
+          }
+        ],
+        "risk_capacity_after_cancellation": {
+          "amount": "960",
+          "currency": "USD"
+        },
+        "risk_capacity_after_partial_fill": {
+          "amount": "900",
+          "currency": "USD"
+        },
+        "risk_capacity_before_order": {
+          "amount": "1000",
+          "currency": "USD"
+        },
+        "risk_capacity_while_fully_reserved": {
+          "amount": "900",
+          "currency": "USD"
+        },
+        "risk_decision": {
+          "accepted": true,
+          "allocation_id": "allocation_cdf230e7b18880907dcce0f0",
+          "context_hash": "f8bdc623c51591e1cfcd9b1c725e3370e7bdca21bd792fe0d3ea4ccdbbadd660",
+          "exact_order_fingerprint": "9eb84575fcad3e29446583a80a1331086e99fb5d56f60714a5b3d2ab4646b6b9",
+          "reason_codes": [
+            "ALL_INVARIANTS_PASSED"
+          ],
+          "risk_decision_id": "risk_decision_013116857c0fb85e0c48f217"
+        },
+        "run_id": "run_04339653f37beb92997cd756",
+        "run_outcome": "PARTIAL_FILL_CANCELED",
+        "runtime_capability": "SIMULATION_ONLY",
+        "schema_version": "2",
+        "seed": 20260716,
+        "selected_instrument": "SYNTH-WEATHER-20260715",
+        "strategy_evaluation": {
+          "evaluation_id": "evaluation_4c381fdb084c914f8123d12e",
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "outcome": "PROPOSAL",
+          "proposal": {
+            "executable_ask": {
+              "tick": "0.01",
+              "value": "0.4"
+            },
+            "expected_net_value_per_unit": "0.32",
+            "expires_at": "2026-07-15T15:05:00Z",
+            "fee_model_version": "synthetic-flat-per-contract-v1",
+            "fee_per_unit": {
+              "amount": "0.01",
+              "currency": "USD"
+            },
+            "fingerprint": "0ca5fdabaebd4e5e7b0103eee746ed4f7da56e01f6fef8d472906c95908d89f7",
+            "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+            "instrument_id": "SYNTH-WEATHER-20260715",
+            "limit_price": {
+              "tick": "0.01",
+              "value": "0.39"
+            },
+            "maximum_loss_per_unit": {
+              "amount": "0.4",
+              "currency": "USD"
+            },
+            "order_expires_at": "2026-07-15T15:04:00Z",
+            "proposal_id": "proposal_0ca5fdabaebd4e5e7b0103ee",
+            "requested_risk_fraction": {
+              "value": "0.1"
+            },
+            "rule_version_id": "rule-golden-v1",
+            "side": "YES",
+            "strategy_version": "reference-edge-v1"
+          },
+          "reason_codes": [
+            "SYNTHETIC_THRESHOLD_MET"
+          ],
+          "strategy_version": "reference-edge-v1"
+        },
+        "strategy_version": "reference-edge-v1",
+        "synthetic_executable_ask": {
+          "tick": "0.01",
+          "value": "0.4"
+        },
+        "total_active_campaign_risk": {
+          "amount": "40",
+          "currency": "USD"
+        },
+        "unfilled_reservation_before_cancellation": {
+          "amount": "60",
+          "currency": "USD"
+        }
+      },
+      "report_hash": "b9522c05abee6268bd36145e1c1696c94df033f2a6430791e6be34bc02663c21",
+      "title": "Partial fill, remainder canceled"
+    },
+    {
+      "fixture": "partial-fill-canceled-settled-no",
+      "report": {
+        "active_risk_after_cancellation": {
+          "amount": "40",
+          "currency": "USD"
+        },
+        "active_risk_after_partial_fill": {
+          "amount": "100",
+          "currency": "USD"
+        },
+        "allocation": {
+          "accepted": true,
+          "allocation_id": "allocation_1dcb28fbed9d46939701e800",
+          "maximum_loss": {
+            "amount": "100",
+            "currency": "USD"
+          },
+          "proposal_id": "proposal_0ca5fdabaebd4e5e7b0103ee",
+          "quantity": {
+            "increment": "1",
+            "value": "250"
+          },
+          "reason_codes": [
+            "ALLOCATED"
+          ],
+          "snapshot_hash": "ba39abb0ad82452b3eef1d05a020fc93c9eb8738ad7823469591d5f9e996d55f"
+        },
+        "calibration_evidence": "NONE",
+        "campaign": {
+          "authorized_campaign_loss": "1000",
+          "campaign_id": "campaign-partial-fill-canceled-settled-no",
+          "contribution": "1000",
+          "policy_version": "policy-golden-v1"
+        },
+        "contract_rule_version": {
+          "close_at": "2026-07-15T16:30:00Z",
+          "content_hash": {
+            "value": "742ac2b67c6ebd52f63cc960e890a03cb98b86ba344c68a248a2c2d54d07747d"
+          },
+          "determination_at": "2026-07-15T17:00:00Z",
+          "effective_at": "2026-07-15T14:00:00Z",
+          "exact_text": "This synthetic contract settles to 1.00 if the recorded fixture value is YES, 0.00 if it is NO, and 0.40 if it is VOID. Only the frozen synthetic resolution record identified by this rule is authoritative.",
+          "expected_settlement_at": "2026-07-15T17:05:00Z",
+          "resolution_source": "Frozen synthetic golden settlement record",
+          "rule_version_id": "rule-golden-v1"
+        },
+        "edge_evidence": "NONE",
+        "engine_version": "0.1.0",
+        "execution_events": [
+          {
+            "event_id": "execution_event_220cdf1cdc0ffd168ea777ef",
+            "event_type": "OPENED",
+            "fee": {
+              "amount": "0",
+              "currency": "USD"
+            },
+            "occurred_at": "2026-07-15T15:00:03Z",
+            "order_id": "order_e3ae00f2d7e6a58b83eeadfd",
+            "payload_hash": {
+              "value": "220cdf1cdc0ffd168ea777ef8a97d1900810037ac2dd87c8d41adfea7d03f529"
+            },
+            "price": null,
+            "quantity": {
+              "increment": "1",
+              "value": "0"
+            },
+            "sequence": 1
+          },
+          {
+            "event_id": "execution_event_ab0b555ce8de0d4e8a056821",
+            "event_type": "FILL",
+            "fee": {
+              "amount": "1",
+              "currency": "USD"
+            },
+            "occurred_at": "2026-07-15T15:00:04Z",
+            "order_id": "order_e3ae00f2d7e6a58b83eeadfd",
+            "payload_hash": {
+              "value": "ab0b555ce8de0d4e8a0568216b9840746df518ad4993a893e98d7ea0c2ec32b8"
+            },
+            "price": {
+              "tick": "0.01",
+              "value": "0.39"
+            },
+            "quantity": {
+              "increment": "1",
+              "value": "100"
+            },
+            "sequence": 2
+          },
+          {
+            "event_id": "execution_event_6ed9d169729dabd1a498a8e1",
+            "event_type": "CANCELED",
+            "fee": {
+              "amount": "0",
+              "currency": "USD"
+            },
+            "occurred_at": "2026-07-15T15:00:05Z",
+            "order_id": "order_e3ae00f2d7e6a58b83eeadfd",
+            "payload_hash": {
+              "value": "6ed9d169729dabd1a498a8e15210fc864edf6adecbd0753fcf8087396b4bb800"
+            },
+            "price": null,
+            "quantity": {
+              "increment": "1",
+              "value": "0"
+            },
+            "sequence": 3
+          }
+        ],
+        "execution_evidence": "SYNTHETIC",
+        "fee_accounting_basis": "EXPENSED_SEPARATELY",
+        "fees": "1",
+        "filled_quantity": {
+          "increment": "1",
+          "value": "100"
+        },
+        "final_cash": {
+          "amount": "960",
+          "currency": "USD"
+        },
+        "final_ledger_equity": "960",
+        "final_position_risk": {
+          "amount": "0",
+          "currency": "USD"
+        },
+        "final_reservation": {
+          "campaign_id": "campaign-partial-fill-canceled-settled-no",
+          "exact_order_fingerprint": "a4b27f8d6835485d61873e8a470e5b0f7262eca1408c37c036609939719e376d",
+          "maximum_loss": {
+            "amount": "0",
+            "currency": "USD"
+          },
+          "order_id": "order_e3ae00f2d7e6a58b83eeadfd",
+          "reservation_id": "reservation_e3ae00f2d7e6a58b83eeadfd",
+          "risk_decision_id": "risk_decision_24a2b26ecfabf741bab8c342",
+          "state": "RELEASED"
+        },
+        "fixture_id": "partial-fill-canceled-settled-no",
+        "fixture_manifest_hash": "f46b9e7c59a099f3aa26e3505d1c73717204e7459039974781fdcbeb5753d2ca",
+        "information_set": {
+          "content_hash": {
+            "value": "09428621ff9c8e9e0d7fc58ad2cde22d59692bb5d53d4281d5dc32b639311ebd"
+          },
+          "cutoff": {
+            "value": "2026-07-15T15:00:00Z"
+          },
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "instrument": {
+            "category": "WEATHER",
+            "instrument_id": "SYNTH-WEATHER-20260715",
+            "no_settlement_value": "0",
+            "payout_unit": "1",
+            "price_tick": "0.01",
+            "quantity_increment": "1",
+            "void_settlement_value": "0.4",
+            "yes_settlement_value": "1"
+          },
+          "market": {
+            "no_ask": {
+              "tick": "0.01",
+              "value": "0.62"
+            },
+            "visible_yes_quantity": {
+              "increment": "1",
+              "value": "1000"
+            },
+            "yes_ask": {
+              "tick": "0.01",
+              "value": "0.4"
+            }
+          },
+          "ordered_members": [
+            {
+              "available_at": "2026-07-15T14:58:01Z",
+              "content_hash": {
+                "value": "189ffa4ebfd4bfe9082c3e3e244ae80fa779f627efaa8e18898ac14a47500e6c"
+              },
+              "sequence": 1,
+              "source_id": "source-book-1"
+            },
+            {
+              "available_at": "2026-07-15T14:59:02Z",
+              "content_hash": {
+                "value": "7d09e4e24133fb7c063228bba76a0d7240406668c505b8797f0ec6abab4dec76"
+              },
+              "sequence": 2,
+              "source_id": "source-estimate-2"
+            }
+          ],
+          "rule": {
+            "close_at": "2026-07-15T16:30:00Z",
+            "content_hash": {
+              "value": "742ac2b67c6ebd52f63cc960e890a03cb98b86ba344c68a248a2c2d54d07747d"
+            },
+            "determination_at": "2026-07-15T17:00:00Z",
+            "effective_at": "2026-07-15T14:00:00Z",
+            "exact_text": "This synthetic contract settles to 1.00 if the recorded fixture value is YES, 0.00 if it is NO, and 0.40 if it is VOID. Only the frozen synthetic resolution record identified by this rule is authoritative.",
+            "expected_settlement_at": "2026-07-15T17:05:00Z",
+            "resolution_source": "Frozen synthetic golden settlement record",
+            "rule_version_id": "rule-golden-v1"
+          },
+          "valid": true
+        },
+        "information_set_hash": "09428621ff9c8e9e0d7fc58ad2cde22d59692bb5d53d4281d5dc32b639311ebd",
+        "initial_reserved_maximum_loss": {
+          "amount": "100",
+          "currency": "USD"
+        },
+        "ledger_journals": [
+          {
+            "journal_id": "journal_165b2b80c9748f61ac554f16",
+            "journal_type": "PURCHASE",
+            "occurred_at": "2026-07-15T15:00:04Z",
+            "postings": [
+              {
+                "account_code": "POSITION_COST",
+                "amount": {
+                  "amount": "39",
+                  "currency": "USD"
+                },
+                "side": "DEBIT"
+              },
+              {
+                "account_code": "CASH",
+                "amount": {
+                  "amount": "39",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              }
+            ],
+            "source_id": "execution_event_ab0b555ce8de0d4e8a056821",
+            "source_kind": "execution_purchase"
+          },
+          {
+            "journal_id": "journal_27b216830d5934d1e28c2803",
+            "journal_type": "FEE",
+            "occurred_at": "2026-07-15T15:00:04Z",
+            "postings": [
+              {
+                "account_code": "FEE_EXPENSE",
+                "amount": {
+                  "amount": "1",
+                  "currency": "USD"
+                },
+                "side": "DEBIT"
+              },
+              {
+                "account_code": "CASH",
+                "amount": {
+                  "amount": "1",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              }
+            ],
+            "source_id": "execution_event_ab0b555ce8de0d4e8a056821",
+            "source_kind": "execution_fee"
+          },
+          {
+            "journal_id": "journal_68b2f3fe23e031f665818e17",
+            "journal_type": "SETTLEMENT",
+            "occurred_at": "2026-07-15T17:00:03Z",
+            "postings": [
+              {
+                "account_code": "REALIZED_PNL",
+                "amount": {
+                  "amount": "39",
+                  "currency": "USD"
+                },
+                "side": "DEBIT"
+              },
+              {
+                "account_code": "POSITION_COST",
+                "amount": {
+                  "amount": "39",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              }
+            ],
+            "source_id": "settlement-partial-fill-canceled-no",
+            "source_kind": "settlement"
+          },
+          {
+            "journal_id": "journal_e95d536da64809002b8d0772",
+            "journal_type": "CONTRIBUTION",
+            "occurred_at": "2026-07-15T14:00:00Z",
+            "postings": [
+              {
+                "account_code": "CASH",
+                "amount": {
+                  "amount": "1000",
+                  "currency": "USD"
+                },
+                "side": "DEBIT"
+              },
+              {
+                "account_code": "CONTRIBUTED_CAPITAL",
+                "amount": {
+                  "amount": "1000",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              }
+            ],
+            "source_id": "contribution_cc81fcb5425102a2dafd8419",
+            "source_kind": "campaign_contribution"
+          }
+        ],
+        "logical_time": "2026-07-15T18:00:00Z",
+        "mark_evidence": "NONE",
+        "net_trading_pnl": "-40",
+        "order": {
+          "client_order_id": "client_order_e3ae00f2d7e6a58b83eeadfd",
+          "exact_order_fingerprint": "a4b27f8d6835485d61873e8a470e5b0f7262eca1408c37c036609939719e376d",
+          "executable_ask": {
+            "tick": "0.01",
+            "value": "0.4"
+          },
+          "expires_at": "2026-07-15T15:04:00Z",
+          "filled_quantity": {
+            "increment": "1",
+            "value": "100"
+          },
+          "last_execution_sequence": 3,
+          "limit_price": {
+            "tick": "0.01",
+            "value": "0.39"
+          },
+          "order_id": "order_e3ae00f2d7e6a58b83eeadfd",
+          "proposal_id": "proposal_0ca5fdabaebd4e5e7b0103ee",
+          "quantity": {
+            "increment": "1",
+            "value": "250"
+          },
+          "reserved_maximum_loss": {
+            "amount": "0",
+            "currency": "USD"
+          },
+          "risk_decision_id": "risk_decision_24a2b26ecfabf741bab8c342",
+          "side": "YES",
+          "state": "CANCELED"
+        },
+        "order_limit_price": {
+          "tick": "0.01",
+          "value": "0.39"
+        },
+        "ordered_quantity": {
+          "increment": "1",
+          "value": "250"
+        },
+        "policy_version": "policy-golden-v1",
+        "position_cost": {
+          "amount": "0",
+          "currency": "USD"
+        },
+        "position_risk_before_settlement": {
+          "amount": "40",
+          "currency": "USD"
+        },
+        "position_risk_released_at_settlement": {
+          "amount": "40",
+          "currency": "USD"
+        },
+        "position_valuation_basis": "FINAL_RULE_SETTLEMENT",
+        "pre_settlement_position": {
+          "cost_basis": {
+            "amount": "39",
+            "currency": "USD"
+          },
+          "instrument_id": "SYNTH-WEATHER-20260715",
+          "maximum_remaining_loss": {
+            "amount": "40",
+            "currency": "USD"
+          },
+          "open_quantity": {
+            "increment": "1",
+            "value": "100"
+          },
+          "originating_fill_event_id": "execution_event_ab0b555ce8de0d4e8a056821",
+          "originating_order_id": "order_e3ae00f2d7e6a58b83eeadfd",
+          "rule_version_id": "rule-golden-v1",
+          "settlement_state": "OPEN",
+          "side": "YES"
+        },
+        "proposal": {
+          "executable_ask": {
+            "tick": "0.01",
+            "value": "0.4"
+          },
+          "expected_net_value_per_unit": "0.32",
+          "expires_at": "2026-07-15T15:05:00Z",
+          "fee_model_version": "synthetic-flat-per-contract-v1",
+          "fee_per_unit": {
+            "amount": "0.01",
+            "currency": "USD"
+          },
+          "fingerprint": "0ca5fdabaebd4e5e7b0103eee746ed4f7da56e01f6fef8d472906c95908d89f7",
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "instrument_id": "SYNTH-WEATHER-20260715",
+          "limit_price": {
+            "tick": "0.01",
+            "value": "0.39"
+          },
+          "maximum_loss_per_unit": {
+            "amount": "0.4",
+            "currency": "USD"
+          },
+          "order_expires_at": "2026-07-15T15:04:00Z",
+          "proposal_id": "proposal_0ca5fdabaebd4e5e7b0103ee",
+          "requested_risk_fraction": {
+            "value": "0.1"
+          },
+          "rule_version_id": "rule-golden-v1",
+          "side": "YES",
+          "strategy_version": "reference-edge-v1"
+        },
+        "realized_settlement_pnl": "-39",
+        "realized_trading_pnl_before_fees": "-39",
+        "released_at_cancellation": {
+          "amount": "60",
+          "currency": "USD"
+        },
+        "remaining_quantity": {
+          "increment": "1",
+          "value": "150"
+        },
+        "reservation_after_partial_fill": {
+          "campaign_id": "campaign-partial-fill-canceled-settled-no",
+          "exact_order_fingerprint": "a4b27f8d6835485d61873e8a470e5b0f7262eca1408c37c036609939719e376d",
+          "maximum_loss": {
+            "amount": "60",
+            "currency": "USD"
+          },
+          "order_id": "order_e3ae00f2d7e6a58b83eeadfd",
+          "reservation_id": "reservation_e3ae00f2d7e6a58b83eeadfd",
+          "risk_decision_id": "risk_decision_24a2b26ecfabf741bab8c342",
+          "state": "OPEN"
+        },
+        "reservation_lifecycle": [
+          {
+            "campaign_id": "campaign-partial-fill-canceled-settled-no",
+            "exact_order_fingerprint": "a4b27f8d6835485d61873e8a470e5b0f7262eca1408c37c036609939719e376d",
+            "maximum_loss": {
+              "amount": "100",
+              "currency": "USD"
+            },
+            "order_id": "order_e3ae00f2d7e6a58b83eeadfd",
+            "reservation_id": "reservation_e3ae00f2d7e6a58b83eeadfd",
+            "risk_decision_id": "risk_decision_24a2b26ecfabf741bab8c342",
+            "state": "HELD"
+          },
+          {
+            "campaign_id": "campaign-partial-fill-canceled-settled-no",
+            "exact_order_fingerprint": "a4b27f8d6835485d61873e8a470e5b0f7262eca1408c37c036609939719e376d",
+            "maximum_loss": {
+              "amount": "100",
+              "currency": "USD"
+            },
+            "order_id": "order_e3ae00f2d7e6a58b83eeadfd",
+            "reservation_id": "reservation_e3ae00f2d7e6a58b83eeadfd",
+            "risk_decision_id": "risk_decision_24a2b26ecfabf741bab8c342",
+            "state": "OPEN"
+          },
+          {
+            "campaign_id": "campaign-partial-fill-canceled-settled-no",
+            "exact_order_fingerprint": "a4b27f8d6835485d61873e8a470e5b0f7262eca1408c37c036609939719e376d",
+            "maximum_loss": {
+              "amount": "60",
+              "currency": "USD"
+            },
+            "order_id": "order_e3ae00f2d7e6a58b83eeadfd",
+            "reservation_id": "reservation_e3ae00f2d7e6a58b83eeadfd",
+            "risk_decision_id": "risk_decision_24a2b26ecfabf741bab8c342",
+            "state": "OPEN"
+          },
+          {
+            "campaign_id": "campaign-partial-fill-canceled-settled-no",
+            "exact_order_fingerprint": "a4b27f8d6835485d61873e8a470e5b0f7262eca1408c37c036609939719e376d",
+            "maximum_loss": {
+              "amount": "0",
+              "currency": "USD"
+            },
+            "order_id": "order_e3ae00f2d7e6a58b83eeadfd",
+            "reservation_id": "reservation_e3ae00f2d7e6a58b83eeadfd",
+            "risk_decision_id": "risk_decision_24a2b26ecfabf741bab8c342",
+            "state": "RELEASED"
+          }
+        ],
+        "risk_capacity_after_cancellation": {
+          "amount": "960",
+          "currency": "USD"
+        },
+        "risk_capacity_after_partial_fill": {
+          "amount": "900",
+          "currency": "USD"
+        },
+        "risk_capacity_after_settlement": {
+          "amount": "960",
+          "currency": "USD"
+        },
+        "risk_capacity_before_order": {
+          "amount": "1000",
+          "currency": "USD"
+        },
+        "risk_capacity_while_fully_reserved": {
+          "amount": "900",
+          "currency": "USD"
+        },
+        "risk_decision": {
+          "accepted": true,
+          "allocation_id": "allocation_1dcb28fbed9d46939701e800",
+          "context_hash": "b466a0e0d7adb615c62b2aafebb33e2c513e55929b7166be24a83f397f9e962b",
+          "exact_order_fingerprint": "a4b27f8d6835485d61873e8a470e5b0f7262eca1408c37c036609939719e376d",
+          "reason_codes": [
+            "ALL_INVARIANTS_PASSED"
+          ],
+          "risk_decision_id": "risk_decision_24a2b26ecfabf741bab8c342"
+        },
+        "run_id": "run_0d791b14df1af7c5cf5afb68",
+        "run_outcome": "PARTIAL_FILL_CANCELED_SETTLED_NO",
+        "runtime_capability": "SIMULATION_ONLY",
+        "schema_version": "2",
+        "seed": 20260716,
+        "selected_instrument": "SYNTH-WEATHER-20260715",
+        "settled_position": {
+          "cost_basis": {
+            "amount": "0",
+            "currency": "USD"
+          },
+          "instrument_id": "SYNTH-WEATHER-20260715",
+          "maximum_remaining_loss": {
+            "amount": "0",
+            "currency": "USD"
+          },
+          "open_quantity": {
+            "increment": "1",
+            "value": "0"
+          },
+          "originating_fill_event_id": "execution_event_ab0b555ce8de0d4e8a056821",
+          "originating_order_id": "order_e3ae00f2d7e6a58b83eeadfd",
+          "rule_version_id": "rule-golden-v1",
+          "settled_quantity": {
+            "increment": "1",
+            "value": "100"
+          },
+          "settlement_id": "settlement_be94a90ba26876e75f6de8cf",
+          "settlement_source_id": "settlement-partial-fill-canceled-no",
+          "settlement_state": "SETTLED",
+          "settlement_value": "0",
+          "side": "YES"
+        },
+        "settlement_cash": {
+          "amount": "0",
+          "currency": "USD"
+        },
+        "settlement_fact": {
+          "available_at": "2026-07-15T17:00:03Z",
+          "content_hash": {
+            "value": "ceee614f3a20a0a2cfba89b78776a7b09a9173b2373c5d7b90352e3080eb576d"
+          },
+          "fixture_id": "partial-fill-canceled-settled-no",
+          "instrument_id": "SYNTH-WEATHER-20260715",
+          "raw_payload": "resolution:NO;settlement_value=0.00;instrument=SYNTH-WEATHER-20260715;rule=rule-golden-v1;rule_hash=742ac2b67c6ebd52f63cc960e890a03cb98b86ba344c68a248a2c2d54d07747d;source=Frozen synthetic golden settlement record",
+          "raw_payload_hash": {
+            "value": "5ff5fc1fa49941f70e9de1774c7f6026c65373608b7e170cfe0f7fdb1b1880ca"
+          },
+          "resolution_source": "Frozen synthetic golden settlement record",
+          "rule_content_hash": {
+            "value": "742ac2b67c6ebd52f63cc960e890a03cb98b86ba344c68a248a2c2d54d07747d"
+          },
+          "rule_version_id": "rule-golden-v1",
+          "schema_version": "2",
+          "settlement_value": "0",
+          "settlement_value_text": "0.00",
+          "source_event_at": "2026-07-15T17:00:00Z",
+          "source_id": "settlement-partial-fill-canceled-no"
+        },
+        "settlement_file_hash": {
+          "value": "9dde3967063d5ebd5730dc9994deb400b4086437fa5ca887e9373f9f44832550"
+        },
+        "settlement_result": {
+          "filled_quantity": {
+            "increment": "1",
+            "value": "100"
+          },
+          "position_risk_release": {
+            "amount": "40",
+            "currency": "USD"
+          },
+          "realized_pnl": "-39",
+          "reservation_release": {
+            "amount": "0",
+            "currency": "USD"
+          },
+          "settlement_cash": {
+            "amount": "0",
+            "currency": "USD"
+          },
+          "settlement_id": "settlement_be94a90ba26876e75f6de8cf",
+          "source_id": "settlement-partial-fill-canceled-no"
+        },
+        "settlement_value": "0",
+        "strategy_evaluation": {
+          "evaluation_id": "evaluation_4c381fdb084c914f8123d12e",
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "outcome": "PROPOSAL",
+          "proposal": {
+            "executable_ask": {
+              "tick": "0.01",
+              "value": "0.4"
+            },
+            "expected_net_value_per_unit": "0.32",
+            "expires_at": "2026-07-15T15:05:00Z",
+            "fee_model_version": "synthetic-flat-per-contract-v1",
+            "fee_per_unit": {
+              "amount": "0.01",
+              "currency": "USD"
+            },
+            "fingerprint": "0ca5fdabaebd4e5e7b0103eee746ed4f7da56e01f6fef8d472906c95908d89f7",
+            "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+            "instrument_id": "SYNTH-WEATHER-20260715",
+            "limit_price": {
+              "tick": "0.01",
+              "value": "0.39"
+            },
+            "maximum_loss_per_unit": {
+              "amount": "0.4",
+              "currency": "USD"
+            },
+            "order_expires_at": "2026-07-15T15:04:00Z",
+            "proposal_id": "proposal_0ca5fdabaebd4e5e7b0103ee",
+            "requested_risk_fraction": {
+              "value": "0.1"
+            },
+            "rule_version_id": "rule-golden-v1",
+            "side": "YES",
+            "strategy_version": "reference-edge-v1"
+          },
+          "reason_codes": [
+            "SYNTHETIC_THRESHOLD_MET"
+          ],
+          "strategy_version": "reference-edge-v1"
+        },
+        "strategy_version": "reference-edge-v1",
+        "synthetic_executable_ask": {
+          "tick": "0.01",
+          "value": "0.4"
+        },
+        "total_active_campaign_risk": {
+          "amount": "0",
+          "currency": "USD"
+        },
+        "unfilled_reservation_before_cancellation": {
+          "amount": "60",
+          "currency": "USD"
+        }
+      },
+      "report_hash": "d236abfe89353b9f64af5472a56cf3c656f7e0803b31bd388e5f5fd773f98bef",
+      "title": "Partial fill, settled NO"
+    },
+    {
+      "fixture": "partial-fill-canceled-settled-void",
+      "report": {
+        "active_risk_after_cancellation": {
+          "amount": "40",
+          "currency": "USD"
+        },
+        "active_risk_after_partial_fill": {
+          "amount": "100",
+          "currency": "USD"
+        },
+        "allocation": {
+          "accepted": true,
+          "allocation_id": "allocation_4bb7e30d8b4c8a0e085886d1",
+          "maximum_loss": {
+            "amount": "100",
+            "currency": "USD"
+          },
+          "proposal_id": "proposal_0ca5fdabaebd4e5e7b0103ee",
+          "quantity": {
+            "increment": "1",
+            "value": "250"
+          },
+          "reason_codes": [
+            "ALLOCATED"
+          ],
+          "snapshot_hash": "8acc732e6116b41401e19104b464282347bc62731f8e28315cbe36c4e61232b1"
+        },
+        "calibration_evidence": "NONE",
+        "campaign": {
+          "authorized_campaign_loss": "1000",
+          "campaign_id": "campaign-partial-fill-canceled-settled-void",
+          "contribution": "1000",
+          "policy_version": "policy-golden-v1"
+        },
+        "campaign_policy": {
+          "content_hash": {
+            "value": "d7541080f3dc3655853b8390429945b3ab1a5c157abb81e0421fe4d09cd90204"
+          },
+          "max_capital_lockup_seconds": 10800,
+          "max_open_loss_fraction": {
+            "value": "1"
+          },
+          "max_spread": "0.25",
+          "max_trade_loss_fraction": {
+            "value": "0.1"
+          },
+          "min_synthetic_edge": "0.01",
+          "policy_version_id": "policy-golden-v1",
+          "profile": "MOONSHOT",
+          "requested_risk_fraction": {
+            "value": "0.1"
+          }
+        },
+        "canceled_quantity": {
+          "increment": "1",
+          "value": "150"
+        },
+        "contract_rule_version": {
+          "close_at": "2026-07-15T16:30:00Z",
+          "content_hash": {
+            "value": "742ac2b67c6ebd52f63cc960e890a03cb98b86ba344c68a248a2c2d54d07747d"
+          },
+          "determination_at": "2026-07-15T17:00:00Z",
+          "effective_at": "2026-07-15T14:00:00Z",
+          "exact_text": "This synthetic contract settles to 1.00 if the recorded fixture value is YES, 0.00 if it is NO, and 0.40 if it is VOID. Only the frozen synthetic resolution record identified by this rule is authoritative.",
+          "expected_settlement_at": "2026-07-15T17:05:00Z",
+          "resolution_source": "Frozen synthetic golden settlement record",
+          "rule_version_id": "rule-golden-v1",
+          "void_settlement_term": {
+            "content_hash": {
+              "value": "2d00611ca057d33025a8875b307955f95fa0501b25b768bc072ad300dfbb81d4"
+            },
+            "outcome_classification": "VOID",
+            "settlement_value": "0.4",
+            "settlement_value_text": "0.40"
+          }
+        },
+        "edge_evidence": "NONE",
+        "engine_version": "0.1.0",
+        "execution_events": [
+          {
+            "event_id": "execution_event_7d823280bb5bbc2d4b7ac658",
+            "event_type": "OPENED",
+            "fee": {
+              "amount": "0",
+              "currency": "USD"
+            },
+            "occurred_at": "2026-07-15T15:00:03Z",
+            "order_id": "order_697906901c2d23d09665c1b3",
+            "payload_hash": {
+              "value": "7d823280bb5bbc2d4b7ac658f3a7ec30348a419a39fb2164dce1bb2edb845410"
+            },
+            "price": null,
+            "quantity": {
+              "increment": "1",
+              "value": "0"
+            },
+            "sequence": 1
+          },
+          {
+            "event_id": "execution_event_65ffac1bce5ecc2be923d8fb",
+            "event_type": "FILL",
+            "fee": {
+              "amount": "1",
+              "currency": "USD"
+            },
+            "occurred_at": "2026-07-15T15:00:04Z",
+            "order_id": "order_697906901c2d23d09665c1b3",
+            "payload_hash": {
+              "value": "65ffac1bce5ecc2be923d8fb275884e004af571a4d4e251e71f33416b86c4360"
+            },
+            "price": {
+              "tick": "0.01",
+              "value": "0.39"
+            },
+            "quantity": {
+              "increment": "1",
+              "value": "100"
+            },
+            "sequence": 2
+          },
+          {
+            "event_id": "execution_event_4b89f62ab3a2ca76de8cc07f",
+            "event_type": "CANCELED",
+            "fee": {
+              "amount": "0",
+              "currency": "USD"
+            },
+            "occurred_at": "2026-07-15T15:00:05Z",
+            "order_id": "order_697906901c2d23d09665c1b3",
+            "payload_hash": {
+              "value": "4b89f62ab3a2ca76de8cc07f98c20f943005364cf4477ca57ca08a8c7befc954"
+            },
+            "price": null,
+            "quantity": {
+              "increment": "1",
+              "value": "0"
+            },
+            "sequence": 3
+          }
+        ],
+        "execution_evidence": "SYNTHETIC",
+        "execution_fees": {
+          "amount": "1",
+          "currency": "USD"
+        },
+        "fee_accounting_basis": "EXPENSED_SEPARATELY",
+        "fees": "1",
+        "filled_quantity": {
+          "increment": "1",
+          "value": "100"
+        },
+        "final_cash": {
+          "amount": "1000",
+          "currency": "USD"
+        },
+        "final_ledger_equity": "1000",
+        "final_position_risk": {
+          "amount": "0",
+          "currency": "USD"
+        },
+        "final_reservation": {
+          "campaign_id": "campaign-partial-fill-canceled-settled-void",
+          "exact_order_fingerprint": "f0bbc7283b7467618d12033a4b737455e60dffc2cca3745470da5e788b60c749",
+          "maximum_loss": {
+            "amount": "0",
+            "currency": "USD"
+          },
+          "order_id": "order_697906901c2d23d09665c1b3",
+          "reservation_id": "reservation_697906901c2d23d09665c1b3",
+          "risk_decision_id": "risk_decision_a2a361b658ade0d913a5f4cd",
+          "state": "RELEASED"
+        },
+        "fixture_id": "partial-fill-canceled-settled-void",
+        "fixture_manifest_hash": "3f332dbf07b8ecabcccb7bd0e0c94dc463a6a9dc9f1a03d9f403366c869ba1c6",
+        "information_set": {
+          "content_hash": {
+            "value": "09428621ff9c8e9e0d7fc58ad2cde22d59692bb5d53d4281d5dc32b639311ebd"
+          },
+          "cutoff": {
+            "value": "2026-07-15T15:00:00Z"
+          },
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "instrument": {
+            "category": "WEATHER",
+            "instrument_id": "SYNTH-WEATHER-20260715",
+            "no_settlement_value": "0",
+            "payout_unit": "1",
+            "price_tick": "0.01",
+            "quantity_increment": "1",
+            "void_settlement_value": "0.4",
+            "yes_settlement_value": "1"
+          },
+          "market": {
+            "no_ask": {
+              "tick": "0.01",
+              "value": "0.62"
+            },
+            "visible_yes_quantity": {
+              "increment": "1",
+              "value": "1000"
+            },
+            "yes_ask": {
+              "tick": "0.01",
+              "value": "0.4"
+            }
+          },
+          "ordered_members": [
+            {
+              "available_at": "2026-07-15T14:58:01Z",
+              "content_hash": {
+                "value": "189ffa4ebfd4bfe9082c3e3e244ae80fa779f627efaa8e18898ac14a47500e6c"
+              },
+              "sequence": 1,
+              "source_id": "source-book-1"
+            },
+            {
+              "available_at": "2026-07-15T14:59:02Z",
+              "content_hash": {
+                "value": "7d09e4e24133fb7c063228bba76a0d7240406668c505b8797f0ec6abab4dec76"
+              },
+              "sequence": 2,
+              "source_id": "source-estimate-2"
+            }
+          ],
+          "rule": {
+            "close_at": "2026-07-15T16:30:00Z",
+            "content_hash": {
+              "value": "742ac2b67c6ebd52f63cc960e890a03cb98b86ba344c68a248a2c2d54d07747d"
+            },
+            "determination_at": "2026-07-15T17:00:00Z",
+            "effective_at": "2026-07-15T14:00:00Z",
+            "exact_text": "This synthetic contract settles to 1.00 if the recorded fixture value is YES, 0.00 if it is NO, and 0.40 if it is VOID. Only the frozen synthetic resolution record identified by this rule is authoritative.",
+            "expected_settlement_at": "2026-07-15T17:05:00Z",
+            "resolution_source": "Frozen synthetic golden settlement record",
+            "rule_version_id": "rule-golden-v1",
+            "void_settlement_term": {
+              "content_hash": {
+                "value": "2d00611ca057d33025a8875b307955f95fa0501b25b768bc072ad300dfbb81d4"
+              },
+              "outcome_classification": "VOID",
+              "settlement_value": "0.4",
+              "settlement_value_text": "0.40"
+            }
+          },
+          "valid": true
+        },
+        "information_set_hash": "09428621ff9c8e9e0d7fc58ad2cde22d59692bb5d53d4281d5dc32b639311ebd",
+        "initial_reserved_maximum_loss": {
+          "amount": "100",
+          "currency": "USD"
+        },
+        "ledger_journals": [
+          {
+            "journal_id": "journal_3051548da77e6dad9a2a340d",
+            "journal_type": "PURCHASE",
+            "occurred_at": "2026-07-15T15:00:04Z",
+            "postings": [
+              {
+                "account_code": "POSITION_COST",
+                "amount": {
+                  "amount": "39",
+                  "currency": "USD"
+                },
+                "side": "DEBIT"
+              },
+              {
+                "account_code": "CASH",
+                "amount": {
+                  "amount": "39",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              }
+            ],
+            "source_id": "execution_event_65ffac1bce5ecc2be923d8fb",
+            "source_kind": "execution_purchase"
+          },
+          {
+            "journal_id": "journal_7d5075f99b2b65250915dea2",
+            "journal_type": "FEE",
+            "occurred_at": "2026-07-15T15:00:04Z",
+            "postings": [
+              {
+                "account_code": "FEE_EXPENSE",
+                "amount": {
+                  "amount": "1",
+                  "currency": "USD"
+                },
+                "side": "DEBIT"
+              },
+              {
+                "account_code": "CASH",
+                "amount": {
+                  "amount": "1",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              }
+            ],
+            "source_id": "execution_event_65ffac1bce5ecc2be923d8fb",
+            "source_kind": "execution_fee"
+          },
+          {
+            "journal_id": "journal_f14e48f17a3ea79c7ee02bac",
+            "journal_type": "CONTRIBUTION",
+            "occurred_at": "2026-07-15T14:00:00Z",
+            "postings": [
+              {
+                "account_code": "CASH",
+                "amount": {
+                  "amount": "1000",
+                  "currency": "USD"
+                },
+                "side": "DEBIT"
+              },
+              {
+                "account_code": "CONTRIBUTED_CAPITAL",
+                "amount": {
+                  "amount": "1000",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              }
+            ],
+            "source_id": "contribution_1beb1d9fe77c50776fa8b6c6",
+            "source_kind": "campaign_contribution"
+          },
+          {
+            "journal_id": "journal_f4aa0c6722a6e185434908da",
+            "journal_type": "SETTLEMENT",
+            "occurred_at": "2026-07-15T17:00:03Z",
+            "postings": [
+              {
+                "account_code": "CASH",
+                "amount": {
+                  "amount": "40",
+                  "currency": "USD"
+                },
+                "side": "DEBIT"
+              },
+              {
+                "account_code": "POSITION_COST",
+                "amount": {
+                  "amount": "39",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              },
+              {
+                "account_code": "REALIZED_PNL",
+                "amount": {
+                  "amount": "1",
+                  "currency": "USD"
+                },
+                "side": "CREDIT"
+              }
+            ],
+            "source_id": "settlement-partial-fill-canceled-void",
+            "source_kind": "settlement"
+          }
+        ],
+        "logical_time": "2026-07-15T18:00:00Z",
+        "mark_evidence": "NONE",
+        "net_trading_pnl": "0",
+        "order": {
+          "client_order_id": "client_order_697906901c2d23d09665c1b3",
+          "exact_order_fingerprint": "f0bbc7283b7467618d12033a4b737455e60dffc2cca3745470da5e788b60c749",
+          "executable_ask": {
+            "tick": "0.01",
+            "value": "0.4"
+          },
+          "expires_at": "2026-07-15T15:04:00Z",
+          "filled_quantity": {
+            "increment": "1",
+            "value": "100"
+          },
+          "last_execution_sequence": 3,
+          "limit_price": {
+            "tick": "0.01",
+            "value": "0.39"
+          },
+          "order_id": "order_697906901c2d23d09665c1b3",
+          "proposal_id": "proposal_0ca5fdabaebd4e5e7b0103ee",
+          "quantity": {
+            "increment": "1",
+            "value": "250"
+          },
+          "reserved_maximum_loss": {
+            "amount": "0",
+            "currency": "USD"
+          },
+          "risk_decision_id": "risk_decision_a2a361b658ade0d913a5f4cd",
+          "side": "YES",
+          "state": "CANCELED"
+        },
+        "order_limit_price": {
+          "tick": "0.01",
+          "value": "0.39"
+        },
+        "ordered_quantity": {
+          "increment": "1",
+          "value": "250"
+        },
+        "outcome_classification": "VOID",
+        "policy_version": "policy-golden-v1",
+        "position_cost": {
+          "amount": "0",
+          "currency": "USD"
+        },
+        "position_risk_before_settlement": {
+          "amount": "40",
+          "currency": "USD"
+        },
+        "position_risk_released_at_settlement": {
+          "amount": "40",
+          "currency": "USD"
+        },
+        "position_valuation_basis": "FINAL_RULE_SETTLEMENT",
+        "pre_settlement_position": {
+          "cost_basis": {
+            "amount": "39",
+            "currency": "USD"
+          },
+          "instrument_id": "SYNTH-WEATHER-20260715",
+          "maximum_remaining_loss": {
+            "amount": "40",
+            "currency": "USD"
+          },
+          "open_quantity": {
+            "increment": "1",
+            "value": "100"
+          },
+          "originating_fill_event_id": "execution_event_65ffac1bce5ecc2be923d8fb",
+          "originating_order_id": "order_697906901c2d23d09665c1b3",
+          "rule_version_id": "rule-golden-v1",
+          "settlement_state": "OPEN",
+          "side": "YES"
+        },
+        "proposal": {
+          "executable_ask": {
+            "tick": "0.01",
+            "value": "0.4"
+          },
+          "expected_net_value_per_unit": "0.32",
+          "expires_at": "2026-07-15T15:05:00Z",
+          "fee_model_version": "synthetic-flat-per-contract-v1",
+          "fee_per_unit": {
+            "amount": "0.01",
+            "currency": "USD"
+          },
+          "fingerprint": "0ca5fdabaebd4e5e7b0103eee746ed4f7da56e01f6fef8d472906c95908d89f7",
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "instrument_id": "SYNTH-WEATHER-20260715",
+          "limit_price": {
+            "tick": "0.01",
+            "value": "0.39"
+          },
+          "maximum_loss_per_unit": {
+            "amount": "0.4",
+            "currency": "USD"
+          },
+          "order_expires_at": "2026-07-15T15:04:00Z",
+          "proposal_id": "proposal_0ca5fdabaebd4e5e7b0103ee",
+          "requested_risk_fraction": {
+            "value": "0.1"
+          },
+          "rule_version_id": "rule-golden-v1",
+          "side": "YES",
+          "strategy_version": "reference-edge-v1"
+        },
+        "realized_contract_pnl": "1",
+        "realized_trading_pnl_before_fees": "1",
+        "released_at_cancellation": {
+          "amount": "60",
+          "currency": "USD"
+        },
+        "remaining_quantity": {
+          "increment": "1",
+          "value": "150"
+        },
+        "reservation_after_partial_fill": {
+          "campaign_id": "campaign-partial-fill-canceled-settled-void",
+          "exact_order_fingerprint": "f0bbc7283b7467618d12033a4b737455e60dffc2cca3745470da5e788b60c749",
+          "maximum_loss": {
+            "amount": "60",
+            "currency": "USD"
+          },
+          "order_id": "order_697906901c2d23d09665c1b3",
+          "reservation_id": "reservation_697906901c2d23d09665c1b3",
+          "risk_decision_id": "risk_decision_a2a361b658ade0d913a5f4cd",
+          "state": "OPEN"
+        },
+        "reservation_lifecycle": [
+          {
+            "campaign_id": "campaign-partial-fill-canceled-settled-void",
+            "exact_order_fingerprint": "f0bbc7283b7467618d12033a4b737455e60dffc2cca3745470da5e788b60c749",
+            "maximum_loss": {
+              "amount": "100",
+              "currency": "USD"
+            },
+            "order_id": "order_697906901c2d23d09665c1b3",
+            "reservation_id": "reservation_697906901c2d23d09665c1b3",
+            "risk_decision_id": "risk_decision_a2a361b658ade0d913a5f4cd",
+            "state": "HELD"
+          },
+          {
+            "campaign_id": "campaign-partial-fill-canceled-settled-void",
+            "exact_order_fingerprint": "f0bbc7283b7467618d12033a4b737455e60dffc2cca3745470da5e788b60c749",
+            "maximum_loss": {
+              "amount": "100",
+              "currency": "USD"
+            },
+            "order_id": "order_697906901c2d23d09665c1b3",
+            "reservation_id": "reservation_697906901c2d23d09665c1b3",
+            "risk_decision_id": "risk_decision_a2a361b658ade0d913a5f4cd",
+            "state": "OPEN"
+          },
+          {
+            "campaign_id": "campaign-partial-fill-canceled-settled-void",
+            "exact_order_fingerprint": "f0bbc7283b7467618d12033a4b737455e60dffc2cca3745470da5e788b60c749",
+            "maximum_loss": {
+              "amount": "60",
+              "currency": "USD"
+            },
+            "order_id": "order_697906901c2d23d09665c1b3",
+            "reservation_id": "reservation_697906901c2d23d09665c1b3",
+            "risk_decision_id": "risk_decision_a2a361b658ade0d913a5f4cd",
+            "state": "OPEN"
+          },
+          {
+            "campaign_id": "campaign-partial-fill-canceled-settled-void",
+            "exact_order_fingerprint": "f0bbc7283b7467618d12033a4b737455e60dffc2cca3745470da5e788b60c749",
+            "maximum_loss": {
+              "amount": "0",
+              "currency": "USD"
+            },
+            "order_id": "order_697906901c2d23d09665c1b3",
+            "reservation_id": "reservation_697906901c2d23d09665c1b3",
+            "risk_decision_id": "risk_decision_a2a361b658ade0d913a5f4cd",
+            "state": "RELEASED"
+          }
+        ],
+        "risk_capacity_after_cancellation": {
+          "amount": "960",
+          "currency": "USD"
+        },
+        "risk_capacity_after_partial_fill": {
+          "amount": "900",
+          "currency": "USD"
+        },
+        "risk_capacity_after_settlement": {
+          "amount": "1000",
+          "currency": "USD"
+        },
+        "risk_capacity_before_order": {
+          "amount": "1000",
+          "currency": "USD"
+        },
+        "risk_capacity_while_fully_reserved": {
+          "amount": "900",
+          "currency": "USD"
+        },
+        "risk_decision": {
+          "accepted": true,
+          "allocation_id": "allocation_4bb7e30d8b4c8a0e085886d1",
+          "context_hash": "aa5a3c08b7a46b7116de8235ef179bf9b5afbca473cda2804b7dcb0351dc2c90",
+          "exact_order_fingerprint": "f0bbc7283b7467618d12033a4b737455e60dffc2cca3745470da5e788b60c749",
+          "reason_codes": [
+            "ALL_INVARIANTS_PASSED"
+          ],
+          "risk_decision_id": "risk_decision_a2a361b658ade0d913a5f4cd"
+        },
+        "run_id": "run_06b22adf77e3e654f9959c26",
+        "run_outcome": "PARTIAL_FILL_CANCELED_SETTLED_VOID",
+        "runtime_capability": "SIMULATION_ONLY",
+        "schema_version": "2",
+        "seed": 20260716,
+        "selected_instrument": "SYNTH-WEATHER-20260715",
+        "settled_position": {
+          "cost_basis": {
+            "amount": "0",
+            "currency": "USD"
+          },
+          "instrument_id": "SYNTH-WEATHER-20260715",
+          "maximum_remaining_loss": {
+            "amount": "0",
+            "currency": "USD"
+          },
+          "open_quantity": {
+            "increment": "1",
+            "value": "0"
+          },
+          "originating_fill_event_id": "execution_event_65ffac1bce5ecc2be923d8fb",
+          "originating_order_id": "order_697906901c2d23d09665c1b3",
+          "outcome_classification": "VOID",
+          "realized_contract_pnl": "1",
+          "rule_version_id": "rule-golden-v1",
+          "settled_quantity": {
+            "increment": "1",
+            "value": "100"
+          },
+          "settlement_cash": {
+            "amount": "40",
+            "currency": "USD"
+          },
+          "settlement_id": "settlement_729194e0e1502d45482a6d49",
+          "settlement_source_id": "settlement-partial-fill-canceled-void",
+          "settlement_state": "SETTLED",
+          "settlement_value": "0.4",
+          "side": "YES"
+        },
+        "settlement_cash": {
+          "amount": "40",
+          "currency": "USD"
+        },
+        "settlement_fact": {
+          "available_at": "2026-07-15T17:00:03Z",
+          "content_hash": {
+            "value": "e0060db407988eaa8556856d3dc6d3aacc69b299731cd3ea6ffcdd23447e395f"
+          },
+          "fixture_id": "partial-fill-canceled-settled-void",
+          "instrument_id": "SYNTH-WEATHER-20260715",
+          "outcome_classification": "VOID",
+          "raw_payload": "resolution:VOID;settlement_value=0.40;instrument=SYNTH-WEATHER-20260715;rule=rule-golden-v1;rule_hash=742ac2b67c6ebd52f63cc960e890a03cb98b86ba344c68a248a2c2d54d07747d;source=Frozen synthetic golden settlement record",
+          "raw_payload_hash": {
+            "value": "d8a29d9bd7174a9cee328112905e21e13cadd60101d8b79a080060c9906f47f3"
+          },
+          "resolution_source": "Frozen synthetic golden settlement record",
+          "rule_content_hash": {
+            "value": "742ac2b67c6ebd52f63cc960e890a03cb98b86ba344c68a248a2c2d54d07747d"
+          },
+          "rule_version_id": "rule-golden-v1",
+          "schema_version": "2",
+          "settlement_value": "0.4",
+          "settlement_value_text": "0.40",
+          "source_event_at": "2026-07-15T17:00:00Z",
+          "source_id": "settlement-partial-fill-canceled-void"
+        },
+        "settlement_file_hash": {
+          "value": "4f1296544c941e7696aa74cfddae568ad577f7079dbb1e6f1b304e087585e57e"
+        },
+        "settlement_result": {
+          "filled_quantity": {
+            "increment": "1",
+            "value": "100"
+          },
+          "outcome_classification": "VOID",
+          "position_risk_release": {
+            "amount": "40",
+            "currency": "USD"
+          },
+          "realized_pnl": "1",
+          "reservation_release": {
+            "amount": "0",
+            "currency": "USD"
+          },
+          "settlement_cash": {
+            "amount": "40",
+            "currency": "USD"
+          },
+          "settlement_id": "settlement_729194e0e1502d45482a6d49",
+          "source_id": "settlement-partial-fill-canceled-void"
+        },
+        "settlement_value": "0.4",
+        "strategy_evaluation": {
+          "evaluation_id": "evaluation_4c381fdb084c914f8123d12e",
+          "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+          "outcome": "PROPOSAL",
+          "proposal": {
+            "executable_ask": {
+              "tick": "0.01",
+              "value": "0.4"
+            },
+            "expected_net_value_per_unit": "0.32",
+            "expires_at": "2026-07-15T15:05:00Z",
+            "fee_model_version": "synthetic-flat-per-contract-v1",
+            "fee_per_unit": {
+              "amount": "0.01",
+              "currency": "USD"
+            },
+            "fingerprint": "0ca5fdabaebd4e5e7b0103eee746ed4f7da56e01f6fef8d472906c95908d89f7",
+            "information_set_id": "information_set_09428621ff9c8e9e0d7fc58a",
+            "instrument_id": "SYNTH-WEATHER-20260715",
+            "limit_price": {
+              "tick": "0.01",
+              "value": "0.39"
+            },
+            "maximum_loss_per_unit": {
+              "amount": "0.4",
+              "currency": "USD"
+            },
+            "order_expires_at": "2026-07-15T15:04:00Z",
+            "proposal_id": "proposal_0ca5fdabaebd4e5e7b0103ee",
+            "requested_risk_fraction": {
+              "value": "0.1"
+            },
+            "rule_version_id": "rule-golden-v1",
+            "side": "YES",
+            "strategy_version": "reference-edge-v1"
+          },
+          "reason_codes": [
+            "SYNTHETIC_THRESHOLD_MET"
+          ],
+          "strategy_version": "reference-edge-v1"
+        },
+        "strategy_version": "reference-edge-v1",
+        "synthetic_executable_ask": {
+          "tick": "0.01",
+          "value": "0.4"
+        },
+        "total_active_campaign_risk": {
+          "amount": "0",
+          "currency": "USD"
+        },
+        "unfilled_reservation_before_cancellation": {
+          "amount": "60",
+          "currency": "USD"
+        }
+      },
+      "report_hash": "7da55882273dd37cca512b176d82d9f03284aff9d8949206e8f48cfba6cd0c12",
+      "title": "Partial fill, settled VOID"
+    }
+  ],
+  "seed": 20260716
+}

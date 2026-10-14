@@ -1,0 +1,93 @@
+{
+ "body": {
+  "capability": "SIMULATION_PAPER_ONLY",
+  "data": {
+   "items": [
+    {
+     "configuration_hash": {
+      "value": "9a33b6dc2cdef9c8bcc52aee89113a82fecf6f08853764a466f1e5c0a06c084e"
+     },
+     "created_at": "2026-07-25T12:00:00Z",
+     "maximum_conflict_frequency": "0.1",
+     "maximum_conservative_brier_difference": "0",
+     "maximum_conservative_log_loss_difference": "0",
+     "maximum_evidence_age": "P90D",
+     "maximum_point_brier_difference": "0",
+     "maximum_point_log_loss_difference": "0",
+     "maximum_recent_degradation": "0.03",
+     "maximum_unresolved_integrity_warnings": 0,
+     "minimum_calibration_coverage": "0.6",
+     "minimum_distinct_events": 30,
+     "minimum_distinct_markets": 30,
+     "minimum_probability_range_coverage": 3,
+     "minimum_recent_resolved": 20,
+     "minimum_resolved_predictions": 100,
+     "policy_id": "fixture-governed-evidence-paper-v2",
+     "policy_version": "apex-evidence-review-policy-v1",
+     "require_configuration_lineage": true,
+     "require_outcome_lineage": true,
+     "superseded_at": null,
+     "supported_strategy_family": null,
+     "supported_strategy_id": "fixture-governed-evidence-paper-v1"
+    },
+    {
+     "configuration_hash": {
+      "value": "d1ded207500ec7d8aa1c1b7ee59f0678395b61113f5dfc282bc072e2d8fe4924"
+     },
+     "created_at": "2026-07-25T12:00:00Z",
+     "maximum_conflict_frequency": "0.1",
+     "maximum_conservative_brier_difference": "0",
+     "maximum_conservative_log_loss_difference": "0",
+     "maximum_evidence_age": "P90D",
+     "maximum_point_brier_difference": "0",
+     "maximum_point_log_loss_difference": "0",
+     "maximum_recent_degradation": "0.03",
+     "maximum_unresolved_integrity_warnings": 0,
+     "minimum_calibration_coverage": "0.6",
+     "minimum_distinct_events": 30,
+     "minimum_distinct_markets": 30,
+     "minimum_probability_range_coverage": 3,
+     "minimum_recent_resolved": 20,
+     "minimum_resolved_predictions": 100,
+     "policy_id": "market_dynamics-paper-evidence-v1",
+     "policy_version": "apex-evidence-review-policy-v1",
+     "require_configuration_lineage": true,
+     "require_outcome_lineage": true,
+     "superseded_at": null,
+     "supported_strategy_family": "MARKET_DYNAMICS",
+     "supported_strategy_id": null
+    },
+    {
+     "configuration_hash": {
+      "value": "eb9557fc48cfc1f6739bbe90a6a2530d7428b81fb11d4f2e498adc442a816d80"
+     },
+     "created_at": "2026-07-25T12:00:00Z",
+     "maximum_conflict_frequency": "0.1",
+     "maximum_conservative_brier_difference": "0",
+     "maximum_conservative_log_loss_difference": "0",
+     "maximum_evidence_age": "P90D",
+     "maximum_point_brier_difference": "0",
+     "maximum_point_log_loss_difference": "0",
+     "maximum_recent_degradation": "0.03",
+     "maximum_unresolved_integrity_warnings": 0,
+     "minimum_calibration_coverage": "0.6",
+     "minimum_distinct_events": 30,
+     "minimum_distinct_markets": 30,
+     "minimum_probability_range_coverage": 3,
+     "minimum_recent_resolved": 20,
+     "minimum_resolved_predictions": 100,
+     "policy_id": "market_structure-paper-evidence-v1",
+     "policy_version": "apex-evidence-review-policy-v1",
+     "require_configuration_lineage": true,
+     "require_outcome_lineage": true,
+     "superseded_at": null,
+     "supported_strategy_family": "MARKET_STRUCTURE",
+     "supported_strategy_id": null
+    }
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/strategy-review-policies",
+ "status": 200
+}

@@ -1,0 +1,20 @@
+{
+ "body": {
+  "capability": "RESEARCH_EVIDENCE_ONLY",
+  "data": {
+   "authority": "NONE",
+   "automatic_champion_replacement": false,
+   "automatic_deployment": false,
+   "items": [],
+   "warnings": [
+    "AUTOMATED LEARNING CREATES RESEARCH EVIDENCE \u2014 NOT DEPLOYMENT AUTHORITY",
+    "CHALLENGER RECOMMENDATIONS NEVER REPLACE THE CHAMPION AUTOMATICALLY",
+    "AUTOMATED LEARNING DOES NOT AUTHORIZE MODEL DEPLOYMENT",
+    "CHAMPION REPLACEMENT REQUIRES EXPLICIT OPERATOR ACTION"
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/strategy-lab/learning-plans",
+ "status": 200
+}

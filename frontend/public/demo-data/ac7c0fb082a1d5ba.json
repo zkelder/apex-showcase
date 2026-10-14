@@ -1,0 +1,36 @@
+{
+ "body": {
+  "capability": "SIMULATION_PAPER_ONLY",
+  "data": {
+   "items": [
+    {
+     "authorized_amount": "0.5",
+     "created_at": "2026-07-25T12:00:00Z",
+     "current_amount": "0",
+     "order_id": "order_0dc9d1a72fe20c57c91bda8b",
+     "position_id": "position_e7806f2381112aff3b484f5f",
+     "position_settlement_state": "SETTLED",
+     "proposal_id": "proposal_20b24c76e75a93845e91661d",
+     "released_at": "2026-07-25T12:00:03Z",
+     "reservation_id": "reservation_0dc9d1a72fe20c57c91bda8b",
+     "state": "RELEASED"
+    },
+    {
+     "authorized_amount": "0.5",
+     "created_at": "2026-07-25T12:00:00Z",
+     "current_amount": "0",
+     "order_id": "order_9fc92628ba0da9d2fade9658",
+     "position_id": "position_7eb643c404c163d48facf2b1",
+     "position_settlement_state": "SETTLED",
+     "proposal_id": "proposal_09bceeabf1a2dd88eae32fdd",
+     "released_at": "2026-07-25T12:00:03Z",
+     "reservation_id": "reservation_9fc92628ba0da9d2fade9658",
+     "state": "RELEASED"
+    }
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/campaigns/evidence-review-paper-trial-demo-v7/reservations",
+ "status": 200
+}

@@ -1,0 +1,18 @@
+{
+ "body": {
+  "capability": "RESEARCH_EVIDENCE_ONLY",
+  "data": {
+   "items": [],
+   "latest_evaluation": null,
+   "latest_snapshot": null,
+   "warnings": [
+    "META-STRATEGY OUTPUT IS RESEARCH ONLY",
+    "BLOCKED MODELS CANNOT GRANT ACTION AUTHORITY",
+    "CASH AND ABSTENTION ARE VALID OUTCOMES"
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/ensemble-meta-strategy/runs",
+ "status": 200
+}

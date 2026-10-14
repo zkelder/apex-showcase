@@ -1,0 +1,164 @@
+{
+ "body": {
+  "capability": "SECURITIES_SHADOW_ONLY",
+  "data": {
+   "ambiguous_count": 0,
+   "authority": "OBSERVATION_ONLY",
+   "capabilities": [
+    {
+     "contract_discovery": "AVAILABLE_WHEN_ENTITLED",
+     "greeks": "FIELD_MAY_BE_UNAVAILABLE",
+     "option_order_authority": "NONE",
+     "provider": "ALPACA",
+     "quotes": "AVAILABLE_WHEN_ENTITLED"
+    },
+    {
+     "complete_series": "PAID_REFERENCE_REQUIRED",
+     "open_interest": "PAID_REFERENCE_REQUIRED",
+     "provider": "OCC"
+    }
+   ],
+   "chain_snapshot": null,
+   "contract": "APEX_OPTION_CONTRACT_V1",
+   "contracts_retained": 0,
+   "defined_risk_candidates": [],
+   "expirations": [],
+   "financial_authority": "NONE",
+   "forward_evidence_operations": {
+    "authority": "NONE",
+    "capture_due": {
+     "reasons": [
+      "NO_RETAINED_OPTIONS_CAPTURE_PLAN"
+     ],
+     "session_id": null,
+     "status": "UNAVAILABLE",
+     "window_close_at": null,
+     "window_open_at": null
+    },
+    "capture_window_policy": {
+     "calendar_identity": "XNYS",
+     "canonical_hash": "3795a3347f6b2c568bc8e6d25497374a2bcec55e534756c531544a2ec59123d6",
+     "freshness_threshold_seconds": 900,
+     "policy_id": "options_capture_window_policy_3795a3347f6b2c568bc8e6d2",
+     "post_close_grace_seconds": 900,
+     "version": "OPTIONS_CAPTURE_WINDOW_POLICY_V1"
+    },
+    "contract": "OPTIONS_FORWARD_EVIDENCE_CHECKPOINT_V1",
+    "latest_checkpoint": null,
+    "limitations": [
+     "OPEN_INTEREST_UNAVAILABLE",
+     "INDICATIVE_FEED_NOT_OPRA_CONSOLIDATED",
+     "HISTORICAL_OPTIONS_PRICING_UNAVAILABLE"
+    ],
+    "longitudinal_research_ready_underlying_count": 0,
+    "minimum_distinct_sessions_for_longitudinal_research": 20,
+    "operator_commands": {
+     "chain_coverage_inspect": "options-chain-coverage-inspect",
+     "checkpoint_inspect": "options-forward-checkpoint-inspect",
+     "due_inspect": "options-research-due-inspect",
+     "history_inspect": "options-history-inspect",
+     "quality_inspect": "options-research-quality-inspect",
+     "run_once": "options-research-run-once"
+    },
+    "per_underlying_history_readiness": [],
+    "plan_id": null,
+    "warnings": [
+     "OPTIONS RESEARCH EVIDENCE OPERATIONS ARE RESEARCH ONLY",
+     "NO OPTIONS OPPORTUNITY, PAPER ORDER, OR LIVE ORDER IS EVER CREATED HERE",
+     "A STALE STRUCTURE OR SNAPSHOT NEVER COUNTS AS CURRENT EVIDENCE",
+     "ONE FRESH SESSION IS A CROSS-SECTIONAL BASELINE, NOT LONGITUDINAL RESEARCH READINESS",
+     "NO OPTION ORDER AUTHORITY IS ENABLED",
+     "LIVE TRADING IS NOT ENABLED"
+    ]
+   },
+   "latest_stable_linkage_run_id": null,
+   "linked_underlying_count": 0,
+   "optionable_underlying_count": 0,
+   "optionable_underlyings_considered": 0,
+   "options_capture_actual_bytes": null,
+   "options_capture_bound_bytes": 120000000,
+   "options_capture_raw_sha256": null,
+   "options_capture_status": null,
+   "options_source_schema_level": "CONTRACT_LEVEL",
+   "quote_chain_intelligence": {
+    "authority": "NONE",
+    "capability": null,
+    "contract": "OPTIONS_CHAIN_SNAPSHOT_V1",
+    "historical_options_pricing_note": "HISTORICAL_OPTIONS_PRICING_UNAVAILABLE",
+    "iv_history_note": "IV_HISTORY_INSUFFICIENT until 20+ snapshots retained per underlying",
+    "latest_run": null,
+    "plan": null,
+    "provider": "ALPACA_OPTIONS_MARKET_DATA",
+    "underlyings": [],
+    "validation_report_command": "options-quote-validation-report",
+    "warnings": [
+     "OPTIONS QUOTE INTELLIGENCE IS RESEARCH ONLY",
+     "MIDPOINT IS DESCRIPTIVE, NEVER EXECUTABLE",
+     "EXPECTED MOVE IS NOT A CONFIDENCE INTERVAL",
+     "SKEW IS MARKET PRICING EVIDENCE, NOT A DIRECTIONAL SIGNAL",
+     "IV-VERSUS-REALIZED PREMIUM IS NOT AN AUTOMATIC EDGE",
+     "NO OPTION ORDER AUTHORITY IS ENABLED"
+    ]
+   },
+   "retained_capabilities": [],
+   "selected_underlying": null,
+   "shadow_proposal_state": "NO_RETAINED_PROPOSAL",
+   "stable_ambiguous_count": 0,
+   "stable_linkage_unresolved_href": "/api/v1/security-identity/ambiguous",
+   "stable_linked_underlying_count": 0,
+   "stable_unlinked_count": 0,
+   "stock_option_comparisons": [],
+   "stock_ranking": null,
+   "structure_economics": {
+    "authority": "NONE",
+    "contract": "OPTION_STRUCTURE_CANDIDATE_V1",
+    "limitations": [
+     "INDICATIVE_FEED_NOT_OPRA_CONSOLIDATED",
+     "QUOTE_EVIDENCE_MAY_BE_STALE_SEE_SOURCE_SNAPSHOT_FRESHNESS",
+     "FIXED_RISK_FREE_RATE_ASSUMPTION",
+     "ZERO_DIVIDEND_YIELD_ASSUMPTION",
+     "OPEN_INTEREST_UNAVAILABLE",
+     "NO_HISTORICAL_OPTIONS_PRICING",
+     "IV_RANK_MAY_BE_INSUFFICIENT_HISTORY",
+     "NO_EARLY_EXERCISE_MODEL: American-style exercise is not modeled; every payoff is a European-style terminal value at expiration only.",
+     "NO_ASSIGNMENT_MODEL",
+     "NO_FILL_PROBABILITY_MODEL: conservative side-aware entry prices are not a guaranteed fill.",
+     "NO_EXPECTED_VALUE_DISTRIBUTION: payoff geometry and IV context are retained without a justified probability model -- see EXPECTED_VALUE_UNAVAILABLE.",
+     "NO_PROBABILITY_OF_PROFIT_FIELD: option delta is not represented as a probability anywhere in this module.",
+     "FEE_EVIDENCE_MAY_BE_INCOMPLETE: see the bound fee policy's fee_evidence_status -- a FEE_EVIDENCE_INCOMPLETE policy uses a clearly-labeled conservative research assumption, not a confirmed provider rate.",
+     "SINGLE_QUANTITY_V1: position sizing beyond a small fixed contract quantity per leg is not modeled this milestone.",
+     "NO_IV_REGIME_SCORING: high/low implied volatility is never scored as automatically favorable for a credit or debit structure; that relationship is left to later research."
+    ],
+    "policy": null,
+    "structure_comparison_command": "options-structure-comparison",
+    "structure_policy_create_command": "options-structure-policy-create",
+    "structures_build_command": "options-structures-build",
+    "total_structures_retained": 0,
+    "underlyings": [],
+    "warnings": [
+     "DEFINED-RISK OPTIONS STRUCTURE ECONOMICS IS RESEARCH ONLY",
+     "NO OPTION ORDER, PAPER ORDER, OR SHARED OPPORTUNITY IS EVER CREATED HERE",
+     "CONSERVATIVE ENTRY PRICING IS NOT A GUARANTEED FILL",
+     "FEES MAY BE A CONSERVATIVE RESEARCH ASSUMPTION, NOT A CONFIRMED PROVIDER RATE",
+     "OPTION DELTA IS NOT PROBABILITY OF PROFIT",
+     "NO EXPECTED VALUE IS CLAIMED WITHOUT A JUSTIFIED PROBABILITY MODEL",
+     "NO EARLY EXERCISE OR ASSIGNMENT IS MODELED",
+     "HIGH IV IS NOT AUTOMATICALLY GOOD FOR CREDIT SPREADS; LOW IV IS NOT AUTOMATICALLY GOOD FOR DEBIT SPREADS",
+     "NO OPTION ORDER AUTHORITY IS ENABLED",
+     "LIVE TRADING IS NOT ENABLED"
+    ]
+   },
+   "unlinked_count": 0,
+   "warnings": [
+    "OPTIONS INTELLIGENCE IS RESEARCH ONLY",
+    "OPTIONS CAN EXPIRE WORTHLESS",
+    "ONLY DEFINED-RISK STRUCTURES ARE INCLUDED IN V1",
+    "NO OPTION ORDER AUTHORITY IS ENABLED",
+    "LIVE TRADING IS NOT ENABLED"
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/options-intelligence/workspace",
+ "status": 200
+}

@@ -1,0 +1,15 @@
+{
+ "body": {
+  "capability": "RESEARCH_EVIDENCE_ONLY",
+  "data": {
+   "items": [],
+   "warnings": [
+    "TESTING MORE VARIANTS INCREASES THE CHANCE OF A FALSE WINNER",
+    "RESEARCH INTEGRITY ELIGIBILITY DOES NOT GRANT TRADING AUTHORITY"
+   ]
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/research-integrity/experiment-families",
+ "status": 200
+}

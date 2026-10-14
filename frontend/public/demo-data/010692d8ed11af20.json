@@ -1,0 +1,41 @@
+{
+ "body": {
+  "capability": "OPERATOR_READ_ONLY",
+  "data": {
+   "authority": "NONE",
+   "campaign_progress_label": "0/20",
+   "campaign_sessions_captured": 0,
+   "campaign_sessions_target": 20,
+   "capture_task": {
+    "next_capture_window_open_at": null,
+    "reasons": [
+     "NO_RETAINED_OPTIONS_CAPTURE_PLAN"
+    ],
+    "session_id": null,
+    "status": "UNAVAILABLE",
+    "window_close_at": null,
+    "window_open_at": null
+   },
+   "empty_state": "NO_RETAINED_FORWARD_SESSION",
+   "latest_session": null,
+   "latest_underlyings": [],
+   "missed_session_ids": [
+    "2026-10-05",
+    "2026-10-06",
+    "2026-10-07",
+    "2026-10-08",
+    "2026-10-09",
+    "2026-10-12",
+    "2026-10-13"
+   ],
+   "readiness_reasons": [
+    "NO_RETAINED_FORWARD_SNAPSHOT"
+   ],
+   "readiness_state": "INSUFFICIENT_HISTORY",
+   "sessions": []
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/operator-console/options-research",
+ "status": 200
+}

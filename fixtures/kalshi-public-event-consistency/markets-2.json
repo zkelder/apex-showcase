@@ -1,0 +1,6 @@
+{"markets":[
+  {"ticker":"EVT-SOURCE-A","event_ticker":"EVT-SOURCE","title":"Synthetic source A","subtitle":"A","status":"open","close_time":"2026-07-21T00:00:00Z","yes_bid_dollars":"0.48","yes_ask_dollars":"0.50","no_bid_dollars":"0.50","no_ask_dollars":"0.52","yes_bid_size_fp":"4","yes_ask_size_fp":"4","rules_primary":"source rule A"},
+  {"ticker":"EVT-RULE-A","event_ticker":"EVT-RULE","title":"Synthetic rule A","subtitle":"A","status":"open","close_time":"2026-07-21T00:00:00Z","yes_bid_dollars":"0.48","yes_ask_dollars":"0.50","no_bid_dollars":"0.50","no_ask_dollars":"0.52","yes_bid_size_fp":"4","yes_ask_size_fp":"4","rules_primary":"rule source A"},
+  {"ticker":"EVT-CLOSE-A","event_ticker":"EVT-CLOSE","title":"Synthetic close A","subtitle":"A","status":"open","close_time":"2026-07-21T00:00:00Z","yes_bid_dollars":"0.48","yes_ask_dollars":"0.50","no_bid_dollars":"0.50","no_ask_dollars":"0.52","yes_bid_size_fp":"4","yes_ask_size_fp":"4","rules_primary":"close rule A"},
+  {"ticker":"EVT-PAGED-A","event_ticker":"EVT-PAGED","title":"Synthetic paged A","subtitle":"A","status":"open","close_time":"2026-07-21T00:00:00Z","yes_bid_dollars":"0.48","yes_ask_dollars":"0.50","no_bid_dollars":"0.50","no_ask_dollars":"0.52","yes_bid_size_fp":"3","yes_ask_size_fp":"3","rules_primary":"paged rule A"}
+]}

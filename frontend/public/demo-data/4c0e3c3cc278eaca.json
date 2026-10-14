@@ -1,0 +1,210 @@
+{
+ "body": {
+  "capability": "LIVE_READINESS_READ_ONLY",
+  "data": {
+   "alert_deliveries": [],
+   "assessment": {},
+   "authority": "NONE",
+   "backup_manifest": null,
+   "backup_readiness": {},
+   "coinbase_private_read_only": {
+    "allowed_endpoint_classes": [
+     "ACCOUNT_STATUS_READ",
+     "BALANCES_READ",
+     "PERMISSIONS_READ",
+     "FEES_READ",
+     "PRODUCT_RESTRICTIONS_READ"
+    ],
+    "approvals": [],
+    "attempts": [],
+    "authority": "NONE",
+    "balances_are_capital": false,
+    "captures": [],
+    "endpoint_allowlist_policy": "COINBASE_PRIVATE_READ_ALLOWLIST_V1",
+    "latest_approval": null,
+    "latest_attempt": null,
+    "latest_capture": null,
+    "live_authority": "NONE",
+    "preview_capability": "NONE",
+    "provider": "COINBASE",
+    "provider_request_count": 0,
+    "provider_write_count": 0,
+    "refreshes": [],
+    "trade_capability": "NONE",
+    "transfer_capability": "NONE",
+    "withdrawal_capability": "NONE"
+   },
+   "credential_references": [],
+   "deployment_profile": null,
+   "empty_state": "LIVE_READINESS_EVIDENCE_NOT_MATERIALIZED",
+   "execution_control": {},
+   "kalshi_private_read_only": {
+    "allowed_endpoint_classes": [
+     "ACCOUNT_IDENTITY_READ",
+     "BALANCE_READ",
+     "PERMISSIONS_READ",
+     "ACCOUNT_TIER_READ"
+    ],
+    "approvals": [],
+    "attempts": [],
+    "authority": "NONE",
+    "balances_are_capital": false,
+    "captures": [],
+    "endpoint_allowlist_policy": "KALSHI_PRIVATE_READ_ALLOWLIST_V1",
+    "latest_approval": null,
+    "latest_attempt": null,
+    "latest_capture": null,
+    "live_authority": "NONE",
+    "preview_capability": "NONE",
+    "provider": "KALSHI",
+    "provider_request_count": 0,
+    "provider_write_count": 0,
+    "refreshes": [],
+    "trade_capability": "NONE",
+    "transfer_capability": "NONE",
+    "withdrawal_capability": "NONE"
+   },
+   "kill_switch_drill": null,
+   "live_authority": "NONE",
+   "live_preflight": {
+    "approval_count": 0,
+    "authority": "NONE",
+    "empty_state": "NO_ELIGIBLE_LIVE_INTENT",
+    "intent_count": 0,
+    "latest_assessment": null,
+    "latest_intent": null,
+    "latest_internal_preflight": null,
+    "latest_provider_preview": null,
+    "live_authority": "NONE",
+    "operating_cycle_tasks": [
+     {
+      "authority": "NONE",
+      "disposition": "ZERO_INTENT",
+      "evidence_ids": [],
+      "provider_request_count": 0,
+      "provider_write_count": 0,
+      "reasons": [
+       "NO_ELIGIBLE_INTENT_CONSTRUCTED"
+      ],
+      "task_type": "LIVE_INTENT_ELIGIBILITY_REVIEW"
+     },
+     {
+      "authority": "NONE",
+      "disposition": "COMPLETED",
+      "evidence_ids": [],
+      "provider_request_count": 0,
+      "provider_write_count": 0,
+      "reasons": [],
+      "task_type": "STALE_PREFLIGHT_DETECTION"
+     },
+     {
+      "authority": "NONE",
+      "disposition": "NO_APPROVAL",
+      "evidence_ids": [],
+      "provider_request_count": 0,
+      "provider_write_count": 0,
+      "reasons": [
+       "DEFAULT_OPERATION_PERFORMS_ZERO_PRIVATE_REQUESTS"
+      ],
+      "task_type": "APPROVED_PROVIDER_PREVIEW_DUE_STATUS"
+     },
+     {
+      "authority": "NONE",
+      "disposition": "NO_CHANGE",
+      "evidence_ids": [],
+      "provider_request_count": 0,
+      "provider_write_count": 0,
+      "reasons": [],
+      "task_type": "PREFLIGHT_BLOCKER_CHANGES"
+     },
+     {
+      "authority": "NONE",
+      "disposition": "NO_INTENT",
+      "evidence_ids": [],
+      "provider_request_count": 0,
+      "provider_write_count": 0,
+      "reasons": [
+       "PREFLIGHT_CANNOT_CREATE_LIVE_PILOT_ELIGIBILITY",
+       "EXPLICIT_REASSESSMENT_ONLY"
+      ],
+      "task_type": "READINESS_REASSESSMENT"
+     }
+    ],
+    "prohibited_actions": [
+     "SUBMIT",
+     "CANCEL",
+     "REPLACE",
+     "TRANSFER",
+     "WITHDRAW",
+     "LIVE_PILOT_ARMED"
+    ],
+    "provider_preview_support": {
+     "COINBASE": "SUPPORTED_SEPARATE_EXACT_APPROVAL_REQUIRED",
+     "KALSHI": "PROVIDER_PREVIEW_UNAVAILABLE"
+    },
+    "provider_request_count": 0,
+    "provider_write_count": 0,
+    "safe_actions": [
+     "CONSTRUCT_FROM_NONZERO_AUTHORITY_FREE_TRIAL_PROPOSAL",
+     "RUN_INTERNAL_PREFLIGHT",
+     "REQUEST_OR_INSPECT_EXACT_PROVIDER_PREVIEW_APPROVAL",
+     "RUN_APPROVED_COINBASE_PREVIEW",
+     "INSPECT_EVIDENCE",
+     "EXPIRE_OR_INVALIDATE_INTENT"
+    ],
+    "warning": "LIVE PREFLIGHT IS EVIDENCE ONLY \u2014 NO LIVE AUTHORITY"
+   },
+   "operating_runner": null,
+   "operational_health": null,
+   "prohibited_controls": [
+    "LIVE_PILOT_ARMED",
+    "UNAPPROVED_OR_OUT_OF_SCOPE_PROVIDER_PREVIEW",
+    "GENUINE_ORDER_SUBMISSION",
+    "GENUINE_CANCELLATION",
+    "TRANSFER",
+    "WITHDRAWAL"
+   ],
+   "provider_capabilities": [],
+   "provider_configuration_status": "CREDENTIALS_ABSENT",
+   "provider_write_capability": "NONE",
+   "readiness_recommendation": "LIVE_NOT_READY",
+   "recovery_attempts": [],
+   "restore_verification": null,
+   "risk_policy": {},
+   "safe_controls": [
+    "REGISTER_CREDENTIAL_REFERENCE",
+    "INSPECT_PROVIDER_CAPABILITY_READ_ONLY",
+    "REQUEST_OR_INSPECT_COINBASE_READ_ONLY_APPROVAL",
+    "RUN_APPROVED_COINBASE_READ_ONLY_INSPECTION",
+    "REQUEST_OR_INSPECT_KALSHI_READ_ONLY_APPROVAL",
+    "RUN_APPROVED_KALSHI_READ_ONLY_INSPECTION",
+    "CONSTRUCT_EXACT_LIVE_INTENT_FROM_NONZERO_TRIAL_PROPOSAL",
+    "RUN_INTERNAL_LIVE_PREFLIGHT",
+    "REQUEST_OR_INSPECT_EXACT_PROVIDER_PREVIEW_APPROVAL",
+    "RUN_APPROVED_COINBASE_PROVIDER_PREVIEW",
+    "EXPIRE_OR_INVALIDATE_LIVE_INTENT",
+    "SET_PAPER_ONLY",
+    "SET_LIVE_BLOCKED",
+    "TRIGGER_EMERGENCY_STOP",
+    "CLEAR_EMERGENCY_STOP_EXACT_CONFIRMATION",
+    "MATERIALIZE_READINESS",
+    "EXPORT_REDACTED_EVIDENCE",
+    "START_STOP_LOCAL_OPERATING_RUNNER",
+    "PAUSE_RESUME_OPERATING_CYCLES",
+    "TRIGGER_EXACT_BACKUP_VERIFICATION",
+    "INSPECT_RECOVERY_STATUS",
+    "RUN_CREDENTIALS_ABSENT_INSPECTION",
+    "EMERGENCY_STOP",
+    "CLEAR_EMERGENCY_STOP_TO_LIVE_BLOCKED",
+    "MATERIALIZE_READINESS_ASSESSMENT"
+   ],
+   "unresolved_blockers": [
+    "READINESS_ASSESSMENT_MISSING"
+   ],
+   "warning": "LIVE READINESS IS EVIDENCE ONLY \u2014 NO LIVE AUTHORITY"
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/operator-console/live-readiness",
+ "status": 200
+}

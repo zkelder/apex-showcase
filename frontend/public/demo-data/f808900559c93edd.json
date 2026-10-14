@@ -1,0 +1,384 @@
+{
+ "body": {
+  "capability": "SIMULATION_PAPER_ONLY",
+  "data": {
+   "active_risk": {
+    "amount": "0",
+    "currency": "USD"
+   },
+   "authorized_loss": {
+    "amount": "500",
+    "currency": "USD"
+   },
+   "campaigns": [
+    {
+     "authorized_loss": "500",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "contribution": "1000",
+     "expires_at": "2026-07-26T12:00:00Z",
+     "name": "Governed evidence-review fixture demonstration",
+     "operating_mode": "PAPER",
+     "starts_at": "2026-07-25T11:59:00Z",
+     "state": "RUNNING"
+    }
+   ],
+   "campaigns_by_mode": {
+    "PAPER": 1
+   },
+   "campaigns_by_state": {
+    "RUNNING": 1
+   },
+   "conservative_marked_result": {
+    "amount": "0",
+    "currency": "USD"
+   },
+   "funded_capital": {
+    "amount": "1000",
+    "currency": "USD"
+   },
+   "open_positions": 0,
+   "realized_paper_result": {
+    "amount": "0",
+    "currency": "USD"
+   },
+   "recent_activity": [
+    {
+     "action": "CAMPAIGN_PAUSE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "CAMPAIGN_CONTROL",
+     "operator_note": "prove trial path respects campaign pause",
+     "reason_codes": [
+      "CAMPAIGN_PAUSED"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "campaign_control_843b69f67af56b37a4287799",
+      "evidence-review-paper-trial-demo-v7"
+     ],
+     "target_id": "campaign_control_843b69f67af56b37a4287799",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "CAMPAIGN_RESUME",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "CAMPAIGN_CONTROL",
+     "operator_note": "resume explicit fixture PAPER trial",
+     "reason_codes": [
+      "CAMPAIGN_RESUMED"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "campaign_control_9f094beb04da810d393aa735",
+      "evidence-review-paper-trial-demo-v7"
+     ],
+     "target_id": "campaign_control_9f094beb04da810d393aa735",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "CREATE_CAMPAIGN",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "fixture-only governed PAPER demonstration; no provider authority",
+     "reason_codes": [
+      "CAMPAIGN_CREATED"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "evidence-review-paper-trial-demo-v7",
+      "journal_25702c0df67caaa4871ea96a"
+     ],
+     "target_id": "operator_action_57128ab859664e8d812e2534",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "CYCLE",
+     "actor": "AUTOPILOT",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "CYCLE",
+     "operator_note": "must be blocked by revoked trial",
+     "reason_codes": [],
+     "result_state": "PARTIAL",
+     "target_entity_ids": [
+      "autopilot_cycle_1c2f10f079029d437fa75654"
+     ],
+     "target_id": "autopilot_cycle_1c2f10f079029d437fa75654",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "CYCLE",
+     "actor": "AUTOPILOT",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "CYCLE",
+     "operator_note": "one governed fixture PAPER cycle",
+     "reason_codes": [],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "autopilot_cycle_517749c74c4947924393032d"
+     ],
+     "target_id": "autopilot_cycle_517749c74c4947924393032d",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "DECIDE_STRATEGY_EVIDENCE_REVIEW",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "exact confirmation supplied by local operator",
+     "reason_codes": [
+      "ALL_HARD_GATES_PASS",
+      "PAPER_TRIAL_AUTHORIZED"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "strategy_evidence_review_c44d5619d808b14e0e10a414",
+      "strategy_evidence_snapshot_487eeee3f43dc9beacd7230a"
+     ],
+     "target_id": "operator_action_377d1f23da73c9228f970476",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_9d583f30e06ff0363b351cb9"
+     ],
+     "target_id": "operator_action_7ed70f4b44926c679a95f672",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_a7cf99caba9e3925e8301209"
+     ],
+     "target_id": "operator_action_bf02614f1f8bb339063eabb2",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "EVALUATE_FORWARD_PERFORMANCE",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "deterministic public-outcome forward scoring",
+     "reason_codes": [
+      "PUBLIC_OUTCOME_FACT",
+      "NO_FINANCIAL_SETTLEMENT"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "public_outcome_fact_ad0e3ff4b79cd9bcac38f01e"
+     ],
+     "target_id": "operator_action_c583eb96f1ba1cb8251d78e2",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "OPPORTUNITY_ASSESSED",
+     "actor": "AUTOPILOT",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPPORTUNITY",
+     "operator_note": "",
+     "reason_codes": [
+      "PAPER_AUTHORIZATION_ELIGIBLE"
+     ],
+     "result_state": "VALID",
+     "target_entity_ids": [
+      "proposal_09bceeabf1a2dd88eae32fdd"
+     ],
+     "target_id": "proposal_09bceeabf1a2dd88eae32fdd",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "OPPORTUNITY_ASSESSED",
+     "actor": "AUTOPILOT",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPPORTUNITY",
+     "operator_note": "",
+     "reason_codes": [
+      "PAPER_AUTHORIZATION_ELIGIBLE"
+     ],
+     "result_state": "VALID",
+     "target_entity_ids": [
+      "proposal_20b24c76e75a93845e91661d"
+     ],
+     "target_id": "proposal_20b24c76e75a93845e91661d",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "PAPER_EXECUTION",
+     "actor": "PAPER_ENGINE",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "ORDER",
+     "operator_note": "",
+     "reason_codes": [
+      "PAPER_DISPLAYED_DEPTH_MATCHED"
+     ],
+     "result_state": "FULL_FILL",
+     "target_entity_ids": [
+      "paper_execution_7efc8287f89993d50c42fe2d",
+      "order_9fc92628ba0da9d2fade9658"
+     ],
+     "target_id": "order_9fc92628ba0da9d2fade9658",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "PAPER_EXECUTION",
+     "actor": "PAPER_ENGINE",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "ORDER",
+     "operator_note": "",
+     "reason_codes": [
+      "PAPER_DISPLAYED_DEPTH_MATCHED"
+     ],
+     "result_state": "FULL_FILL",
+     "target_entity_ids": [
+      "paper_execution_d7f0fc479d5ebe5fdcc5222d",
+      "order_0dc9d1a72fe20c57c91bda8b"
+     ],
+     "target_id": "order_0dc9d1a72fe20c57c91bda8b",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "POSITION_MARKED",
+     "actor": "PAPER_ENGINE",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "MARK",
+     "operator_note": "",
+     "reason_codes": [
+      "PAPER_MARK_VISIBLE_BID_DEPTH"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "paper_position_mark_7575c9aa4fd2ca5cbfab5930",
+      "position_e7806f2381112aff3b484f5f"
+     ],
+     "target_id": "position_e7806f2381112aff3b484f5f",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "POSITION_SETTLED",
+     "actor": "PAPER_ENGINE",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "SETTLEMENT",
+     "operator_note": "",
+     "reason_codes": [],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "paper_position_settlement_5b17dc9139c4f34c12b73da3",
+      "position_e7806f2381112aff3b484f5f",
+      "paper_settlement_fact_73a690f05691b9b79a262863"
+     ],
+     "target_id": "position_e7806f2381112aff3b484f5f",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "POSITION_SETTLED",
+     "actor": "PAPER_ENGINE",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "SETTLEMENT",
+     "operator_note": "",
+     "reason_codes": [],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "paper_position_settlement_b58000d5309db8e4d85f4d1b",
+      "position_7eb643c404c163d48facf2b1",
+      "paper_settlement_fact_59edbbf9c7828048d835b2df"
+     ],
+     "target_id": "position_7eb643c404c163d48facf2b1",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "RECONCILE_PAPER_TRIAL_LIMITS",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "MAXIMUM_CAPITAL_LOCKUP_REACHED,MAXIMUM_DRAWDOWN_REACHED,MAXIMUM_PAPER_CYCLES_REACHED,MAXIMUM_REALIZED_LOSS_REACHED",
+     "reason_codes": [
+      "MAXIMUM_CAPITAL_LOCKUP_REACHED,MAXIMUM_DRAWDOWN_REACHED,MAXIMUM_PAPER_CYCLES_REACHED,MAXIMUM_REALIZED_LOSS_REACHED"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "paper_trial_authorization_856265d4043f452dfc8b862a"
+     ],
+     "target_id": "operator_action_8d187ff05cae45ce94fe1249",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "REQUEST_STRATEGY_EVIDENCE_REVIEW",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "all metrics are derived from retained production scoring rows",
+     "reason_codes": [
+      "REVIEW_REQUESTED"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "fixture-governed-evidence-paper-v1",
+      "strategy_evidence_snapshot_487eeee3f43dc9beacd7230a"
+     ],
+     "target_id": "operator_action_4be267521775d0785eebd376",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "REVOKE_PAPER_TRIAL_AUTHORIZATION",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "operator revokes suspended fixture trial",
+     "reason_codes": [
+      "operator revokes suspended fixture trial"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "paper_trial_authorization_856265d4043f452dfc8b862a"
+     ],
+     "target_id": "operator_action_70a987483f51fbbae535719f",
+     "timestamp": "2026-07-25T12:00:00Z"
+    },
+    {
+     "action": "START_STRATEGY_EVIDENCE_REVIEW",
+     "actor": "OPERATOR",
+     "campaign_id": "evidence-review-paper-trial-demo-v7",
+     "entity_type": "OPERATOR_ACTION",
+     "operator_note": "fixture-only review",
+     "reason_codes": [
+      "REVIEW_STARTED"
+     ],
+     "result_state": "COMPLETED",
+     "target_entity_ids": [
+      "strategy_evidence_review_c44d5619d808b14e0e10a414",
+      "strategy_evidence_snapshot_487eeee3f43dc9beacd7230a"
+     ],
+     "target_id": "operator_action_22e437bb735c27b4e8bf7929",
+     "timestamp": "2026-07-25T12:00:00Z"
+    }
+   ],
+   "remaining_loss_capacity": {
+    "amount": "500",
+    "currency": "USD"
+   }
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/overview",
+ "status": 200
+}

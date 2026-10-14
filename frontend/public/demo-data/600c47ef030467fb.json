@@ -1,0 +1,16 @@
+{
+ "body": {
+  "capability": "OPERATOR_READ_ONLY",
+  "data": {
+   "authority": "NONE",
+   "empty_state": "NO_EXTERNAL_STRATEGIES_REGISTERED_YET",
+   "live_authority": "NONE",
+   "paper_authority": "NONE",
+   "strategies": [],
+   "total": 0
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/operator-console/external-strategies",
+ "status": 200
+}

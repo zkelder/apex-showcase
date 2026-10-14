@@ -1,0 +1,39 @@
+{
+ "body": {
+  "capability": "OPERATOR_READ_ONLY",
+  "data": {
+   "attributions": [],
+   "authority": "NONE",
+   "empty_state": "INSUFFICIENT_SAMPLE",
+   "health": [],
+   "live_authority": "NONE",
+   "method_summaries": [],
+   "paper_evidence_counts": {
+    "attributions": 0,
+    "fills": 0,
+    "reconciliation_issues": 0,
+    "settled": 0
+   },
+   "policy": {
+    "authority": "NONE",
+    "canonical_hash": "df8953ba5442d84719190a04431f141f3cb137c4721f16ae66608055ca9b42d8",
+    "healthy_minimum_fill_rate": "0.75",
+    "live_authority": "NONE",
+    "maximum_drawdown_for_watch": "0.2",
+    "maximum_fee_variance": "0.01",
+    "maximum_slippage_variance": "0.01",
+    "minimum_fills": 2,
+    "minimum_settled_outcomes": 2,
+    "minimum_trials": 3,
+    "policy_id": "STRATEGY_HEALTH_POLICY_V1",
+    "watch_minimum_fill_rate": "0.4"
+   },
+   "portfolio_summary": null,
+   "venue_summaries": [],
+   "warning": "PAPER PERFORMANCE IS NOT REAL EARNINGS"
+  },
+  "schema_version": "apex.operator.v1"
+ },
+ "path": "/api/v1/operator-console/learning",
+ "status": 200
+}

@@ -1,0 +1,22 @@
+Apex
+Copyright 2026 Apex contributors
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not
+use this software except in compliance with the License. You may obtain a copy
+of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+License for the specific language governing permissions and limitations under
+the License.
+
+This product includes only synthetic fixtures. No real market data, account
+data, or credentials are distributed with it.
+
+Third-party notice: the optional-at-runtime dependency `vectorbt` is licensed
+"Apache 2.0 with Commons Clause" ("Commons Clause" License Condition v1.0, which
+withholds the right to Sell the software). It is installed from PyPI and is not
+bundled in this repository. See README.md and THIRD_PARTY_LICENSES.md.
