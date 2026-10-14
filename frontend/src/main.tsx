@@ -1,4 +1,4 @@
-import { FormEvent, ReactNode, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { FormEvent, ReactNode, useCallback, useEffect, useMemo, useContext, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import {
   ApiError,
@@ -14,6 +14,7 @@ import {
 } from "./api";
 import { DemoBanner } from "./demoBanner";
 import { DemoShell } from "./demoShell";
+import { DemoConsoleRequest } from "./demoNav";
 import { OperatorConsolePage, OperatorView, operatorNavigation } from "./operatorConsole";
 import "./styles.css";
 
@@ -2605,15 +2606,19 @@ function App() {
   const [notice, setNotice] = useState("");
   const refresh = useCallback(async () => { try { const [summary, service] = await Promise.all([api<Overview>("/api/v1/overview"), api<Health>("/api/v1/health")]); const loaded = Array.isArray(summary.campaigns) ? summary.campaigns : []; setOverview(summary); setCampaigns(loaded); setHealth(service); setError(null); } catch (reason) { setError(reason); } }, []);
   useEffect(() => { void refresh(); }, [refresh]);
-  // Static demo only: open on the populated campaign command center instead of an empty Home brief.
-  const demoOpened = useRef(false);
+  // Static demo only: open on the populated campaign command center (or the view a guided step
+  // asks for) instead of an empty Home brief. The demo hook is inert outside demo mode.
+  const demoRequest = useContext(DemoConsoleRequest);
+  const demoOpenedNonce = useRef<number | null>(null);
   useEffect(() => {
-    if (!DEMO_MODE || demoOpened.current || campaigns.length === 0) return;
-    demoOpened.current = true;
+    if (!DEMO_MODE || campaigns.length === 0 || demoOpenedNonce.current === demoRequest.nonce) return;
+    demoOpenedNonce.current = demoRequest.nonce;
     const preferred = campaigns.find((item) => item.name.includes("evidence-review")) ?? campaigns[0];
     setSelectedCampaign(preferred.campaign_id);
-    setView("Command");
-  }, [campaigns]);
+    const asked = demoRequest.view;
+    const known = asked === "Command" || (navigation as readonly string[]).includes(asked ?? "");
+    setView(known ? (asked as View) : "Command");
+  }, [campaigns, demoRequest]);
   const openCampaign = (id: string) => { setSelectedCampaign(id); setView("Command"); };
   const openPortfolio = (tab: PortfolioTab = "Reservations") => { setPortfolioTab(tab); setView("Portfolio"); };
   const created = async (campaignId: string, replay: boolean) => { await refresh(); setNotice(`Campaign ${replay ? "loaded from its idempotent replay" : "created"}. Authoritative local state is now displayed.`); openCampaign(campaignId); };

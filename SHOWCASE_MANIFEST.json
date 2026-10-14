@@ -1,5 +1,5 @@
 {
-  "file_count": 1012,
+  "file_count": 1016,
   "files": [
     {
       "path": ".env.example",
@@ -33,8 +33,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "0ed3d16c822894903095330e39a92a065749e34f78c808b9e6f9985b032b4e71",
-      "size": 12404
+      "sha256": "be50a1bb5b5a6fae9c5b902b92d18d6d1f6dae6c7d8828a6c1851633ca265eda",
+      "size": 18040
     },
     {
       "path": "THIRD_PARTY_LICENSES.md",
@@ -138,8 +138,8 @@
     },
     {
       "path": "docs/TESTING_AND_REPRODUCIBILITY.md",
-      "sha256": "f16234fc8a3b10e9546901244046fa31109cb5accab3b03c6a1b063ba054ee3c",
-      "size": 6380
+      "sha256": "3ced55b918c1efadc9794ec1e1484bcf7b645189f10f50feb0a9ed6cba3da4ac",
+      "size": 6848
     },
     {
       "path": "docs/adr/0001-securities-research-ecosystem-ownership.md",
@@ -147,34 +147,44 @@
       "size": 5334
     },
     {
-      "path": "docs/images/console-campaign.png",
-      "sha256": "2a8e3d9a610c5b5d36ccfebea2b67abb81c378a5b387977139c01c2e60dad27e",
-      "size": 153518
+      "path": "docs/images/console-activity.png",
+      "sha256": "b514f7370f17265954158e1ee506c5e0dad8fda522445824f3de0830521437e3",
+      "size": 146802
     },
     {
-      "path": "docs/images/console-operations.png",
-      "sha256": "ff1c6f82ad1b650b9510e65f2186fc8c7713a034a1c66f19d2cfdaf1c2a1a3dc",
-      "size": 119381
+      "path": "docs/images/console-command.png",
+      "sha256": "b02c9cd19d87dc7f32b64244087471b2483b8d35f59d08d3b87ec933f8687d01",
+      "size": 135410
     },
     {
-      "path": "docs/images/console-portfolio-ledger.png",
-      "sha256": "d035897ba69b8a99c501d25b6eedfea3f78e7a97e5f36b268d99e9ba9d7f3537",
-      "size": 161423
+      "path": "docs/images/console-queue.png",
+      "sha256": "d422be82a6c4d147c2bb40afacab81e631d0de08cf9cbac59700ce3cb0876ef8",
+      "size": 112705
     },
     {
-      "path": "docs/images/console-portfolio-orders.png",
-      "sha256": "20e1b032e7b7ad5ac8b0b628b7850a28753f234e91441f18ecc11c8c946a2f85",
-      "size": 129973
+      "path": "docs/images/demo-guide.png",
+      "sha256": "78a8450673873d1990aceb25b5321969f98be3ea9c8cde33afb910e02297f8f1",
+      "size": 172432
     },
     {
       "path": "docs/images/demo-outcome-ledger.png",
-      "sha256": "74ac2ac4089815b445d1ece6ee273b1857c621915dda3096dac5f8d7844a87fc",
-      "size": 117073
+      "sha256": "66cc8dd6fe6c5b63f4206e51687c5293eb4e7582dad43d1e334a1f9af47d3d45",
+      "size": 126148
     },
     {
       "path": "docs/images/demo-outcomes.png",
-      "sha256": "166f542f581440ca34d5251ee8b4663a5f43a1a4391847c7d955d7180063dc0d",
-      "size": 186772
+      "sha256": "b9954bde69533d5191b8e6b0d1f8f06e201e801ed740518f909616e9254bed79",
+      "size": 189677
+    },
+    {
+      "path": "docs/images/live-readiness.png",
+      "sha256": "cd23b9762db8e54e653523a451938f8d4ef03852ce6fa5810c61acad83cf6b8a",
+      "size": 134514
+    },
+    {
+      "path": "docs/images/paper-operations.png",
+      "sha256": "da34f27430735b517b8738f34a89ecbf409ad7dce6793cc44498aa768d6cbe2a",
+      "size": 145533
     },
     {
       "path": "fixtures/broad-research/nasdaqlisted.txt",
@@ -933,13 +943,13 @@
     },
     {
       "path": "frontend/src/consoleKit.test.tsx",
-      "sha256": "ecd74576de9af086c9d0243848045b02d00fa50ef5ff14502b412411a20efb87",
-      "size": 7201
+      "sha256": "715726fba64fa0bed6100e8c79fe515c6b9e1e862eb9ae058d1fa5ed603e028a",
+      "size": 7198
     },
     {
       "path": "frontend/src/consoleKit.tsx",
-      "sha256": "8c18db0d8a789ec06c4baf2437e274113fb946c09e2242295df5a6be6bb8b446",
-      "size": 12102
+      "sha256": "1cf751a5dfbbaf8fa96be1de5e876dada2e87ed0c51ede8c4128b000854fdb99",
+      "size": 12100
     },
     {
       "path": "frontend/src/decisionLedger.test.tsx",
@@ -953,23 +963,33 @@
     },
     {
       "path": "frontend/src/demoBanner.tsx",
-      "sha256": "8091d0f4521de96389ca15d0e09d4c8612db12b7c1ede2cac092914f0851503c",
-      "size": 783
+      "sha256": "6fb873e446c4c794cd3b73a806f47d9e44247e46949729981d5f49358bba5653",
+      "size": 1349
+    },
+    {
+      "path": "frontend/src/demoGuide.tsx",
+      "sha256": "74f636d60c2f7ee32e473121e923cf8d99150308c29eb0e155816809a80fa6ed",
+      "size": 7095
     },
     {
       "path": "frontend/src/demoMode.test.tsx",
-      "sha256": "afdbf3421caec00fd037deb2463fd88d333f2665b202f269f091d74add3e8baa",
-      "size": 4972
+      "sha256": "4a0f78d5936dcc700d0890ee6f2af9286e26cf0756f50e3c230f6b9f1f8f13b4",
+      "size": 6989
+    },
+    {
+      "path": "frontend/src/demoNav.ts",
+      "sha256": "6a408200852fb056870ca7b7eabf9348e01b7769e0ae35f99dbe8cb381403c96",
+      "size": 2658
     },
     {
       "path": "frontend/src/demoShell.tsx",
-      "sha256": "3f6c4de90592e63e8a88629de36e939bcf7ae1f360964eb6517c6c5234f3f087",
-      "size": 2532
+      "sha256": "63213db988db27629d6ddf7c3bb3245a42335fa1a9bb1b6799e651d07f7eec8c",
+      "size": 6890
     },
     {
       "path": "frontend/src/fixtureOutcomes.tsx",
-      "sha256": "368725749db45e5b78a340ae63b80899738fe8a50d0d5220ace817c7bf6f2b16",
-      "size": 7939
+      "sha256": "b0df18099f75e8ecb650df7e41b10136468953af27b16e31588288f2e734b30d",
+      "size": 8132
     },
     {
       "path": "frontend/src/followUp.test.tsx",
@@ -978,8 +998,8 @@
     },
     {
       "path": "frontend/src/followUp.tsx",
-      "sha256": "ac6aa5c907655114b63ae39e81e90b5da3dcf526547205c6ecb4f7231f8666b1",
-      "size": 17975
+      "sha256": "c3a9d046486ef8d6d16f53cc6efad081a7e37e258b2f7d05b055650a9433c21a",
+      "size": 17961
     },
     {
       "path": "frontend/src/layout.test.tsx",
@@ -988,8 +1008,8 @@
     },
     {
       "path": "frontend/src/main.tsx",
-      "sha256": "e68711386e92948eff91dde308cb596ab05776af7c6178c0f5d4cfa9a3a867fa",
-      "size": 312145
+      "sha256": "5c86c43ead9f1cf5910951d96f1f97f451b87579bfe587b8c1d5b1ba20cb7062",
+      "size": 312580
     },
     {
       "path": "frontend/src/operations.test.tsx",
@@ -998,8 +1018,8 @@
     },
     {
       "path": "frontend/src/operations.tsx",
-      "sha256": "0f1fbaa7346552eed814b0bfe49900e593ca8f0b7b9541906156d280c51954b6",
-      "size": 6291
+      "sha256": "d3ad65c41c45b5f2da740f5129deb027b556958ec7a137e6bdb94757de8a69eb",
+      "size": 6289
     },
     {
       "path": "frontend/src/operatorConsole.test.tsx",
@@ -1008,8 +1028,8 @@
     },
     {
       "path": "frontend/src/operatorConsole.tsx",
-      "sha256": "5bd99e02d3325b7044d07f38d3227a628fb91d3b331b59d4bdac155636d9a952",
-      "size": 73668
+      "sha256": "32f952e9d3e753ca4f8ec5f68027d8daf1645c772f1f0bc3c59c524ca85cdac4",
+      "size": 73646
     },
     {
       "path": "frontend/src/optionsResearch.test.tsx",
@@ -1018,8 +1038,8 @@
     },
     {
       "path": "frontend/src/optionsResearch.tsx",
-      "sha256": "925acdf986a688d5c74644687eb3eb48f481ccf0d9af50614ec99205cf5993a1",
-      "size": 11011
+      "sha256": "1ec4668434621a8a91c2201291ee966897793175aabadcd151a05f9a5b2c3821",
+      "size": 11005
     },
     {
       "path": "frontend/src/portfolioMandate.test.tsx",
@@ -1028,8 +1048,8 @@
     },
     {
       "path": "frontend/src/portfolioMandate.tsx",
-      "sha256": "7c86a7ac1a0d1b6a764d65bd9b7b820af0f4f877aefc1a22e5731b8a564ea031",
-      "size": 11331
+      "sha256": "8cf53836483c38df3e28b338ccc1f0d072c911478aafa57eb3c98eef5bcd01b1",
+      "size": 11329
     },
     {
       "path": "frontend/src/reasonCodes.test.ts",
@@ -1043,8 +1063,8 @@
     },
     {
       "path": "frontend/src/styles.css",
-      "sha256": "e7b4920cefab7235dc97a87241f783973abe56ea258f6a176ce0d720cbcafc41",
-      "size": 15656
+      "sha256": "3e4d608997f83826ac17606afd85043e7b988645c5e2dacafbbc10804618e71d",
+      "size": 20034
     },
     {
       "path": "frontend/src/test/helpers.ts",
@@ -5062,5 +5082,5 @@
       "size": 187828
     }
   ],
-  "source_commit": "c70cf09490262a8545dad5066add6d3b160b8f05"
+  "source_commit": "4444a5ecbb6cd4e84a19806e9d6e6a31a602ab9e"
 }

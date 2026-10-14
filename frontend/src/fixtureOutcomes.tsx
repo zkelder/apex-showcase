@@ -73,10 +73,11 @@ function Journals({ report }: { report: Json }) {
   );
 }
 
-export function FixtureOutcomesPage() {
+export function FixtureOutcomesPage({ selectedFixture }: { selectedFixture?: string } = {}) {
   const [document, setDocument] = useState<Document | null>(null);
   const [error, setError] = useState("");
-  const [selected, setSelected] = useState("golden");
+  const [selected, setSelected] = useState(selectedFixture ?? "golden");
+  useEffect(() => { if (selectedFixture) setSelected(selectedFixture); }, [selectedFixture]);
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}demo-data/fixture-outcomes.json`)
       .then((response) => response.json() as Promise<Document>)
@@ -89,7 +90,7 @@ export function FixtureOutcomesPage() {
   const report = current.report;
   return (
     <section aria-label="Deterministic fixture outcomes" className="fixture-outcomes">
-      <h2>Apex in 60 seconds</h2>
+      <h1 className="fixture-title">Apex in 60 seconds</h1>
       <p>
         Apex is a research and <strong>simulation-only</strong> decision platform for prediction markets and other instruments.
         Every decision passes a fixed pipeline: point-in-time evidence → strategy proposal → allocation → a non-bypassable

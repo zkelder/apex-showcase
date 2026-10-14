@@ -200,14 +200,14 @@ export function PortfolioMandatePage({ inspect }: { inspect: InspectEvidence }) 
                 ["Max lockup days", mandate?.maximum_capital_lockup_days],
               ]}
             />
-            <div className="key-values">
+            <dl className="key-values">
               <div><dt>Permitted venues</dt><dd>{list(mandate?.permitted_venues).join(" · ") || "none"}</dd></div>
               <div><dt>Permitted market families</dt><dd>{list(mandate?.permitted_market_families).join(" · ") || "none"}</dd></div>
               <div><dt>Disallowed market families</dt><dd>{list(mandate?.disallowed_market_families).join(" · ") || "none"}</dd></div>
               <div><dt>Aggregate / instrument cap</dt><dd>{fraction(mandate?.maximum_aggregate_exposure_fraction)} / {fraction(mandate?.maximum_per_instrument_fraction)}</dd></div>
               <div><dt>Venue / family concentration cap</dt><dd>{fraction(mandate?.maximum_venue_concentration_fraction)} / {fraction(mandate?.maximum_market_family_concentration_fraction)}</dd></div>
               <div><dt>Notes</dt><dd>{text(mandate?.notes, "none")}</dd></div>
-            </div>
+            </dl>
             {mandateVersions.length > 1 && (
               <p className="muted">
                 {mandateVersions.length} version(s) retained for this lineage, newest first:{" "}

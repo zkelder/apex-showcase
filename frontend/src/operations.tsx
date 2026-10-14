@@ -55,12 +55,12 @@ function HighlightPanel({ item }: { item: ApiRecord | undefined }) {
   if (!item) return null;
   return (
     <Panel title={text(item.task_type)} badge={text(item.current_disposition, "UNKNOWN")}>
-      <div className="key-values">
+      <dl className="key-values">
         <div><dt>Current reasons</dt><dd>{list(item.current_reasons).join(" · ") || "none retained"}</dd></div>
         <div><dt>Latest result</dt><dd>{text(item.latest_result_status)}<small>{text(item.latest_result_completed_at)}</small></dd></div>
         <div><dt>Latest completed / reused</dt><dd>{text(item.latest_effective_status, "none yet")}<small>{text(item.latest_effective_completed_at)}</small></dd></div>
         <div><dt>Latest outputs</dt><dd>{list(item.latest_effective_output_identities).join(" · ") || "none"}</dd></div>
-      </div>
+      </dl>
     </Panel>
   );
 }

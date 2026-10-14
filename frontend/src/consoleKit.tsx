@@ -153,7 +153,7 @@ export function AuthorityLadder({ paperAccountCount }: { paperAccountCount: unkn
       ? `${count} internal simulated account(s) retained — simulated capital only, never genuine earnings`
       : "No internal PAPER account retained yet — simulated capital only when one exists, never genuine earnings";
   return (
-    <div className="key-values authority-ladder">
+    <dl className="key-values authority-ladder">
       {AUTHORITY_STAGES.map((stage) => (
         <div key={stage.key}>
           <dt>{stage.label}</dt>
@@ -168,7 +168,7 @@ export function AuthorityLadder({ paperAccountCount }: { paperAccountCount: unkn
         <dt>LIVE (real capital)</dt>
         <dd>NONE — not enabled in this build, no provider order submission</dd>
       </div>
-    </div>
+    </dl>
   );
 }
 

@@ -114,31 +114,31 @@ export function OptionsResearchPage({ inspect }: { inspect: InspectEvidence }) {
 
             <div className="research-summary-grid">
               <Panel title="Latest session">
-                <div className="key-values">
+                <dl className="key-values">
                   <div><dt>Session</dt><dd>{text(latestSession?.session_id)}</dd></div>
                   <div><dt>Window</dt><dd>{text(latestSession?.window_open_at)} → {text(latestSession?.window_close_at)}</dd></div>
                   <div><dt>Captured / requested</dt><dd>{text(latestSession?.underlyings_captured_count)} / {text(latestSession?.underlyings_requested_count)}</dd></div>
                   <div><dt>Structures retained</dt><dd>{text(latestSession?.structures_retained)} / {text(latestSession?.structures_evaluated)} evaluated</dd></div>
-                </div>
+                </dl>
                 <div className="control-row">
                   <EvidenceButton href={latestSession?.evidence_href} label="Latest checkpoint" inspect={inspect} />
                 </div>
               </Panel>
               <Panel title="Next capture window" badge={text(captureTask?.status, "UNKNOWN")}>
-                <div className="key-values">
+                <dl className="key-values">
                   <div><dt>Session</dt><dd>{text(captureTask?.session_id, "none identified")}</dd></div>
                   <div><dt>Window</dt><dd>{text(captureTask?.window_open_at, "—")} → {text(captureTask?.window_close_at, "—")}</dd></div>
                   <div><dt>Next eligible window opens</dt><dd>{text(captureTask?.next_capture_window_open_at, "not retained")}</dd></div>
-                </div>
+                </dl>
                 <p className="muted">{list(captureTask?.reasons).join(" · ") || "no reasons retained"}</p>
               </Panel>
               <Panel title="Coverage quality (latest session)">
-                <div className="key-values">
+                <dl className="key-values">
                   {pairs(latestSession?.chain_coverage_quality_counts).map(([key, count]) => (
                     <div key={key}><dt>{key}</dt><dd>{count}</dd></div>
                   ))}
                   {!pairs(latestSession?.chain_coverage_quality_counts).length && <div><dt>none retained</dt><dd>0</dd></div>}
-                </div>
+                </dl>
               </Panel>
               <Panel title="Standing limitations">
                 <ul>

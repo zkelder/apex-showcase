@@ -1,114 +1,115 @@
 # Apex
 
-Apex is a Python/PostgreSQL research and paper-trading **simulation** platform
-built around one idea: observation may be broad, but execution authority stays
-narrow, explicit, and separately governed. It captures market evidence,
-stores it in append-only content-addressed tables, evaluates hypotheses and
-strategies against that evidence under point-in-time rules, and keeps an
-exact, replayable record of every accepted *and rejected* decision. It runs
-unattended as bounded, idempotent one-shot workers and refuses to start when
-the database schema does not match the code.
+**A local-first quantitative research platform in Python and PostgreSQL.** Apex
+observes public market data, evaluates strategies against retained evidence
+under point-in-time rules, runs governed paper (simulated) campaigns with exact
+double-entry accounting, and operates unattended as idempotent one-shot workers
+under systemd. A React Operator Console and a FastAPI service expose everything
+it retains, including every rejected decision.
 
-> **Honest scope.** Apex is **engineering evidence only**. It makes no claim
-> of trading edge, profitability, calibration, or readiness for live trading.
-> The financial runtime is always non-LIVE: there is no code path that places
-> a real-money order. All bundled fixtures are synthetic. See
-> [docs/SAFETY_MODEL.md](docs/SAFETY_MODEL.md) and
+<p align="center">
+  <a href="https://zkelder.dev/apex/demo/">
+    <img src="docs/images/console-command.png" alt="Apex Operator Console, captured from the static synthetic-data demo: navigation rail with fourteen views and a campaign command center." width="900">
+  </a>
+  <br>
+  <sub>The Operator Console, captured from the static demo. All data is synthetic and every page is labelled as such.</sub>
+</p>
+
+**[Interactive demo](https://zkelder.dev/apex/demo/)** (static, read-only, synthetic data) ·
+**[Case study](https://zkelder.dev/apex/)** (architecture, engineering decisions, evidence) ·
+**[Architecture](docs/ARCHITECTURE_OVERVIEW.md)** ·
+**[Engineering decisions](docs/ENGINEERING_DECISIONS.md)**
+
+> **Scope.** Apex is **engineering evidence, not a trading product.** It makes no
+> claim of trading edge, profitability, calibration, or readiness for live
+> trading. The financial runtime is always non-LIVE: there is no code path that
+> places a real-money order, and tests enforce that. All bundled fixtures are
+> synthetic. See [docs/SAFETY_MODEL.md](docs/SAFETY_MODEL.md) and
 > [docs/LIMITATIONS_AND_FUTURE_WORK.md](docs/LIMITATIONS_AND_FUTURE_WORK.md).
 
-## Try it
+## What Apex does
 
-- **Hosted demo (static, read-only, synthetic data):** <https://zkelder.dev/apex/demo/> (case study: <https://zkelder.dev/apex/>)
-- **Locally, no database or network needed:** the eight deterministic
-  fixture outcomes (see [Quick start](#quick-start)).
-- **Locally, full stack:** PostgreSQL via Docker Compose, then the Operator
-  Console (React/Vite) over a FastAPI operator API.
+| | Job | What it means in practice |
+|---|---|---|
+| **Observe** | Capture evidence within strict bounds | Bounded, GET-only collectors read public Coinbase and Kalshi market data and SEC and Nasdaq reference data. Raw responses are retained with content hashes and resumable checkpoints. Missing or stale data is recorded as such. |
+| **Research** | Evaluate strategies without fooling yourself | Point-in-time information sets prevent look-ahead; every experiment attempt is retained; strategy definitions carry version provenance; rejected opportunities go to a counterfactual ledger; null-control batteries measure how often noise looks like signal. |
+| **Simulate** | Paper trading with exact accounting | Governed PAPER campaigns pass a risk kernel, reservations, orders, fills and balanced double-entry journals in `Decimal`, with reconciliation across fills, positions and ledger. |
+| **Operate** | Run unattended, recover cleanly | A systemd timer launches a bounded worker every five minutes. It takes a lease, resumes interrupted cycles, refuses to run against a mismatched schema, and raises local alerts. |
 
-## Highlights
+Experimental or not exercised in the public demo: automated candidate
+generation and the external-broker PAPER tiers. Not part of Apex: live trading,
+real-money accounts, multi-user access and horizontal scaling.
 
-| Area | What is in the repository |
-|---|---|
-| Typed Python 3.12 | `mypy --strict` over `src` and `scripts/dev.py`, `ruff` lint/format, enforced by `python scripts/dev.py typecheck` / `lint` (`pyproject.toml`). |
-| PostgreSQL integrity | Reversible Alembic migrations (`migrations/versions/`); evidence tables are append-only, enforced by database triggers (`immutable_trigger_ddl` in `src/apex/adapters/postgres.py`) and tested at the database boundary (`tests/persistence/test_postgres_security.py`). |
-| Docker Compose | One `postgres:17-alpine` service with healthcheck and resource limits (`compose.yaml`); per-worktree isolated project, port and test database for verification ([docs/TESTING_AND_REPRODUCIBILITY.md](docs/TESTING_AND_REPRODUCIBILITY.md)). |
-| Unattended operation | systemd user timers launch bounded `--once` workers; scheduling and due-work logic live in the application, not the host (`deploy/`). A schema-compatibility guard makes workers fail closed on a revision mismatch (`src/apex/domain/schema_compatibility.py`). |
-| Fault tolerance | Lease/heartbeat runner, deterministic idempotency keys, crash-resumable cycles, per-task failure isolation with dependency propagation ([docs/OPERATIONS_AND_RELIABILITY.md](docs/OPERATIONS_AND_RELIABILITY.md)). |
-| Exact money | `Decimal` only; floats, NaN, exponents rejected at parse (`parse_decimal` in `src/apex/domain/values.py`); a double-entry ledger is the sole financial authority (`src/apex/domain/ledger.py`). |
-| Controlled authority | Records carry `authority = "NONE"`; a tiered model (SHADOW, INTERNAL PAPER, EXTERNAL PAPER, LIVE prohibited) is enforced by tests (`tests/security/`). |
-| Reproducibility | Canonical JSON + SHA-256 content hashes (`canonical_json_bytes`, `content_digest`), deterministic fixtures with registered IDs, byte-identical repeat reports under a socket-denied test run. |
+## Engineering highlights
+
+Each item names the code and the tests that demonstrate it.
+
+- **Evidence is immutable in the database, not by convention.** Row-level triggers on every evidence family, `authority = 'NONE'` CHECK constraints, and downgrades that refuse to destroy retained rows
+  ([`immutable_trigger_ddl`](src/apex/adapters/postgres.py), [`test_postgres_security.py`](tests/persistence/test_postgres_security.py)).
+- **Workers fail closed on schema drift.** An exact required-revision guard turns a code-before-migration deploy into an explicit refusal instead of a crash loop
+  ([`schema_compatibility.py`](src/apex/domain/schema_compatibility.py), [`test_schema_compatibility.py`](tests/test_schema_compatibility.py)).
+- **Unattended work is idempotent and crash-resumable.** Content-addressed identities, per-task failure isolation, and a resume step that reconciles a retained cycle with current reality
+  ([`operating_cycle.py`](src/apex/application/operating_cycle.py), [`test_postgres_operating_cycle.py`](tests/persistence/test_postgres_operating_cycle.py)).
+- **Money is exact.** `Decimal` only, with floats, NaN and exponents rejected at parse; a double-entry ledger is the sole financial authority. A ledger defect found at the first paper-trial close (a fee counted twice) was fixed with a guarded, append-only correction
+  ([`ledger.py`](src/apex/domain/ledger.py), [`test_crypto_paper_ledger_close_accounting.py`](tests/test_crypto_paper_ledger_close_accounting.py)).
+- **Research output is reproducible.** Canonical JSON plus SHA-256 identities, hash-bound fixtures loaded only by registered ID, and a total-order tie-break that fixed a nondeterministic research panel
+  ([`corporate_fundamentals.py`](src/apex/domain/corporate_fundamentals.py), [`test_no_live_path.py`](tests/security/test_no_live_path.py)).
+- **Verification is isolated from the live system.** A deterministic per-checkout Compose project, port and test database stop one checkout's tests from touching another's data
+  ([`scripts/dev.py`](scripts/dev.py), [ADR 10](docs/ENGINEERING_DECISIONS.md)).
+
+Ten decision records with context, tradeoffs and evidence are in
+[docs/ENGINEERING_DECISIONS.md](docs/ENGINEERING_DECISIONS.md).
 
 ## Architecture
 
 ```mermaid
-flowchart LR
-    subgraph Sources["Evidence sources"]
-        FX["Synthetic fixtures"]
-        PUB["Bounded public read-only providers"]
+flowchart TB
+    subgraph IN["Inputs"]
+        FX["Synthetic fixtures<br/>hash-bound, registered IDs"]
+        PUB["Bounded public providers<br/>GET-only"]
     end
-    subgraph Core["Apex core (dependency direction: adapters to application to domain)"]
-        AD["adapters: HTTP, PostgreSQL, files"]
-        APP["application: use cases, orchestration"]
-        DOM["domain: pure rules, Decimal, canonical hashes"]
+    SYS["systemd user timers<br/>one-shot workers"]
+    subgraph CORE["Apex core: adapters to application to domain"]
+        direction LR
+        AD["Adapters<br/>HTTP, PostgreSQL, fixtures"] --> APP["Application<br/>use cases, operating cycle"] --> DOM["Domain<br/>Decimal, risk kernel, ledger,<br/>point-in-time sets"]
     end
-    DB[("PostgreSQL: append-only evidence")]
-    W["Supervised one-shot workers (systemd timers)"]
+    DB[("PostgreSQL 17<br/>append-only evidence<br/>Alembic migrations, schema guard")]
     API["FastAPI operator API"]
-    UI["Operator Console (React)"]
+    UI["React Operator Console"]
+    DEMO["Static demo build<br/>frozen synthetic snapshot"]
     FX --> AD
     PUB --> AD
-    AD --> APP --> DOM
+    SYS --> APP
     AD <--> DB
-    W --> APP
     DB --> API --> UI
+    UI -.->|same console, snapshot data| DEMO
 ```
 
-Details and more diagrams: [docs/ARCHITECTURE_OVERVIEW.md](docs/ARCHITECTURE_OVERVIEW.md).
+The core has four subsystems, Observe, Research, Simulate and Account, all
+writing to the same evidence store. More diagrams and the dependency rules:
+[docs/ARCHITECTURE_OVERVIEW.md](docs/ARCHITECTURE_OVERVIEW.md).
 
 ## Quick start
 
-Prerequisites: Python 3.12, [`uv`](https://docs.astral.sh/uv/), and (only for
-the persistence suite) Docker with Compose.
+Prerequisites: Python 3.12, [`uv`](https://docs.astral.sh/uv/), Node.js (current
+LTS, for the demo), and (only for the persistence suite) Docker with Compose.
+
+**1. Thirty seconds, no database and no network.** Run one of the eight
+deterministic prediction-market outcomes. It prints a canonical JSON report;
+repeated runs are byte-identical.
 
 ```bash
 uv sync --all-extras          # or: python scripts/dev.py bootstrap
-```
-
-Run one of the eight offline, deterministic prediction-market outcomes. Each
-prints a canonical JSON report; repeated runs are byte-identical.
-
-```bash
 uv run python scripts/dev.py demo-core --fixture golden --capital 1000.00 --seed 20260716
 ```
 
 The registered fixture IDs (`REGISTERED_FIXTURE_IDS`, asserted in
-`tests/security/test_no_live_path.py`) are: `golden`, `no-proposal`,
+`tests/security/test_no_live_path.py`) are `golden`, `no-proposal`,
 `policy-rejected`, `invariant-rejected`, `unfilled-expired`,
-`partial-fill-canceled`, `partial-fill-canceled-settled-no`,
+`partial-fill-canceled`, `partial-fill-canceled-settled-no` and
 `partial-fill-canceled-settled-void`.
 
-Verify (formatting/lint, `mypy --strict`, and the full offline suite with
-outbound sockets denied):
-
-```bash
-uv run python scripts/dev.py verify-core
-```
-
-Optional persistence verification (isolated Docker PostgreSQL, migrations to
-head, real-database tests):
-
-```bash
-uv run python scripts/dev.py db-up
-uv run python scripts/dev.py verify-persistence
-uv run python scripts/dev.py db-down
-```
-
-Operator Console (needs a database; see the hosted demo for a no-setup view):
-`operator-build`, `operator-api` and `operator-ui` are defined in `scripts/dev.py`. The
-older `operator-demo-seed`, `operator-console-demo` and `paper-portfolio-demo` seeding commands
-are **stale** and currently fail (they predate the PAPER trial authorization requirement); the
-supported way to produce console data is `scripts/demo/regenerate_demo_data.sh` below.
-
-### Static synthetic demo (no backend, no credentials)
+**2. Five minutes: the static demo, locally.**
 
 ```bash
 cd frontend
@@ -118,30 +119,76 @@ npm run build:demo            # -> frontend/dist-demo
 python3 -m http.server 4173 --directory dist-demo   # open http://127.0.0.1:4173/
 ```
 
-The demo has two parts, both labelled by a permanent
-`SYNTHETIC DEMONSTRATION DATA — NOT LIVE OPERATIONS` banner:
+**3. Full verification.** Formatting and lint, `mypy --strict`, and the full
+offline suite with outbound sockets denied:
 
-- **Deterministic outcomes**: the eight fixture outcomes, produced by the real
-  offline `demo-core` command, shown as a decision pipeline and double-entry ledger with their
-  canonical report hashes.
-- **Operator Console**: the real React console reading a retained snapshot of the real operator API,
-  captured from a throwaway database seeded only by Apex's fixture-only governed PAPER demo.
-  Every mutation is blocked in the client; the page makes no `/api` calls.
-  It opens on the populated Campaign command center; views such as Home, Opportunities and Live
-  Readiness are genuinely empty in this fixture-seeded snapshot and the page says so.
+```bash
+uv run python scripts/dev.py verify-core
+```
 
-Regenerate the data from scratch (isolated Docker Postgres with its own Compose project and port,
-removed afterwards; two consecutive runs produce byte-identical files):
+Then the real-PostgreSQL suite (isolated Docker PostgreSQL, migrated to head):
+
+```bash
+uv run python scripts/dev.py db-up
+uv run python scripts/dev.py verify-persistence
+uv run python scripts/dev.py db-down
+```
+
+The Operator Console needs a database: `operator-build`, `operator-api` and
+`operator-ui` are defined in `scripts/dev.py`. The older `operator-demo-seed`,
+`operator-console-demo` and `paper-portfolio-demo` seeding commands are
+**stale** and currently fail (they predate the PAPER trial authorization
+requirement); the supported way to produce console data is
+`scripts/demo/regenerate_demo_data.sh`.
+
+### The static demo
+
+[The hosted demo](https://zkelder.dev/apex/demo/) opens on a short guide with
+three paths (deterministic outcomes, a governed PAPER campaign, authority and
+safety gates). Every page carries a permanent
+`SYNTHETIC DEMONSTRATION DATA — NOT LIVE OPERATIONS` banner.
+
+- **Deterministic outcomes:** the eight fixture outcomes, produced by the real offline `demo-core` command, shown as a decision pipeline and double-entry ledger with their canonical report hashes.
+- **Operator Console:** the real React console reading a retained snapshot of the real operator API, captured from a throwaway database seeded only by Apex's fixture-only governed PAPER demo. Every mutation is blocked in the client and the page makes no `/api` calls. Views such as Home, Opportunities and Live Readiness are genuinely empty in this fixture-seeded snapshot and say so.
+
+Regenerate the data from scratch (isolated Docker Postgres with its own Compose
+project and port, removed afterwards; two consecutive runs produce
+byte-identical files):
 
 ```bash
 scripts/demo/regenerate_demo_data.sh              # outcomes + console snapshot
 scripts/demo/regenerate_demo_data.sh --outcomes-only   # no Docker needed
 ```
 
-Wall-clock fields in the snapshot (`created_at`, `recorded_at`, `timestamp`, `as_of`,
-`last_activity` and a few run identifiers) are pinned to the fixture clock so the snapshot is
-reproducible; every other value is verbatim API output. Several console pages honestly show
-empty states, because a fixture database has no recurring-cycle history.
+Wall-clock fields in the snapshot (`created_at`, `recorded_at`, `timestamp`,
+`as_of`, `last_activity` and a few run identifiers) are pinned to the fixture
+clock so the snapshot is reproducible; every other value is verbatim API output.
+
+## Screenshots
+
+All screenshots are of the static synthetic demo. The banner is part of the product, not an overlay.
+
+| Deterministic outcomes | Double-entry ledger for a settled trade |
+|---|---|
+| ![Eight deterministic outcomes with the partial-fill settled VOID outcome selected](docs/images/demo-outcomes.png) | ![Decision pipeline and balanced ledger postings for the settled trade](docs/images/demo-outcome-ledger.png) |
+
+| Opportunity queue | Activity timeline |
+|---|---|
+| ![Opportunity queue with evidence grade and reason codes](docs/images/console-queue.png) | ![Activity timeline of operator actions and cycles](docs/images/console-activity.png) |
+
+| PAPER operations: capability gate | Live readiness: fail-closed by default |
+|---|---|
+| ![PAPER Operations view with the capability gate disabled](docs/images/paper-operations.png) | ![Live Readiness view reporting LIVE_NOT_READY](docs/images/live-readiness.png) |
+
+![Guided entry page of the static demo](docs/images/demo-guide.png)
+
+## How the pieces relate
+
+| Artifact | What it is | Where |
+|---|---|---|
+| **Private operational Apex** | The running system: its history, retained data and infrastructure. It is not published. | Private |
+| **This repository** | A curated, deterministic source snapshot exported from the private repository by an allow-list manifest, then scanned for secrets and operational specifics. Provenance is in `SHOWCASE_MANIFEST.json`. | [github.com/zkelder/apex-showcase](https://github.com/zkelder/apex-showcase) |
+| **Hosted demo** | A static build of this repository's console over a frozen snapshot of synthetic data. No backend, database or credentials. | [zkelder.dev/apex/demo](https://zkelder.dev/apex/demo/) |
 
 ## Repository map
 
@@ -159,7 +206,7 @@ empty states, because a fixture database has no recurring-cycle history.
 | `scripts/dev.py` | The single development command runner. |
 | `docs/` | Architecture, decisions, operations, safety, testing, limitations. |
 
-## Testing and validation
+## Reproducibility and tests
 
 Verification is tiered: narrow tests while developing; at completion the
 sequence `format`, `lint`, `typecheck`, `verify-core`, `db-up`,
@@ -167,49 +214,60 @@ sequence `format`, `lint`, `typecheck`, `verify-core`, `db-up`,
 ledger-balance, idempotency, rollback and risk-conservation tests are never
 weakened. Details: [docs/TESTING_AND_REPRODUCIBILITY.md](docs/TESTING_AND_REPRODUCIBILITY.md).
 
-Latest recorded run for this release: Recorded 2026-10-14 on a clean checkout: `ruff` format/lint and `mypy --strict` clean; `verify-core` **3675 passed**; `verify-persistence` **946 passed, 5 skipped, 0 failed** against an isolated PostgreSQL 17 container migrated from empty to head (`0118`); frontend typecheck clean, **98 Vitest tests passed**, `npm audit` reports 0 vulnerabilities. The five skips are acceptance tests that report themselves skipped when no retained real market-data history exists in the database, which is the case for a fresh isolated database. These are results from this repository's own commands, not a claim of trading performance.
+| Check | Result | What it establishes |
+|---|---|---|
+| `verify-core` | **3,675 passed** | `ruff` format and lint and `mypy --strict` clean; offline tests with outbound sockets denied: financial invariants, idempotency, determinism, architecture and safety boundaries. |
+| `verify-persistence` | **946 passed, 5 skipped** | Real PostgreSQL 17 migrated from empty to head (`0118`): triggers, lock ordering, concurrency, crash recovery, schema guard. The five skips are acceptance tests that need retained real market-data history, which a fresh database lacks. |
+| Frontend | **101 Vitest tests passed** | Component behavior, demo read-only guarantees, guided navigation, responsive layout. `npm audit` reports 0 vulnerabilities. |
 
-## Screenshots
+Recorded 2026-10-14 on a clean checkout. The two backend figures come from the
+release commit before the demo-entry work; the backend was not changed
+afterwards (`git diff` over `src`, `tests` and `migrations` is empty), and the
+frontend count grew from 98 to 99 (a mobile-overflow fix) to 101 (guided entry).
+Counts are pytest and Vitest results, so parametrized and property-based cases
+are counted individually and are not independent scenarios. These are results
+from this repository's own commands. They show correctness, reproducibility and
+safe failure, not trading performance.
 
-All screenshots are of the static synthetic demo; the banner is part of the product, not an overlay.
+## Technical decisions and tradeoffs
 
-| Deterministic outcomes | Outcome detail: double-entry ledger |
-|---|---|
-| ![Eight deterministic outcomes](docs/images/demo-outcomes.png) | ![Partial fill settled NO, with ledger](docs/images/demo-outcome-ledger.png) |
+| Decision | Why | Cost accepted |
+|---|---|---|
+| `Decimal` everywhere ([ADR 1](docs/ENGINEERING_DECISIONS.md)) | Floats cannot represent prices and fees exactly; drift breaks ledger balance. | More verbose; slower numeric research; explicit parsing at every boundary. |
+| Append-only evidence enforced by triggers ([ADR 2](docs/ENGINEERING_DECISIONS.md)) | Application bugs cannot rewrite history. | Storage only grows; corrections are new rows. |
+| Content-addressed identities ([ADR 3](docs/ENGINEERING_DECISIONS.md)) | Retries and replays never duplicate work. | Choosing what belongs in an identity is subtle. |
+| Exact schema-revision guard ([ADR 4](docs/ENGINEERING_DECISIONS.md)) | A code-before-migration deploy stops loudly. | No rolling-deploy window; migrate first. |
+| One-shot worker under systemd, not a workflow engine ([ADR 8](docs/ENGINEERING_DECISIONS.md)) | Recoverable single-machine operation with no scheduler to run. | No horizontal scaling or automatic restart policy. |
 
-| Campaign command center | Posted ledger entries |
-|---|---|
-| ![Campaign command center](docs/images/console-campaign.png) | ![Portfolio ledger](docs/images/console-portfolio-ledger.png) |
+## Security boundaries
 
-![Operations view](docs/images/console-operations.png)
-
-## Dependency licensing note
-
-Apex's own code is Apache-2.0 (see `LICENSE` and `NOTICE`).
-
-**`vectorbt` (1.1.0) is licensed "Apache 2.0 with Commons Clause"**, which is a source-available
-licence and **not** an OSI-approved open-source licence. The Commons Clause withholds the right to
-*Sell* the software, meaning to provide a third party, for a fee, a product or service whose value
-derives entirely or substantially from vectorbt's functionality (hosting and consulting included).
-How it is used here:
-
-- It is declared as a regular pinned dependency in `pyproject.toml` and installed from PyPI by
-  `uv sync`; its code is not copied into or redistributed by this repository.
-- It is used only by one cross-check simulator (`src/apex/adapters/securities_baseline_simulators.py`).
-  The import is guarded: if vectorbt is absent, that simulator reports itself unavailable and the
-  rest of Apex, including `demo-core`, the static demo and the test suite's other paths, is unaffected.
-- Apex is not offered as a paid product or service. Anyone who forks Apex to sell a product or
-  service must review the Commons Clause themselves, and may need to remove the dependency.
-  This note is not legal advice.
-
-`psycopg` is LGPL-3.0 and is used as an unmodified library. The full generated dependency
-inventory is in `THIRD_PARTY_LICENSES.md`.
+- **No execution path.** Research records carry `authority = "NONE"`; the risk kernel refuses to authorize outside `SIMULATION_ONLY`; the LIVE tier is prohibited and guarded by [`tests/security/`](tests/security).
+- **Bounded network access.** Public provider clients are GET-only, and adapter imports are constrained by exact allow-lists in [`tests/security/test_architecture_boundaries.py`](tests/security/test_architecture_boundaries.py).
+- **Untrusted fixtures.** Fixture text is data: never executed, interpolated or rendered as markup.
+- **Safety model.** The tiered authority model is described in [docs/SAFETY_MODEL.md](docs/SAFETY_MODEL.md).
 
 ## Limitations
 
 Single-machine, single-operator design; fixture-scale demo data; public
-read-only provider evidence only; no performance claims. Full list in
+read-only provider evidence only; no performance claims. The full list is in
 [docs/LIMITATIONS_AND_FUTURE_WORK.md](docs/LIMITATIONS_AND_FUTURE_WORK.md).
+
+## Dependencies and licensing
+
+Apex's own code is Apache-2.0 (see `LICENSE` and `NOTICE`). The generated
+dependency inventory is in `THIRD_PARTY_LICENSES.md`.
+
+**`vectorbt` (1.1.0) is licensed "Apache 2.0 with Commons Clause"**, a
+source-available licence that is **not** OSI-approved. The Commons Clause
+withholds the right to *Sell* the software: to provide a third party, for a fee,
+a product or service whose value derives entirely or substantially from
+vectorbt's functionality (hosting and consulting included). How it is used here:
+
+- It is declared as a regular pinned dependency in `pyproject.toml` and installed from PyPI by `uv sync`; its code is not copied into or redistributed by this repository.
+- It is used only by one cross-check simulator (`src/apex/adapters/securities_baseline_simulators.py`). The import is guarded: if vectorbt is absent, that simulator reports itself unavailable and the rest of Apex, including `demo-core`, the static demo and the other test paths, is unaffected.
+- Apex is not offered as a paid product or service. Anyone who forks Apex to sell a product or service must review the Commons Clause themselves, and may need to remove the dependency. This note is not legal advice.
+
+`psycopg` is LGPL-3.0 and is used as an unmodified library.
 
 ## More documentation
 
