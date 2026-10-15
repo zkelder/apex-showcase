@@ -9,7 +9,7 @@ it retains, including every rejected decision.
 
 <p align="center">
   <a href="https://zkelder.dev/apex/demo/">
-    <img src="docs/images/console-command.png" alt="Apex Operator Console, captured from the static synthetic-data demo: navigation rail with fourteen views and a campaign command center." width="900">
+    <img src="docs/images/console-command.png" alt="Apex Operator Console, captured from the static synthetic-data demo: navigation rail of operator views and a campaign command center." width="900">
   </a>
   <br>
   <sub>The Operator Console, captured from the static demo. All data is synthetic and every page is labelled as such.</sub>
@@ -181,6 +181,15 @@ All screenshots are of the static synthetic demo. The banner is part of the prod
 | ![PAPER Operations view with the capability gate disabled](docs/images/paper-operations.png) | ![Live Readiness view reporting LIVE_NOT_READY](docs/images/live-readiness.png) |
 
 ![Guided entry page of the static demo](docs/images/demo-guide.png)
+
+## Role and development approach
+
+Apex was created, directed and operated by Zac Kelder as **creator, technical
+lead and operator**: architecture, requirements and the safety model, design
+decisions, validation, and operational acceptance. Implementation was
+**AI-assisted**: coding assistants wrote much of the code under that direction
+and review, so this repository's claims rest on tests and recorded results you
+can re-run rather than on authorship of any individual line.
 
 ## How the pieces relate
 
