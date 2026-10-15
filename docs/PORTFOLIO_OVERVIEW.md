@@ -30,12 +30,23 @@ and no live trading.
 | Full-stack delivery | FastAPI operator API (`src/apex/operator_api.py`) and a React/TypeScript/Vite console (`frontend/`) |
 | Engineering judgment | Written decisions with tradeoffs (`docs/ENGINEERING_DECISIONS.md`); honest limitations (`docs/LIMITATIONS_AND_FUTURE_WORK.md`); incident-driven fixes (`docs/OPERATIONS_AND_RELIABILITY.md`) |
 
+## Role and development approach
+
+Apex was created, directed and operated by one person, Zac Kelder, as creator,
+technical lead and operator: responsible for the architecture, requirements and
+safety model, the design decisions, the validation strategy, and operational
+acceptance of the system. Implementation was **AI-assisted**: coding assistants
+wrote much of the code under that direction and review. The claims in this
+repository are therefore anchored in tests and recorded results that can be
+re-run, not in who typed a given line.
+
 ## Resume / portfolio blurbs
 
 **About 60 words**
 
-> Built Apex, a typed Python/PostgreSQL research and paper-trading simulation
-> platform. Evidence lives in append-only, trigger-protected tables with
+> Created and technically led Apex (architecture, requirements, validation and
+> operation, with AI-assisted implementation), a typed Python/PostgreSQL research
+> and paper-trading simulation platform. Evidence lives in append-only, trigger-protected tables with
 > content-addressed IDs; money is Decimal-exact with a double-entry ledger.
 > Runs unattended via systemd timers with leases, idempotent replay, and a
 > schema-compatibility fail-closed guard. Execution authority is structurally
@@ -43,8 +54,9 @@ and no live trading.
 
 **About 120 words**
 
-> Apex is a research and paper-trading simulation platform I designed and
-> built end to end in Python 3.12 and PostgreSQL. A strict domain,
+> Apex is a research and paper-trading simulation platform I created and
+> technically led in Python 3.12 and PostgreSQL, with AI-assisted
+> implementation under my direction and review. A strict domain,
 > application, adapter layering is enforced by AST-based tests, and the
 > financial core uses Decimal-only values, a double-entry ledger, and a risk
 > kernel with non-bypassable invariants. Evidence is stored in append-only

@@ -151,7 +151,7 @@ describe("AuthorityLadder", () => {
   });
   it("never renders language implying a real order was placed", () => {
     render(<AuthorityLadder paperAccountCount={3} />);
-    const container = screen.getByText(/NONE — not enabled/).closest("div.key-values");
+    const container = screen.getByText(/NONE — not enabled/).closest(".key-values");
     expect(container?.textContent).not.toMatch(/order (was |is )?(placed|submitted|executed)/i);
   });
 });

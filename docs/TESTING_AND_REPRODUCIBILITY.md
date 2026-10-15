@@ -113,4 +113,8 @@ The output is deterministic and contains no production values.
 
 ### Recorded results
 
-Recorded 2026-10-14 on a clean checkout: `ruff` format/lint and `mypy --strict` clean; `verify-core` **3675 passed**; `verify-persistence` **946 passed, 5 skipped, 0 failed** against an isolated PostgreSQL 17 container migrated from empty to head (`0118`); frontend typecheck clean, **98 Vitest tests passed**, `npm audit` reports 0 vulnerabilities. The five skips are acceptance tests that report themselves skipped when no retained real market-data history exists in the database, which is the case for a fresh isolated database. These are results from this repository's own commands, not a claim of trading performance.
+Recorded 2026-10-14 on a clean checkout: `ruff` format/lint and `mypy --strict` clean; `verify-core` **3675 passed**; `verify-persistence` **946 passed, 5 skipped, 0 failed** against an isolated PostgreSQL 17 container migrated from empty to head (`0118`). The five skips are acceptance tests that report themselves skipped when no retained real market-data history exists in the database, which is the case for a fresh isolated database.
+
+Frontend: typecheck clean, `npm audit` reports 0 vulnerabilities, and **101 Vitest tests pass** on the current snapshot. That count was 98 at the backend run above, 99 after a mobile table-overflow fix, and 101 after the guided demo-entry tests. None of those commits changed backend code (`git diff` over `src`, `tests` and `migrations` is empty), so the backend figures still describe this snapshot.
+
+Counts are pytest and Vitest results: parametrized and property-based cases are counted individually, so they are test results and not independent scenarios. They are results from this repository's own commands, not a claim of trading performance.

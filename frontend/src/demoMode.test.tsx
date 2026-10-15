@@ -99,20 +99,55 @@ describe("demo shell guard", () => {
     const { DemoShell } = await import("./demoShell");
     const { fireEvent } = await import("@testing-library/react");
     render(<DemoShell console={<button onClick={handler}>Run Paper Cycle</button>} />);
-    fireEvent.click(screen.getByText(/Operator Console/));
+    fireEvent.click(screen.getByRole("button", { name: "Operator Console" }));
     fireEvent.click(screen.getByText("Run Paper Cycle"));
     expect(handler).not.toHaveBeenCalled();
     expect(screen.getByRole("status").textContent).toContain("read-only synthetic demonstration");
   });
 
-  it("labels empty console states and defaults to the populated outcomes tab", async () => {
+  it("opens on the guided entry page, labels empty console views, and links back", async () => {
     stubFetch({ "fixture-outcomes.json": { seed: 1, capital: "1000.00", outcomes: [] } });
+    window.location.hash = "";
     const { DemoShell } = await import("./demoShell");
     const { fireEvent } = await import("@testing-library/react");
     render(<DemoShell console={<p>console body</p>} />);
-    expect(screen.queryByTestId("demo-empty-note")).toBeNull();
-    expect(screen.getByRole("button", { name: "Deterministic outcomes" }).getAttribute("aria-pressed")).toBe("true");
-    fireEvent.click(screen.getByText(/Operator Console/));
-    expect(screen.getByTestId("demo-empty-note").textContent).toContain("Empty states are expected");
+    expect(screen.getByRole("button", { name: "Start here" }).getAttribute("aria-pressed")).toBe("true");
+    expect(screen.getByRole("heading", { level: 1 }).textContent).toContain("synthetic data");
+    expect(screen.getByTestId("demo-empty-note").textContent).toContain("empty states");
+    expect(screen.getAllByRole("link", { name: /Back to the case study/ })[0].getAttribute("href")).toBe("/apex/");
+    expect(screen.getAllByRole("listitem").length).toBeGreaterThan(8);
+    fireEvent.click(screen.getByRole("button", { name: "Operator Console" }));
+    expect(screen.getByText("console body")).toBeTruthy();
   });
+
+  it("walks a guided path with a step rail and deep-link hashes", async () => {
+    stubFetch({ "fixture-outcomes.json": { seed: 1, capital: "1000.00", outcomes: [] } });
+    window.location.hash = "";
+    const { DemoShell } = await import("./demoShell");
+    const { fireEvent } = await import("@testing-library/react");
+    render(<DemoShell console={<p>console body</p>} />);
+    fireEvent.click(screen.getByRole("link", { name: "Rejected by the risk kernel" }));
+    expect(window.location.hash).toBe("#path/outcomes/2");
+    const rail = screen.getByRole("navigation", { name: /Guided path: Deterministic outcomes/ });
+    expect(rail.textContent).toContain("Step 2 of 3");
+    fireEvent.click(screen.getByRole("button", { name: /Next/ }));
+    expect(window.location.hash).toBe("#path/outcomes/3");
+    expect((screen.getByRole("button", { name: /Next/ }) as HTMLButtonElement).disabled).toBe(true);
+    fireEvent.click(screen.getByRole("button", { name: "All paths" }));
+    expect(screen.queryByRole("navigation", { name: /Guided path/ })).toBeNull();
+  });
+
+  it("keeps write controls rejected inside a guided console step", async () => {
+    stubFetch({});
+    window.location.hash = "#path/gates/3";
+    const handler = vi.fn();
+    const { DemoShell } = await import("./demoShell");
+    const { fireEvent } = await import("@testing-library/react");
+    render(<DemoShell console={<button onClick={handler}>Run Paper Cycle</button>} />);
+    fireEvent.click(screen.getByText("Run Paper Cycle"));
+    expect(handler).not.toHaveBeenCalled();
+    expect(screen.getByRole("status").textContent).toContain("read-only synthetic demonstration");
+    window.location.hash = "";
+  });
+
 });

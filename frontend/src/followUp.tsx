@@ -127,51 +127,51 @@ export function FollowUpPage({ inspect }: { inspect: InspectEvidence }) {
       {!value && !error && <Loading />}
       <div className="research-summary-grid">
         <Panel title="Retained coverage" badge="ALL POLICY VERSIONS">
-          <div className="key-values">
+          <dl className="key-values">
             <div><dt>Observations</dt><dd>{text(coverage?.observation_count, "0")}</dd></div>
             <div><dt>Decisions with ≥1</dt><dd>{text(coverage?.decisions_with_at_least_one_observation, "0")}</dd></div>
             <div><dt>Most recent capture</dt><dd>{text(coverage?.most_recent_observed_at)}</dd></div>
-          </div>
+          </dl>
         </Panel>
         <Panel title="By policy version">
-          <div className="key-values">
+          <dl className="key-values">
             {counts(coverage?.observation_count_by_policy_version).map(([key, count]) => (
               <div key={key}><dt>{key}</dt><dd>{count}</dd></div>
             ))}
             {!counts(coverage?.observation_count_by_policy_version).length && <div><dt>none retained</dt><dd>0</dd></div>}
-          </div>
+          </dl>
         </Panel>
         <Panel title="By venue">
-          <div className="key-values">
+          <dl className="key-values">
             {counts(coverage?.observation_count_by_venue).map(([key, count]) => (
               <div key={key}><dt>{key}</dt><dd>{count}</dd></div>
             ))}
             {!counts(coverage?.observation_count_by_venue).length && <div><dt>none retained</dt><dd>0</dd></div>}
-          </div>
+          </dl>
         </Panel>
         <Panel title="By horizon">
-          <div className="key-values">
+          <dl className="key-values">
             {counts(coverage?.observation_count_by_horizon_kind).map(([key, count]) => (
               <div key={key}><dt>{key}</dt><dd>{count}</dd></div>
             ))}
             {!counts(coverage?.observation_count_by_horizon_kind).length && <div><dt>none retained</dt><dd>0</dd></div>}
-          </div>
+          </dl>
         </Panel>
         <Panel title="By baseline kind">
-          <div className="key-values">
+          <dl className="key-values">
             {counts(coverage?.observation_count_by_baseline_kind).map(([key, count]) => (
               <div key={key}><dt>{key}</dt><dd>{count}</dd></div>
             ))}
             {!counts(coverage?.observation_count_by_baseline_kind).length && <div><dt>none retained</dt><dd>0</dd></div>}
-          </div>
+          </dl>
         </Panel>
         <Panel title="Current backlog" badge={text(planSummary?.policy_version)}>
-          <div className="key-values">
+          <dl className="key-values">
             {pairs(planSummary?.state_counts).map(([key, count]) => (
               <div key={key}><dt>{key}</dt><dd>{count}</dd></div>
             ))}
             {!pairs(planSummary?.state_counts).length && <div><dt>none pending</dt><dd>0</dd></div>}
-          </div>
+          </dl>
         </Panel>
       </div>
 
@@ -181,7 +181,7 @@ export function FollowUpPage({ inspect }: { inspect: InspectEvidence }) {
           -- read only, never a live sync. Permanently-unavailable pairs cost nothing to skip and never consume
           the budgets below; they are not ordinary backlog.
         </p>
-        <div className="key-values">
+        <dl className="key-values">
           <div>
             <dt>Last recurring cycle</dt>
             <dd>
@@ -264,7 +264,7 @@ export function FollowUpPage({ inspect }: { inspect: InspectEvidence }) {
               <small>{text(progress?.currently_not_yet_due, "0")} not yet due</small>
             </dd>
           </div>
-        </div>
+        </dl>
       </Panel>
 
       {comparisons.length > 0 && (
