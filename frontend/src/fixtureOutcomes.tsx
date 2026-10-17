@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { KeyboardEvent, useEffect, useState } from "react";
 
 type Json = Record<string, unknown>;
 type Outcome = { fixture: string; title: string; report_hash: string; report: Json };
@@ -51,7 +51,7 @@ function Journals({ report }: { report: Json }) {
   const journals = asArray(report.ledger_journals);
   if (!journals.length) return <p className="muted">No ledger journals beyond the opening contribution.</p>;
   return (
-    <div className="scroll">
+    <div className="scroll" tabIndex={0} role="region" aria-label="Double-entry ledger journals (scrolls horizontally on small screens)">
     <table>
       <thead>
         <tr><th>Journal</th><th>Posting</th><th>Side</th><th>Amount (USD)</th></tr>
@@ -87,9 +87,22 @@ export function FixtureOutcomesPage() {
   if (!document) return <p>Loading deterministic outcomes…</p>;
   const current = document.outcomes.find((item) => item.fixture === selected) ?? document.outcomes[0];
   const report = current.report;
+  const onTabKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
+    const fixtures = document.outcomes.map((item) => item.fixture);
+    const index = fixtures.indexOf(current.fixture);
+    let next: number | null = null;
+    if (event.key === "ArrowRight" || event.key === "ArrowDown") next = (index + 1) % fixtures.length;
+    else if (event.key === "ArrowLeft" || event.key === "ArrowUp") next = (index - 1 + fixtures.length) % fixtures.length;
+    else if (event.key === "Home") next = 0;
+    else if (event.key === "End") next = fixtures.length - 1;
+    if (next === null) return;
+    event.preventDefault();
+    setSelected(fixtures[next]);
+    window.document.getElementById(`outcome-tab-${fixtures[next]}`)?.focus();
+  };
   return (
     <section aria-label="Deterministic fixture outcomes" className="fixture-outcomes">
-      <h2>Apex in 60 seconds</h2>
+      <h1 className="fixture-title">Apex in 60 seconds</h1>
       <p>
         Apex is a research and <strong>simulation-only</strong> decision platform for prediction markets and other instruments.
         Every decision passes a fixed pipeline: point-in-time evidence → strategy proposal → allocation → a non-bypassable
@@ -101,12 +114,15 @@ export function FixtureOutcomesPage() {
         Each card is the real output of <code>scripts/dev.py demo-core --fixture … --capital {document.capital} --seed {document.seed}</code>,
         produced by Apex's domain, risk and ledger code with no database and no network. The report hash is pinned by tests; any change in behaviour changes it.
       </p>
-      <div className="outcome-grid" role="tablist" aria-label="Fixture outcomes">
+      <div className="outcome-grid" role="tablist" aria-label="Fixture outcomes" onKeyDown={onTabKeyDown}>
         {document.outcomes.map((item) => (
           <button
             key={item.fixture}
+            id={`outcome-tab-${item.fixture}`}
             role="tab"
             aria-selected={item.fixture === current.fixture}
+            aria-controls="outcome-detail"
+            tabIndex={item.fixture === current.fixture ? 0 : -1}
             className={`outcome-card tone-${OUTCOME_TONE[text(item.report.run_outcome)] ?? "neutral"} ${item.fixture === current.fixture ? "active" : ""}`}
             onClick={() => setSelected(item.fixture)}
           >
@@ -116,7 +132,7 @@ export function FixtureOutcomesPage() {
           </button>
         ))}
       </div>
-      <div className="outcome-detail">
+      <div className="outcome-detail" id="outcome-detail" role="tabpanel" aria-labelledby={`outcome-tab-${current.fixture}`}>
         <h3>{current.title}</h3>
         <dl className="facts">
           <div><dt>Run outcome</dt><dd>{text(report.run_outcome)}</dd></div>
@@ -138,7 +154,7 @@ export function FixtureOutcomesPage() {
         <Journals report={report} />
         <details>
           <summary>Full canonical report (JSON)</summary>
-          <pre>{JSON.stringify(report, null, 2)}</pre>
+          <pre tabIndex={0} aria-label="Full canonical report, JSON">{JSON.stringify(report, null, 2)}</pre>
         </details>
       </div>
     </section>

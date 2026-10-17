@@ -25,6 +25,8 @@ export function DemoShell({ console: consoleView }: { console: ReactNode }) {
 
   return (
     <div className="demo-shell" onClickCapture={guard}>
+      {/* One skip link per view: the outcomes view owns main#main; the console view is wrapped in #demo-console. */}
+      <a className="skip-link" href={tab === "outcomes" ? "#main" : "#demo-console"}>Skip to content</a>
       <nav className="demo-tabs" aria-label="Demonstration sections">
         <button aria-pressed={tab === "outcomes"} onClick={() => setTab("outcomes")}>Deterministic outcomes</button>
         <button aria-pressed={tab === "console"} onClick={() => setTab("console")}>Operator Console (retained synthetic evidence)</button>
@@ -43,7 +45,7 @@ export function DemoShell({ console: consoleView }: { console: ReactNode }) {
           portfolio views are the populated part.
         </p>
       )}
-      {tab === "outcomes" ? <main><FixtureOutcomesPage /></main> : consoleView}
+      {tab === "outcomes" ? <main id="main" tabIndex={-1}><FixtureOutcomesPage /></main> : <div id="demo-console" tabIndex={-1}>{consoleView}</div>}
     </div>
   );
 }
