@@ -21,10 +21,10 @@ table { width: 100%; border-collapse: collapse; font-size: .86rem; } th { color:
 
 /* Static demonstration build: permanent synthetic-data indicator. */
 .demo-banner {
-  position: fixed;
+  /* Sticky (in flow) rather than fixed, so the banner's own height never covers the controls below it
+     at widths where its text wraps. */
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
   z-index: 10000;
   display: flex;
   flex-wrap: wrap;
@@ -41,18 +41,17 @@ table { width: 100%; border-collapse: collapse; font-size: .86rem; } th { color:
 }
 .demo-banner strong { letter-spacing: 0.04em; }
 .demo-banner span { opacity: 0.92; }
-body[data-demo="true"] { padding-top: 44px; }
-@media (max-width: 720px) { body[data-demo="true"] { padding-top: 78px; } }
 
 /* Demo shell and deterministic-outcomes view. */
 .demo-tabs { display: flex; gap: 8px; padding: 10px 16px; border-bottom: 1px solid #2a3340; flex-wrap: wrap; }
-.demo-tabs button { width: auto; flex: 0 0 auto; padding: 8px 14px; border-radius: 6px; border: 1px solid #3b4757; background: transparent; color: inherit; cursor: pointer; font: inherit; }
+.demo-tabs button { width: auto; flex: 0 1 auto; padding: 8px 14px; border-radius: 6px; border: 1px solid #3b4757; background: transparent; color: inherit; cursor: pointer; font: inherit; white-space: normal; text-align: left; }
 .demo-tabs button[aria-pressed="true"] { background: #1f3a5f; border-color: #5b8bd0; }
 .fixture-outcomes { padding: 8px 16px 32px; max-width: 1200px; margin: 0 auto; }
 .outcome-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; margin: 16px 0; }
 .outcome-card { display: flex; flex-direction: column; gap: 4px; text-align: left; padding: 12px; border-radius: 8px; border: 1px solid #3b4757; background: rgba(255,255,255,0.03); color: inherit; cursor: pointer; font: inherit; }
-.outcome-card.active { outline: 2px solid #5b8bd0; }
-.outcome-card span { font-size: 12px; letter-spacing: .04em; opacity: .85; }
+.outcome-card.active { border-color: #5b8bd0; box-shadow: 0 0 0 2px #5b8bd0; }
+.outcome-card:focus-visible { outline: 3px solid #f9c86a; outline-offset: 3px; }
+.outcome-card span { font-size: 12px; letter-spacing: .04em; opacity: .85; overflow-wrap: anywhere; }
 .outcome-card small { opacity: .75; }
 .outcome-card.tone-ok { border-left: 4px solid #3fa56b; }
 .outcome-card.tone-warn { border-left: 4px solid #d09a3b; }
@@ -64,6 +63,8 @@ body[data-demo="true"] { padding-top: 44px; }
 .pipeline li { display: grid; grid-template-columns: 150px 1fr; gap: 12px; padding: 8px 10px; border-radius: 6px; background: rgba(255,255,255,0.04); }
 @media (max-width: 720px) { .pipeline li { grid-template-columns: 1fr; } }
 .fixture-outcomes pre { max-height: 420px; overflow: auto; font-size: 12px; }
+.fixture-outcomes .scroll:focus-visible, .fixture-outcomes pre:focus-visible { outline: 3px solid #f9c86a; outline-offset: 2px; }
+main#main:focus, #demo-console:focus { outline: none; }
 .fixture-outcomes table { width: 100%; border-collapse: collapse; } .fixture-outcomes th, .fixture-outcomes td { text-align: left; padding: 4px 8px; border-bottom: 1px solid #2a3340; }
 body[data-demo="true"] form button[type="submit"] { pointer-events: none; opacity: 0.45; }
 body[data-demo="true"] form button[type="submit"]::after { content: " (disabled in demo)"; font-weight: 400; }
